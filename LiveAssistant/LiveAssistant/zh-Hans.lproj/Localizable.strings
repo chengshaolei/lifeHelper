@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  LiveAssistant
+
+  Created by csl on 15/12/9.
+  Copyright © 2015年 CSL. All rights reserved.
+*/
+"tabbar_tool" = "工具";
+"tabbar_chatroom" = "聊天";
+"tabbar_health" = "健康";
+
+//警告框
+"alertTitle" = "通知";
+"scanReaderNotSupport" = "当前设备不支持扫描";
+"scanResult" = "扫描结果";
