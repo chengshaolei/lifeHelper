@@ -31,7 +31,7 @@ static QRCodeReaderViewController *vc = nil;
 -(void) viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
     if (!_isScanFinished) {//如果扫描没结束
-        [self scanAction];
+        [self scanAction];//开始扫描
     }
     
 }
@@ -45,18 +45,22 @@ static QRCodeReaderViewController *vc = nil;
             QRCodeReader *reader = [QRCodeReader readerWithMetadataObjectTypes:@[AVMetadataObjectTypeQRCode]];
             
             //创建扫描控制器
-            vc  = [QRCodeReaderViewController readerWithCancelButtonTitle:@"Cancel" codeReader:reader startScanningAtLoad:YES showSwitchCameraButton:YES showTorchButton:YES];
+            vc  = [QRCodeReaderViewController readerWithCancelButtonTitle:@"Cancel" codeReader:reader startScanningAtLoad:NO showSwitchCameraButton:YES showTorchButton:YES];
          });
     }
     else {//不支持
         //弹框通知
         [Auxiliary alertWithTitle:NSLocalizedString(@"alertTitle", nil) message:NSLocalizedString(@"scanReaderNotSupport", nil) button:1 done:nil];
     }
+    
+    //把扫描控制器的view加到当前的view上，不采用模态视图控制器方式操作
+    [self.view addSubview:vc.view];
 }
 - (void)scanAction
 {
-    //把扫描控制器的view加到当前的view上，不采用模态视图控制器方式操作
-     [self.view addSubview:vc.view];
+    if (!_isScanFinished) {
+        [vc startScanning];//开始扫描
+    }
     
     //避免循环引用
     __weak CSLScanViewController*weakSelf = self;

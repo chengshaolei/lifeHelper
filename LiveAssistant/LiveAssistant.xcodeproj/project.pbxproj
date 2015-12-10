@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		6C6D47CD1C18617900B80FB6 /* CSLScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C6D47CC1C18617900B80FB6 /* CSLScanViewController.m */; };
 		6C6D47D01C18833600B80FB6 /* Auxiliary.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C6D47CF1C18833600B80FB6 /* Auxiliary.m */; };
+		6C93F0CB1C19246B007BA2B0 /* CSLExpressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C93F0C91C19246B007BA2B0 /* CSLExpressViewController.m */; };
+		6C93F0CC1C19246B007BA2B0 /* CSLExpressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C93F0CA1C19246B007BA2B0 /* CSLExpressViewController.xib */; };
+		6C93F0D01C1925D1007BA2B0 /* CSLNetRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C93F0CF1C1925D1007BA2B0 /* CSLNetRequest.m */; };
 		6C9FB9B51C185BE700725C02 /* CSLChatroomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C9FB9911C185BE600725C02 /* CSLChatroomViewController.m */; };
 		6C9FB9B61C185BE700725C02 /* CSLChatroomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C9FB9921C185BE600725C02 /* CSLChatroomViewController.xib */; };
 		6C9FB9B71C185BE700725C02 /* CSLToolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C9FB9951C185BE600725C02 /* CSLToolViewController.m */; };
@@ -42,6 +45,12 @@
 		6C6D47CC1C18617900B80FB6 /* CSLScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSLScanViewController.m; sourceTree = "<group>"; };
 		6C6D47CE1C18833600B80FB6 /* Auxiliary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Auxiliary.h; sourceTree = "<group>"; };
 		6C6D47CF1C18833600B80FB6 /* Auxiliary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Auxiliary.m; sourceTree = "<group>"; };
+		6C93F0C81C19246B007BA2B0 /* CSLExpressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSLExpressViewController.h; sourceTree = "<group>"; };
+		6C93F0C91C19246B007BA2B0 /* CSLExpressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSLExpressViewController.m; sourceTree = "<group>"; };
+		6C93F0CA1C19246B007BA2B0 /* CSLExpressViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSLExpressViewController.xib; sourceTree = "<group>"; };
+		6C93F0CD1C192513007BA2B0 /* CSLConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSLConstant.h; sourceTree = "<group>"; };
+		6C93F0CE1C1925D1007BA2B0 /* CSLNetRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSLNetRequest.h; sourceTree = "<group>"; };
+		6C93F0CF1C1925D1007BA2B0 /* CSLNetRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSLNetRequest.m; sourceTree = "<group>"; };
 		6C9FB9901C185BE600725C02 /* CSLChatroomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSLChatroomViewController.h; sourceTree = "<group>"; };
 		6C9FB9911C185BE600725C02 /* CSLChatroomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSLChatroomViewController.m; sourceTree = "<group>"; };
 		6C9FB9921C185BE600725C02 /* CSLChatroomViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSLChatroomViewController.xib; sourceTree = "<group>"; };
@@ -139,6 +148,9 @@
 				6C9FB9941C185BE600725C02 /* CSLToolViewController.h */,
 				6C9FB9951C185BE600725C02 /* CSLToolViewController.m */,
 				6C9FB9961C185BE600725C02 /* CSLToolViewController.xib */,
+				6C93F0C81C19246B007BA2B0 /* CSLExpressViewController.h */,
+				6C93F0C91C19246B007BA2B0 /* CSLExpressViewController.m */,
+				6C93F0CA1C19246B007BA2B0 /* CSLExpressViewController.xib */,
 			);
 			path = commontool;
 			sourceTree = "<group>";
@@ -185,11 +197,14 @@
 		6C9FB9A61C185BE700725C02 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				6C6D47CA1C18613C00B80FB6 /* 3rd */,
+				6C93F0CD1C192513007BA2B0 /* CSLConstant.h */,
 				6C6D47CE1C18833600B80FB6 /* Auxiliary.h */,
 				6C6D47CF1C18833600B80FB6 /* Auxiliary.m */,
-				6C6D47CA1C18613C00B80FB6 /* 3rd */,
 				6C9FB9A71C185BE700725C02 /* CSLTabBarController.h */,
 				6C9FB9A81C185BE700725C02 /* CSLTabBarController.m */,
+				6C93F0CE1C1925D1007BA2B0 /* CSLNetRequest.h */,
+				6C93F0CF1C1925D1007BA2B0 /* CSLNetRequest.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -339,6 +354,7 @@
 				6C9FB9BE1C185BE700725C02 /* tool.png in Resources */,
 				6C9FB9C01C185BE700725C02 /* flashlight.png in Resources */,
 				6CB503CE1C185ACE0026891F /* LaunchScreen.storyboard in Resources */,
+				6C93F0CC1C19246B007BA2B0 /* CSLExpressViewController.xib in Resources */,
 				6C9FB9BD1C185BE700725C02 /* health.png in Resources */,
 				6CB503CB1C185ACE0026891F /* Assets.xcassets in Resources */,
 				6C9FB9BF1C185BE700725C02 /* express.png in Resources */,
@@ -404,6 +420,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C93F0CB1C19246B007BA2B0 /* CSLExpressViewController.m in Sources */,
 				6C6D47CD1C18617900B80FB6 /* CSLScanViewController.m in Sources */,
 				6C9FB9B71C185BE700725C02 /* CSLToolViewController.m in Sources */,
 				6C9FB9BA1C185BE700725C02 /* CSLHealthViewController.m in Sources */,
@@ -415,6 +432,7 @@
 				6C9FB9C61C185BE700725C02 /* QRCodeReaderViewController.m in Sources */,
 				6C9FB9C41C185BE700725C02 /* QRCodeReader.m in Sources */,
 				6C9FB9B91C185BE700725C02 /* CSLBaseViewController.m in Sources */,
+				6C93F0D01C1925D1007BA2B0 /* CSLNetRequest.m in Sources */,
 				6C9FB9C31C185BE700725C02 /* QRCameraSwitchButton.m in Sources */,
 				6C6D47D01C18833600B80FB6 /* Auxiliary.m in Sources */,
 				6CB503C01C185ACE0026891F /* main.m in Sources */,

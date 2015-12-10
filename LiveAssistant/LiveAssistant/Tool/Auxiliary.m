@@ -115,7 +115,7 @@
     
     //弹出警告框
     [controller presentViewController:alertController animated:YES completion:nil];
-    
+
 }
 
 +(CATransition*) transitWithProperties:(NSDictionary*)properties{
