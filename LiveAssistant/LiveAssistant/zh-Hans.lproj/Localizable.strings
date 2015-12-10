@@ -13,3 +13,6 @@
 "alertTitle" = "通知";
 "scanReaderNotSupport" = "当前设备不支持扫描";
 "scanResult" = "扫描结果";
+
+//下拉列表框
+"placeholdtext" = "请输入选择项";

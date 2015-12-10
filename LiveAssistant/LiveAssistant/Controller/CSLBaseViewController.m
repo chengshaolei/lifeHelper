@@ -9,7 +9,7 @@
 #import "CSLBaseViewController.h"
 
 @interface CSLBaseViewController ()
-
+-(void) dataInit;//数据初始化
 @end
 
 @implementation CSLBaseViewController
@@ -24,14 +24,16 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+//初始化数据源
+-(void) dataInit{
+    if (!_dataSource) {
+        _dataSource = [NSMutableArray array];
+    }
 }
-*/
 
+//数据请求
+-(void) requestData:(NSString*)urlString para:(NSDictionary*)dict{
+    
+}
 @end

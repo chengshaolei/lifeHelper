@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CSLExpressViewController">
             <connections>
+                <outlet property="expressOrderTextField" destination="fyW-jS-1rI" id="tlG-JL-XwH"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -13,7 +15,114 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="快递单号：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vPk-4w-YJP">
+                    <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="85" id="KFH-6e-HTZ"/>
+                        <constraint firstAttribute="height" constant="21" id="w6O-bz-xNW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="KFH-6e-HTZ"/>
+                            <exclude reference="w6O-bz-xNW"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="KFH-6e-HTZ"/>
+                            <include reference="w6O-bz-xNW"/>
+                        </mask>
+                    </variation>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="快递公司：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BHO-Yr-tLz">
+                    <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="BOK-Iy-jI4"/>
+                        <constraint firstAttribute="width" constant="85" id="KmO-rH-vSv"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="BOK-Iy-jI4"/>
+                            <exclude reference="KmO-rH-vSv"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="BOK-Iy-jI4"/>
+                            <include reference="KmO-rH-vSv"/>
+                        </mask>
+                    </variation>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fyW-jS-1rI">
+                    <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Zn8-US-AMG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Zn8-US-AMG"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="Zn8-US-AMG"/>
+                        </mask>
+                    </variation>
+                </textField>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="fyW-jS-1rI" secondAttribute="trailing" constant="101" id="0Fl-Br-cBf">
+                    <variation key="widthClass=compact" constant="30"/>
+                </constraint>
+                <constraint firstItem="BHO-Yr-tLz" firstAttribute="top" secondItem="vPk-4w-YJP" secondAttribute="bottom" constant="25" id="HZC-rP-uhL"/>
+                <constraint firstItem="BHO-Yr-tLz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="17" id="Ohi-tB-h1i"/>
+                <constraint firstItem="vPk-4w-YJP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="45" id="Q5L-2Z-LUm"/>
+                <constraint firstItem="fyW-jS-1rI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="41" id="WXr-mm-My9"/>
+                <constraint firstItem="fyW-jS-1rI" firstAttribute="leading" secondItem="vPk-4w-YJP" secondAttribute="trailing" id="X0X-Ga-I5a"/>
+                <constraint firstItem="vPk-4w-YJP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="17" id="pKr-52-6tx"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="vPk-4w-YJP"/>
+                    <exclude reference="BHO-Yr-tLz"/>
+                    <exclude reference="fyW-jS-1rI"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="Q5L-2Z-LUm"/>
+                    <exclude reference="pKr-52-6tx"/>
+                    <exclude reference="HZC-rP-uhL"/>
+                    <exclude reference="Ohi-tB-h1i"/>
+                    <exclude reference="0Fl-Br-cBf"/>
+                    <exclude reference="WXr-mm-My9"/>
+                    <exclude reference="X0X-Ga-I5a"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="subviews">
+                    <include reference="vPk-4w-YJP"/>
+                    <include reference="BHO-Yr-tLz"/>
+                    <include reference="fyW-jS-1rI"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="Q5L-2Z-LUm"/>
+                    <include reference="pKr-52-6tx"/>
+                    <include reference="HZC-rP-uhL"/>
+                    <include reference="Ohi-tB-h1i"/>
+                    <include reference="0Fl-Br-cBf"/>
+                    <include reference="WXr-mm-My9"/>
+                    <include reference="X0X-Ga-I5a"/>
+                </mask>
+            </variation>
         </view>
     </objects>
 </document>

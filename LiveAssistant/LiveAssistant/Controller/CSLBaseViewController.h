@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "Auxiliary.h"
-@interface CSLBaseViewController : UIViewController
+#import "CSLConstant.h"
+#import "CSLNetRequest.h"
 
+@interface CSLBaseViewController : UIViewController
+@property(nonatomic,strong)  NSMutableArray * dataSource;//数据源
+
+//数据请求，子类实现
+-(void) requestData:(NSString*)urlString para:(NSDictionary*)dict;
 @end

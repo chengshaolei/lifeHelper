@@ -282,28 +282,28 @@
                     <exclude reference="CZe-06-wpQ"/>
                 </mask>
                 <mask key="constraints">
-                    <exclude reference="BqH-yu-W1E"/>
-                    <exclude reference="qa3-pN-cHi"/>
+                    <exclude reference="V8r-Gc-bci"/>
+                    <exclude reference="qeS-y1-XpD"/>
+                    <exclude reference="MEe-xY-FnD"/>
+                    <exclude reference="ZG9-11-ViP"/>
+                    <exclude reference="euE-5G-Zao"/>
+                    <exclude reference="rgY-1E-r5M"/>
                     <exclude reference="dcc-s9-Ugx"/>
                     <exclude reference="emb-gZ-xfp"/>
                     <exclude reference="gf5-dz-mcO"/>
                     <exclude reference="lbc-w9-Tsz"/>
+                    <exclude reference="BqH-yu-W1E"/>
+                    <exclude reference="qa3-pN-cHi"/>
                     <exclude reference="127-JM-l1t"/>
                     <exclude reference="Pdd-Pv-047"/>
+                    <exclude reference="RuJ-VA-3PQ"/>
+                    <exclude reference="lej-Qg-FzM"/>
                     <exclude reference="Dk4-1y-gbC"/>
                     <exclude reference="JRz-AA-7iF"/>
                     <exclude reference="US1-eD-BB1"/>
                     <exclude reference="AWi-Gw-Qq4"/>
                     <exclude reference="nvj-xV-4XW"/>
                     <exclude reference="sRp-AB-Vg6"/>
-                    <exclude reference="RuJ-VA-3PQ"/>
-                    <exclude reference="lej-Qg-FzM"/>
-                    <exclude reference="euE-5G-Zao"/>
-                    <exclude reference="rgY-1E-r5M"/>
-                    <exclude reference="V8r-Gc-bci"/>
-                    <exclude reference="qeS-y1-XpD"/>
-                    <exclude reference="MEe-xY-FnD"/>
-                    <exclude reference="ZG9-11-ViP"/>
                 </mask>
             </variation>
             <variation key="widthClass=compact">
@@ -325,28 +325,28 @@
             </variation>
             <variation key="heightClass=regular-widthClass=compact">
                 <mask key="constraints">
-                    <include reference="BqH-yu-W1E"/>
-                    <include reference="qa3-pN-cHi"/>
+                    <include reference="V8r-Gc-bci"/>
+                    <include reference="qeS-y1-XpD"/>
+                    <include reference="MEe-xY-FnD"/>
+                    <include reference="ZG9-11-ViP"/>
+                    <include reference="euE-5G-Zao"/>
+                    <include reference="rgY-1E-r5M"/>
                     <include reference="dcc-s9-Ugx"/>
                     <include reference="emb-gZ-xfp"/>
                     <exclude reference="gf5-dz-mcO"/>
                     <exclude reference="lbc-w9-Tsz"/>
+                    <include reference="BqH-yu-W1E"/>
+                    <include reference="qa3-pN-cHi"/>
                     <include reference="127-JM-l1t"/>
                     <include reference="Pdd-Pv-047"/>
+                    <include reference="RuJ-VA-3PQ"/>
+                    <include reference="lej-Qg-FzM"/>
                     <include reference="Dk4-1y-gbC"/>
                     <include reference="JRz-AA-7iF"/>
                     <include reference="US1-eD-BB1"/>
                     <include reference="AWi-Gw-Qq4"/>
                     <include reference="nvj-xV-4XW"/>
                     <include reference="sRp-AB-Vg6"/>
-                    <include reference="RuJ-VA-3PQ"/>
-                    <include reference="lej-Qg-FzM"/>
-                    <include reference="euE-5G-Zao"/>
-                    <include reference="rgY-1E-r5M"/>
-                    <include reference="V8r-Gc-bci"/>
-                    <include reference="qeS-y1-XpD"/>
-                    <include reference="MEe-xY-FnD"/>
-                    <include reference="ZG9-11-ViP"/>
                 </mask>
             </variation>
         </view>

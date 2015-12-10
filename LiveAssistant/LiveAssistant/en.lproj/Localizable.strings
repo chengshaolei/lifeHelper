@@ -13,3 +13,6 @@
 "alertTitle" = "notification";
 "scanReaderNotSupport" = "Reader not supported by the current device";
 "scanResult" = "Completion with result";
+
+//下拉列表框
+"placeholdtext" = "please input query item";
