@@ -12,10 +12,6 @@
 BOOL isExpand = NO;//列表是否展开
 
 @interface CSLDownListView()<UITableViewDataSource,UITableViewDelegate,UITextFieldDelegate>
-@property(nonatomic,strong) UITextField * inputTextField;//输入框
-@property(nonatomic,strong) UITableView * listView;//下拉列表
-
-
 -(void) createInterface;//创建界面
 -(void) restoreOrigion:(BOOL)flag;//恢复视图的初始样式
 -(void) layoutView;//自动布局
@@ -27,6 +23,13 @@ BOOL isExpand = NO;//列表是否展开
 
 -(instancetype) init{
     return [self initWithFrame:CGRectZero];
+}
+
+-(instancetype) initWithCoder:(NSCoder *)aDecoder{
+    if (self=[super initWithCoder:aDecoder]) {
+        [self createInterface];
+    }
+    return self ;
 }
 
 //初始化方法重写
@@ -73,6 +76,7 @@ BOOL isExpand = NO;//列表是否展开
     
     //创建输入框
     self.inputTextField = [[UITextField alloc] initWithFrame:CGRectMake(0, 0, self.bounds.size.width, 40)];
+   
     self.inputTextField.borderStyle = UITextBorderStyleRoundedRect;
     self.inputTextField.placeholder = NSLocalizedString(@"placeholdtext", nil);
     UIButton * rightButton = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
@@ -91,23 +95,28 @@ BOOL isExpand = NO;//列表是否展开
     self.listView.layer.borderColor = [UIColor grayColor].CGColor;
     self.listView.hidden = YES;
     [self addSubview:self.listView];
-    
-    
+
     //自动布局
     [self layoutView];
 }
 
 //自动布局
 -(void) layoutView{
+    //取消automaskresize
     _inputTextField.translatesAutoresizingMaskIntoConstraints = NO;
     _listView.translatesAutoresizingMaskIntoConstraints = NO;
+    
+    //垂直布局
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[_inputTextField]-1-[_listView]-0-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_inputTextField,_listView)]];
+    
+    //水平布局
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[_inputTextField]-0-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_inputTextField)]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[_listView]-0-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_listView)]];
 }
 
 #pragma mark-------表视图的数据源和代理方法------
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    NSLog(@"%ld",_dataSource.count);
     return _dataSource.count;
 }
 
@@ -120,7 +129,9 @@ BOOL isExpand = NO;//列表是否展开
     }
     
     cell.textLabel.text = _dataSource[indexPath.row];
+    NSLog(@"%@",_dataSource[indexPath.row]);
     cell.textLabel.font = [UIFont systemFontOfSize:14];
+    cell.textLabel.textColor = [UIColor blackColor];
     return cell;
 }
 
@@ -137,18 +148,24 @@ BOOL isExpand = NO;//列表是否展开
     //恢复初始大小
     [self restoreOrigion:YES];
     isExpand = !isExpand;
+    
+    //取消选中
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
 }
 
 #pragma mark------文本框代理-------------------------
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField{
-    return NO;
+    return YES;
 }
 
 
 #pragma mark-------按钮处理--------------------------
 -(void) downList:(UIButton*)sender{
-    [self restoreOrigion:isExpand];
+    [self restoreOrigion:isExpand];//收缩或扩展列表
     isExpand = !isExpand;//修改标志位
+    if (_done) {
+        _done();
+    }
 }
 
 //恢复视图的初始样式

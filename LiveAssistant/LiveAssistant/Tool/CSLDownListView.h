@@ -8,14 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-typedef void (^QueryNumberCallBack)(NSString*,NSString*);//查询选中快递单号
+typedef void (^ClickCallBack)();
 
 //下拉列表框由输入框和下拉列表组合实现
 @interface CSLDownListView : UIView
+@property(nonatomic,strong) UITextField * inputTextField;//输入框
+@property(nonatomic,strong) UITableView * listView;//下拉列表
 @property(nonatomic,strong) NSMutableArray * dataSource;//列表框的数据源
 @property(nonatomic,strong)NSString* selectedItem;//当前选中项
-@property(nonatomic,copy)QueryNumberCallBack findNo;
-
+@property(nonatomic,copy) ClickCallBack done;
 
 //方法
 
