@@ -7,7 +7,8 @@
 //
 
 #import "CSLNetRequest.h"
-
+#import "CSLConstant.h"
+#import "JHAPISDK.h"
 
 @implementation CSLNetRequest
 +(void) get:(NSString*)urlString complete:(CompleteCallBack)complete fail:(FailureCallBack)failure{
@@ -74,13 +75,13 @@
     
     [manager.reachabilityManager setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
         switch (status) {
-            //联通状态
+                //联通状态
             case AFNetworkReachabilityStatusReachableViaWWAN:
             case AFNetworkReachabilityStatusReachableViaWiFi:
                 [operationQueue setSuspended:NO];
                 netState = YES;
                 break;
-            //非联通状态
+                //非联通状态
             case AFNetworkReachabilityStatusNotReachable:
                 netState = NO;
             default:
@@ -92,5 +93,19 @@
     [manager.reachabilityManager startMonitoring];
     
     return netState;
+}
+
+//+(void) JHRequestMethod:(NSString*)method url:(NSString*)urlString paras:(NSDictionary*)dict success:(void(^)(id reponeseData))done failure:(void(^)(NSError*))fail
++(void) JHRequestAPPId:(NSString*)aid Method:(NSString*)method url:(NSString*)urlString paras:(NSDictionary*)dict success:(void(^)(id reponeseData))done failure:(void(^)(NSError*))fail{
+    JHAPISDK *juheapi = [JHAPISDK shareJHAPISDK];
+    [juheapi executeWorkWithAPI:urlString APIID:aid Parameters:dict Method:method Success:^(id responseObject) {
+        if (done) {
+            done(responseObject);
+        }
+    } Failure:^(NSError *error) {
+        if (fail) {
+            fail(error);
+        }
+    }];
 }
 @end

@@ -32,4 +32,13 @@ typedef void (^FailureCallBack)(NSError* error);//请求出错的回调
 //参数：urlString 网址
 //返回值：网络联通返回YES，否则返回NO
 + (BOOL) netWorkReachabilityWithURLString:(NSString *) urlString;
+
+//聚合数据网络请求
+//功能：通过聚合接口请求数据
+//参数：method 请求方式：get/post
+//    urlString 网址
+//    dict 参数字典
+//    done 请求成功回调；fail 请求失败的回调
+//返回值：无
++(void) JHRequestAPPId:(NSString*)aid Method:(NSString*)method url:(NSString*)urlString paras:(NSDictionary*)dict success:(void(^)(id reponeseData))done failure:(void(^)(NSError*))fail;
 @end

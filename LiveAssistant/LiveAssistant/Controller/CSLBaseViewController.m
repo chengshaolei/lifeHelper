@@ -33,7 +33,33 @@
 }
 
 //数据请求
--(void) requestData:(NSString*)urlString para:(NSDictionary*)dict{
+-(void) request:(NSString*)method url:(NSString*)urlString para:(NSDictionary*)dict{
+    if ([method isEqualToString:@"GET"]) {
+        [CSLNetRequest get:urlString complete:^(id data) {
+            [self parserData:data];
+        } fail:^(NSError *error) {
+            NSLog(@"%@",error);
+        }];
+    }
+    else{
+        [CSLNetRequest post:urlString para:dict complete:^(id data) {
+            [self parserData:data];
+        } fail:^(NSError *error) {
+            NSLog(@"%@",error.description);
+        }];
+    }
+}
+
+-(void) JHRequestWithAPPid:(NSString*)appid method:(NSString*)method url:(NSString*)urlString paras:(NSDictionary*)dict{
+    [CSLNetRequest JHRequestAPPId:appid Method:method url:urlString paras:dict success:^(id reponeseData) {
+        [self parserData:reponeseData];
+    } failure:^(NSError *error) {
+        NSLog(@"%@",error.description);
+    }];
+}
+
+//子类是实现
+-(void) parserData:(id)data{
     
 }
 @end

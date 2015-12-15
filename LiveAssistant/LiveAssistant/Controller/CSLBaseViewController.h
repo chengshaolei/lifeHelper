@@ -14,6 +14,12 @@
 @interface CSLBaseViewController : UIViewController
 @property(nonatomic,strong)  NSMutableArray * dataSource;//数据源
 
-//数据请求，子类实现
--(void) requestData:(NSString*)urlString para:(NSDictionary*)dict;
+//一般数据请求，子类实现
+-(void) request:(NSString*)method url:(NSString*)urlString para:(NSDictionary*)dict;
+
+//聚合数据请求
+-(void) JHRequestWithAPPid:(NSString*)appid method:(NSString*)method url:(NSString*)urlString paras:(NSDictionary*)dict;
+
+
+-(void) parserData:(id)data;//数据解析
 @end

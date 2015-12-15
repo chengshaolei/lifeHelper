@@ -9,9 +9,14 @@
 #import "AppDelegate.h"
 #import "CSLTabBarController.h"
 
+#import "JHAPISDK.h"
+#import "JHOpenidSupplier.h"
+#import "CSLConstant.h"
+
 @interface AppDelegate ()
 //搭建app的框架
 -(void) createAppFrame;
+-(void) initApp;//初始化
 @end
 
 @implementation AppDelegate
@@ -24,6 +29,9 @@
     
     //搭建系统框架
     [self createAppFrame];
+    [self initApp];//系统初始化
+//    
+//    [[EaseMob sharedInstance] application:application didFinishLaunchingWithOptions:launchOptions];
     [self.window makeKeyAndVisible];
     
     return YES;
@@ -35,12 +43,12 @@
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
-    // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+    
+    
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
@@ -51,6 +59,8 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+
+//创建标签栏
 -(void) createAppFrame{
     //创建标签栏
     CSLTabBarController * tabBarController = [[CSLTabBarController alloc] init];
@@ -68,5 +78,13 @@
     
     //设置window的rootviewcontroller
     self.window.rootViewController = tabBarController;
+}
+
+//各种初始化
+-(void) initApp{
+    //聚合初始化
+    [[JHOpenidSupplier shareSupplier] registerJuheAPIByOpenId:JHAPPID];
+    //环信初始化
+//    [[EaseMob sharedInstance] registerSDKWithAppKey:@"1000phonemobile#chatdemo" apnsCertName:@"MyPushDemo20151125"];
 }
 @end

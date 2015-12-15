@@ -33,7 +33,7 @@
 		6C9FB9C61C185BE700725C02 /* QRCodeReaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C9FB9B21C185BE700725C02 /* QRCodeReaderViewController.m */; };
 		6C9FB9C71C185BE700725C02 /* QRToggleTorchButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C9FB9B41C185BE700725C02 /* QRToggleTorchButton.m */; };
 		6C9FB9CC1C185C2700725C02 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6C9FB9CE1C185C2700725C02 /* Localizable.strings */; };
-		6C9FB9D11C185C4D00725C02 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C9FB9D01C185C4D00725C02 /* AppDelegate.m */; };
+		6C9FB9D11C185C4D00725C02 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6C9FB9D01C185C4D00725C02 /* AppDelegate.mm */; };
 		6CB503C01C185ACE0026891F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB503BF1C185ACE0026891F /* main.m */; };
 		6CB503C91C185ACE0026891F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CB503C71C185ACE0026891F /* Main.storyboard */; };
 		6CB503CB1C185ACE0026891F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CB503CA1C185ACE0026891F /* Assets.xcassets */; };
@@ -56,6 +56,12 @@
 		6CB9EBD21C1FEE3F006C64F0 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CB9EBD11C1FEE3E006C64F0 /* libsqlite3.tbd */; };
 		6CB9EBD41C1FEF3F006C64F0 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CB9EBD31C1FEF3F006C64F0 /* AdSupport.framework */; };
 		6CB9EBD61C1FEF4D006C64F0 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CB9EBD51C1FEF4D006C64F0 /* CoreTelephony.framework */; };
+		6CB9EBDA1C1FF0D0006C64F0 /* CSLDataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB9EBD91C1FF0D0006C64F0 /* CSLDataBase.m */; };
+		6CB9EBE21C1FF145006C64F0 /* CSLPositionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB9EBDD1C1FF145006C64F0 /* CSLPositionModel.m */; };
+		6CB9EBE31C1FF145006C64F0 /* CSLShopInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB9EBDF1C1FF145006C64F0 /* CSLShopInfoModel.m */; };
+		6CB9EBE41C1FF145006C64F0 /* CSLShopListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB9EBE11C1FF145006C64F0 /* CSLShopListModel.m */; };
+		6CB9EBEB1C1FF247006C64F0 /* JuheApisSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CB9EBEA1C1FF247006C64F0 /* JuheApisSDK.a */; };
+		6CB9EBED1C1FF2BF006C64F0 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CB9EBEC1C1FF2BF006C64F0 /* libc++.tbd */; };
 		9D597E1D483010A03B8813F6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BDC7C3E36C06637BB62B476B /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -106,7 +112,7 @@
 		6C9FB9C91C185BFE00725C02 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		6C9FB9CD1C185C2700725C02 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		6C9FB9CF1C185C2900725C02 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		6C9FB9D01C185C4D00725C02 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6C9FB9D01C185C4D00725C02 /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 		6CB503BB1C185ACE0026891F /* LiveAssistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveAssistant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CB503BF1C185ACE0026891F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6CB503C11C185ACE0026891F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -149,6 +155,18 @@
 		6CB9EBD11C1FEE3E006C64F0 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		6CB9EBD31C1FEF3F006C64F0 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		6CB9EBD51C1FEF4D006C64F0 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		6CB9EBD81C1FF0D0006C64F0 /* CSLDataBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSLDataBase.h; sourceTree = "<group>"; };
+		6CB9EBD91C1FF0D0006C64F0 /* CSLDataBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSLDataBase.m; sourceTree = "<group>"; };
+		6CB9EBDC1C1FF145006C64F0 /* CSLPositionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSLPositionModel.h; sourceTree = "<group>"; };
+		6CB9EBDD1C1FF145006C64F0 /* CSLPositionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSLPositionModel.m; sourceTree = "<group>"; };
+		6CB9EBDE1C1FF145006C64F0 /* CSLShopInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSLShopInfoModel.h; sourceTree = "<group>"; };
+		6CB9EBDF1C1FF145006C64F0 /* CSLShopInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSLShopInfoModel.m; sourceTree = "<group>"; };
+		6CB9EBE01C1FF145006C64F0 /* CSLShopListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSLShopListModel.h; sourceTree = "<group>"; };
+		6CB9EBE11C1FF145006C64F0 /* CSLShopListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSLShopListModel.m; sourceTree = "<group>"; };
+		6CB9EBE81C1FF247006C64F0 /* JHAPISDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHAPISDK.h; sourceTree = "<group>"; };
+		6CB9EBE91C1FF247006C64F0 /* JHOpenidSupplier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHOpenidSupplier.h; sourceTree = "<group>"; };
+		6CB9EBEA1C1FF247006C64F0 /* JuheApisSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = JuheApisSDK.a; sourceTree = "<group>"; };
+		6CB9EBEC1C1FF2BF006C64F0 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		7FE7FBD82F87F3523EC7BCCD /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		BDC7C3E36C06637BB62B476B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D07D47B2BEA5DA8D58961260 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -159,8 +177,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CB9EBED1C1FF2BF006C64F0 /* libc++.tbd in Frameworks */,
 				6CB9EBD61C1FEF4D006C64F0 /* CoreTelephony.framework in Frameworks */,
 				6CB9EBD41C1FEF3F006C64F0 /* AdSupport.framework in Frameworks */,
+				6CB9EBEB1C1FF247006C64F0 /* JuheApisSDK.a in Frameworks */,
 				6CB9EBD21C1FEE3F006C64F0 /* libsqlite3.tbd in Frameworks */,
 				9D597E1D483010A03B8813F6 /* libPods.a in Frameworks */,
 			);
@@ -172,7 +192,7 @@
 		6C6D47CA1C18613C00B80FB6 /* 3rd */ = {
 			isa = PBXGroup;
 			children = (
-				6CB9EBD01C1FEDEA006C64F0 /* JuheApisSDK */,
+				6CB9EBE51C1FF247006C64F0 /* JuheApisSDK */,
 				6CB9EBAC1C1FEDDF006C64F0 /* JSONModel */,
 				6CB9EB9B1C1FEDD6006C64F0 /* fmdb */,
 				6C9FB9A91C185BE700725C02 /* QRCodeReaderViewController */,
@@ -220,6 +240,7 @@
 		6C9FB9991C185BE600725C02 /* health */ = {
 			isa = PBXGroup;
 			children = (
+				6CB9EBDB1C1FF145006C64F0 /* model */,
 				6C9FB99A1C185BE600725C02 /* CSLHealthViewController.h */,
 				6C9FB99B1C185BE600725C02 /* CSLHealthViewController.m */,
 				6C9FB99C1C185BE600725C02 /* CSLHealthViewController.xib */,
@@ -259,6 +280,7 @@
 		6C9FB9A61C185BE700725C02 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				6CB9EBD71C1FF0D0006C64F0 /* DB */,
 				6C6D47CA1C18613C00B80FB6 /* 3rd */,
 				6C93F0CD1C192513007BA2B0 /* CSLConstant.h */,
 				6C6D47CE1C18833600B80FB6 /* Auxiliary.h */,
@@ -316,7 +338,7 @@
 				6C9FB99D1C185BE600725C02 /* Resource */,
 				6C9FB9A61C185BE700725C02 /* Tool */,
 				6CB503C11C185ACE0026891F /* AppDelegate.h */,
-				6C9FB9D01C185C4D00725C02 /* AppDelegate.m */,
+				6C9FB9D01C185C4D00725C02 /* AppDelegate.mm */,
 				6CB503C71C185ACE0026891F /* Main.storyboard */,
 				6CB503CA1C185ACE0026891F /* Assets.xcassets */,
 				6CB503CC1C185ACE0026891F /* LaunchScreen.storyboard */,
@@ -413,9 +435,50 @@
 			path = JSONModelTransformations;
 			sourceTree = "<group>";
 		};
-		6CB9EBD01C1FEDEA006C64F0 /* JuheApisSDK */ = {
+		6CB9EBD71C1FF0D0006C64F0 /* DB */ = {
 			isa = PBXGroup;
 			children = (
+				6CB9EBD81C1FF0D0006C64F0 /* CSLDataBase.h */,
+				6CB9EBD91C1FF0D0006C64F0 /* CSLDataBase.m */,
+			);
+			path = DB;
+			sourceTree = "<group>";
+		};
+		6CB9EBDB1C1FF145006C64F0 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				6CB9EBDC1C1FF145006C64F0 /* CSLPositionModel.h */,
+				6CB9EBDD1C1FF145006C64F0 /* CSLPositionModel.m */,
+				6CB9EBDE1C1FF145006C64F0 /* CSLShopInfoModel.h */,
+				6CB9EBDF1C1FF145006C64F0 /* CSLShopInfoModel.m */,
+				6CB9EBE01C1FF145006C64F0 /* CSLShopListModel.h */,
+				6CB9EBE11C1FF145006C64F0 /* CSLShopListModel.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		6CB9EBE51C1FF247006C64F0 /* JuheApisSDK */ = {
+			isa = PBXGroup;
+			children = (
+				6CB9EBE61C1FF247006C64F0 /* include */,
+				6CB9EBEA1C1FF247006C64F0 /* JuheApisSDK.a */,
+			);
+			path = JuheApisSDK;
+			sourceTree = "<group>";
+		};
+		6CB9EBE61C1FF247006C64F0 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				6CB9EBE71C1FF247006C64F0 /* JuheApisSDK */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		6CB9EBE71C1FF247006C64F0 /* JuheApisSDK */ = {
+			isa = PBXGroup;
+			children = (
+				6CB9EBE81C1FF247006C64F0 /* JHAPISDK.h */,
+				6CB9EBE91C1FF247006C64F0 /* JHOpenidSupplier.h */,
 			);
 			path = JuheApisSDK;
 			sourceTree = "<group>";
@@ -432,6 +495,7 @@
 		B2BD2523249F3FDD38F76E6F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6CB9EBEC1C1FF2BF006C64F0 /* libc++.tbd */,
 				6CB9EBD51C1FEF4D006C64F0 /* CoreTelephony.framework */,
 				6CB9EBD31C1FEF3F006C64F0 /* AdSupport.framework */,
 				6CB9EBD11C1FEE3E006C64F0 /* libsqlite3.tbd */,
@@ -579,16 +643,18 @@
 				6C9FB9B71C185BE700725C02 /* CSLToolViewController.m in Sources */,
 				6CB9EBA71C1FEDD6006C64F0 /* FMDatabase.m in Sources */,
 				6C9FB9BA1C185BE700725C02 /* CSLHealthViewController.m in Sources */,
+				6CB9EBE21C1FF145006C64F0 /* CSLPositionModel.m in Sources */,
 				6C9FB9C21C185BE700725C02 /* CSLTabBarController.m in Sources */,
 				6CB9EBCD1C1FEDDF006C64F0 /* JSONModel+networking.m in Sources */,
 				6C9FB9C51C185BE700725C02 /* QRCodeReaderView.m in Sources */,
 				6CB9EBC81C1FEDDF006C64F0 /* JSONModelClassProperty.m in Sources */,
 				6C9FB9C71C185BE700725C02 /* QRToggleTorchButton.m in Sources */,
+				6CB9EBDA1C1FF0D0006C64F0 /* CSLDataBase.m in Sources */,
 				6CB9EBAB1C1FEDD6006C64F0 /* FMResultSet.m in Sources */,
 				6CB9EBCA1C1FEDDF006C64F0 /* NSArray+JSONModel.m in Sources */,
 				6CB9EBC91C1FEDDF006C64F0 /* JSONModelError.m in Sources */,
 				6C9FB9B51C185BE700725C02 /* CSLChatroomViewController.m in Sources */,
-				6C9FB9D11C185C4D00725C02 /* AppDelegate.m in Sources */,
+				6C9FB9D11C185C4D00725C02 /* AppDelegate.mm in Sources */,
 				6C9FB9C61C185BE700725C02 /* QRCodeReaderViewController.m in Sources */,
 				6CB9EBCC1C1FEDDF006C64F0 /* JSONHTTPClient.m in Sources */,
 				6C93F0D31C195B72007BA2B0 /* CSLDownListView.m in Sources */,
@@ -596,6 +662,8 @@
 				6C9FB9B91C185BE700725C02 /* CSLBaseViewController.m in Sources */,
 				6C93F0D01C1925D1007BA2B0 /* CSLNetRequest.m in Sources */,
 				6CB9EBA81C1FEDD6006C64F0 /* FMDatabaseAdditions.m in Sources */,
+				6CB9EBE41C1FF145006C64F0 /* CSLShopListModel.m in Sources */,
+				6CB9EBE31C1FF145006C64F0 /* CSLShopInfoModel.m in Sources */,
 				6C9FB9C31C185BE700725C02 /* QRCameraSwitchButton.m in Sources */,
 				6CB9EBC61C1FEDDF006C64F0 /* JSONModel.m in Sources */,
 				6CB9EBAA1C1FEDD6006C64F0 /* FMDatabaseQueue.m in Sources */,
@@ -728,6 +796,10 @@
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = LiveAssistant/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LiveAssistant/Tool/JuheApisSDK",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.soft1537.LiveAssistant;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -741,6 +813,10 @@
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = LiveAssistant/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LiveAssistant/Tool/JuheApisSDK",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.soft1537.LiveAssistant;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
