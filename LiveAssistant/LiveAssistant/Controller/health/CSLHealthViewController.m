@@ -81,6 +81,7 @@
             NSLog(@"%@",result);
         }
     }
+    [super parserData:nil];
 }
 
 #pragma mark----------------------UITableViewDatasource/Delegate----
