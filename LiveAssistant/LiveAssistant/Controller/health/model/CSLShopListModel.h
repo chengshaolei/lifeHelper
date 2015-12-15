@@ -9,6 +9,7 @@
 #import "JSONModel.h"
 
 @interface CSLShopListModel : JSONModel
+@property(nonatomic,copy) NSString * name;
 @property(nonatomic,assign) NSUInteger id;//药店编号
 @property(nonatomic,copy) NSString * img;
 @property(nonatomic,copy) NSString * leader;

@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CSLHealthViewController">
             <connections>
+                <outlet property="tableView" destination="4qi-8m-Flp" id="gdC-sv-hPb"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -14,7 +15,46 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4qi-8m-Flp">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="DC3-Ai-vQp"/>
+                        <outlet property="delegate" destination="-1" id="6tx-o1-Cnj"/>
+                    </connections>
+                </tableView>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="4qi-8m-Flp" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="9ff-xp-kgQ"/>
+                <constraint firstAttribute="trailing" secondItem="4qi-8m-Flp" secondAttribute="trailing" id="IJb-V6-3oE"/>
+                <constraint firstItem="4qi-8m-Flp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="KqC-B5-TpK"/>
+                <constraint firstAttribute="bottom" secondItem="4qi-8m-Flp" secondAttribute="bottom" id="mxy-hQ-cii"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="4qi-8m-Flp"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="9ff-xp-kgQ"/>
+                    <exclude reference="IJb-V6-3oE"/>
+                    <exclude reference="KqC-B5-TpK"/>
+                    <exclude reference="mxy-hQ-cii"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="subviews">
+                    <include reference="4qi-8m-Flp"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="9ff-xp-kgQ"/>
+                    <include reference="IJb-V6-3oE"/>
+                    <include reference="KqC-B5-TpK"/>
+                    <include reference="mxy-hQ-cii"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="367" y="127"/>
         </view>
     </objects>
 </document>

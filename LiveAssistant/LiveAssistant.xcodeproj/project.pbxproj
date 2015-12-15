@@ -18,8 +18,6 @@
 		6C9FB9B71C185BE700725C02 /* CSLToolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C9FB9951C185BE600725C02 /* CSLToolViewController.m */; };
 		6C9FB9B81C185BE700725C02 /* CSLToolViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C9FB9961C185BE600725C02 /* CSLToolViewController.xib */; };
 		6C9FB9B91C185BE700725C02 /* CSLBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C9FB9981C185BE600725C02 /* CSLBaseViewController.m */; };
-		6C9FB9BA1C185BE700725C02 /* CSLHealthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C9FB99B1C185BE600725C02 /* CSLHealthViewController.m */; };
-		6C9FB9BB1C185BE700725C02 /* CSLHealthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C9FB99C1C185BE600725C02 /* CSLHealthViewController.xib */; };
 		6C9FB9BC1C185BE700725C02 /* chatroom@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C9FB99F1C185BE600725C02 /* chatroom@2x.png */; };
 		6C9FB9BD1C185BE700725C02 /* health.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C9FB9A01C185BE600725C02 /* health.png */; };
 		6C9FB9BE1C185BE700725C02 /* tool.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C9FB9A11C185BE600725C02 /* tool.png */; };
@@ -62,6 +60,10 @@
 		6CB9EBE41C1FF145006C64F0 /* CSLShopListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB9EBE11C1FF145006C64F0 /* CSLShopListModel.m */; };
 		6CB9EBEB1C1FF247006C64F0 /* JuheApisSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CB9EBEA1C1FF247006C64F0 /* JuheApisSDK.a */; };
 		6CB9EBED1C1FF2BF006C64F0 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CB9EBEC1C1FF2BF006C64F0 /* libc++.tbd */; };
+		6CB9EBF11C1FF657006C64F0 /* CSLHealthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB9EBEF1C1FF657006C64F0 /* CSLHealthViewController.m */; };
+		6CB9EBF21C1FF657006C64F0 /* CSLHealthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CB9EBF01C1FF657006C64F0 /* CSLHealthViewController.xib */; };
+		6CB9EBF71C200E58006C64F0 /* CSLShopListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB9EBF51C200E57006C64F0 /* CSLShopListCell.m */; };
+		6CB9EBF81C200E58006C64F0 /* CSLShopListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CB9EBF61C200E57006C64F0 /* CSLShopListCell.xib */; };
 		9D597E1D483010A03B8813F6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BDC7C3E36C06637BB62B476B /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -86,9 +88,6 @@
 		6C9FB9961C185BE600725C02 /* CSLToolViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSLToolViewController.xib; sourceTree = "<group>"; };
 		6C9FB9971C185BE600725C02 /* CSLBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSLBaseViewController.h; sourceTree = "<group>"; };
 		6C9FB9981C185BE600725C02 /* CSLBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSLBaseViewController.m; sourceTree = "<group>"; };
-		6C9FB99A1C185BE600725C02 /* CSLHealthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSLHealthViewController.h; sourceTree = "<group>"; };
-		6C9FB99B1C185BE600725C02 /* CSLHealthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSLHealthViewController.m; sourceTree = "<group>"; };
-		6C9FB99C1C185BE600725C02 /* CSLHealthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSLHealthViewController.xib; sourceTree = "<group>"; };
 		6C9FB99F1C185BE600725C02 /* chatroom@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chatroom@2x.png"; sourceTree = "<group>"; };
 		6C9FB9A01C185BE600725C02 /* health.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = health.png; sourceTree = "<group>"; };
 		6C9FB9A11C185BE600725C02 /* tool.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tool.png; sourceTree = "<group>"; };
@@ -167,6 +166,12 @@
 		6CB9EBE91C1FF247006C64F0 /* JHOpenidSupplier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHOpenidSupplier.h; sourceTree = "<group>"; };
 		6CB9EBEA1C1FF247006C64F0 /* JuheApisSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = JuheApisSDK.a; sourceTree = "<group>"; };
 		6CB9EBEC1C1FF2BF006C64F0 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		6CB9EBEE1C1FF657006C64F0 /* CSLHealthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSLHealthViewController.h; sourceTree = "<group>"; };
+		6CB9EBEF1C1FF657006C64F0 /* CSLHealthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSLHealthViewController.m; sourceTree = "<group>"; };
+		6CB9EBF01C1FF657006C64F0 /* CSLHealthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSLHealthViewController.xib; sourceTree = "<group>"; };
+		6CB9EBF41C200E57006C64F0 /* CSLShopListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSLShopListCell.h; path = view/CSLShopListCell.h; sourceTree = "<group>"; };
+		6CB9EBF51C200E57006C64F0 /* CSLShopListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSLShopListCell.m; path = view/CSLShopListCell.m; sourceTree = "<group>"; };
+		6CB9EBF61C200E57006C64F0 /* CSLShopListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CSLShopListCell.xib; path = view/CSLShopListCell.xib; sourceTree = "<group>"; };
 		7FE7FBD82F87F3523EC7BCCD /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		BDC7C3E36C06637BB62B476B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D07D47B2BEA5DA8D58961260 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -240,10 +245,11 @@
 		6C9FB9991C185BE600725C02 /* health */ = {
 			isa = PBXGroup;
 			children = (
+				6CB9EBF31C200D96006C64F0 /* view */,
+				6CB9EBEE1C1FF657006C64F0 /* CSLHealthViewController.h */,
+				6CB9EBEF1C1FF657006C64F0 /* CSLHealthViewController.m */,
+				6CB9EBF01C1FF657006C64F0 /* CSLHealthViewController.xib */,
 				6CB9EBDB1C1FF145006C64F0 /* model */,
-				6C9FB99A1C185BE600725C02 /* CSLHealthViewController.h */,
-				6C9FB99B1C185BE600725C02 /* CSLHealthViewController.m */,
-				6C9FB99C1C185BE600725C02 /* CSLHealthViewController.xib */,
 			);
 			path = health;
 			sourceTree = "<group>";
@@ -483,6 +489,16 @@
 			path = JuheApisSDK;
 			sourceTree = "<group>";
 		};
+		6CB9EBF31C200D96006C64F0 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				6CB9EBF41C200E57006C64F0 /* CSLShopListCell.h */,
+				6CB9EBF51C200E57006C64F0 /* CSLShopListCell.m */,
+				6CB9EBF61C200E57006C64F0 /* CSLShopListCell.xib */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
 		85E713EA889580396727BBD6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -565,6 +581,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C9FB9C11C185BE700725C02 /* twodemention.jpg in Resources */,
+				6CB9EBF21C1FF657006C64F0 /* CSLHealthViewController.xib in Resources */,
 				6C9FB9B61C185BE700725C02 /* CSLChatroomViewController.xib in Resources */,
 				6C9FB9B81C185BE700725C02 /* CSLToolViewController.xib in Resources */,
 				6C9FB9BE1C185BE700725C02 /* tool.png in Resources */,
@@ -573,11 +590,11 @@
 				6C93F0CC1C19246B007BA2B0 /* CSLExpressViewController.xib in Resources */,
 				6C9FB9BD1C185BE700725C02 /* health.png in Resources */,
 				6CB503CB1C185ACE0026891F /* Assets.xcassets in Resources */,
+				6CB9EBF81C200E58006C64F0 /* CSLShopListCell.xib in Resources */,
 				6C9FB9BF1C185BE700725C02 /* express.png in Resources */,
 				6C9FB9CC1C185C2700725C02 /* Localizable.strings in Resources */,
 				6C9FB9BC1C185BE700725C02 /* chatroom@2x.png in Resources */,
 				6CB503C91C185ACE0026891F /* Main.storyboard in Resources */,
-				6C9FB9BB1C185BE700725C02 /* CSLHealthViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -642,8 +659,8 @@
 				6CB9EBCE1C1FEDDF006C64F0 /* JSONKeyMapper.m in Sources */,
 				6C9FB9B71C185BE700725C02 /* CSLToolViewController.m in Sources */,
 				6CB9EBA71C1FEDD6006C64F0 /* FMDatabase.m in Sources */,
-				6C9FB9BA1C185BE700725C02 /* CSLHealthViewController.m in Sources */,
 				6CB9EBE21C1FF145006C64F0 /* CSLPositionModel.m in Sources */,
+				6CB9EBF71C200E58006C64F0 /* CSLShopListCell.m in Sources */,
 				6C9FB9C21C185BE700725C02 /* CSLTabBarController.m in Sources */,
 				6CB9EBCD1C1FEDDF006C64F0 /* JSONModel+networking.m in Sources */,
 				6C9FB9C51C185BE700725C02 /* QRCodeReaderView.m in Sources */,
@@ -672,6 +689,7 @@
 				6CB9EBC71C1FEDDF006C64F0 /* JSONModelArray.m in Sources */,
 				6C6D47D01C18833600B80FB6 /* Auxiliary.m in Sources */,
 				6CB503C01C185ACE0026891F /* main.m in Sources */,
+				6CB9EBF11C1FF657006C64F0 /* CSLHealthViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
