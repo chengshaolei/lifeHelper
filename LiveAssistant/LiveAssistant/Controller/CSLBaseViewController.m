@@ -33,6 +33,26 @@
     if (!_dataSource) {
         _dataSource = [NSMutableArray array];
     }
+    _isLoadIndicator = YES;//默认加载数据显示加载标志
+}
+
+-(void) requestType:(RequestType)type method:(NSString*)method url:(NSString*)urlString paras:(NSDictionary*)dict{
+    switch (type) {
+        case NormalRequest:
+            [self request:method url:urlString para:dict];
+            break;
+        case JHRequest:
+        {
+            NSString * appid = dict[@"appid"];
+            NSMutableDictionary * mdict  = [[NSMutableDictionary alloc] init];
+            [mdict addEntriesFromDictionary:dict];
+            [mdict removeObjectForKey:@"appid"];
+            [self JHRequestWithAPPid:appid method:method url:urlString paras:mdict];
+        }
+        default:
+            break;
+    }
+   
 }
 
 //数据请求
@@ -71,6 +91,9 @@
 }
 
 -(void) showIndicator:(BOOL)show{
+    if (!_isLoadIndicator) {//如果加载标志为假，不显示加载标志
+        return;
+    }
     if (show) {
         [MBProgressHUD showHUDAddedTo:self.navigationController.view animated:YES];
     }

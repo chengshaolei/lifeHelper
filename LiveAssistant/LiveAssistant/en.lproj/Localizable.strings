@@ -16,3 +16,12 @@
 
 //下拉列表框
 "placeholdtext" = "please input query item";
+
+
+//药店
+"Business Detail" = "Business Detail";
+"type" = "type";
+"access count" = "access count";
+"scope" = "scope";
+"legal" = "legal";
+"tel" = "tel";

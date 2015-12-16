@@ -16,3 +16,11 @@
 
 //下拉列表框
 "placeholdtext" = "请输入选择项";
+
+//药店
+"Business Detail" = "商家详情";
+"type" = "经营类型";
+"access count" = "访问量";
+"scope" = "经营范围";
+"legal" = "法人";
+"tel" = "电话";

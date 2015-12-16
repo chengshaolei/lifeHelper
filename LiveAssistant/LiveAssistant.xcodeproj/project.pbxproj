@@ -32,6 +32,11 @@
 		6C9FB9C71C185BE700725C02 /* QRToggleTorchButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C9FB9B41C185BE700725C02 /* QRToggleTorchButton.m */; };
 		6C9FB9CC1C185C2700725C02 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6C9FB9CE1C185C2700725C02 /* Localizable.strings */; };
 		6C9FB9D11C185C4D00725C02 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6C9FB9D01C185C4D00725C02 /* AppDelegate.mm */; };
+		6CA8F6551C20F73C00FC1BA9 /* drugshop.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CA8F6541C20F73C00FC1BA9 /* drugshop.png */; };
+		6CA8F6591C2112D700FC1BA9 /* CSLShopDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA8F6571C2112D700FC1BA9 /* CSLShopDetailViewController.m */; };
+		6CA8F65A1C2112D700FC1BA9 /* CSLShopDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CA8F6581C2112D700FC1BA9 /* CSLShopDetailViewController.xib */; };
+		6CA8F65C1C213E7C00FC1BA9 /* arrow_right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CA8F65B1C213E7C00FC1BA9 /* arrow_right@2x.png */; };
+		6CA8F65E1C21417100FC1BA9 /* location.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CA8F65D1C21417100FC1BA9 /* location.png */; };
 		6CB503C01C185ACE0026891F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB503BF1C185ACE0026891F /* main.m */; };
 		6CB503C91C185ACE0026891F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CB503C71C185ACE0026891F /* Main.storyboard */; };
 		6CB503CB1C185ACE0026891F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CB503CA1C185ACE0026891F /* Assets.xcassets */; };
@@ -132,6 +137,12 @@
 		6C9FB9CD1C185C2700725C02 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		6C9FB9CF1C185C2900725C02 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6C9FB9D01C185C4D00725C02 /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		6CA8F6541C20F73C00FC1BA9 /* drugshop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = drugshop.png; sourceTree = "<group>"; };
+		6CA8F6561C2112D700FC1BA9 /* CSLShopDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSLShopDetailViewController.h; sourceTree = "<group>"; };
+		6CA8F6571C2112D700FC1BA9 /* CSLShopDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSLShopDetailViewController.m; sourceTree = "<group>"; };
+		6CA8F6581C2112D700FC1BA9 /* CSLShopDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSLShopDetailViewController.xib; sourceTree = "<group>"; };
+		6CA8F65B1C213E7C00FC1BA9 /* arrow_right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow_right@2x.png"; sourceTree = "<group>"; };
+		6CA8F65D1C21417100FC1BA9 /* location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location.png; sourceTree = "<group>"; };
 		6CB503BB1C185ACE0026891F /* LiveAssistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveAssistant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CB503BF1C185ACE0026891F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6CB503C11C185ACE0026891F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -311,17 +322,24 @@
 				6CB9EBEE1C1FF657006C64F0 /* CSLHealthViewController.h */,
 				6CB9EBEF1C1FF657006C64F0 /* CSLHealthViewController.m */,
 				6CB9EBF01C1FF657006C64F0 /* CSLHealthViewController.xib */,
+				6CA8F6561C2112D700FC1BA9 /* CSLShopDetailViewController.h */,
+				6CA8F6571C2112D700FC1BA9 /* CSLShopDetailViewController.m */,
+				6CA8F6581C2112D700FC1BA9 /* CSLShopDetailViewController.xib */,
 				6CB9EBDB1C1FF145006C64F0 /* model */,
 			);
 			path = health;
 			sourceTree = "<group>";
 		};
-		6C9FB99D1C185BE600725C02 /* Resource */ = {
+		6C9FB99D1C185BE600725C02 /* resourcelib */ = {
 			isa = PBXGroup;
 			children = (
+				6CA8F65D1C21417100FC1BA9 /* location.png */,
+				6CA8F65B1C213E7C00FC1BA9 /* arrow_right@2x.png */,
+				6CA8F6541C20F73C00FC1BA9 /* drugshop.png */,
 				6C9FB99E1C185BE600725C02 /* tabbar */,
 				6C9FB9A21C185BE700725C02 /* tool */,
 			);
+			name = resourcelib;
 			path = Resource;
 			sourceTree = "<group>";
 		};
@@ -403,7 +421,7 @@
 			isa = PBXGroup;
 			children = (
 				6C9FB98E1C185BE600725C02 /* Controller */,
-				6C9FB99D1C185BE600725C02 /* Resource */,
+				6C9FB99D1C185BE600725C02 /* resourcelib */,
 				6C9FB9A61C185BE700725C02 /* Tool */,
 				6CB503C11C185ACE0026891F /* AppDelegate.h */,
 				6C9FB9D01C185C4D00725C02 /* AppDelegate.mm */,
@@ -745,7 +763,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C9FB9C11C185BE700725C02 /* twodemention.jpg in Resources */,
+				6CA8F65C1C213E7C00FC1BA9 /* arrow_right@2x.png in Resources */,
 				6CB9EBF21C1FF657006C64F0 /* CSLHealthViewController.xib in Resources */,
+				6CA8F65A1C2112D700FC1BA9 /* CSLShopDetailViewController.xib in Resources */,
 				6C9FB9B61C185BE700725C02 /* CSLChatroomViewController.xib in Resources */,
 				6C9FB9B81C185BE700725C02 /* CSLToolViewController.xib in Resources */,
 				6C9FB9BE1C185BE700725C02 /* tool.png in Resources */,
@@ -753,6 +773,8 @@
 				6CB503CE1C185ACE0026891F /* LaunchScreen.storyboard in Resources */,
 				6C93F0CC1C19246B007BA2B0 /* CSLExpressViewController.xib in Resources */,
 				6C9FB9BD1C185BE700725C02 /* health.png in Resources */,
+				6CA8F6551C20F73C00FC1BA9 /* drugshop.png in Resources */,
+				6CA8F65E1C21417100FC1BA9 /* location.png in Resources */,
 				6CB503CB1C185ACE0026891F /* Assets.xcassets in Resources */,
 				6CB9EBF81C200E58006C64F0 /* CSLShopListCell.xib in Resources */,
 				6C9FB9BF1C185BE700725C02 /* express.png in Resources */,
@@ -854,6 +876,7 @@
 				6CB9EC371C202CF8006C64F0 /* UIScrollView+MJRefresh.m in Sources */,
 				6C93F0D01C1925D1007BA2B0 /* CSLNetRequest.m in Sources */,
 				6CB9EBA81C1FEDD6006C64F0 /* FMDatabaseAdditions.m in Sources */,
+				6CA8F6591C2112D700FC1BA9 /* CSLShopDetailViewController.m in Sources */,
 				6CB9EC271C202CF8006C64F0 /* MJRefreshBackFooter.m in Sources */,
 				6CB9EBE41C1FF145006C64F0 /* CSLShopListModel.m in Sources */,
 				6CB9EBE31C1FF145006C64F0 /* CSLShopInfoModel.m in Sources */,

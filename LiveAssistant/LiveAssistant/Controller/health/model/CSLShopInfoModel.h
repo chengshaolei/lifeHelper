@@ -10,10 +10,12 @@
 
 @interface CSLShopInfoModel : JSONModel
 @property(nonatomic,copy) NSString * address;
+@property(nonatomic,assign) double createdate;
 @property(nonatomic,copy) NSString * business;
 @property(nonatomic,copy) NSString * charge;
 @property(nonatomic,copy) NSString * img;
 @property(nonatomic,copy) NSString * leader;
+@property(nonatomic,copy) NSString *  legal;
 @property(nonatomic,copy) NSString * message;
 @property(nonatomic,copy) NSString * name;
 @property(nonatomic,copy) NSString * number;

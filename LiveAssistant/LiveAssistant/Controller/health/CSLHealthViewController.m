@@ -10,6 +10,8 @@
 #import "CSLPositionModel.h"
 #import "CSLShopListModel.h"
 #import "CSLShopListCell.h"
+#import "CSLShopDetailViewController.h"
+#import "MJRefresh.h"
 
 #define ShopListCellReuse @"ShopListCellReuse"
 
@@ -23,13 +25,15 @@
 @implementation CSLHealthViewController
 {
     NSUInteger _pages;
+    NSUInteger amount;//总记录数
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationController.navigationBar.translucent = NO;
     
     //数据请求
-    [self getData];
+    //[self getData];
     [self initData];
 }
 
@@ -41,9 +45,28 @@
 -(void) initData{
     //注册cell
     [self.tableView registerNib:[UINib nibWithNibName:@"CSLShopListCell" bundle:nil] forCellReuseIdentifier:ShopListCellReuse];
+    self.tableView.rowHeight = 80;
     
     //初始化
     _pages = 1;
+    
+    //下拉刷新
+    __weak CSLHealthViewController * weakSelf = self;
+    self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        //初始化页数为1，删除数组数据
+        _pages = 1;
+        weakSelf.isLoadIndicator = NO;
+        [weakSelf.dataSource removeAllObjects];//清除数据
+        [weakSelf getData];
+    }];
+    [self.tableView.mj_header beginRefreshing];
+    
+    //上提刷新
+    MJRefreshAutoNormalFooter * footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
+        weakSelf.isLoadIndicator = NO;
+        [weakSelf getData];
+    }];
+    self.tableView.mj_footer = footer;
 }
 
 #pragma mark ------------------------数据请求和解析------------------
@@ -53,9 +76,7 @@
     
     //查询药店列表
     [self JHRequestWithAPPid:@"144" method:@"GET" url:JH_ShopList_URL paras:@{@"key":@"875cdfc5776231020026c6dceeb387b3",@"id":[NSNumber numberWithUnsignedLong:_pages]}];
-    
-    //查询药店详情
-//    [self JHRequestWithAPPid:@"144" method:@"GET" url:JH_ShopInfo_URL paras:@{@"key":@"875cdfc5776231020026c6dceeb387b3",@"id":@101082}];
+    _pages++;//页数自增
 }
 
 //数据解析
@@ -67,6 +88,8 @@
             return;
         }
         NSArray * arr = [CSLShopListModel arrayOfModelsFromDictionaries:tan];
+        
+        //如果数组是空
         if ([arr isEqual:[NSNull null]]) {
             return;
         }
@@ -81,6 +104,8 @@
             NSLog(@"%@",result);
         }
     }
+    [self.tableView.mj_header endRefreshing];
+    [self.tableView.mj_footer endRefreshing];
     [super parserData:nil];
 }
 
@@ -96,5 +121,13 @@
     return cell;
 }
 
+-(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    CSLShopListModel * model = self.dataSource[indexPath.row];
+    
+    //实例化详细页面
+    CSLShopDetailViewController * detailController = [[CSLShopDetailViewController alloc] init];
+    detailController.compandId = model.id;
+    [self.navigationController pushViewController:detailController animated:YES];
+}
 
 @end
