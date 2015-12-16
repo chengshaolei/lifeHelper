@@ -37,6 +37,7 @@
 		6CA8F65A1C2112D700FC1BA9 /* CSLShopDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CA8F6581C2112D700FC1BA9 /* CSLShopDetailViewController.xib */; };
 		6CA8F65C1C213E7C00FC1BA9 /* arrow_right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CA8F65B1C213E7C00FC1BA9 /* arrow_right@2x.png */; };
 		6CA8F65E1C21417100FC1BA9 /* location.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CA8F65D1C21417100FC1BA9 /* location.png */; };
+		6CA8F6611C21691A00FC1BA9 /* CSLFlashlightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA8F6601C21691A00FC1BA9 /* CSLFlashlightViewController.m */; };
 		6CB503C01C185ACE0026891F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB503BF1C185ACE0026891F /* main.m */; };
 		6CB503C91C185ACE0026891F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CB503C71C185ACE0026891F /* Main.storyboard */; };
 		6CB503CB1C185ACE0026891F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CB503CA1C185ACE0026891F /* Assets.xcassets */; };
@@ -143,6 +144,8 @@
 		6CA8F6581C2112D700FC1BA9 /* CSLShopDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSLShopDetailViewController.xib; sourceTree = "<group>"; };
 		6CA8F65B1C213E7C00FC1BA9 /* arrow_right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow_right@2x.png"; sourceTree = "<group>"; };
 		6CA8F65D1C21417100FC1BA9 /* location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location.png; sourceTree = "<group>"; };
+		6CA8F65F1C21691A00FC1BA9 /* CSLFlashlightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSLFlashlightViewController.h; sourceTree = "<group>"; };
+		6CA8F6601C21691A00FC1BA9 /* CSLFlashlightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSLFlashlightViewController.m; sourceTree = "<group>"; };
 		6CB503BB1C185ACE0026891F /* LiveAssistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveAssistant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CB503BF1C185ACE0026891F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6CB503C11C185ACE0026891F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -311,6 +314,8 @@
 				6C93F0C81C19246B007BA2B0 /* CSLExpressViewController.h */,
 				6C93F0C91C19246B007BA2B0 /* CSLExpressViewController.m */,
 				6C93F0CA1C19246B007BA2B0 /* CSLExpressViewController.xib */,
+				6CA8F65F1C21691A00FC1BA9 /* CSLFlashlightViewController.h */,
+				6CA8F6601C21691A00FC1BA9 /* CSLFlashlightViewController.m */,
 			);
 			path = commontool;
 			sourceTree = "<group>";
@@ -891,6 +896,7 @@
 				6CB9EBCF1C1FEDDF006C64F0 /* JSONValueTransformer.m in Sources */,
 				6CB9EBA91C1FEDD6006C64F0 /* FMDatabasePool.m in Sources */,
 				6CB9EBC71C1FEDDF006C64F0 /* JSONModelArray.m in Sources */,
+				6CA8F6611C21691A00FC1BA9 /* CSLFlashlightViewController.m in Sources */,
 				6CB9EC301C202CF8006C64F0 /* MJRefreshBackStateFooter.m in Sources */,
 				6C6D47D01C18833600B80FB6 /* Auxiliary.m in Sources */,
 				6CB503C01C185ACE0026891F /* main.m in Sources */,

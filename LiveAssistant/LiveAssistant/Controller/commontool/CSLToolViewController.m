@@ -9,6 +9,7 @@
 #import "CSLToolViewController.h"
 #import "CSLScanViewController.h"
 #import "CSLExpressViewController.h"
+#import "CSLFlashlightViewController.h"
 
 #define SCANBUTTONTAG   10//扫描按钮tag值
 @interface CSLToolViewController ()
@@ -23,7 +24,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    _childControllers = @[@"CSLScanViewController",@"CSLExpressViewController"];//实例化
+    _childControllers = @[@"CSLScanViewController",@"CSLExpressViewController",@"CSLFlashlightViewController"];//实例化
 }
 -(void) viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
@@ -43,6 +44,13 @@
 
 //快递
 - (IBAction)express:(id)sender {
+    //取得按钮的tag值
+    NSUInteger index = ((UIButton*)sender).tag;
+    [self pushController:index];
+}
+
+//手电筒
+- (IBAction)light:(id)sender {
     //取得按钮的tag值
     NSUInteger index = ((UIButton*)sender).tag;
     [self pushController:index];

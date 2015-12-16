@@ -9,9 +9,13 @@
 "tabbar_chatroom" = "聊天";
 "tabbar_health" = "健康";
 
+//手电筒
+"flashlight" = "手电筒";
+
 //警告框
 "alertTitle" = "通知";
 "scanReaderNotSupport" = "当前设备不支持扫描";
+"flashlightNotSupport" = "当前设备没有闪光灯，不能提供手电筒功能";
 "scanResult" = "扫描结果";
 
 //下拉列表框

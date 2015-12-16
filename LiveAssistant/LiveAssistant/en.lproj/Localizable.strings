@@ -9,9 +9,13 @@
 "tabbar_chatroom" = "chat";
 "tabbar_health" = "health";
 
+//手电筒
+"flashlight" = "flashlight";
+
 //警告框
 "alertTitle" = "notification";
 "scanReaderNotSupport" = "Reader not supported by the current device";
+"flashlightNotSupport" = "flashlightNotSupport";
 "scanResult" = "Completion with result";
 
 //下拉列表框
