@@ -9,6 +9,7 @@
 #import "CSLHealthMainController.h"
 #import "CSLHealthViewController.h"
 #import "SCNavTabBarController.h"
+#import "CSLDrugTypeViewController.h"
 
 @interface CSLHealthMainController ()
 
@@ -21,8 +22,12 @@
     // Do any additional setup after loading the view.
     CSLHealthViewController *drugShop = [[CSLHealthViewController alloc] init];
     drugShop.title = @"药房";
+    
+    CSLDrugTypeViewController * drugType = [[CSLDrugTypeViewController alloc] init];
+    drugType.title = @"药品";
+    
     SCNavTabBarController * navTabBarController = [[SCNavTabBarController alloc] init];
-    navTabBarController.subViewControllers = @[drugShop];
+    navTabBarController.subViewControllers = @[drugShop,drugType];
     navTabBarController.showArrowButton = YES;
     navTabBarController.navTabBarColor = [UIColor whiteColor];
     [navTabBarController addParentController:self];

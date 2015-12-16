@@ -63,11 +63,18 @@
 
 //药品大全
 //数据ID：148
+//APPKey:4dc428e62a3a75334fbcd02e4d4f485a
 //名称	类型	  必填	说明
 //key	string	是	您申请的APPKEY
 //name	string	否	分类关键字(如：胃)
 //skip	int	    否 	跳过的数量，默认为0
-#define JH_Medicine_URL   @"http://api2.juheapi.com/medicine/drugclass"
+
+//药品分类
+#define JH_MedicineType_URL   @"http://api2.juheapi.com/medicine/drugclass"
+
+//药品详细
+#define JH_MedicineList_URL @"http://api2.juheapi.com/medicine/list"
+
 
 //周公解梦
 //数据ID：64
