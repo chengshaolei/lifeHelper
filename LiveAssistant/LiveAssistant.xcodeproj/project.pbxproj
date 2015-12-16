@@ -90,6 +90,11 @@
 		6CB9EC371C202CF8006C64F0 /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB9EC231C202CF7006C64F0 /* UIScrollView+MJRefresh.m */; };
 		6CB9EC381C202CF8006C64F0 /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB9EC251C202CF8006C64F0 /* UIView+MJExtension.m */; };
 		6CB9EC3C1C20339E006C64F0 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB9EC3B1C20339E006C64F0 /* MBProgressHUD.m */; };
+		6CEE38A01C2191FE0077291F /* SCNavTabBar.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6CEE38971C2191FE0077291F /* SCNavTabBar.bundle */; };
+		6CEE38A11C2191FE0077291F /* SCNavTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CEE389A1C2191FE0077291F /* SCNavTabBarController.m */; };
+		6CEE38A21C2191FE0077291F /* SCNavTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CEE389D1C2191FE0077291F /* SCNavTabBar.m */; };
+		6CEE38A31C2191FE0077291F /* SCPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CEE389F1C2191FE0077291F /* SCPopView.m */; };
+		6CEE38A61C21924D0077291F /* CSLHealthMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CEE38A51C21924D0077291F /* CSLHealthMainController.m */; };
 		9D597E1D483010A03B8813F6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BDC7C3E36C06637BB62B476B /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -246,6 +251,16 @@
 		6CB9EC251C202CF8006C64F0 /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJExtension.m"; sourceTree = "<group>"; };
 		6CB9EC3A1C20339E006C64F0 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		6CB9EC3B1C20339E006C64F0 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		6CEE38961C2191FE0077291F /* CommonMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonMacro.h; sourceTree = "<group>"; };
+		6CEE38971C2191FE0077291F /* SCNavTabBar.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SCNavTabBar.bundle; sourceTree = "<group>"; };
+		6CEE38991C2191FE0077291F /* SCNavTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCNavTabBarController.h; sourceTree = "<group>"; };
+		6CEE389A1C2191FE0077291F /* SCNavTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCNavTabBarController.m; sourceTree = "<group>"; };
+		6CEE389C1C2191FE0077291F /* SCNavTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCNavTabBar.h; sourceTree = "<group>"; };
+		6CEE389D1C2191FE0077291F /* SCNavTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCNavTabBar.m; sourceTree = "<group>"; };
+		6CEE389E1C2191FE0077291F /* SCPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCPopView.h; sourceTree = "<group>"; };
+		6CEE389F1C2191FE0077291F /* SCPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCPopView.m; sourceTree = "<group>"; };
+		6CEE38A41C21924D0077291F /* CSLHealthMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSLHealthMainController.h; sourceTree = "<group>"; };
+		6CEE38A51C21924D0077291F /* CSLHealthMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSLHealthMainController.m; sourceTree = "<group>"; };
 		7FE7FBD82F87F3523EC7BCCD /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		BDC7C3E36C06637BB62B476B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D07D47B2BEA5DA8D58961260 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -271,6 +286,7 @@
 		6C6D47CA1C18613C00B80FB6 /* 3rd */ = {
 			isa = PBXGroup;
 			children = (
+				6CEE38951C2191FE0077291F /* SCNavTabBar */,
 				6CB9EC391C203384006C64F0 /* MBProgressHUD */,
 				6CB9EBF91C202CF7006C64F0 /* MJRefresh */,
 				6CB9EBE51C1FF247006C64F0 /* JuheApisSDK */,
@@ -331,6 +347,8 @@
 				6CA8F6571C2112D700FC1BA9 /* CSLShopDetailViewController.m */,
 				6CA8F6581C2112D700FC1BA9 /* CSLShopDetailViewController.xib */,
 				6CB9EBDB1C1FF145006C64F0 /* model */,
+				6CEE38A41C21924D0077291F /* CSLHealthMainController.h */,
+				6CEE38A51C21924D0077291F /* CSLHealthMainController.m */,
 			);
 			path = health;
 			sourceTree = "<group>";
@@ -686,6 +704,37 @@
 			name = MBProgressHUD;
 			sourceTree = "<group>";
 		};
+		6CEE38951C2191FE0077291F /* SCNavTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				6CEE38961C2191FE0077291F /* CommonMacro.h */,
+				6CEE38971C2191FE0077291F /* SCNavTabBar.bundle */,
+				6CEE38981C2191FE0077291F /* ViewControllers */,
+				6CEE389B1C2191FE0077291F /* Views */,
+			);
+			path = SCNavTabBar;
+			sourceTree = "<group>";
+		};
+		6CEE38981C2191FE0077291F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6CEE38991C2191FE0077291F /* SCNavTabBarController.h */,
+				6CEE389A1C2191FE0077291F /* SCNavTabBarController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		6CEE389B1C2191FE0077291F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6CEE389C1C2191FE0077291F /* SCNavTabBar.h */,
+				6CEE389D1C2191FE0077291F /* SCNavTabBar.m */,
+				6CEE389E1C2191FE0077291F /* SCPopView.h */,
+				6CEE389F1C2191FE0077291F /* SCPopView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		85E713EA889580396727BBD6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -780,6 +829,7 @@
 				6C9FB9BD1C185BE700725C02 /* health.png in Resources */,
 				6CA8F6551C20F73C00FC1BA9 /* drugshop.png in Resources */,
 				6CA8F65E1C21417100FC1BA9 /* location.png in Resources */,
+				6CEE38A01C2191FE0077291F /* SCNavTabBar.bundle in Resources */,
 				6CB503CB1C185ACE0026891F /* Assets.xcassets in Resources */,
 				6CB9EBF81C200E58006C64F0 /* CSLShopListCell.xib in Resources */,
 				6C9FB9BF1C185BE700725C02 /* express.png in Resources */,
@@ -848,6 +898,7 @@
 				6CB9EC351C202CF8006C64F0 /* MJRefreshConst.m in Sources */,
 				6CB9EBCB1C1FEDDF006C64F0 /* JSONAPI.m in Sources */,
 				6C93F0CB1C19246B007BA2B0 /* CSLExpressViewController.m in Sources */,
+				6CEE38A21C2191FE0077291F /* SCNavTabBar.m in Sources */,
 				6C6D47CD1C18617900B80FB6 /* CSLScanViewController.m in Sources */,
 				6CB9EBCE1C1FEDDF006C64F0 /* JSONKeyMapper.m in Sources */,
 				6C9FB9B71C185BE700725C02 /* CSLToolViewController.m in Sources */,
@@ -879,12 +930,14 @@
 				6CB9EC381C202CF8006C64F0 /* UIView+MJExtension.m in Sources */,
 				6C9FB9B91C185BE700725C02 /* CSLBaseViewController.m in Sources */,
 				6CB9EC371C202CF8006C64F0 /* UIScrollView+MJRefresh.m in Sources */,
+				6CEE38A11C2191FE0077291F /* SCNavTabBarController.m in Sources */,
 				6C93F0D01C1925D1007BA2B0 /* CSLNetRequest.m in Sources */,
 				6CB9EBA81C1FEDD6006C64F0 /* FMDatabaseAdditions.m in Sources */,
 				6CA8F6591C2112D700FC1BA9 /* CSLShopDetailViewController.m in Sources */,
 				6CB9EC271C202CF8006C64F0 /* MJRefreshBackFooter.m in Sources */,
 				6CB9EBE41C1FF145006C64F0 /* CSLShopListModel.m in Sources */,
 				6CB9EBE31C1FF145006C64F0 /* CSLShopInfoModel.m in Sources */,
+				6CEE38A31C2191FE0077291F /* SCPopView.m in Sources */,
 				6CB9EC2A1C202CF8006C64F0 /* MJRefreshHeader.m in Sources */,
 				6CB9EC2C1C202CF8006C64F0 /* MJRefreshAutoNormalFooter.m in Sources */,
 				6C9FB9C31C185BE700725C02 /* QRCameraSwitchButton.m in Sources */,
@@ -895,6 +948,7 @@
 				6CB9EC361C202CF8006C64F0 /* UIScrollView+MJExtension.m in Sources */,
 				6CB9EBCF1C1FEDDF006C64F0 /* JSONValueTransformer.m in Sources */,
 				6CB9EBA91C1FEDD6006C64F0 /* FMDatabasePool.m in Sources */,
+				6CEE38A61C21924D0077291F /* CSLHealthMainController.m in Sources */,
 				6CB9EBC71C1FEDDF006C64F0 /* JSONModelArray.m in Sources */,
 				6CA8F6611C21691A00FC1BA9 /* CSLFlashlightViewController.m in Sources */,
 				6CB9EC301C202CF8006C64F0 /* MJRefreshBackStateFooter.m in Sources */,

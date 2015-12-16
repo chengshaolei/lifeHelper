@@ -68,7 +68,8 @@
     [tabBarController addItem:NSLocalizedString(@"tabbar_tool",nil) normalImage:[UIImage imageNamed:@"tool.png"] highLightImage:[UIImage imageNamed:@"tool.png"] controller:@"CSLToolViewController"];
     
     //增加健康标签
-    [tabBarController addItem:NSLocalizedString(@"tabbar_health",nil) normalImage:[UIImage imageNamed:@"health.png"] highLightImage:[UIImage imageNamed:@"health.png"] controller:@"CSLHealthViewController"];
+//    [tabBarController addItem:NSLocalizedString(@"tabbar_health",nil) normalImage:[UIImage imageNamed:@"health.png"] highLightImage:[UIImage imageNamed:@"health.png"] controller:@"CSLHealthViewController"];
+    [tabBarController addItem:NSLocalizedString(@"tabbar_health",nil) normalImage:[UIImage imageNamed:@"health.png"] highLightImage:[UIImage imageNamed:@"health.png"] controller:@"CSLHealthMainController"];
     
     //增加聊天室标签
     [tabBarController addItem:NSLocalizedString(@"tabbar_chatroom",nil) normalImage:[UIImage imageNamed:@"chatroom.png"] highLightImage:[UIImage imageNamed:@"chatroom.png"] controller:@"CSLChatroomViewController"];
