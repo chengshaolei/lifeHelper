@@ -9,5 +9,5 @@
 #import "JSONModel.h"
 
 @interface CSLDrugTypeModel : JSONModel
-
+@property(nonatomic,copy) NSString * title;//标题
 @end

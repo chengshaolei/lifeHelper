@@ -1,14 +1,14 @@
 //
-//  CSLDrugTypeModel.m
+//  CSLDrugListModel.m
 //  LiveAssistant
 //
-//  Created by csl on 15/12/16.
+//  Created by csl on 15/12/17.
 //  Copyright © 2015年 CSL. All rights reserved.
 //
 
-#import "CSLDrugTypeModel.h"
+#import "CSLDrugListModel.h"
 
-@implementation CSLDrugTypeModel
+@implementation CSLDrugListModel
 +(BOOL)propertyIsOptional:(NSString*)propertyName
 {
     return YES;

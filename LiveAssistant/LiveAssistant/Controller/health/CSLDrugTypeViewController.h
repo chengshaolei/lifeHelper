@@ -7,7 +7,10 @@
 //
 
 #import "CSLBaseViewController.h"
+@class CSLDrugTypeLeftController;
+@class CSLDrugTypeDetailViewController;
 
 @interface CSLDrugTypeViewController : CSLBaseViewController
-
+@property(nonatomic,strong)CSLDrugTypeLeftController * LeftController;
+@property(nonatomic,strong)CSLDrugTypeDetailViewController * rightController; 
 @end

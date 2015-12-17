@@ -9,5 +9,5 @@
 #import "CSLBaseViewController.h"
 
 @interface CSLDrugListViewController : CSLBaseViewController
-
+@property(nonatomic,copy) NSString * drugType;//药品类别
 @end

@@ -90,6 +90,11 @@
 		6CB9EC371C202CF8006C64F0 /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB9EC231C202CF7006C64F0 /* UIScrollView+MJRefresh.m */; };
 		6CB9EC381C202CF8006C64F0 /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB9EC251C202CF8006C64F0 /* UIView+MJExtension.m */; };
 		6CB9EC3C1C20339E006C64F0 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB9EC3B1C20339E006C64F0 /* MBProgressHUD.m */; };
+		6CD178181C22CF0900E6DE32 /* CSLDrugListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD178171C22CF0900E6DE32 /* CSLDrugListModel.m */; };
+		6CD1781C1C22D8A900E6DE32 /* CSLDrugListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD1781A1C22D8A900E6DE32 /* CSLDrugListCell.m */; };
+		6CD1781D1C22D8A900E6DE32 /* CSLDrugListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CD1781B1C22D8A900E6DE32 /* CSLDrugListCell.xib */; };
+		6CD178211C22DFFC00E6DE32 /* CSLDrugDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD1781F1C22DFFC00E6DE32 /* CSLDrugDetailController.m */; };
+		6CD178221C22DFFC00E6DE32 /* CSLDrugDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CD178201C22DFFC00E6DE32 /* CSLDrugDetailController.xib */; };
 		6CEE38A01C2191FE0077291F /* SCNavTabBar.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6CEE38971C2191FE0077291F /* SCNavTabBar.bundle */; };
 		6CEE38A11C2191FE0077291F /* SCNavTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CEE389A1C2191FE0077291F /* SCNavTabBarController.m */; };
 		6CEE38A21C2191FE0077291F /* SCNavTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CEE389D1C2191FE0077291F /* SCNavTabBar.m */; };
@@ -260,6 +265,14 @@
 		6CB9EC251C202CF8006C64F0 /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJExtension.m"; sourceTree = "<group>"; };
 		6CB9EC3A1C20339E006C64F0 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		6CB9EC3B1C20339E006C64F0 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		6CD178161C22CF0900E6DE32 /* CSLDrugListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSLDrugListModel.h; sourceTree = "<group>"; };
+		6CD178171C22CF0900E6DE32 /* CSLDrugListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSLDrugListModel.m; sourceTree = "<group>"; };
+		6CD178191C22D8A900E6DE32 /* CSLDrugListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSLDrugListCell.h; path = view/CSLDrugListCell.h; sourceTree = "<group>"; };
+		6CD1781A1C22D8A900E6DE32 /* CSLDrugListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSLDrugListCell.m; path = view/CSLDrugListCell.m; sourceTree = "<group>"; };
+		6CD1781B1C22D8A900E6DE32 /* CSLDrugListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CSLDrugListCell.xib; path = view/CSLDrugListCell.xib; sourceTree = "<group>"; };
+		6CD1781E1C22DFFC00E6DE32 /* CSLDrugDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSLDrugDetailController.h; path = drug/CSLDrugDetailController.h; sourceTree = "<group>"; };
+		6CD1781F1C22DFFC00E6DE32 /* CSLDrugDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSLDrugDetailController.m; path = drug/CSLDrugDetailController.m; sourceTree = "<group>"; };
+		6CD178201C22DFFC00E6DE32 /* CSLDrugDetailController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CSLDrugDetailController.xib; path = drug/CSLDrugDetailController.xib; sourceTree = "<group>"; };
 		6CEE38961C2191FE0077291F /* CommonMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonMacro.h; sourceTree = "<group>"; };
 		6CEE38971C2191FE0077291F /* SCNavTabBar.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SCNavTabBar.bundle; sourceTree = "<group>"; };
 		6CEE38991C2191FE0077291F /* SCNavTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCNavTabBarController.h; sourceTree = "<group>"; };
@@ -583,6 +596,8 @@
 				6CB9EBE11C1FF145006C64F0 /* CSLShopListModel.m */,
 				6CFD58B71C21AF48000B262D /* CSLDrugTypeModel.h */,
 				6CFD58B81C21AF48000B262D /* CSLDrugTypeModel.m */,
+				6CD178161C22CF0900E6DE32 /* CSLDrugListModel.h */,
+				6CD178171C22CF0900E6DE32 /* CSLDrugListModel.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -619,6 +634,9 @@
 				6CB9EBF41C200E57006C64F0 /* CSLShopListCell.h */,
 				6CB9EBF51C200E57006C64F0 /* CSLShopListCell.m */,
 				6CB9EBF61C200E57006C64F0 /* CSLShopListCell.xib */,
+				6CD178191C22D8A900E6DE32 /* CSLDrugListCell.h */,
+				6CD1781A1C22D8A900E6DE32 /* CSLDrugListCell.m */,
+				6CD1781B1C22D8A900E6DE32 /* CSLDrugListCell.xib */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -771,6 +789,9 @@
 				6CFD58BA1C21AFF5000B262D /* CSLDrugTypeDetailViewController.h */,
 				6CFD58BB1C21AFF5000B262D /* CSLDrugTypeDetailViewController.m */,
 				6CFD58BC1C21AFF5000B262D /* CSLDrugTypeDetailViewController.xib */,
+				6CD1781E1C22DFFC00E6DE32 /* CSLDrugDetailController.h */,
+				6CD1781F1C22DFFC00E6DE32 /* CSLDrugDetailController.m */,
+				6CD178201C22DFFC00E6DE32 /* CSLDrugDetailController.xib */,
 			);
 			name = drug;
 			sourceTree = "<group>";
@@ -887,10 +908,12 @@
 				6CA8F65E1C21417100FC1BA9 /* location.png in Resources */,
 				6CEE38A01C2191FE0077291F /* SCNavTabBar.bundle in Resources */,
 				6CB503CB1C185ACE0026891F /* Assets.xcassets in Resources */,
+				6CD1781D1C22D8A900E6DE32 /* CSLDrugListCell.xib in Resources */,
 				6CFD58AD1C21A75C000B262D /* CSLDrugTypeViewController.xib in Resources */,
 				6CB9EBF81C200E58006C64F0 /* CSLShopListCell.xib in Resources */,
 				6C9FB9BF1C185BE700725C02 /* express.png in Resources */,
 				6C9FB9CC1C185C2700725C02 /* Localizable.strings in Resources */,
+				6CD178221C22DFFC00E6DE32 /* CSLDrugDetailController.xib in Resources */,
 				6C9FB9BC1C185BE700725C02 /* chatroom@2x.png in Resources */,
 				6CB9EC341C202CF8006C64F0 /* MJRefresh.bundle in Resources */,
 				6CB503C91C185ACE0026891F /* Main.storyboard in Resources */,
@@ -993,11 +1016,13 @@
 				6CB9EC371C202CF8006C64F0 /* UIScrollView+MJRefresh.m in Sources */,
 				6CEE38A11C2191FE0077291F /* SCNavTabBarController.m in Sources */,
 				6C93F0D01C1925D1007BA2B0 /* CSLNetRequest.m in Sources */,
+				6CD178211C22DFFC00E6DE32 /* CSLDrugDetailController.m in Sources */,
 				6CB9EBA81C1FEDD6006C64F0 /* FMDatabaseAdditions.m in Sources */,
 				6CA8F6591C2112D700FC1BA9 /* CSLShopDetailViewController.m in Sources */,
 				6CB9EC271C202CF8006C64F0 /* MJRefreshBackFooter.m in Sources */,
 				6CB9EBE41C1FF145006C64F0 /* CSLShopListModel.m in Sources */,
 				6CB9EBE31C1FF145006C64F0 /* CSLShopInfoModel.m in Sources */,
+				6CD178181C22CF0900E6DE32 /* CSLDrugListModel.m in Sources */,
 				6CEE38A31C2191FE0077291F /* SCPopView.m in Sources */,
 				6CB9EC2A1C202CF8006C64F0 /* MJRefreshHeader.m in Sources */,
 				6CB9EC2C1C202CF8006C64F0 /* MJRefreshAutoNormalFooter.m in Sources */,
@@ -1018,6 +1043,7 @@
 				6CB503C01C185ACE0026891F /* main.m in Sources */,
 				6CB9EC331C202CF8006C64F0 /* MJRefreshStateHeader.m in Sources */,
 				6CB9EBF11C1FF657006C64F0 /* CSLHealthViewController.m in Sources */,
+				6CD1781C1C22D8A900E6DE32 /* CSLDrugListCell.m in Sources */,
 				6CB9EC3C1C20339E006C64F0 /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

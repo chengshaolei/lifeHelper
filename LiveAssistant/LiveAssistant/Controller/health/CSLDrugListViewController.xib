@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CSLDrugListViewController">
             <connections>
+                <outlet property="DrugList" destination="fKs-QM-9o8" id="D8g-An-Kxk"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -14,7 +15,45 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fKs-QM-9o8">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="owX-er-fQ6"/>
+                        <outlet property="delegate" destination="-1" id="mwd-Xf-52h"/>
+                    </connections>
+                </tableView>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="fKs-QM-9o8" secondAttribute="trailing" id="20g-s4-MO8"/>
+                <constraint firstAttribute="bottom" secondItem="fKs-QM-9o8" secondAttribute="bottom" id="XMH-be-bbG"/>
+                <constraint firstItem="fKs-QM-9o8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="gXp-I8-f2J"/>
+                <constraint firstItem="fKs-QM-9o8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="ztT-ls-Fj7"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="fKs-QM-9o8"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="20g-s4-MO8"/>
+                    <exclude reference="XMH-be-bbG"/>
+                    <exclude reference="gXp-I8-f2J"/>
+                    <exclude reference="ztT-ls-Fj7"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="subviews">
+                    <include reference="fKs-QM-9o8"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="20g-s4-MO8"/>
+                    <include reference="XMH-be-bbG"/>
+                    <include reference="gXp-I8-f2J"/>
+                    <include reference="ztT-ls-Fj7"/>
+                </mask>
+            </variation>
         </view>
     </objects>
 </document>

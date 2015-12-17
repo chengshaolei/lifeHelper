@@ -72,8 +72,10 @@
 //药品分类
 #define JH_MedicineType_URL   @"http://api2.juheapi.com/medicine/drugclass"
 
-//药品详细
+//药品列表
 #define JH_MedicineList_URL @"http://api2.juheapi.com/medicine/list"
+//药品分类搜索
+#define JH_MedicineTypeSearch_URL @"http://api2.juheapi.com/medicine/drugclass"
 
 
 //周公解梦

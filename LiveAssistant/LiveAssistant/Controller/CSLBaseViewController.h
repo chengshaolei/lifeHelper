@@ -33,6 +33,7 @@ typedef enum{NormalRequest,JHRequest} RequestType;
 //聚合数据请求
 -(void) JHRequestWithAPPid:(NSString*)appid method:(NSString*)method url:(NSString*)urlString paras:(NSDictionary*)dict;
 
+-(void) showIndicatorInView:(UIView*)parentView isDisplay:(BOOL)show;//是否显示指示器
 
 -(void) parserData:(id)data;//数据解析
 @end

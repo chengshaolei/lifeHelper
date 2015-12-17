@@ -9,5 +9,5 @@
 #import "CSLBaseViewController.h"
 
 @interface CSLDrugTypeDetailViewController : CSLBaseViewController
-
+-(void) reloadData:(NSString*)type;//加载数据
 @end
