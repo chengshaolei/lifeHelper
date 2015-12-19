@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		6C6D47CD1C18617900B80FB6 /* CSLScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C6D47CC1C18617900B80FB6 /* CSLScanViewController.m */; };
 		6C6D47D01C18833600B80FB6 /* Auxiliary.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C6D47CF1C18833600B80FB6 /* Auxiliary.m */; };
+		6C73E4531C238E5600B674E9 /* CSLDrugDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C73E4511C238E5600B674E9 /* CSLDrugDetailController.xib */; };
+		6C73E45B1C23B88E00B674E9 /* CSLDrugDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C73E4591C23B88E00B674E9 /* CSLDrugDetailCell.m */; };
+		6C73E45C1C23B88E00B674E9 /* CSLDrugDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C73E45A1C23B88E00B674E9 /* CSLDrugDetailCell.xib */; };
+		6C73E4621C23E36D00B674E9 /* NSObject+perpoty.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C73E4611C23E36D00B674E9 /* NSObject+perpoty.m */; };
 		6C93F0CB1C19246B007BA2B0 /* CSLExpressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C93F0C91C19246B007BA2B0 /* CSLExpressViewController.m */; };
 		6C93F0CC1C19246B007BA2B0 /* CSLExpressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C93F0CA1C19246B007BA2B0 /* CSLExpressViewController.xib */; };
 		6C93F0D01C1925D1007BA2B0 /* CSLNetRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C93F0CF1C1925D1007BA2B0 /* CSLNetRequest.m */; };
@@ -94,12 +98,14 @@
 		6CD1781C1C22D8A900E6DE32 /* CSLDrugListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD1781A1C22D8A900E6DE32 /* CSLDrugListCell.m */; };
 		6CD1781D1C22D8A900E6DE32 /* CSLDrugListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CD1781B1C22D8A900E6DE32 /* CSLDrugListCell.xib */; };
 		6CD178211C22DFFC00E6DE32 /* CSLDrugDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD1781F1C22DFFC00E6DE32 /* CSLDrugDetailController.m */; };
-		6CD178221C22DFFC00E6DE32 /* CSLDrugDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CD178201C22DFFC00E6DE32 /* CSLDrugDetailController.xib */; };
 		6CEE38A01C2191FE0077291F /* SCNavTabBar.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6CEE38971C2191FE0077291F /* SCNavTabBar.bundle */; };
 		6CEE38A11C2191FE0077291F /* SCNavTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CEE389A1C2191FE0077291F /* SCNavTabBarController.m */; };
 		6CEE38A21C2191FE0077291F /* SCNavTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CEE389D1C2191FE0077291F /* SCNavTabBar.m */; };
 		6CEE38A31C2191FE0077291F /* SCPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CEE389F1C2191FE0077291F /* SCPopView.m */; };
 		6CEE38A61C21924D0077291F /* CSLHealthMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CEE38A51C21924D0077291F /* CSLHealthMainController.m */; };
+		6CF5C1031C24FB500086FCC6 /* CSLVocabularyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CF5C1021C24FB500086FCC6 /* CSLVocabularyController.m */; };
+		6CF5C1051C24FBE90086FCC6 /* CSLVocabularyController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CF5C1041C24FBE90086FCC6 /* CSLVocabularyController.xib */; };
+		6CF5C1091C2540A70086FCC6 /* cSLVocabularyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CF5C1081C2540A70086FCC6 /* cSLVocabularyModel.m */; };
 		6CFD58A71C21A616000B262D /* CSLDrugListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFD58A51C21A616000B262D /* CSLDrugListViewController.m */; };
 		6CFD58A81C21A616000B262D /* CSLDrugListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CFD58A61C21A616000B262D /* CSLDrugListViewController.xib */; };
 		6CFD58AC1C21A75C000B262D /* CSLDrugTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFD58AA1C21A75C000B262D /* CSLDrugTypeViewController.m */; };
@@ -117,6 +123,14 @@
 		6C6D47CC1C18617900B80FB6 /* CSLScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSLScanViewController.m; sourceTree = "<group>"; };
 		6C6D47CE1C18833600B80FB6 /* Auxiliary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Auxiliary.h; sourceTree = "<group>"; };
 		6C6D47CF1C18833600B80FB6 /* Auxiliary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Auxiliary.m; sourceTree = "<group>"; };
+		6C73E4541C238E5E00B674E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = drug/Base.lproj/CSLDrugDetailController.xib; sourceTree = "<group>"; };
+		6C73E4551C238E6F00B674E9 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "drug/zh-Hans.lproj/CSLDrugDetailController.strings"; sourceTree = "<group>"; };
+		6C73E4571C238E7200B674E9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = drug/en.lproj/CSLDrugDetailController.strings; sourceTree = "<group>"; };
+		6C73E4581C23B88E00B674E9 /* CSLDrugDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSLDrugDetailCell.h; path = view/CSLDrugDetailCell.h; sourceTree = "<group>"; };
+		6C73E4591C23B88E00B674E9 /* CSLDrugDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSLDrugDetailCell.m; path = view/CSLDrugDetailCell.m; sourceTree = "<group>"; };
+		6C73E45A1C23B88E00B674E9 /* CSLDrugDetailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CSLDrugDetailCell.xib; path = view/CSLDrugDetailCell.xib; sourceTree = "<group>"; };
+		6C73E4601C23E36D00B674E9 /* NSObject+perpoty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+perpoty.h"; sourceTree = "<group>"; };
+		6C73E4611C23E36D00B674E9 /* NSObject+perpoty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+perpoty.m"; sourceTree = "<group>"; };
 		6C93F0C81C19246B007BA2B0 /* CSLExpressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSLExpressViewController.h; sourceTree = "<group>"; };
 		6C93F0C91C19246B007BA2B0 /* CSLExpressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSLExpressViewController.m; sourceTree = "<group>"; };
 		6C93F0CA1C19246B007BA2B0 /* CSLExpressViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSLExpressViewController.xib; sourceTree = "<group>"; };
@@ -272,7 +286,6 @@
 		6CD1781B1C22D8A900E6DE32 /* CSLDrugListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CSLDrugListCell.xib; path = view/CSLDrugListCell.xib; sourceTree = "<group>"; };
 		6CD1781E1C22DFFC00E6DE32 /* CSLDrugDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSLDrugDetailController.h; path = drug/CSLDrugDetailController.h; sourceTree = "<group>"; };
 		6CD1781F1C22DFFC00E6DE32 /* CSLDrugDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSLDrugDetailController.m; path = drug/CSLDrugDetailController.m; sourceTree = "<group>"; };
-		6CD178201C22DFFC00E6DE32 /* CSLDrugDetailController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CSLDrugDetailController.xib; path = drug/CSLDrugDetailController.xib; sourceTree = "<group>"; };
 		6CEE38961C2191FE0077291F /* CommonMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonMacro.h; sourceTree = "<group>"; };
 		6CEE38971C2191FE0077291F /* SCNavTabBar.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SCNavTabBar.bundle; sourceTree = "<group>"; };
 		6CEE38991C2191FE0077291F /* SCNavTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCNavTabBarController.h; sourceTree = "<group>"; };
@@ -283,6 +296,11 @@
 		6CEE389F1C2191FE0077291F /* SCPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCPopView.m; sourceTree = "<group>"; };
 		6CEE38A41C21924D0077291F /* CSLHealthMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSLHealthMainController.h; sourceTree = "<group>"; };
 		6CEE38A51C21924D0077291F /* CSLHealthMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSLHealthMainController.m; sourceTree = "<group>"; };
+		6CF5C1011C24FB500086FCC6 /* CSLVocabularyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSLVocabularyController.h; sourceTree = "<group>"; };
+		6CF5C1021C24FB500086FCC6 /* CSLVocabularyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSLVocabularyController.m; sourceTree = "<group>"; };
+		6CF5C1041C24FBE90086FCC6 /* CSLVocabularyController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSLVocabularyController.xib; sourceTree = "<group>"; };
+		6CF5C1071C2540A70086FCC6 /* CSLVocabularyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSLVocabularyModel.h; path = model/CSLVocabularyModel.h; sourceTree = "<group>"; };
+		6CF5C1081C2540A70086FCC6 /* cSLVocabularyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = cSLVocabularyModel.m; path = model/cSLVocabularyModel.m; sourceTree = "<group>"; };
 		6CFD58A41C21A616000B262D /* CSLDrugListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSLDrugListViewController.h; sourceTree = "<group>"; };
 		6CFD58A51C21A616000B262D /* CSLDrugListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSLDrugListViewController.m; sourceTree = "<group>"; };
 		6CFD58A61C21A616000B262D /* CSLDrugListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSLDrugListViewController.xib; sourceTree = "<group>"; };
@@ -358,6 +376,8 @@
 		6C9FB9931C185BE600725C02 /* commontool */ = {
 			isa = PBXGroup;
 			children = (
+				6CF5C10A1C25416E0086FCC6 /* view */,
+				6CF5C1061C2540720086FCC6 /* model */,
 				6C6D47CB1C18617900B80FB6 /* CSLScanViewController.h */,
 				6C6D47CC1C18617900B80FB6 /* CSLScanViewController.m */,
 				6C9FB9941C185BE600725C02 /* CSLToolViewController.h */,
@@ -368,6 +388,9 @@
 				6C93F0CA1C19246B007BA2B0 /* CSLExpressViewController.xib */,
 				6CA8F65F1C21691A00FC1BA9 /* CSLFlashlightViewController.h */,
 				6CA8F6601C21691A00FC1BA9 /* CSLFlashlightViewController.m */,
+				6CF5C1011C24FB500086FCC6 /* CSLVocabularyController.h */,
+				6CF5C1021C24FB500086FCC6 /* CSLVocabularyController.m */,
+				6CF5C1041C24FBE90086FCC6 /* CSLVocabularyController.xib */,
 			);
 			path = commontool;
 			sourceTree = "<group>";
@@ -432,6 +455,8 @@
 				6C93F0CF1C1925D1007BA2B0 /* CSLNetRequest.m */,
 				6C93F0D11C195B72007BA2B0 /* CSLDownListView.h */,
 				6C93F0D21C195B72007BA2B0 /* CSLDownListView.m */,
+				6C73E4601C23E36D00B674E9 /* NSObject+perpoty.h */,
+				6C73E4611C23E36D00B674E9 /* NSObject+perpoty.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -637,6 +662,9 @@
 				6CD178191C22D8A900E6DE32 /* CSLDrugListCell.h */,
 				6CD1781A1C22D8A900E6DE32 /* CSLDrugListCell.m */,
 				6CD1781B1C22D8A900E6DE32 /* CSLDrugListCell.xib */,
+				6C73E4581C23B88E00B674E9 /* CSLDrugDetailCell.h */,
+				6C73E4591C23B88E00B674E9 /* CSLDrugDetailCell.m */,
+				6C73E45A1C23B88E00B674E9 /* CSLDrugDetailCell.xib */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -774,6 +802,22 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		6CF5C1061C2540720086FCC6 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				6CF5C1071C2540A70086FCC6 /* CSLVocabularyModel.h */,
+				6CF5C1081C2540A70086FCC6 /* cSLVocabularyModel.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		6CF5C10A1C25416E0086FCC6 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
 		6CFD58AE1C21A881000B262D /* drug */ = {
 			isa = PBXGroup;
 			children = (
@@ -791,7 +835,7 @@
 				6CFD58BC1C21AFF5000B262D /* CSLDrugTypeDetailViewController.xib */,
 				6CD1781E1C22DFFC00E6DE32 /* CSLDrugDetailController.h */,
 				6CD1781F1C22DFFC00E6DE32 /* CSLDrugDetailController.m */,
-				6CD178201C22DFFC00E6DE32 /* CSLDrugDetailController.xib */,
+				6C73E4511C238E5600B674E9 /* CSLDrugDetailController.xib */,
 			);
 			name = drug;
 			sourceTree = "<group>";
@@ -874,6 +918,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 6CB503B21C185ACE0026891F;
 			productRefGroup = 6CB503BC1C185ACE0026891F /* Products */;
@@ -895,6 +940,8 @@
 				6CA8F65C1C213E7C00FC1BA9 /* arrow_right@2x.png in Resources */,
 				6CB9EBF21C1FF657006C64F0 /* CSLHealthViewController.xib in Resources */,
 				6CA8F65A1C2112D700FC1BA9 /* CSLShopDetailViewController.xib in Resources */,
+				6CF5C1051C24FBE90086FCC6 /* CSLVocabularyController.xib in Resources */,
+				6C73E45C1C23B88E00B674E9 /* CSLDrugDetailCell.xib in Resources */,
 				6C9FB9B61C185BE700725C02 /* CSLChatroomViewController.xib in Resources */,
 				6C9FB9B81C185BE700725C02 /* CSLToolViewController.xib in Resources */,
 				6C9FB9BE1C185BE700725C02 /* tool.png in Resources */,
@@ -913,7 +960,7 @@
 				6CB9EBF81C200E58006C64F0 /* CSLShopListCell.xib in Resources */,
 				6C9FB9BF1C185BE700725C02 /* express.png in Resources */,
 				6C9FB9CC1C185C2700725C02 /* Localizable.strings in Resources */,
-				6CD178221C22DFFC00E6DE32 /* CSLDrugDetailController.xib in Resources */,
+				6C73E4531C238E5600B674E9 /* CSLDrugDetailController.xib in Resources */,
 				6C9FB9BC1C185BE700725C02 /* chatroom@2x.png in Resources */,
 				6CB9EC341C202CF8006C64F0 /* MJRefresh.bundle in Resources */,
 				6CB503C91C185ACE0026891F /* Main.storyboard in Resources */,
@@ -980,12 +1027,15 @@
 				6C93F0CB1C19246B007BA2B0 /* CSLExpressViewController.m in Sources */,
 				6CEE38A21C2191FE0077291F /* SCNavTabBar.m in Sources */,
 				6C6D47CD1C18617900B80FB6 /* CSLScanViewController.m in Sources */,
+				6CF5C1091C2540A70086FCC6 /* cSLVocabularyModel.m in Sources */,
 				6CB9EBCE1C1FEDDF006C64F0 /* JSONKeyMapper.m in Sources */,
 				6C9FB9B71C185BE700725C02 /* CSLToolViewController.m in Sources */,
+				6CF5C1031C24FB500086FCC6 /* CSLVocabularyController.m in Sources */,
 				6CB9EC2F1C202CF8006C64F0 /* MJRefreshBackNormalFooter.m in Sources */,
 				6CFD58B91C21AF48000B262D /* CSLDrugTypeModel.m in Sources */,
 				6CB9EC321C202CF8006C64F0 /* MJRefreshNormalHeader.m in Sources */,
 				6CB9EBA71C1FEDD6006C64F0 /* FMDatabase.m in Sources */,
+				6C73E4621C23E36D00B674E9 /* NSObject+perpoty.m in Sources */,
 				6CB9EBE21C1FF145006C64F0 /* CSLPositionModel.m in Sources */,
 				6CFD58AC1C21A75C000B262D /* CSLDrugTypeViewController.m in Sources */,
 				6CB9EBF71C200E58006C64F0 /* CSLShopListCell.m in Sources */,
@@ -1017,6 +1067,7 @@
 				6CEE38A11C2191FE0077291F /* SCNavTabBarController.m in Sources */,
 				6C93F0D01C1925D1007BA2B0 /* CSLNetRequest.m in Sources */,
 				6CD178211C22DFFC00E6DE32 /* CSLDrugDetailController.m in Sources */,
+				6C73E45B1C23B88E00B674E9 /* CSLDrugDetailCell.m in Sources */,
 				6CB9EBA81C1FEDD6006C64F0 /* FMDatabaseAdditions.m in Sources */,
 				6CA8F6591C2112D700FC1BA9 /* CSLShopDetailViewController.m in Sources */,
 				6CB9EC271C202CF8006C64F0 /* MJRefreshBackFooter.m in Sources */,
@@ -1051,6 +1102,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		6C73E4511C238E5600B674E9 /* CSLDrugDetailController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C73E4541C238E5E00B674E9 /* Base */,
+				6C73E4551C238E6F00B674E9 /* zh-Hans */,
+				6C73E4571C238E7200B674E9 /* en */,
+			);
+			name = CSLDrugDetailController.xib;
+			sourceTree = "<group>";
+		};
 		6C9FB9CE1C185C2700725C02 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (

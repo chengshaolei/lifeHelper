@@ -1,0 +1,39 @@
+
+/* Class = "UILabel"; text = "主治："; ObjectID = "0hP-P4-WA7"; */
+"0hP-P4-WA7.text" = "function：";
+
+/* Class = "UILabel"; text = "用法用量："; ObjectID = "C71-mq-89n"; */
+"C71-mq-89n.text" = "use：";
+
+/* Class = "UILabel"; text = "名称"; ObjectID = "DSF-ew-LnD"; */
+"DSF-ew-LnD.text" = "name";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "EaL-zb-xq1"; */
+"EaL-zb-xq1.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "FPT-k8-Bjn"; */
+"FPT-k8-Bjn.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "TBg-dM-imi"; */
+"TBg-dM-imi.text" = "Label";
+
+/* Class = "UILabel"; text = "成份："; ObjectID = "Tcu-Qx-xed"; */
+"Tcu-Qx-xed.text" = "ingredients：";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Voh-gS-1Uq"; */
+"Voh-gS-1Uq.text" = "Label";
+
+/* Class = "UILabel"; text = "注意事项："; ObjectID = "bGC-0c-at6"; */
+"bGC-0c-at6.text" = "attention：";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "dWz-FC-jAT"; */
+"dWz-FC-jAT.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "e7Y-Ec-739"; */
+"e7Y-Ec-739.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "hPI-Pj-jLd"; */
+"hPI-Pj-jLd.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "kYD-Qs-XeF"; */
+"kYD-Qs-XeF.text" = "Label";

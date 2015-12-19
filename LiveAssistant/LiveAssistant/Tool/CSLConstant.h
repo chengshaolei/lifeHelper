@@ -30,6 +30,7 @@
 
 //新华字典
 // 数据ID：156
+//appkey:ed07031621b19377c2f78f3968f32fdf
 //参数说明
 //名称	类型	   必填	说明
 //word	string	是	填写需要查询的汉字，UTF8 urlencode编码

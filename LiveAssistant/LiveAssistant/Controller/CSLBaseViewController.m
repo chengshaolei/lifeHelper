@@ -19,6 +19,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    if (self.navigationController) {
+        self.navigationController.navigationBar.translucent = NO;
+    }
     [self dataInit];
 }
 

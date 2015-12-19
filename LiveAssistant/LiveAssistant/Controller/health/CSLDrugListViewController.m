@@ -42,6 +42,8 @@
 
 //加载数据
 -(void) loadData{
+    self.isLoadIndicator = YES;
+    [self showIndicatorInView:self.parentViewController.view isDisplay:YES];
     [self JHRequestWithAPPid:@"148" method:@"GET" url:JH_MedicineList_URL paras:@{@"key":@"4dc428e62a3a75334fbcd02e4d4f485a",@"cName":_drugType}];
 }
 
@@ -59,6 +61,7 @@
             }
         }
     }
+    [self showIndicatorInView:self.parentViewController.view isDisplay:NO];
 }
 
 #pragma mark-------表的代理----------------

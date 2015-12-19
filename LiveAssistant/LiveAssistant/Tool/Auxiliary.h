@@ -32,4 +32,15 @@
 //调用示例：CATransition * transition = [Auxiliary transitWithProperties:@{@"type":@"cube",@"subType":@"fromRight",@"duration":@"1"}];
 //   [self.navigationController.view.layer    addAnimation:transition forKey:nil]
 +(CATransition*) transitWithProperties:(NSDictionary*)properties;
+
+
+//动态计算字符串高度
+//参数：string：要计算的字符串
+//     width：字符串要显示的宽度
+//     property：字典，在字典里指定字符串的字体，颜色等属性常用的键值有：
+// NSDictionary* attrs =@{NSFontAttributeName:[UIFont fontWithName:@"AmericanTypewriter" size:30],//文本的颜色 字体 大小
+//NSForegroundColorAttributeName:[UIColor redColor]};//文字颜色
+//返回值：指定属性字符串的高度
++(CGFloat) dynamicHeightWithString:(NSString*)string width:(CGFloat)width attribute:(NSDictionary*)attrs;
+
 @end

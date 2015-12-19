@@ -205,7 +205,7 @@
                         <constraint firstAttribute="height" constant="30" id="baw-Hy-pdN"/>
                         <constraint firstAttribute="width" constant="46" id="nC0-1R-X39"/>
                     </constraints>
-                    <state key="normal" title="Button"/>
+                    <state key="normal" title="新华字典"/>
                     <variation key="default">
                         <mask key="constraints">
                             <exclude reference="baw-Hy-pdN"/>
@@ -215,12 +215,16 @@
                     <variation key="widthClass=compact" fixedFrame="YES">
                         <rect key="frame" x="41" y="205" width="46" height="30"/>
                     </variation>
-                    <variation key="heightClass=regular-widthClass=compact">
+                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                        <rect key="frame" x="17" y="196" width="72" height="34"/>
                         <mask key="constraints">
                             <include reference="baw-Hy-pdN"/>
                             <include reference="nC0-1R-X39"/>
                         </mask>
                     </variation>
+                    <connections>
+                        <action selector="chineseExplain:" destination="-1" eventType="touchUpInside" id="ND4-ib-WZe"/>
+                    </connections>
                 </button>
                 <button opaque="NO" tag="18" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CZe-06-wpQ">
                     <rect key="frame" x="-23" y="-15" width="46" height="30"/>
