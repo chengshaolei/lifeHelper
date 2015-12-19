@@ -100,6 +100,9 @@
                             <include reference="xKC-8r-Hj2"/>
                         </mask>
                     </variation>
+                    <connections>
+                        <action selector="termExplain:" destination="-1" eventType="touchUpInside" id="MLN-gg-VGr"/>
+                    </connections>
                 </button>
                 <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7fM-Bq-Tmr">
                     <rect key="frame" x="-23" y="-15" width="46" height="30"/>

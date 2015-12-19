@@ -54,53 +54,124 @@
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="拼音：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aEe-Wp-U2o">
                             <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="W9s-8L-0ho"/>
+                                <constraint firstAttribute="width" constant="92" id="gg3-bR-ynv"/>
+                            </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
-                            <variation key="widthClass=compact" fixedFrame="YES">
-                                <rect key="frame" x="13" y="7" width="51" height="21"/>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="W9s-8L-0ho"/>
+                                    <exclude reference="gg3-bR-ynv"/>
+                                </mask>
+                            </variation>
+                            <variation key="widthClass=compact">
+                                <mask key="constraints">
+                                    <include reference="W9s-8L-0ho"/>
+                                    <include reference="gg3-bR-ynv"/>
+                                </mask>
                             </variation>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="部首：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tQ4-nn-4TT">
                             <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="72" id="03G-bp-WeD"/>
+                                <constraint firstAttribute="height" constant="21" id="Bq4-g3-CKq"/>
+                            </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
-                            <variation key="widthClass=compact" fixedFrame="YES">
-                                <rect key="frame" x="113" y="7" width="51" height="21"/>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="03G-bp-WeD"/>
+                                    <exclude reference="Bq4-g3-CKq"/>
+                                </mask>
+                            </variation>
+                            <variation key="widthClass=compact">
+                                <mask key="constraints">
+                                    <include reference="03G-bp-WeD"/>
+                                    <include reference="Bq4-g3-CKq"/>
+                                </mask>
                             </variation>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="五笔：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UB6-k3-pyS">
                             <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="9ku-Oz-Z1A"/>
+                            </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
-                            <variation key="widthClass=compact" fixedFrame="YES">
-                                <rect key="frame" x="228" y="8" width="51" height="21"/>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="9ku-Oz-Z1A"/>
+                                </mask>
+                            </variation>
+                            <variation key="widthClass=compact">
+                                <mask key="constraints">
+                                    <include reference="9ku-Oz-Z1A"/>
+                                </mask>
                             </variation>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="笔画：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ead-hd-vr4">
                             <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="92" id="YRS-wx-Dq3"/>
+                                <constraint firstAttribute="height" constant="21" id="e2r-SL-io7"/>
+                            </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
-                            <variation key="widthClass=compact" fixedFrame="YES">
-                                <rect key="frame" x="13" y="36" width="51" height="21"/>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="YRS-wx-Dq3"/>
+                                    <exclude reference="e2r-SL-io7"/>
+                                </mask>
+                            </variation>
+                            <variation key="widthClass=compact">
+                                <mask key="constraints">
+                                    <include reference="YRS-wx-Dq3"/>
+                                    <include reference="e2r-SL-io7"/>
+                                </mask>
                             </variation>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="笔画顺序：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FE0-4m-nMt">
                             <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="U1Y-YD-JFf"/>
+                            </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
-                            <variation key="widthClass=compact" fixedFrame="YES">
-                                <rect key="frame" x="113" y="36" width="85" height="21"/>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="U1Y-YD-JFf"/>
+                                </mask>
+                            </variation>
+                            <variation key="widthClass=compact">
+                                <mask key="constraints">
+                                    <include reference="U1Y-YD-JFf"/>
+                                </mask>
                             </variation>
                         </label>
                     </subviews>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
+                        <constraint firstItem="ead-hd-vr4" firstAttribute="leading" secondItem="SOV-43-Jgd" secondAttribute="leading" constant="13" id="7uB-Km-rYf"/>
+                        <constraint firstItem="tQ4-nn-4TT" firstAttribute="leading" secondItem="aEe-Wp-U2o" secondAttribute="trailing" constant="8" id="9nk-Rg-dXs"/>
+                        <constraint firstItem="UB6-k3-pyS" firstAttribute="top" secondItem="SOV-43-Jgd" secondAttribute="top" constant="8" id="I6X-y0-GeC"/>
+                        <constraint firstAttribute="trailing" secondItem="UB6-k3-pyS" secondAttribute="trailing" constant="8" id="IX3-mP-1iJ"/>
+                        <constraint firstItem="aEe-Wp-U2o" firstAttribute="top" secondItem="SOV-43-Jgd" secondAttribute="top" constant="7" id="L1M-bu-f2S"/>
+                        <constraint firstItem="tQ4-nn-4TT" firstAttribute="top" secondItem="SOV-43-Jgd" secondAttribute="top" constant="7" id="Qoc-sQ-kOf"/>
+                        <constraint firstItem="UB6-k3-pyS" firstAttribute="leading" secondItem="tQ4-nn-4TT" secondAttribute="trailing" constant="8" id="UdG-6U-POg"/>
+                        <constraint firstItem="FE0-4m-nMt" firstAttribute="top" secondItem="UB6-k3-pyS" secondAttribute="bottom" constant="7" id="YF9-7d-GgJ"/>
+                        <constraint firstItem="aEe-Wp-U2o" firstAttribute="leading" secondItem="SOV-43-Jgd" secondAttribute="leading" constant="13" id="YxR-E8-LvA"/>
+                        <constraint firstItem="ead-hd-vr4" firstAttribute="top" secondItem="aEe-Wp-U2o" secondAttribute="bottom" constant="8" id="faa-iv-PDs"/>
                         <constraint firstAttribute="height" constant="64" id="oDX-ay-lcK"/>
+                        <constraint firstItem="FE0-4m-nMt" firstAttribute="leading" secondItem="ead-hd-vr4" secondAttribute="trailing" constant="8" id="rWb-j6-J10"/>
+                        <constraint firstAttribute="trailing" secondItem="FE0-4m-nMt" secondAttribute="trailing" constant="8" id="uxa-Pz-6cd"/>
                     </constraints>
                     <variation key="default">
                         <mask key="subviews">
@@ -112,10 +183,21 @@
                         </mask>
                         <mask key="constraints">
                             <exclude reference="oDX-ay-lcK"/>
+                            <exclude reference="L1M-bu-f2S"/>
+                            <exclude reference="YxR-E8-LvA"/>
+                            <exclude reference="7uB-Km-rYf"/>
+                            <exclude reference="faa-iv-PDs"/>
+                            <exclude reference="9nk-Rg-dXs"/>
+                            <exclude reference="Qoc-sQ-kOf"/>
+                            <exclude reference="YF9-7d-GgJ"/>
+                            <exclude reference="rWb-j6-J10"/>
+                            <exclude reference="uxa-Pz-6cd"/>
+                            <exclude reference="I6X-y0-GeC"/>
+                            <exclude reference="IX3-mP-1iJ"/>
+                            <exclude reference="UdG-6U-POg"/>
                         </mask>
                     </variation>
-                    <variation key="widthClass=compact" misplaced="YES">
-                        <rect key="frame" x="9" y="68" width="382" height="64"/>
+                    <variation key="widthClass=compact">
                         <mask key="subviews">
                             <include reference="aEe-Wp-U2o"/>
                             <include reference="tQ4-nn-4TT"/>
@@ -125,6 +207,18 @@
                         </mask>
                         <mask key="constraints">
                             <include reference="oDX-ay-lcK"/>
+                            <include reference="L1M-bu-f2S"/>
+                            <include reference="YxR-E8-LvA"/>
+                            <include reference="7uB-Km-rYf"/>
+                            <include reference="faa-iv-PDs"/>
+                            <include reference="9nk-Rg-dXs"/>
+                            <include reference="Qoc-sQ-kOf"/>
+                            <include reference="YF9-7d-GgJ"/>
+                            <include reference="rWb-j6-J10"/>
+                            <include reference="uxa-Pz-6cd"/>
+                            <include reference="I6X-y0-GeC"/>
+                            <include reference="IX3-mP-1iJ"/>
+                            <include reference="UdG-6U-POg"/>
                         </mask>
                     </variation>
                 </view>

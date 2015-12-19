@@ -152,4 +152,11 @@
     CGRect rect = [string boundingRectWithSize:CGSizeMake(width, CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading attributes:attrs context:nil];
     return rect.size.height;
 }
+
++(void) layerCornerRadius:(CALayer*)dest radius:(float)radius width:(float)width color:(UIColor*)color{
+    dest.cornerRadius = radius;
+    dest.borderWidth = width;
+    dest.borderColor = color.CGColor;
+    dest.masksToBounds = YES;
+}
 @end

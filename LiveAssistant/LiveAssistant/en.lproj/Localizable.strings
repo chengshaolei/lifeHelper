@@ -29,3 +29,16 @@
 "scope" = "scope";
 "legal" = "legal";
 "tel" = "tel";
+
+//成语词典
+"bushou" = "bushou";
+"head" = "head";
+"pinyin" = "pinyin";
+"chengyujs" = "chengyujs";
+"from_" = "from";
+"example" = "example";
+"yufa" = "grammar";
+"ciyujs" = "ciyujs";
+"yinzhengjs" = "yinzhengjs";
+"tongyi" = "synonymy";
+"fanyi" = "antonymy";

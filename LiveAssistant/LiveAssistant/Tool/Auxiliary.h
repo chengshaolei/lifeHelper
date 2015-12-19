@@ -43,4 +43,7 @@
 //返回值：指定属性字符串的高度
 +(CGFloat) dynamicHeightWithString:(NSString*)string width:(CGFloat)width attribute:(NSDictionary*)attrs;
 
+//设置视图的层圆角
++(void) layerCornerRadius:(CALayer*)dest radius:(float)radius width:(float)width color:(UIColor*)color;
+
 @end

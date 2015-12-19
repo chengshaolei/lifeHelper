@@ -26,11 +26,11 @@
 
 -(void) vocabularyInit;//初始化
 -(void) RequestData;//加载数据
--(void) setBaseInfo;//设置基础信息
+-(void) setupBaseInfo;//设置基础信息
 @end
 @implementation CSLVocabularyController{
     CSLVocabularyModel * _word;//字的信息
-    
+    NSArray * _sectionTitles;//标题
 }
 -(void) viewDidLoad{
     [super viewDidLoad];
@@ -39,7 +39,8 @@
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    
+    _word = nil;
+    _sectionTitles = nil;
 }
 
 
@@ -48,16 +49,18 @@
     self.title = @"新华字典";
     self.vocabularyTextField.delegate = self;
     self.vocabularyTextField.returnKeyType = UIReturnKeyGoogle;
-
+    [Auxiliary layerCornerRadius:self.baseInfoView.layer radius:5 width:1 color:[UIColor grayColor]];//设置视图圆角
+    
     [self.vocabularyTable registerClass:[UITableViewCell class] forCellReuseIdentifier:VocabularyCell];//注册cell
+    _sectionTitles = @[@"基础解释",@"详细解释"];
 }
 
 //设置基础信息
--(void) setBaseInfo{
-    self.pinyinLabel.text = _word.pinyin;
-    self.wubiLabel.text = _word.wubi;
-    self.bushouLabel.text = _word.bushou;
-    self.bihuaLabel.text = _word.bihua;
+-(void) setupBaseInfo{
+    self.pinyinLabel.text = [NSString stringWithFormat:@"拼音：%@",_word.pinyin];
+    self.wubiLabel.text = [NSString stringWithFormat:@"五笔：%@",_word.wubi];
+    self.bushouLabel.text = [NSString stringWithFormat:@"部首：%@",_word.bushou];
+    self.bihuaLabel.text = [NSString stringWithFormat:@"笔画：%@",_word.bihua];
     self.sequenceLabel.text = _word.sequence;
 }
 
@@ -78,7 +81,7 @@
             if (!error) {//有数据
                 [self.dataSource removeAllObjects];//移除原来数据
                 _word.sequence = [_word.jijie lastObject];//加入笔画顺序
-               [self setBaseInfo];
+               [self setupBaseInfo];
                 
                 //把简介和详情加入数据源
                 [self.dataSource addObject:_word.jijie];
@@ -114,6 +117,13 @@
     
     return cell;
 }
+
+//section标题
+- (nullable NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
+    return _sectionTitles[section];
+}
+
+//行高
 -(CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     NSString * string = self.dataSource[indexPath.section][indexPath.row];
     return [Auxiliary dynamicHeightWithString:string width:tableView.frame.size.width attribute:@{NSFontAttributeName:[UIFont fontWithName:@"AmericanTypewriter" size:13]}]+10;

@@ -28,3 +28,16 @@
 "scope" = "经营范围";
 "legal" = "法人";
 "tel" = "电话";
+
+//成语
+"bushou" = "部首";
+"head" = "头";
+"pinyin" = "拼音";
+"chengyujs" = "释义";
+"from_" = "出处";
+"example" = "例子";
+"yufa" = "语法";
+"ciyujs" = "词语解释";
+"yinzhengjs" = "引证";
+"tongyi" = "同义词";
+"fanyi" = "反义词";

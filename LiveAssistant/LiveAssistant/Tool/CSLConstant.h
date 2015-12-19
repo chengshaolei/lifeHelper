@@ -22,6 +22,8 @@
 
 //成语词典
 //参数说明
+//appkey:7d75ad7391527b5fa0c1e9aeebbc3979
+//appid 157
 //名称	类型	   必填	说明
 //word	string	是	填写需要查询的汉字，UTF8 urlencode编码
 //key	string	是	应用APPKEY(应用详细页查询)
