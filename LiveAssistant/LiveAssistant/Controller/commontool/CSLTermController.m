@@ -34,11 +34,12 @@
 
 //初始化
 -(void) termInit{
-    self.navigationItem.title = @"成语词典";
+    self.navigationItem.title = NSLocalizedString(@"dictionary of idioms", nil);
     self.navigationController.navigationBar.translucent = NO;
     
     //设置代理
     self.seachBar.delegate = self;
+    self.seachBar.placeholder = NSLocalizedString(@"please input an idiom", nil);
     
     //注册cell
     [self.termTable registerClass:[UITableViewCell class] forCellReuseIdentifier:TermCell];

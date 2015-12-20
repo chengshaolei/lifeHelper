@@ -129,6 +129,9 @@
                             <include reference="vPx-03-ns3"/>
                         </mask>
                     </variation>
+                    <connections>
+                        <action selector="translate:" destination="-1" eventType="touchUpInside" id="ZXs-y2-NQc"/>
+                    </connections>
                 </button>
                 <button opaque="NO" tag="17" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CjE-2B-kjR">
                     <rect key="frame" x="-23" y="-15" width="46" height="30"/>

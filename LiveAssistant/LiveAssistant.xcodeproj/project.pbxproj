@@ -251,6 +251,10 @@
 		6CF5C2341C2595DB0086FCC6 /* 素材,素材中国,开源免费下载_中国素材网.lnk in Resources */ = {isa = PBXBuildFile; fileRef = 6CF5C1D01C2595DB0086FCC6 /* 素材,素材中国,开源免费下载_中国素材网.lnk */; };
 		6CF5C2351C2595DB0086FCC6 /* 素材中国网说明.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6CF5C1D11C2595DB0086FCC6 /* 素材中国网说明.txt */; };
 		6CF5C2361C2595DB0086FCC6 /* 访问爱图网.url in Resources */ = {isa = PBXBuildFile; fileRef = 6CF5C1D21C2595DB0086FCC6 /* 访问爱图网.url */; };
+		6CF5C2391C262A730086FCC6 /* CSLTranlationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CF5C2381C262A720086FCC6 /* CSLTranlationModel.m */; };
+		6CF5C23C1C262A950086FCC6 /* CSLTranslationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CF5C23B1C262A950086FCC6 /* CSLTranslationController.m */; };
+		6CF5C23E1C262DB70086FCC6 /* CSLTranslationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CF5C23D1C262DB70086FCC6 /* CSLTranslationController.xib */; };
+		6CF5C28A1C2694F00086FCC6 /* jiankang.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CF5C2891C2694F00086FCC6 /* jiankang.png */; };
 		6CFD58A71C21A616000B262D /* CSLDrugListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFD58A51C21A616000B262D /* CSLDrugListViewController.m */; };
 		6CFD58A81C21A616000B262D /* CSLDrugListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CFD58A61C21A616000B262D /* CSLDrugListViewController.xib */; };
 		6CFD58AC1C21A75C000B262D /* CSLDrugTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFD58AA1C21A75C000B262D /* CSLDrugTypeViewController.m */; };
@@ -593,6 +597,12 @@
 		6CF5C1D01C2595DB0086FCC6 /* 素材,素材中国,开源免费下载_中国素材网.lnk */ = {isa = PBXFileReference; lastKnownFileType = file; path = "素材,素材中国,开源免费下载_中国素材网.lnk"; sourceTree = "<group>"; };
 		6CF5C1D11C2595DB0086FCC6 /* 素材中国网说明.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "素材中国网说明.txt"; sourceTree = "<group>"; };
 		6CF5C1D21C2595DB0086FCC6 /* 访问爱图网.url */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "访问爱图网.url"; sourceTree = "<group>"; };
+		6CF5C2371C262A720086FCC6 /* CSLTranlationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSLTranlationModel.h; path = model/CSLTranlationModel.h; sourceTree = "<group>"; };
+		6CF5C2381C262A720086FCC6 /* CSLTranlationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSLTranlationModel.m; path = model/CSLTranlationModel.m; sourceTree = "<group>"; };
+		6CF5C23A1C262A950086FCC6 /* CSLTranslationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSLTranslationController.h; sourceTree = "<group>"; };
+		6CF5C23B1C262A950086FCC6 /* CSLTranslationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSLTranslationController.m; sourceTree = "<group>"; };
+		6CF5C23D1C262DB70086FCC6 /* CSLTranslationController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSLTranslationController.xib; sourceTree = "<group>"; };
+		6CF5C2891C2694F00086FCC6 /* jiankang.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jiankang.png; sourceTree = "<group>"; };
 		6CFD58A41C21A616000B262D /* CSLDrugListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSLDrugListViewController.h; sourceTree = "<group>"; };
 		6CFD58A51C21A616000B262D /* CSLDrugListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSLDrugListViewController.m; sourceTree = "<group>"; };
 		6CFD58A61C21A616000B262D /* CSLDrugListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSLDrugListViewController.xib; sourceTree = "<group>"; };
@@ -686,6 +696,9 @@
 				6CF5C1101C2582290086FCC6 /* CSLTermController.h */,
 				6CF5C1111C2582290086FCC6 /* CSLTermController.m */,
 				6CF5C1121C2582290086FCC6 /* CSLTermController.xib */,
+				6CF5C23A1C262A950086FCC6 /* CSLTranslationController.h */,
+				6CF5C23B1C262A950086FCC6 /* CSLTranslationController.m */,
+				6CF5C23D1C262DB70086FCC6 /* CSLTranslationController.xib */,
 			);
 			path = commontool;
 			sourceTree = "<group>";
@@ -706,6 +719,7 @@
 		6C9FB99D1C185BE600725C02 /* resourcelib */ = {
 			isa = PBXGroup;
 			children = (
+				6CF5C2891C2694F00086FCC6 /* jiankang.png */,
 				6CF5C16E1C2595DB0086FCC6 /* Aiimg_com_57851_Yuanxing */,
 				6CF5C11C1C2595C80086FCC6 /* 2014022014 */,
 				6CF5C11A1C2595A80086FCC6 /* QQ图片20151219201420.jpg */,
@@ -1104,6 +1118,8 @@
 		6CF5C1061C2540720086FCC6 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				6CF5C2371C262A720086FCC6 /* CSLTranlationModel.h */,
+				6CF5C2381C262A720086FCC6 /* CSLTranlationModel.m */,
 				6CF5C1071C2540A70086FCC6 /* CSLVocabularyModel.h */,
 				6CF5C1081C2540A70086FCC6 /* cSLVocabularyModel.m */,
 				6CF5C1151C25873B0086FCC6 /* CSLTermModel.h */,
@@ -1415,6 +1431,7 @@
 				6CF5C14D1C2595C80086FCC6 /* 15.ico in Resources */,
 				6CF5C22A1C2595DB0086FCC6 /* 6.png in Resources */,
 				6CF5C1521C2595C80086FCC6 /* 2.ico in Resources */,
+				6CF5C23E1C262DB70086FCC6 /* CSLTranslationController.xib in Resources */,
 				6CB9EBF21C1FF657006C64F0 /* CSLHealthViewController.xib in Resources */,
 				6CF5C1621C2595C80086FCC6 /* 34.ico in Resources */,
 				6CF5C1481C2595C80086FCC6 /* 10.ico in Resources */,
@@ -1473,6 +1490,7 @@
 				6CF5C15B1C2595C80086FCC6 /* 28.ico in Resources */,
 				6CF5C1E81C2595DB0086FCC6 /* 10.png in Resources */,
 				6CF5C1601C2595C80086FCC6 /* 32.ico in Resources */,
+				6CF5C28A1C2694F00086FCC6 /* jiankang.png in Resources */,
 				6CF5C2361C2595DB0086FCC6 /* 访问爱图网.url in Resources */,
 				6CF5C1DF1C2595DB0086FCC6 /* 1 (4).png in Resources */,
 				6CF5C1EE1C2595DB0086FCC6 /* 13.png in Resources */,
@@ -1672,6 +1690,7 @@
 				6C9FB9B91C185BE700725C02 /* CSLBaseViewController.m in Sources */,
 				6CB9EC371C202CF8006C64F0 /* UIScrollView+MJRefresh.m in Sources */,
 				6CEE38A11C2191FE0077291F /* SCNavTabBarController.m in Sources */,
+				6CF5C2391C262A730086FCC6 /* CSLTranlationModel.m in Sources */,
 				6C93F0D01C1925D1007BA2B0 /* CSLNetRequest.m in Sources */,
 				6CD178211C22DFFC00E6DE32 /* CSLDrugDetailController.m in Sources */,
 				6C73E45B1C23B88E00B674E9 /* CSLDrugDetailCell.m in Sources */,
@@ -1693,6 +1712,7 @@
 				6CB9EBCF1C1FEDDF006C64F0 /* JSONValueTransformer.m in Sources */,
 				6CF5C1131C2582290086FCC6 /* CSLTermController.m in Sources */,
 				6CB9EBA91C1FEDD6006C64F0 /* FMDatabasePool.m in Sources */,
+				6CF5C23C1C262A950086FCC6 /* CSLTranslationController.m in Sources */,
 				6CEE38A61C21924D0077291F /* CSLHealthMainController.m in Sources */,
 				6CFD58A71C21A616000B262D /* CSLDrugListViewController.m in Sources */,
 				6CB9EBC71C1FEDDF006C64F0 /* JSONModelArray.m in Sources */,

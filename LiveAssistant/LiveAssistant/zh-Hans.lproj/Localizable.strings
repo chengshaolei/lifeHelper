@@ -30,6 +30,8 @@
 "tel" = "电话";
 
 //成语
+"dictionary of idioms" ="成语词典";
+"please input an idiom" = "请输入成语";
 "bushou" = "部首";
 "head" = "头";
 "pinyin" = "拼音";
@@ -41,3 +43,12 @@
 "yinzhengjs" = "引证";
 "tongyi" = "同义词";
 "fanyi" = "反义词";
+
+//有道反义
+"basic" = "基本释义";
+"web" = "网络释义";
+"translation" = "翻译";
+"phonetic" = "发音";
+"uk-phonetic" = "英音";
+"us-phonetic" = "美音";
+"youdao" = "有道翻译";

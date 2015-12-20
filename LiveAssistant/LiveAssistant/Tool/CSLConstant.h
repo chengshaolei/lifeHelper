@@ -40,6 +40,17 @@
 //dtype	string	否	返回数据的格式,xml或json，默认json
 #define JH_Dictionary_URL @"http://v.juhe.cn/xhzd/query"
 
+//有道翻译
+//数据ID：111
+//appkey:68f8dd63c274b34a7e8516c6152b731d
+//接口地址：http://japi.juhe.cn/youdao/dictionary.from
+//请求参数说明：
+//名称	类型	   必填	说明
+//key	String	是	您申请的KEY
+//word	String	是	要翻译的内容
+//only	String	否	dict表示只获取词典数据，translate表示只获取翻译数据，默认为都获取
+#define JH_Translation_URL  @"http://japi.juhe.cn/youdao/dictionary.from"
+
 //药店大全
 
 //药店位置

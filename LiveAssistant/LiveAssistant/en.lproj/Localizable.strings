@@ -31,6 +31,8 @@
 "tel" = "tel";
 
 //成语词典
+"dictionary of idioms" ="dictionary of idioms";
+"please input an idiom" = "please input an idiom";
 "bushou" = "bushou";
 "head" = "head";
 "pinyin" = "pinyin";
@@ -42,3 +44,12 @@
 "yinzhengjs" = "yinzhengjs";
 "tongyi" = "synonymy";
 "fanyi" = "antonymy";
+
+//有道反义
+"basic" = "basic";
+"web" = "web";
+"translation" = "translation";
+"phonetic" = "phonetic";
+"uk-phonetic" = "uk-phonetic";
+"us-phonetic" = "us-phonetic";
+"youdao" = "youdao";

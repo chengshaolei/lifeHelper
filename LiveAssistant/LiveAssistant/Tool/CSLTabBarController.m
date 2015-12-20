@@ -40,6 +40,8 @@
     
     //设置item
     controller.tabBarItem = item;
+//    controller.tabBarController.tabBar.barTintColor = ;
+    self.tabBar.barTintColor =[UIColor colorWithRed:121.0/255 green:200.0/255 blue:231.0/255 alpha:1];
     
     //将控制器加入数组
     [_controllers addObject:navigationController];

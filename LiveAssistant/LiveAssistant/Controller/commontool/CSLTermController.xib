@@ -36,20 +36,20 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="O41-ih-rMM" secondAttribute="bottom" constant="45" id="Hid-12-HX5"/>
-                <constraint firstItem="O41-ih-rMM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="djs-Ba-FR3"/>
-                <constraint firstAttribute="trailing" secondItem="O41-ih-rMM" secondAttribute="trailing" id="miB-17-F2T"/>
-                <constraint firstItem="O41-ih-rMM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="15" id="ycA-YD-J6A"/>
+                <constraint firstAttribute="trailing" secondItem="O41-ih-rMM" secondAttribute="trailing" id="HKF-hx-lL1"/>
+                <constraint firstItem="O41-ih-rMM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="RKZ-CR-Qwv"/>
+                <constraint firstAttribute="bottom" secondItem="O41-ih-rMM" secondAttribute="bottom" constant="45" id="reU-ay-5az"/>
+                <constraint firstItem="O41-ih-rMM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="rnN-VK-zVQ"/>
             </constraints>
             <variation key="default">
                 <mask key="subviews">
                     <exclude reference="O41-ih-rMM"/>
                 </mask>
                 <mask key="constraints">
-                    <exclude reference="Hid-12-HX5"/>
-                    <exclude reference="djs-Ba-FR3"/>
-                    <exclude reference="miB-17-F2T"/>
-                    <exclude reference="ycA-YD-J6A"/>
+                    <exclude reference="HKF-hx-lL1"/>
+                    <exclude reference="RKZ-CR-Qwv"/>
+                    <exclude reference="reU-ay-5az"/>
+                    <exclude reference="rnN-VK-zVQ"/>
                 </mask>
             </variation>
             <variation key="widthClass=compact">
@@ -57,10 +57,10 @@
                     <include reference="O41-ih-rMM"/>
                 </mask>
                 <mask key="constraints">
-                    <include reference="Hid-12-HX5"/>
-                    <include reference="djs-Ba-FR3"/>
-                    <include reference="miB-17-F2T"/>
-                    <include reference="ycA-YD-J6A"/>
+                    <include reference="HKF-hx-lL1"/>
+                    <include reference="RKZ-CR-Qwv"/>
+                    <include reference="reU-ay-5az"/>
+                    <include reference="rnN-VK-zVQ"/>
                 </mask>
             </variation>
         </view>
