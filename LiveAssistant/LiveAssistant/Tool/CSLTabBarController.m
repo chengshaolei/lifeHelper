@@ -27,6 +27,7 @@
     normal = [normal imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     highLight = [highLight imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     UITabBarItem * item = [[UITabBarItem alloc] initWithTitle:title image:normal selectedImage:highLight];
+    [item setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor blackColor]} forState:UIControlStateNormal];
     
     //得到控制器类
     Class controllerClass = NSClassFromString(controllerName);

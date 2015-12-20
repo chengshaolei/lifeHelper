@@ -69,10 +69,10 @@
     
     //增加健康标签
 //    [tabBarController addItem:NSLocalizedString(@"tabbar_health",nil) normalImage:[UIImage imageNamed:@"health.png"] highLightImage:[UIImage imageNamed:@"health.png"] controller:@"CSLHealthViewController"];
-    [tabBarController addItem:NSLocalizedString(@"tabbar_health",nil) normalImage:[UIImage imageNamed:@"health.png"] highLightImage:[UIImage imageNamed:@"health.png"] controller:@"CSLHealthMainController"];
+    [tabBarController addItem:NSLocalizedString(@"tabbar_health",nil) normalImage:[UIImage imageNamed:@"tabBar_heal.png"] highLightImage:[UIImage imageNamed:@"tabBar_heal.png"] controller:@"CSLHealthMainController"];
     
     //增加聊天室标签
-    [tabBarController addItem:NSLocalizedString(@"tabbar_chatroom",nil) normalImage:[UIImage imageNamed:@"chatroom.png"] highLightImage:[UIImage imageNamed:@"chatroom.png"] controller:@"CSLChatroomViewController"];
+    [tabBarController addItem:NSLocalizedString(@"tabbar_chatroom",nil) normalImage:[UIImage imageNamed:@"tabBar_chat.png"] highLightImage:[UIImage imageNamed:@"tabBar_chat.png"] controller:@"CSLChatroomViewController"];
     
     //设置标签栏的viewControllers数组
     tabBarController.viewControllers = tabBarController.controllers;

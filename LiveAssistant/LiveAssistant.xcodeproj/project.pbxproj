@@ -24,7 +24,6 @@
 		6C9FB9B91C185BE700725C02 /* CSLBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C9FB9981C185BE600725C02 /* CSLBaseViewController.m */; };
 		6C9FB9BC1C185BE700725C02 /* chatroom@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C9FB99F1C185BE600725C02 /* chatroom@2x.png */; };
 		6C9FB9BD1C185BE700725C02 /* health.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C9FB9A01C185BE600725C02 /* health.png */; };
-		6C9FB9BE1C185BE700725C02 /* tool.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C9FB9A11C185BE600725C02 /* tool.png */; };
 		6C9FB9BF1C185BE700725C02 /* express.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C9FB9A31C185BE700725C02 /* express.png */; };
 		6C9FB9C01C185BE700725C02 /* flashlight.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C9FB9A41C185BE700725C02 /* flashlight.png */; };
 		6C9FB9C11C185BE700725C02 /* twodemention.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C9FB9A51C185BE700725C02 /* twodemention.jpg */; };
@@ -255,6 +254,10 @@
 		6CF5C23C1C262A950086FCC6 /* CSLTranslationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CF5C23B1C262A950086FCC6 /* CSLTranslationController.m */; };
 		6CF5C23E1C262DB70086FCC6 /* CSLTranslationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CF5C23D1C262DB70086FCC6 /* CSLTranslationController.xib */; };
 		6CF5C28A1C2694F00086FCC6 /* jiankang.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CF5C2891C2694F00086FCC6 /* jiankang.png */; };
+		6CF5C28C1C26965E0086FCC6 /* tool@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CF5C28B1C26965E0086FCC6 /* tool@3x.png */; };
+		6CF5C28E1C2696E30086FCC6 /* tabBar_heal@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CF5C28D1C2696E30086FCC6 /* tabBar_heal@3x.png */; };
+		6CF5C2901C26976D0086FCC6 /* tabBar_chat@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CF5C28F1C26976D0086FCC6 /* tabBar_chat@3x.png */; };
+		6CF5C2921C269AE30086FCC6 /* shoudian@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CF5C2911C269AE30086FCC6 /* shoudian@3x.png */; };
 		6CFD58A71C21A616000B262D /* CSLDrugListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFD58A51C21A616000B262D /* CSLDrugListViewController.m */; };
 		6CFD58A81C21A616000B262D /* CSLDrugListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CFD58A61C21A616000B262D /* CSLDrugListViewController.xib */; };
 		6CFD58AC1C21A75C000B262D /* CSLDrugTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFD58AA1C21A75C000B262D /* CSLDrugTypeViewController.m */; };
@@ -298,7 +301,6 @@
 		6C9FB9981C185BE600725C02 /* CSLBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSLBaseViewController.m; sourceTree = "<group>"; };
 		6C9FB99F1C185BE600725C02 /* chatroom@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chatroom@2x.png"; sourceTree = "<group>"; };
 		6C9FB9A01C185BE600725C02 /* health.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = health.png; sourceTree = "<group>"; };
-		6C9FB9A11C185BE600725C02 /* tool.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tool.png; sourceTree = "<group>"; };
 		6C9FB9A31C185BE700725C02 /* express.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = express.png; sourceTree = "<group>"; };
 		6C9FB9A41C185BE700725C02 /* flashlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flashlight.png; sourceTree = "<group>"; };
 		6C9FB9A51C185BE700725C02 /* twodemention.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = twodemention.jpg; sourceTree = "<group>"; };
@@ -603,6 +605,10 @@
 		6CF5C23B1C262A950086FCC6 /* CSLTranslationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSLTranslationController.m; sourceTree = "<group>"; };
 		6CF5C23D1C262DB70086FCC6 /* CSLTranslationController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSLTranslationController.xib; sourceTree = "<group>"; };
 		6CF5C2891C2694F00086FCC6 /* jiankang.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jiankang.png; sourceTree = "<group>"; };
+		6CF5C28B1C26965E0086FCC6 /* tool@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tool@3x.png"; sourceTree = "<group>"; };
+		6CF5C28D1C2696E30086FCC6 /* tabBar_heal@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabBar_heal@3x.png"; sourceTree = "<group>"; };
+		6CF5C28F1C26976D0086FCC6 /* tabBar_chat@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabBar_chat@3x.png"; sourceTree = "<group>"; };
+		6CF5C2911C269AE30086FCC6 /* shoudian@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shoudian@3x.png"; sourceTree = "<group>"; };
 		6CFD58A41C21A616000B262D /* CSLDrugListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSLDrugListViewController.h; sourceTree = "<group>"; };
 		6CFD58A51C21A616000B262D /* CSLDrugListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSLDrugListViewController.m; sourceTree = "<group>"; };
 		6CFD58A61C21A616000B262D /* CSLDrugListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSLDrugListViewController.xib; sourceTree = "<group>"; };
@@ -725,7 +731,11 @@
 				6CF5C11A1C2595A80086FCC6 /* QQ图片20151219201420.jpg */,
 				6CF5C1181C2595400086FCC6 /* 2677.png */,
 				6CA8F65D1C21417100FC1BA9 /* location.png */,
+				6CF5C28D1C2696E30086FCC6 /* tabBar_heal@3x.png */,
+				6CF5C28B1C26965E0086FCC6 /* tool@3x.png */,
+				6CF5C28F1C26976D0086FCC6 /* tabBar_chat@3x.png */,
 				6CA8F65B1C213E7C00FC1BA9 /* arrow_right@2x.png */,
+				6CF5C2911C269AE30086FCC6 /* shoudian@3x.png */,
 				6CA8F6541C20F73C00FC1BA9 /* drugshop.png */,
 				6C9FB99E1C185BE600725C02 /* tabbar */,
 				6C9FB9A21C185BE700725C02 /* tool */,
@@ -739,7 +749,6 @@
 			children = (
 				6C9FB99F1C185BE600725C02 /* chatroom@2x.png */,
 				6C9FB9A01C185BE600725C02 /* health.png */,
-				6C9FB9A11C185BE600725C02 /* tool.png */,
 			);
 			path = tabbar;
 			sourceTree = "<group>";
@@ -1438,6 +1447,7 @@
 				6CA8F65A1C2112D700FC1BA9 /* CSLShopDetailViewController.xib in Resources */,
 				6CF5C1DE1C2595DB0086FCC6 /* 1 (3).png in Resources */,
 				6CF5C1D91C2595DB0086FCC6 /* 1 (13).png in Resources */,
+				6CF5C2901C26976D0086FCC6 /* tabBar_chat@3x.png in Resources */,
 				6CF5C1641C2595C80086FCC6 /* 36.ico in Resources */,
 				6CF5C1F01C2595DB0086FCC6 /* 14.png in Resources */,
 				6CF5C1541C2595C80086FCC6 /* 21.ico in Resources */,
@@ -1450,6 +1460,7 @@
 				6C73E45C1C23B88E00B674E9 /* CSLDrugDetailCell.xib in Resources */,
 				6CF5C1FB1C2595DB0086FCC6 /* 2.ico in Resources */,
 				6C9FB9B61C185BE700725C02 /* CSLChatroomViewController.xib in Resources */,
+				6CF5C28C1C26965E0086FCC6 /* tool@3x.png in Resources */,
 				6CF5C1DA1C2595DB0086FCC6 /* 1 (14).png in Resources */,
 				6CF5C1471C2595C80086FCC6 /* 1.ico in Resources */,
 				6CF5C21E1C2595DB0086FCC6 /* 37.ico in Resources */,
@@ -1464,7 +1475,6 @@
 				6CF5C20A1C2595DB0086FCC6 /* 26.png in Resources */,
 				6CF5C21F1C2595DB0086FCC6 /* 38.ico in Resources */,
 				6CF5C14C1C2595C80086FCC6 /* 14.ico in Resources */,
-				6C9FB9BE1C185BE700725C02 /* tool.png in Resources */,
 				6CF5C11B1C2595A80086FCC6 /* QQ图片20151219201420.jpg in Resources */,
 				6CF5C20D1C2595DB0086FCC6 /* 27.png in Resources */,
 				6CF5C1551C2595C80086FCC6 /* 22.ico in Resources */,
@@ -1567,6 +1577,7 @@
 				6CF5C22E1C2595DB0086FCC6 /* 8.png in Resources */,
 				6CF5C1661C2595C80086FCC6 /* 4.ico in Resources */,
 				6CF5C1FE1C2595DB0086FCC6 /* 20.png in Resources */,
+				6CF5C28E1C2696E30086FCC6 /* tabBar_heal@3x.png in Resources */,
 				6CF5C2251C2595DB0086FCC6 /* 42.ico in Resources */,
 				6CF5C1E31C2595DB0086FCC6 /* 1 (8).png in Resources */,
 				6CF5C1D61C2595DB0086FCC6 /* 1 (10).png in Resources */,
@@ -1576,6 +1587,7 @@
 				6CF5C22B1C2595DB0086FCC6 /* 7.ico in Resources */,
 				6CF5C1F51C2595DB0086FCC6 /* 17.ico in Resources */,
 				6CF5C15E1C2595C80086FCC6 /* 30.ico in Resources */,
+				6CF5C2921C269AE30086FCC6 /* shoudian@3x.png in Resources */,
 				6CF5C1F81C2595DB0086FCC6 /* 18.png in Resources */,
 				6CF5C21A1C2595DB0086FCC6 /* 33.ico in Resources */,
 				6CF5C2181C2595DB0086FCC6 /* 32.ico in Resources */,
