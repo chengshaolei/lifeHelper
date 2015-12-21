@@ -22,11 +22,6 @@
 		6C9FB9B71C185BE700725C02 /* CSLToolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C9FB9951C185BE600725C02 /* CSLToolViewController.m */; };
 		6C9FB9B81C185BE700725C02 /* CSLToolViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C9FB9961C185BE600725C02 /* CSLToolViewController.xib */; };
 		6C9FB9B91C185BE700725C02 /* CSLBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C9FB9981C185BE600725C02 /* CSLBaseViewController.m */; };
-		6C9FB9BC1C185BE700725C02 /* chatroom@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C9FB99F1C185BE600725C02 /* chatroom@2x.png */; };
-		6C9FB9BD1C185BE700725C02 /* health.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C9FB9A01C185BE600725C02 /* health.png */; };
-		6C9FB9BF1C185BE700725C02 /* express.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C9FB9A31C185BE700725C02 /* express.png */; };
-		6C9FB9C01C185BE700725C02 /* flashlight.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C9FB9A41C185BE700725C02 /* flashlight.png */; };
-		6C9FB9C11C185BE700725C02 /* twodemention.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C9FB9A51C185BE700725C02 /* twodemention.jpg */; };
 		6C9FB9C21C185BE700725C02 /* CSLTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C9FB9A81C185BE700725C02 /* CSLTabBarController.m */; };
 		6C9FB9C31C185BE700725C02 /* QRCameraSwitchButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C9FB9AB1C185BE700725C02 /* QRCameraSwitchButton.m */; };
 		6C9FB9C41C185BE700725C02 /* QRCodeReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C9FB9AD1C185BE700725C02 /* QRCodeReader.m */; };
@@ -35,7 +30,6 @@
 		6C9FB9C71C185BE700725C02 /* QRToggleTorchButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C9FB9B41C185BE700725C02 /* QRToggleTorchButton.m */; };
 		6C9FB9CC1C185C2700725C02 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6C9FB9CE1C185C2700725C02 /* Localizable.strings */; };
 		6C9FB9D11C185C4D00725C02 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6C9FB9D01C185C4D00725C02 /* AppDelegate.mm */; };
-		6CA8F6551C20F73C00FC1BA9 /* drugshop.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CA8F6541C20F73C00FC1BA9 /* drugshop.png */; };
 		6CA8F6591C2112D700FC1BA9 /* CSLShopDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA8F6571C2112D700FC1BA9 /* CSLShopDetailViewController.m */; };
 		6CA8F65A1C2112D700FC1BA9 /* CSLShopDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CA8F6581C2112D700FC1BA9 /* CSLShopDetailViewController.xib */; };
 		6CA8F65C1C213E7C00FC1BA9 /* arrow_right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CA8F65B1C213E7C00FC1BA9 /* arrow_right@2x.png */; };
@@ -108,7 +102,6 @@
 		6CF5C1131C2582290086FCC6 /* CSLTermController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CF5C1111C2582290086FCC6 /* CSLTermController.m */; };
 		6CF5C1141C2582290086FCC6 /* CSLTermController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CF5C1121C2582290086FCC6 /* CSLTermController.xib */; };
 		6CF5C1171C25873B0086FCC6 /* CSLTermModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CF5C1161C25873B0086FCC6 /* CSLTermModel.m */; };
-		6CF5C1191C2595400086FCC6 /* 2677.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CF5C1181C2595400086FCC6 /* 2677.png */; };
 		6CF5C11B1C2595A80086FCC6 /* QQ图片20151219201420.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6CF5C11A1C2595A80086FCC6 /* QQ图片20151219201420.jpg */; };
 		6CF5C1461C2595C80086FCC6 /* 0.ico in Resources */ = {isa = PBXBuildFile; fileRef = 6CF5C11E1C2595C80086FCC6 /* 0.ico */; };
 		6CF5C1471C2595C80086FCC6 /* 1.ico in Resources */ = {isa = PBXBuildFile; fileRef = 6CF5C11F1C2595C80086FCC6 /* 1.ico */; };
@@ -258,6 +251,14 @@
 		6CF5C28E1C2696E30086FCC6 /* tabBar_heal@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CF5C28D1C2696E30086FCC6 /* tabBar_heal@3x.png */; };
 		6CF5C2901C26976D0086FCC6 /* tabBar_chat@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CF5C28F1C26976D0086FCC6 /* tabBar_chat@3x.png */; };
 		6CF5C2921C269AE30086FCC6 /* shoudian@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CF5C2911C269AE30086FCC6 /* shoudian@3x.png */; };
+		6CF5C2941C26A9BD0086FCC6 /* tianqi.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CF5C2931C26A9BD0086FCC6 /* tianqi.png */; };
+		6CF5C2961C26A9E60086FCC6 /* toolexpress@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CF5C2951C26A9E60086FCC6 /* toolexpress@2x.png */; };
+		6CF5C2981C26AB6B0086FCC6 /* dictionary.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CF5C2971C26AB6B0086FCC6 /* dictionary.png */; };
+		6CF5C29A1C26AB9E0086FCC6 /* dimentioncode.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CF5C2991C26AB9E0086FCC6 /* dimentioncode.png */; };
+		6CF5C29C1C26ABF30086FCC6 /* idiom.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CF5C29B1C26ABF30086FCC6 /* idiom.png */; };
+		6CF5C29E1C26AD8B0086FCC6 /* youdao'.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CF5C29D1C26AD8B0086FCC6 /* youdao'.png */; };
+		6CF5C2A01C26AE2F0086FCC6 /* zhengjiang.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CF5C29F1C26AE2F0086FCC6 /* zhengjiang.png */; };
+		6CF5C2A21C26AEAB0086FCC6 /* meng.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CF5C2A11C26AEAB0086FCC6 /* meng.png */; };
 		6CFD58A71C21A616000B262D /* CSLDrugListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFD58A51C21A616000B262D /* CSLDrugListViewController.m */; };
 		6CFD58A81C21A616000B262D /* CSLDrugListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CFD58A61C21A616000B262D /* CSLDrugListViewController.xib */; };
 		6CFD58AC1C21A75C000B262D /* CSLDrugTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFD58AA1C21A75C000B262D /* CSLDrugTypeViewController.m */; };
@@ -299,11 +300,6 @@
 		6C9FB9961C185BE600725C02 /* CSLToolViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSLToolViewController.xib; sourceTree = "<group>"; };
 		6C9FB9971C185BE600725C02 /* CSLBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSLBaseViewController.h; sourceTree = "<group>"; };
 		6C9FB9981C185BE600725C02 /* CSLBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSLBaseViewController.m; sourceTree = "<group>"; };
-		6C9FB99F1C185BE600725C02 /* chatroom@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chatroom@2x.png"; sourceTree = "<group>"; };
-		6C9FB9A01C185BE600725C02 /* health.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = health.png; sourceTree = "<group>"; };
-		6C9FB9A31C185BE700725C02 /* express.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = express.png; sourceTree = "<group>"; };
-		6C9FB9A41C185BE700725C02 /* flashlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flashlight.png; sourceTree = "<group>"; };
-		6C9FB9A51C185BE700725C02 /* twodemention.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = twodemention.jpg; sourceTree = "<group>"; };
 		6C9FB9A71C185BE700725C02 /* CSLTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSLTabBarController.h; sourceTree = "<group>"; };
 		6C9FB9A81C185BE700725C02 /* CSLTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSLTabBarController.m; sourceTree = "<group>"; };
 		6C9FB9AA1C185BE700725C02 /* QRCameraSwitchButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCameraSwitchButton.h; sourceTree = "<group>"; };
@@ -322,7 +318,6 @@
 		6C9FB9CD1C185C2700725C02 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		6C9FB9CF1C185C2900725C02 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6C9FB9D01C185C4D00725C02 /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
-		6CA8F6541C20F73C00FC1BA9 /* drugshop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = drugshop.png; sourceTree = "<group>"; };
 		6CA8F6561C2112D700FC1BA9 /* CSLShopDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSLShopDetailViewController.h; sourceTree = "<group>"; };
 		6CA8F6571C2112D700FC1BA9 /* CSLShopDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSLShopDetailViewController.m; sourceTree = "<group>"; };
 		6CA8F6581C2112D700FC1BA9 /* CSLShopDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSLShopDetailViewController.xib; sourceTree = "<group>"; };
@@ -457,7 +452,6 @@
 		6CF5C1121C2582290086FCC6 /* CSLTermController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSLTermController.xib; sourceTree = "<group>"; };
 		6CF5C1151C25873B0086FCC6 /* CSLTermModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSLTermModel.h; path = model/CSLTermModel.h; sourceTree = "<group>"; };
 		6CF5C1161C25873B0086FCC6 /* CSLTermModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSLTermModel.m; path = model/CSLTermModel.m; sourceTree = "<group>"; };
-		6CF5C1181C2595400086FCC6 /* 2677.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2677.png; sourceTree = "<group>"; };
 		6CF5C11A1C2595A80086FCC6 /* QQ图片20151219201420.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "QQ图片20151219201420.jpg"; sourceTree = "<group>"; };
 		6CF5C11E1C2595C80086FCC6 /* 0.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = 0.ico; sourceTree = "<group>"; };
 		6CF5C11F1C2595C80086FCC6 /* 1.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = 1.ico; sourceTree = "<group>"; };
@@ -604,11 +598,19 @@
 		6CF5C23A1C262A950086FCC6 /* CSLTranslationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSLTranslationController.h; sourceTree = "<group>"; };
 		6CF5C23B1C262A950086FCC6 /* CSLTranslationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSLTranslationController.m; sourceTree = "<group>"; };
 		6CF5C23D1C262DB70086FCC6 /* CSLTranslationController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSLTranslationController.xib; sourceTree = "<group>"; };
-		6CF5C2891C2694F00086FCC6 /* jiankang.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jiankang.png; sourceTree = "<group>"; };
-		6CF5C28B1C26965E0086FCC6 /* tool@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tool@3x.png"; sourceTree = "<group>"; };
-		6CF5C28D1C2696E30086FCC6 /* tabBar_heal@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabBar_heal@3x.png"; sourceTree = "<group>"; };
-		6CF5C28F1C26976D0086FCC6 /* tabBar_chat@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabBar_chat@3x.png"; sourceTree = "<group>"; };
-		6CF5C2911C269AE30086FCC6 /* shoudian@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shoudian@3x.png"; sourceTree = "<group>"; };
+		6CF5C2891C2694F00086FCC6 /* jiankang.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = jiankang.png; path = ../jiankang.png; sourceTree = "<group>"; };
+		6CF5C28B1C26965E0086FCC6 /* tool@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tool@3x.png"; path = "../tool@3x.png"; sourceTree = "<group>"; };
+		6CF5C28D1C2696E30086FCC6 /* tabBar_heal@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tabBar_heal@3x.png"; path = "../tabBar_heal@3x.png"; sourceTree = "<group>"; };
+		6CF5C28F1C26976D0086FCC6 /* tabBar_chat@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tabBar_chat@3x.png"; path = "../tabBar_chat@3x.png"; sourceTree = "<group>"; };
+		6CF5C2911C269AE30086FCC6 /* shoudian@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "shoudian@3x.png"; path = "../shoudian@3x.png"; sourceTree = "<group>"; };
+		6CF5C2931C26A9BD0086FCC6 /* tianqi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tianqi.png; path = ../tianqi.png; sourceTree = "<group>"; };
+		6CF5C2951C26A9E60086FCC6 /* toolexpress@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "toolexpress@2x.png"; path = "../toolexpress@2x.png"; sourceTree = "<group>"; };
+		6CF5C2971C26AB6B0086FCC6 /* dictionary.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dictionary.png; sourceTree = "<group>"; };
+		6CF5C2991C26AB9E0086FCC6 /* dimentioncode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dimentioncode.png; sourceTree = "<group>"; };
+		6CF5C29B1C26ABF30086FCC6 /* idiom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = idiom.png; path = ../idiom.png; sourceTree = "<group>"; };
+		6CF5C29D1C26AD8B0086FCC6 /* youdao'.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "youdao'.png"; sourceTree = "<group>"; };
+		6CF5C29F1C26AE2F0086FCC6 /* zhengjiang.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zhengjiang.png; sourceTree = "<group>"; };
+		6CF5C2A11C26AEAB0086FCC6 /* meng.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = meng.png; sourceTree = "<group>"; };
 		6CFD58A41C21A616000B262D /* CSLDrugListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSLDrugListViewController.h; sourceTree = "<group>"; };
 		6CFD58A51C21A616000B262D /* CSLDrugListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSLDrugListViewController.m; sourceTree = "<group>"; };
 		6CFD58A61C21A616000B262D /* CSLDrugListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSLDrugListViewController.xib; sourceTree = "<group>"; };
@@ -725,18 +727,11 @@
 		6C9FB99D1C185BE600725C02 /* resourcelib */ = {
 			isa = PBXGroup;
 			children = (
-				6CF5C2891C2694F00086FCC6 /* jiankang.png */,
 				6CF5C16E1C2595DB0086FCC6 /* Aiimg_com_57851_Yuanxing */,
 				6CF5C11C1C2595C80086FCC6 /* 2014022014 */,
 				6CF5C11A1C2595A80086FCC6 /* QQ图片20151219201420.jpg */,
-				6CF5C1181C2595400086FCC6 /* 2677.png */,
 				6CA8F65D1C21417100FC1BA9 /* location.png */,
-				6CF5C28D1C2696E30086FCC6 /* tabBar_heal@3x.png */,
-				6CF5C28B1C26965E0086FCC6 /* tool@3x.png */,
-				6CF5C28F1C26976D0086FCC6 /* tabBar_chat@3x.png */,
 				6CA8F65B1C213E7C00FC1BA9 /* arrow_right@2x.png */,
-				6CF5C2911C269AE30086FCC6 /* shoudian@3x.png */,
-				6CA8F6541C20F73C00FC1BA9 /* drugshop.png */,
 				6C9FB99E1C185BE600725C02 /* tabbar */,
 				6C9FB9A21C185BE700725C02 /* tool */,
 			);
@@ -747,8 +742,10 @@
 		6C9FB99E1C185BE600725C02 /* tabbar */ = {
 			isa = PBXGroup;
 			children = (
-				6C9FB99F1C185BE600725C02 /* chatroom@2x.png */,
-				6C9FB9A01C185BE600725C02 /* health.png */,
+				6CF5C2891C2694F00086FCC6 /* jiankang.png */,
+				6CF5C28F1C26976D0086FCC6 /* tabBar_chat@3x.png */,
+				6CF5C28D1C2696E30086FCC6 /* tabBar_heal@3x.png */,
+				6CF5C28B1C26965E0086FCC6 /* tool@3x.png */,
 			);
 			path = tabbar;
 			sourceTree = "<group>";
@@ -756,9 +753,15 @@
 		6C9FB9A21C185BE700725C02 /* tool */ = {
 			isa = PBXGroup;
 			children = (
-				6C9FB9A31C185BE700725C02 /* express.png */,
-				6C9FB9A41C185BE700725C02 /* flashlight.png */,
-				6C9FB9A51C185BE700725C02 /* twodemention.jpg */,
+				6CF5C2A11C26AEAB0086FCC6 /* meng.png */,
+				6CF5C29B1C26ABF30086FCC6 /* idiom.png */,
+				6CF5C29D1C26AD8B0086FCC6 /* youdao'.png */,
+				6CF5C29F1C26AE2F0086FCC6 /* zhengjiang.png */,
+				6CF5C2951C26A9E60086FCC6 /* toolexpress@2x.png */,
+				6CF5C2991C26AB9E0086FCC6 /* dimentioncode.png */,
+				6CF5C2971C26AB6B0086FCC6 /* dictionary.png */,
+				6CF5C2931C26A9BD0086FCC6 /* tianqi.png */,
+				6CF5C2911C269AE30086FCC6 /* shoudian@3x.png */,
 			);
 			path = tool;
 			sourceTree = "<group>";
@@ -1430,8 +1433,8 @@
 				6CF5C15D1C2595C80086FCC6 /* 3.ico in Resources */,
 				6CF5C2001C2595DB0086FCC6 /* 21.png in Resources */,
 				6CF5C1491C2595C80086FCC6 /* 11.ico in Resources */,
+				6CF5C2981C26AB6B0086FCC6 /* dictionary.png in Resources */,
 				6CF5C1561C2595C80086FCC6 /* 23.ico in Resources */,
-				6C9FB9C11C185BE700725C02 /* twodemention.jpg in Resources */,
 				6CF5C2331C2595DB0086FCC6 /* 爱图网.txt in Resources */,
 				6CFD58A81C21A616000B262D /* CSLDrugListViewController.xib in Resources */,
 				6CF5C2141C2595DB0086FCC6 /* 30.ico in Resources */,
@@ -1485,6 +1488,7 @@
 				6CF5C1DB1C2595DB0086FCC6 /* 1 (15).png in Resources */,
 				6CF5C2041C2595DB0086FCC6 /* 23.png in Resources */,
 				6CF5C2011C2595DB0086FCC6 /* 22.ico in Resources */,
+				6CF5C2961C26A9E60086FCC6 /* toolexpress@2x.png in Resources */,
 				6CF5C14E1C2595C80086FCC6 /* 16.ico in Resources */,
 				6CF5C20E1C2595DB0086FCC6 /* 28.ico in Resources */,
 				6CF5C2351C2595DB0086FCC6 /* 素材中国网说明.txt in Resources */,
@@ -1496,12 +1500,13 @@
 				6CF5C1F21C2595DB0086FCC6 /* 15.png in Resources */,
 				6CF5C1E71C2595DB0086FCC6 /* 10.ico in Resources */,
 				6CF5C1611C2595C80086FCC6 /* 33.ico in Resources */,
-				6C9FB9C01C185BE700725C02 /* flashlight.png in Resources */,
 				6CF5C15B1C2595C80086FCC6 /* 28.ico in Resources */,
 				6CF5C1E81C2595DB0086FCC6 /* 10.png in Resources */,
 				6CF5C1601C2595C80086FCC6 /* 32.ico in Resources */,
 				6CF5C28A1C2694F00086FCC6 /* jiankang.png in Resources */,
+				6CF5C29C1C26ABF30086FCC6 /* idiom.png in Resources */,
 				6CF5C2361C2595DB0086FCC6 /* 访问爱图网.url in Resources */,
+				6CF5C2941C26A9BD0086FCC6 /* tianqi.png in Resources */,
 				6CF5C1DF1C2595DB0086FCC6 /* 1 (4).png in Resources */,
 				6CF5C1EE1C2595DB0086FCC6 /* 13.png in Resources */,
 				6CF5C1671C2595C80086FCC6 /* 5.ico in Resources */,
@@ -1511,17 +1516,16 @@
 				6CF5C1FC1C2595DB0086FCC6 /* 2.png in Resources */,
 				6CF5C2311C2595DB0086FCC6 /* huiyi8素材网.txt in Resources */,
 				6CF5C1F31C2595DB0086FCC6 /* 16.ico in Resources */,
+				6CF5C29E1C26AD8B0086FCC6 /* youdao'.png in Resources */,
 				6CF5C2291C2595DB0086FCC6 /* 6.ico in Resources */,
 				6CB503CE1C185ACE0026891F /* LaunchScreen.storyboard in Resources */,
 				6C93F0CC1C19246B007BA2B0 /* CSLExpressViewController.xib in Resources */,
 				6CFD58B61C21AD26000B262D /* CSLDrugTypeLeftController.xib in Resources */,
 				6CF5C1F71C2595DB0086FCC6 /* 18.ico in Resources */,
 				6CF5C1DD1C2595DB0086FCC6 /* 1 (2).png in Resources */,
-				6C9FB9BD1C185BE700725C02 /* health.png in Resources */,
 				6CF5C1D51C2595DB0086FCC6 /* 1 (1).png in Resources */,
 				6CF5C1511C2595C80086FCC6 /* 19.ico in Resources */,
 				6CF5C1F41C2595DB0086FCC6 /* 16.png in Resources */,
-				6CA8F6551C20F73C00FC1BA9 /* drugshop.png in Resources */,
 				6CFD58BE1C21AFF5000B262D /* CSLDrugTypeDetailViewController.xib in Resources */,
 				6CF5C2341C2595DB0086FCC6 /* 素材,素材中国,开源免费下载_中国素材网.lnk in Resources */,
 				6CF5C1681C2595C80086FCC6 /* 6.ico in Resources */,
@@ -1535,6 +1539,7 @@
 				6CF5C16C1C2595C80086FCC6 /* huiyi8素材网.txt in Resources */,
 				6CF5C15C1C2595C80086FCC6 /* 29.ico in Resources */,
 				6CF5C16D1C2595C80086FCC6 /* huiyi8素材网.url in Resources */,
+				6CF5C2A21C26AEAB0086FCC6 /* meng.png in Resources */,
 				6CF5C1E21C2595DB0086FCC6 /* 1 (7).png in Resources */,
 				6CF5C2101C2595DB0086FCC6 /* 29.ico in Resources */,
 				6CEE38A01C2191FE0077291F /* SCNavTabBar.bundle in Resources */,
@@ -1570,8 +1575,6 @@
 				6CF5C14A1C2595C80086FCC6 /* 12.ico in Resources */,
 				6CF5C2121C2595DB0086FCC6 /* 3.ico in Resources */,
 				6CF5C2301C2595DB0086FCC6 /* 9.png in Resources */,
-				6CF5C1191C2595400086FCC6 /* 2677.png in Resources */,
-				6C9FB9BF1C185BE700725C02 /* express.png in Resources */,
 				6CF5C1501C2595C80086FCC6 /* 18.ico in Resources */,
 				6CF5C2231C2595DB0086FCC6 /* 40.ico in Resources */,
 				6CF5C22E1C2595DB0086FCC6 /* 8.png in Resources */,
@@ -1581,6 +1584,7 @@
 				6CF5C2251C2595DB0086FCC6 /* 42.ico in Resources */,
 				6CF5C1E31C2595DB0086FCC6 /* 1 (8).png in Resources */,
 				6CF5C1D61C2595DB0086FCC6 /* 1 (10).png in Resources */,
+				6CF5C29A1C26AB9E0086FCC6 /* dimentioncode.png in Resources */,
 				6C9FB9CC1C185C2700725C02 /* Localizable.strings in Resources */,
 				6C73E4531C238E5600B674E9 /* CSLDrugDetailController.xib in Resources */,
 				6CF5C1FF1C2595DB0086FCC6 /* 21.ico in Resources */,
@@ -1592,11 +1596,11 @@
 				6CF5C21A1C2595DB0086FCC6 /* 33.ico in Resources */,
 				6CF5C2181C2595DB0086FCC6 /* 32.ico in Resources */,
 				6CF5C1E41C2595DB0086FCC6 /* 1 (9).png in Resources */,
-				6C9FB9BC1C185BE700725C02 /* chatroom@2x.png in Resources */,
 				6CF5C1E91C2595DB0086FCC6 /* 11.ico in Resources */,
 				6CF5C1EA1C2595DB0086FCC6 /* 11.png in Resources */,
 				6CB9EC341C202CF8006C64F0 /* MJRefresh.bundle in Resources */,
 				6CF5C1E61C2595DB0086FCC6 /* 1.png in Resources */,
+				6CF5C2A01C26AE2F0086FCC6 /* zhengjiang.png in Resources */,
 				6CF5C1581C2595C80086FCC6 /* 25.ico in Resources */,
 				6CB503C91C185ACE0026891F /* Main.storyboard in Resources */,
 				6CF5C1ED1C2595DB0086FCC6 /* 13.ico in Resources */,
