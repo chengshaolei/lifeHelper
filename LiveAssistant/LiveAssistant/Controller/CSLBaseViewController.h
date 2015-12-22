@@ -30,6 +30,10 @@ typedef enum{NormalRequest,JHRequest} RequestType;
 //一般数据请求，子类实现
 -(void) request:(NSString*)method url:(NSString*)urlString para:(NSDictionary*)dict;
 
+//百度apistore的header请求
+-(void)request: (NSString*)urlStr;
+
+
 //聚合数据请求
 -(void) JHRequestWithAPPid:(NSString*)appid method:(NSString*)method url:(NSString*)urlString paras:(NSDictionary*)dict;
 

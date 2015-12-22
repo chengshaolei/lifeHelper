@@ -78,6 +78,30 @@
     }
 }
 
+-(void)request: (NSString*)urlStr  {
+    
+    NSURL *url = [NSURL URLWithString: urlStr];
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc]initWithURL: url cachePolicy: NSURLRequestUseProtocolCachePolicy timeoutInterval: 10];
+    [request setHTTPMethod: @"GET"];
+    
+    //设置header
+    [request addValue: kBadiDu_wheather_Apikey forHTTPHeaderField: @"apikey"];
+    
+    //请求
+    [NSURLConnection sendAsynchronousRequest: request
+                                       queue: [NSOperationQueue mainQueue]
+                           completionHandler: ^(NSURLResponse *response, NSData *data, NSError *error){
+                               if (error) {
+                                   NSLog(@"Httperror: %@%ld", error.localizedDescription, error.code);
+                               } else {
+                                   NSInteger responseCode = [(NSHTTPURLResponse *)response statusCode];
+                                   NSString *responseString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+                                   NSLog(@"HttpResponseCode:%ld", responseCode);
+                                   NSLog(@"HttpResponseBody %@",responseString);
+                                   [self parserData:data];
+                               }
+                           }];
+}
 
 //聚合数据请求
 -(void) JHRequestWithAPPid:(NSString*)appid method:(NSString*)method url:(NSString*)urlString paras:(NSDictionary*)dict{

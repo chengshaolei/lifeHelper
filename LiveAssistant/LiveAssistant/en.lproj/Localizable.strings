@@ -54,3 +54,6 @@
 "uk-phonetic" = "uk-phonetic";
 "us-phonetic" = "us-phonetic";
 "youdao" = "youdao";
+
+//天气预报
+"currentWheather" = "currentWheather";

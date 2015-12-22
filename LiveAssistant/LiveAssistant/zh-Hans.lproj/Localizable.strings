@@ -53,3 +53,6 @@
 "uk-phonetic" = "英音";
 "us-phonetic" = "美音";
 "youdao" = "有道翻译";
+
+//天气预报
+"currentWheather" = "天气预报";

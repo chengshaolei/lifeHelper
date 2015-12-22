@@ -106,7 +106,9 @@
 //type	    string	是	运势类型：today,tomorrow,week,nextweek,month,year
 #define JH_Constellation_URL  @"http://web.juhe.cn:8080/constellation/getAll"
 
-//
-
+//百度天气
+//apikey：1a0c5e03e17b9b8f0a87f53402616f73
+#define kBadiDu_wheather_Apikey  @"1a0c5e03e17b9b8f0a87f53402616f73"
+#define kBaiDu_Wheather_Url @"http://apis.baidu.com/apistore/weatherservice/recentweathers?cityname=%@&cityid=%@"
 
 #endif /* QFConstant_h */

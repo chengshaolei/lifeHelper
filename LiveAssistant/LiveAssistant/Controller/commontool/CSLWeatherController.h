@@ -9,5 +9,5 @@
 #import "CSLBaseViewController.h"
 
 @interface CSLWeatherController : CSLBaseViewController
-
+@property (nonatomic,copy) NSString * currentCityName;//当前城市名
 @end
