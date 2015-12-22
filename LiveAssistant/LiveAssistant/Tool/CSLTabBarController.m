@@ -7,6 +7,7 @@
 //
 
 #import "CSLTabBarController.h"
+#import "CSLSettomgController.h"
 @interface CSLTabBarController()
 @end
 

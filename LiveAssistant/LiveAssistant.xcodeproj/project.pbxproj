@@ -7,6 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C49DE5B1C28F30D0086B04E /* tabbar_setting.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C49DE5A1C28F30D0086B04E /* tabbar_setting.png */; };
+		6C49DE5F1C28F37B0086B04E /* CSLSettomgController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C49DE5E1C28F37B0086B04E /* CSLSettomgController.m */; };
+		6C49DE631C291CDF0086B04E /* CSLWeatherController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C49DE611C291CDF0086B04E /* CSLWeatherController.m */; };
+		6C49DE641C291CDF0086B04E /* CSLWeatherController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C49DE621C291CDF0086B04E /* CSLWeatherController.xib */; };
+		6C49DE801C2953FD0086B04E /* 3bgWidget.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C49DE661C2953FD0086B04E /* 3bgWidget.png */; };
+		6C49DE811C2953FD0086B04E /* 3bgWidget@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C49DE671C2953FD0086B04E /* 3bgWidget@2x.png */; };
+		6C49DE821C2953FD0086B04E /* 3bgWidgetClock.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C49DE681C2953FD0086B04E /* 3bgWidgetClock.png */; };
+		6C49DE831C2953FD0086B04E /* 3bgWidgetClock@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C49DE691C2953FD0086B04E /* 3bgWidgetClock@2x.png */; };
+		6C49DE841C2953FD0086B04E /* 30.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C49DE6B1C2953FD0086B04E /* 30.png */; };
+		6C49DE851C2953FD0086B04E /* 30@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C49DE6C1C2953FD0086B04E /* 30@2x.png */; };
+		6C49DE861C2953FD0086B04E /* 31.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C49DE6D1C2953FD0086B04E /* 31.png */; };
+		6C49DE871C2953FD0086B04E /* 31@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C49DE6E1C2953FD0086B04E /* 31@2x.png */; };
+		6C49DE881C2953FD0086B04E /* 32.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C49DE6F1C2953FD0086B04E /* 32.png */; };
+		6C49DE891C2953FD0086B04E /* 32@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C49DE701C2953FD0086B04E /* 32@2x.png */; };
+		6C49DE8A1C2953FD0086B04E /* 33.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C49DE711C2953FD0086B04E /* 33.png */; };
+		6C49DE8B1C2953FD0086B04E /* 33@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C49DE721C2953FD0086B04E /* 33@2x.png */; };
+		6C49DE8C1C2953FD0086B04E /* 34.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C49DE731C2953FD0086B04E /* 34.png */; };
+		6C49DE8D1C2953FD0086B04E /* 34@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C49DE741C2953FD0086B04E /* 34@2x.png */; };
+		6C49DE8E1C2953FD0086B04E /* 35.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C49DE751C2953FD0086B04E /* 35.png */; };
+		6C49DE8F1C2953FD0086B04E /* 35@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C49DE761C2953FD0086B04E /* 35@2x.png */; };
+		6C49DE901C2953FD0086B04E /* 36.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C49DE771C2953FD0086B04E /* 36.png */; };
+		6C49DE911C2953FD0086B04E /* 36@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C49DE781C2953FD0086B04E /* 36@2x.png */; };
+		6C49DE921C2953FD0086B04E /* 37.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C49DE791C2953FD0086B04E /* 37.png */; };
+		6C49DE931C2953FD0086B04E /* 37@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C49DE7A1C2953FD0086B04E /* 37@2x.png */; };
+		6C49DE941C2953FD0086B04E /* 38.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C49DE7B1C2953FD0086B04E /* 38.png */; };
+		6C49DE951C2953FD0086B04E /* 38@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C49DE7C1C2953FD0086B04E /* 38@2x.png */; };
+		6C49DE961C2953FD0086B04E /* 39.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C49DE7D1C2953FD0086B04E /* 39.png */; };
+		6C49DE971C2953FD0086B04E /* 39@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C49DE7E1C2953FD0086B04E /* 39@2x.png */; };
+		6C49DE981C2953FD0086B04E /* screenShot3.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C49DE7F1C2953FD0086B04E /* screenShot3.png */; };
 		6C6D47CD1C18617900B80FB6 /* CSLScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C6D47CC1C18617900B80FB6 /* CSLScanViewController.m */; };
 		6C6D47D01C18833600B80FB6 /* Auxiliary.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C6D47CF1C18833600B80FB6 /* Auxiliary.m */; };
 		6C73E4531C238E5600B674E9 /* CSLDrugDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C73E4511C238E5600B674E9 /* CSLDrugDetailController.xib */; };
@@ -272,6 +301,37 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6C49DE5A1C28F30D0086B04E /* tabbar_setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tabbar_setting.png; path = LiveAssistant/Resource/tabbar_setting.png; sourceTree = SOURCE_ROOT; };
+		6C49DE5D1C28F37B0086B04E /* CSLSettomgController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSLSettomgController.h; path = setting/CSLSettomgController.h; sourceTree = "<group>"; };
+		6C49DE5E1C28F37B0086B04E /* CSLSettomgController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSLSettomgController.m; path = setting/CSLSettomgController.m; sourceTree = "<group>"; };
+		6C49DE601C291CDE0086B04E /* CSLWeatherController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSLWeatherController.h; sourceTree = "<group>"; };
+		6C49DE611C291CDF0086B04E /* CSLWeatherController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSLWeatherController.m; sourceTree = "<group>"; };
+		6C49DE621C291CDF0086B04E /* CSLWeatherController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSLWeatherController.xib; sourceTree = "<group>"; };
+		6C49DE661C2953FD0086B04E /* 3bgWidget.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3bgWidget.png; sourceTree = "<group>"; };
+		6C49DE671C2953FD0086B04E /* 3bgWidget@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "3bgWidget@2x.png"; sourceTree = "<group>"; };
+		6C49DE681C2953FD0086B04E /* 3bgWidgetClock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3bgWidgetClock.png; sourceTree = "<group>"; };
+		6C49DE691C2953FD0086B04E /* 3bgWidgetClock@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "3bgWidgetClock@2x.png"; sourceTree = "<group>"; };
+		6C49DE6B1C2953FD0086B04E /* 30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 30.png; sourceTree = "<group>"; };
+		6C49DE6C1C2953FD0086B04E /* 30@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "30@2x.png"; sourceTree = "<group>"; };
+		6C49DE6D1C2953FD0086B04E /* 31.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 31.png; sourceTree = "<group>"; };
+		6C49DE6E1C2953FD0086B04E /* 31@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "31@2x.png"; sourceTree = "<group>"; };
+		6C49DE6F1C2953FD0086B04E /* 32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 32.png; sourceTree = "<group>"; };
+		6C49DE701C2953FD0086B04E /* 32@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "32@2x.png"; sourceTree = "<group>"; };
+		6C49DE711C2953FD0086B04E /* 33.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 33.png; sourceTree = "<group>"; };
+		6C49DE721C2953FD0086B04E /* 33@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "33@2x.png"; sourceTree = "<group>"; };
+		6C49DE731C2953FD0086B04E /* 34.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 34.png; sourceTree = "<group>"; };
+		6C49DE741C2953FD0086B04E /* 34@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "34@2x.png"; sourceTree = "<group>"; };
+		6C49DE751C2953FD0086B04E /* 35.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 35.png; sourceTree = "<group>"; };
+		6C49DE761C2953FD0086B04E /* 35@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "35@2x.png"; sourceTree = "<group>"; };
+		6C49DE771C2953FD0086B04E /* 36.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 36.png; sourceTree = "<group>"; };
+		6C49DE781C2953FD0086B04E /* 36@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "36@2x.png"; sourceTree = "<group>"; };
+		6C49DE791C2953FD0086B04E /* 37.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 37.png; sourceTree = "<group>"; };
+		6C49DE7A1C2953FD0086B04E /* 37@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "37@2x.png"; sourceTree = "<group>"; };
+		6C49DE7B1C2953FD0086B04E /* 38.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 38.png; sourceTree = "<group>"; };
+		6C49DE7C1C2953FD0086B04E /* 38@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "38@2x.png"; sourceTree = "<group>"; };
+		6C49DE7D1C2953FD0086B04E /* 39.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 39.png; sourceTree = "<group>"; };
+		6C49DE7E1C2953FD0086B04E /* 39@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "39@2x.png"; sourceTree = "<group>"; };
+		6C49DE7F1C2953FD0086B04E /* screenShot3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenShot3.png; sourceTree = "<group>"; };
 		6C6D47CB1C18617900B80FB6 /* CSLScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSLScanViewController.h; sourceTree = "<group>"; };
 		6C6D47CC1C18617900B80FB6 /* CSLScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSLScanViewController.m; sourceTree = "<group>"; };
 		6C6D47CE1C18833600B80FB6 /* Auxiliary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Auxiliary.h; sourceTree = "<group>"; };
@@ -647,6 +707,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C49DE5C1C28F3390086B04E /* setting */ = {
+			isa = PBXGroup;
+			children = (
+				6C49DE5D1C28F37B0086B04E /* CSLSettomgController.h */,
+				6C49DE5E1C28F37B0086B04E /* CSLSettomgController.m */,
+			);
+			name = setting;
+			sourceTree = "<group>";
+		};
+		6C49DE651C2953FD0086B04E /* skin03 */ = {
+			isa = PBXGroup;
+			children = (
+				6C49DE661C2953FD0086B04E /* 3bgWidget.png */,
+				6C49DE671C2953FD0086B04E /* 3bgWidget@2x.png */,
+				6C49DE681C2953FD0086B04E /* 3bgWidgetClock.png */,
+				6C49DE691C2953FD0086B04E /* 3bgWidgetClock@2x.png */,
+				6C49DE6A1C2953FD0086B04E /* digits */,
+				6C49DE7F1C2953FD0086B04E /* screenShot3.png */,
+			);
+			name = skin03;
+			path = skin/skin03;
+			sourceTree = "<group>";
+		};
+		6C49DE6A1C2953FD0086B04E /* digits */ = {
+			isa = PBXGroup;
+			children = (
+				6C49DE6B1C2953FD0086B04E /* 30.png */,
+				6C49DE6C1C2953FD0086B04E /* 30@2x.png */,
+				6C49DE6D1C2953FD0086B04E /* 31.png */,
+				6C49DE6E1C2953FD0086B04E /* 31@2x.png */,
+				6C49DE6F1C2953FD0086B04E /* 32.png */,
+				6C49DE701C2953FD0086B04E /* 32@2x.png */,
+				6C49DE711C2953FD0086B04E /* 33.png */,
+				6C49DE721C2953FD0086B04E /* 33@2x.png */,
+				6C49DE731C2953FD0086B04E /* 34.png */,
+				6C49DE741C2953FD0086B04E /* 34@2x.png */,
+				6C49DE751C2953FD0086B04E /* 35.png */,
+				6C49DE761C2953FD0086B04E /* 35@2x.png */,
+				6C49DE771C2953FD0086B04E /* 36.png */,
+				6C49DE781C2953FD0086B04E /* 36@2x.png */,
+				6C49DE791C2953FD0086B04E /* 37.png */,
+				6C49DE7A1C2953FD0086B04E /* 37@2x.png */,
+				6C49DE7B1C2953FD0086B04E /* 38.png */,
+				6C49DE7C1C2953FD0086B04E /* 38@2x.png */,
+				6C49DE7D1C2953FD0086B04E /* 39.png */,
+				6C49DE7E1C2953FD0086B04E /* 39@2x.png */,
+			);
+			path = digits;
+			sourceTree = "<group>";
+		};
 		6C6D47CA1C18613C00B80FB6 /* 3rd */ = {
 			isa = PBXGroup;
 			children = (
@@ -664,6 +774,7 @@
 		6C9FB98E1C185BE600725C02 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				6C49DE5C1C28F3390086B04E /* setting */,
 				6C9FB98F1C185BE600725C02 /* chatroom */,
 				6C9FB9931C185BE600725C02 /* commontool */,
 				6C9FB9971C185BE600725C02 /* CSLBaseViewController.h */,
@@ -707,6 +818,9 @@
 				6CF5C23A1C262A950086FCC6 /* CSLTranslationController.h */,
 				6CF5C23B1C262A950086FCC6 /* CSLTranslationController.m */,
 				6CF5C23D1C262DB70086FCC6 /* CSLTranslationController.xib */,
+				6C49DE601C291CDE0086B04E /* CSLWeatherController.h */,
+				6C49DE611C291CDF0086B04E /* CSLWeatherController.m */,
+				6C49DE621C291CDF0086B04E /* CSLWeatherController.xib */,
 			);
 			path = commontool;
 			sourceTree = "<group>";
@@ -727,6 +841,7 @@
 		6C9FB99D1C185BE600725C02 /* resourcelib */ = {
 			isa = PBXGroup;
 			children = (
+				6C49DE651C2953FD0086B04E /* skin03 */,
 				6CF5C16E1C2595DB0086FCC6 /* Aiimg_com_57851_Yuanxing */,
 				6CF5C11C1C2595C80086FCC6 /* 2014022014 */,
 				6CF5C11A1C2595A80086FCC6 /* QQ图片20151219201420.jpg */,
@@ -742,6 +857,7 @@
 		6C9FB99E1C185BE600725C02 /* tabbar */ = {
 			isa = PBXGroup;
 			children = (
+				6C49DE5A1C28F30D0086B04E /* tabbar_setting.png */,
 				6CF5C2891C2694F00086FCC6 /* jiankang.png */,
 				6CF5C28F1C26976D0086FCC6 /* tabBar_chat@3x.png */,
 				6CF5C28D1C2696E30086FCC6 /* tabBar_heal@3x.png */,
@@ -1428,13 +1544,16 @@
 			files = (
 				6CF5C2131C2595DB0086FCC6 /* 3.png in Resources */,
 				6CF5C20C1C2595DB0086FCC6 /* 27.ico in Resources */,
+				6C49DE921C2953FD0086B04E /* 37.png in Resources */,
 				6CF5C2071C2595DB0086FCC6 /* 25.ico in Resources */,
 				6CF5C1461C2595C80086FCC6 /* 0.ico in Resources */,
 				6CF5C15D1C2595C80086FCC6 /* 3.ico in Resources */,
+				6C49DE8C1C2953FD0086B04E /* 34.png in Resources */,
 				6CF5C2001C2595DB0086FCC6 /* 21.png in Resources */,
 				6CF5C1491C2595C80086FCC6 /* 11.ico in Resources */,
 				6CF5C2981C26AB6B0086FCC6 /* dictionary.png in Resources */,
 				6CF5C1561C2595C80086FCC6 /* 23.ico in Resources */,
+				6C49DE901C2953FD0086B04E /* 36.png in Resources */,
 				6CF5C2331C2595DB0086FCC6 /* 爱图网.txt in Resources */,
 				6CFD58A81C21A616000B262D /* CSLDrugListViewController.xib in Resources */,
 				6CF5C2141C2595DB0086FCC6 /* 30.ico in Resources */,
@@ -1473,18 +1592,26 @@
 				6CF5C2171C2595DB0086FCC6 /* 31.png in Resources */,
 				6CF5C1D71C2595DB0086FCC6 /* 1 (11).png in Resources */,
 				6CF5C1E11C2595DB0086FCC6 /* 1 (6).png in Resources */,
+				6C49DE811C2953FD0086B04E /* 3bgWidget@2x.png in Resources */,
 				6CF5C2191C2595DB0086FCC6 /* 32.png in Resources */,
 				6CF5C22D1C2595DB0086FCC6 /* 8.ico in Resources */,
 				6CF5C20A1C2595DB0086FCC6 /* 26.png in Resources */,
 				6CF5C21F1C2595DB0086FCC6 /* 38.ico in Resources */,
+				6C49DE5B1C28F30D0086B04E /* tabbar_setting.png in Resources */,
+				6C49DE861C2953FD0086B04E /* 31.png in Resources */,
 				6CF5C14C1C2595C80086FCC6 /* 14.ico in Resources */,
 				6CF5C11B1C2595A80086FCC6 /* QQ图片20151219201420.jpg in Resources */,
+				6C49DE881C2953FD0086B04E /* 32.png in Resources */,
 				6CF5C20D1C2595DB0086FCC6 /* 27.png in Resources */,
 				6CF5C1551C2595C80086FCC6 /* 22.ico in Resources */,
 				6CF5C1631C2595C80086FCC6 /* 35.ico in Resources */,
 				6CF5C1FD1C2595DB0086FCC6 /* 20.ico in Resources */,
+				6C49DE8F1C2953FD0086B04E /* 35@2x.png in Resources */,
 				6CF5C1D41C2595DB0086FCC6 /* 0.png in Resources */,
+				6C49DE841C2953FD0086B04E /* 30.png in Resources */,
+				6C49DE951C2953FD0086B04E /* 38@2x.png in Resources */,
 				6CF5C1651C2595C80086FCC6 /* 37.ico in Resources */,
+				6C49DE8E1C2953FD0086B04E /* 35.png in Resources */,
 				6CF5C1DB1C2595DB0086FCC6 /* 1 (15).png in Resources */,
 				6CF5C2041C2595DB0086FCC6 /* 23.png in Resources */,
 				6CF5C2011C2595DB0086FCC6 /* 22.ico in Resources */,
@@ -1494,10 +1621,14 @@
 				6CF5C2351C2595DB0086FCC6 /* 素材中国网说明.txt in Resources */,
 				6CF5C21D1C2595DB0086FCC6 /* 36.ico in Resources */,
 				6CF5C2031C2595DB0086FCC6 /* 23.ico in Resources */,
+				6C49DE831C2953FD0086B04E /* 3bgWidgetClock@2x.png in Resources */,
 				6CF5C14B1C2595C80086FCC6 /* 13.ico in Resources */,
+				6C49DE931C2953FD0086B04E /* 37@2x.png in Resources */,
+				6C49DE891C2953FD0086B04E /* 32@2x.png in Resources */,
 				6CF5C1E01C2595DB0086FCC6 /* 1 (5).png in Resources */,
 				6CF5C14F1C2595C80086FCC6 /* 17.ico in Resources */,
 				6CF5C1F21C2595DB0086FCC6 /* 15.png in Resources */,
+				6C49DE971C2953FD0086B04E /* 39@2x.png in Resources */,
 				6CF5C1E71C2595DB0086FCC6 /* 10.ico in Resources */,
 				6CF5C1611C2595C80086FCC6 /* 33.ico in Resources */,
 				6CF5C15B1C2595C80086FCC6 /* 28.ico in Resources */,
@@ -1508,7 +1639,9 @@
 				6CF5C2361C2595DB0086FCC6 /* 访问爱图网.url in Resources */,
 				6CF5C2941C26A9BD0086FCC6 /* tianqi.png in Resources */,
 				6CF5C1DF1C2595DB0086FCC6 /* 1 (4).png in Resources */,
+				6C49DE941C2953FD0086B04E /* 38.png in Resources */,
 				6CF5C1EE1C2595DB0086FCC6 /* 13.png in Resources */,
+				6C49DE961C2953FD0086B04E /* 39.png in Resources */,
 				6CF5C1671C2595C80086FCC6 /* 5.ico in Resources */,
 				6CF5C1FA1C2595DB0086FCC6 /* 19.png in Resources */,
 				6CF5C1DC1C2595DB0086FCC6 /* 1 (16).png in Resources */,
@@ -1516,8 +1649,10 @@
 				6CF5C1FC1C2595DB0086FCC6 /* 2.png in Resources */,
 				6CF5C2311C2595DB0086FCC6 /* huiyi8素材网.txt in Resources */,
 				6CF5C1F31C2595DB0086FCC6 /* 16.ico in Resources */,
+				6C49DE911C2953FD0086B04E /* 36@2x.png in Resources */,
 				6CF5C29E1C26AD8B0086FCC6 /* youdao'.png in Resources */,
 				6CF5C2291C2595DB0086FCC6 /* 6.ico in Resources */,
+				6C49DE801C2953FD0086B04E /* 3bgWidget.png in Resources */,
 				6CB503CE1C185ACE0026891F /* LaunchScreen.storyboard in Resources */,
 				6C93F0CC1C19246B007BA2B0 /* CSLExpressViewController.xib in Resources */,
 				6CFD58B61C21AD26000B262D /* CSLDrugTypeLeftController.xib in Resources */,
@@ -1528,22 +1663,27 @@
 				6CF5C1F41C2595DB0086FCC6 /* 16.png in Resources */,
 				6CFD58BE1C21AFF5000B262D /* CSLDrugTypeDetailViewController.xib in Resources */,
 				6CF5C2341C2595DB0086FCC6 /* 素材,素材中国,开源免费下载_中国素材网.lnk in Resources */,
+				6C49DE641C291CDF0086B04E /* CSLWeatherController.xib in Resources */,
 				6CF5C1681C2595C80086FCC6 /* 6.ico in Resources */,
 				6CF5C21C1C2595DB0086FCC6 /* 35.ico in Resources */,
 				6CF5C2241C2595DB0086FCC6 /* 41.ico in Resources */,
+				6C49DE821C2953FD0086B04E /* 3bgWidgetClock.png in Resources */,
 				6CF5C21B1C2595DB0086FCC6 /* 34.ico in Resources */,
 				6CF5C1D31C2595DB0086FCC6 /* 0.ico in Resources */,
 				6CF5C2081C2595DB0086FCC6 /* 25.png in Resources */,
 				6CA8F65E1C21417100FC1BA9 /* location.png in Resources */,
 				6CF5C15A1C2595C80086FCC6 /* 27.ico in Resources */,
+				6C49DE871C2953FD0086B04E /* 31@2x.png in Resources */,
 				6CF5C16C1C2595C80086FCC6 /* huiyi8素材网.txt in Resources */,
 				6CF5C15C1C2595C80086FCC6 /* 29.ico in Resources */,
 				6CF5C16D1C2595C80086FCC6 /* huiyi8素材网.url in Resources */,
 				6CF5C2A21C26AEAB0086FCC6 /* meng.png in Resources */,
 				6CF5C1E21C2595DB0086FCC6 /* 1 (7).png in Resources */,
+				6C49DE981C2953FD0086B04E /* screenShot3.png in Resources */,
 				6CF5C2101C2595DB0086FCC6 /* 29.ico in Resources */,
 				6CEE38A01C2191FE0077291F /* SCNavTabBar.bundle in Resources */,
 				6CF5C2111C2595DB0086FCC6 /* 29.png in Resources */,
+				6C49DE851C2953FD0086B04E /* 30@2x.png in Resources */,
 				6CF5C16B1C2595C80086FCC6 /* 9.ico in Resources */,
 				6CF5C1EF1C2595DB0086FCC6 /* 14.ico in Resources */,
 				6CF5C1F11C2595DB0086FCC6 /* 15.ico in Resources */,
@@ -1554,6 +1694,7 @@
 				6CF5C2021C2595DB0086FCC6 /* 22.png in Resources */,
 				6CF5C1691C2595C80086FCC6 /* 7.ico in Resources */,
 				6CF5C1D81C2595DB0086FCC6 /* 1 (12).png in Resources */,
+				6C49DE8B1C2953FD0086B04E /* 33@2x.png in Resources */,
 				6CF5C2321C2595DB0086FCC6 /* huiyi8素材网.url in Resources */,
 				6CF5C1EB1C2595DB0086FCC6 /* 12.ico in Resources */,
 				6CF5C1EC1C2595DB0086FCC6 /* 12.png in Resources */,
@@ -1573,7 +1714,9 @@
 				6CB9EBF81C200E58006C64F0 /* CSLShopListCell.xib in Resources */,
 				6CF5C2281C2595DB0086FCC6 /* 5.png in Resources */,
 				6CF5C14A1C2595C80086FCC6 /* 12.ico in Resources */,
+				6C49DE8A1C2953FD0086B04E /* 33.png in Resources */,
 				6CF5C2121C2595DB0086FCC6 /* 3.ico in Resources */,
+				6C49DE8D1C2953FD0086B04E /* 34@2x.png in Resources */,
 				6CF5C2301C2595DB0086FCC6 /* 9.png in Resources */,
 				6CF5C1501C2595C80086FCC6 /* 18.ico in Resources */,
 				6CF5C2231C2595DB0086FCC6 /* 40.ico in Resources */,
@@ -1694,6 +1837,7 @@
 				6CB9EC2D1C202CF8006C64F0 /* MJRefreshAutoStateFooter.m in Sources */,
 				6CB9EBC91C1FEDDF006C64F0 /* JSONModelError.m in Sources */,
 				6C9FB9B51C185BE700725C02 /* CSLChatroomViewController.m in Sources */,
+				6C49DE5F1C28F37B0086B04E /* CSLSettomgController.m in Sources */,
 				6C9FB9D11C185C4D00725C02 /* AppDelegate.mm in Sources */,
 				6CB9EC291C202CF8006C64F0 /* MJRefreshFooter.m in Sources */,
 				6CFD58B31C21AA45000B262D /* CSLDrugTypeLeftController.m in Sources */,
@@ -1732,6 +1876,7 @@
 				6CEE38A61C21924D0077291F /* CSLHealthMainController.m in Sources */,
 				6CFD58A71C21A616000B262D /* CSLDrugListViewController.m in Sources */,
 				6CB9EBC71C1FEDDF006C64F0 /* JSONModelArray.m in Sources */,
+				6C49DE631C291CDF0086B04E /* CSLWeatherController.m in Sources */,
 				6CA8F6611C21691A00FC1BA9 /* CSLFlashlightViewController.m in Sources */,
 				6CB9EC301C202CF8006C64F0 /* MJRefreshBackStateFooter.m in Sources */,
 				6C6D47D01C18833600B80FB6 /* Auxiliary.m in Sources */,

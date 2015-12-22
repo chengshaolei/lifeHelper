@@ -8,6 +8,7 @@
 "tabbar_tool" = "工具";
 "tabbar_chatroom" = "聊天";
 "tabbar_health" = "健康";
+"tabbar_setting" = "我的";
 
 //手电筒
 "flashlight" = "手电筒";
