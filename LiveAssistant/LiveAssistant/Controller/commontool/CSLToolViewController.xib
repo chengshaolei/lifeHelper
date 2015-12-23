@@ -15,14 +15,14 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="8AB-5h-nBt">
-                    <rect key="frame" x="-12" y="0.0" width="422" height="775"/>
+                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8AB-5h-nBt">
+                    <rect key="frame" x="-12" y="0.0" width="1553" height="187"/>
                     <subviews>
-                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4f8-Zz-HGP">
-                            <rect key="frame" x="20" y="20" width="382" height="60"/>
+                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4f8-Zz-HGP">
+                            <rect key="frame" x="0.0" y="19" width="259" height="150"/>
                             <subviews>
-                                <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ght-w6-6aL">
-                                    <rect key="frame" x="292" y="20" width="55" height="55"/>
+                                <button opaque="NO" tag="10" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ght-w6-6aL">
+                                    <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="55" id="R7T-8F-CpL"/>
                                         <constraint firstAttribute="height" constant="55" id="ZwN-eP-4VE"/>
@@ -44,8 +44,8 @@
                                         <action selector="scanCode:" destination="-1" eventType="touchUpInside" id="jOg-gV-EpG"/>
                                     </connections>
                                 </button>
-                                <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dht-Am-1wz">
-                                    <rect key="frame" x="20" y="20" width="59" height="55"/>
+                                <button opaque="NO" tag="11" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dht-Am-1wz">
+                                    <rect key="frame" x="150" y="45" width="59" height="60"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="55" id="Wpa-h2-eyh"/>
                                         <constraint firstAttribute="height" constant="55" id="zUj-Ze-DQf"/>
@@ -67,8 +67,8 @@
                                         <action selector="express:" destination="-1" eventType="touchUpInside" id="3e5-l4-lVg"/>
                                     </connections>
                                 </button>
-                                <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="euL-UI-OTK">
-                                    <rect key="frame" x="167" y="20" width="50" height="49"/>
+                                <button opaque="NO" tag="12" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="euL-UI-OTK">
+                                    <rect key="frame" x="209" y="50" width="50" height="50"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="55" id="9bx-QE-gKq"/>
                                         <constraint firstAttribute="width" constant="55" id="CLh-X2-paH"/>
@@ -92,24 +92,24 @@
                                 </button>
                             </subviews>
                             <constraints>
-                                <constraint firstAttribute="height" constant="55" id="JNQ-GV-xGT"/>
+                                <constraint firstAttribute="height" constant="55" id="Rp4-S6-BkB"/>
                             </constraints>
                             <variation key="default">
                                 <mask key="constraints">
-                                    <exclude reference="JNQ-GV-xGT"/>
+                                    <exclude reference="Rp4-S6-BkB"/>
                                 </mask>
                             </variation>
                             <variation key="heightClass=regular-widthClass=compact">
                                 <mask key="constraints">
-                                    <include reference="JNQ-GV-xGT"/>
+                                    <include reference="Rp4-S6-BkB"/>
                                 </mask>
                             </variation>
                         </stackView>
-                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="eOY-df-QJ8">
-                            <rect key="frame" x="22" y="370" width="380" height="60"/>
+                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="eOY-df-QJ8">
+                            <rect key="frame" x="339" y="0.0" width="594" height="187"/>
                             <subviews>
-                                <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b0G-Qr-hlz">
-                                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <button opaque="NO" tag="13" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b0G-Qr-hlz">
+                                    <rect key="frame" x="0.0" y="3" width="180" height="182"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="55" id="pFL-Q5-BaK"/>
                                         <constraint firstAttribute="height" constant="55" id="vvF-F0-khc"/>
@@ -134,8 +134,8 @@
                                         <action selector="chineseExplain:" destination="-1" eventType="touchUpInside" id="ND4-ib-WZe"/>
                                     </connections>
                                 </button>
-                                <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvO-CL-cSC">
-                                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <button opaque="NO" tag="14" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvO-CL-cSC">
+                                    <rect key="frame" x="180" y="3" width="234" height="182"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="55" id="6Uh-hf-tbx"/>
                                         <constraint firstAttribute="height" constant="55" id="MCy-BZ-e0t"/>
@@ -160,8 +160,8 @@
                                         <action selector="termExplain:" destination="-1" eventType="touchUpInside" id="MLN-gg-VGr"/>
                                     </connections>
                                 </button>
-                                <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7fM-Bq-Tmr">
-                                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <button opaque="NO" tag="15" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7fM-Bq-Tmr">
+                                    <rect key="frame" x="414" y="0.0" width="180" height="187"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="55" id="CcR-6U-EaA"/>
                                         <constraint firstAttribute="width" constant="55" id="x6W-HF-qQ2"/>
@@ -188,24 +188,24 @@
                                 </button>
                             </subviews>
                             <constraints>
-                                <constraint firstAttribute="height" constant="55" id="gQX-Mt-qAv"/>
+                                <constraint firstAttribute="height" constant="55" id="vMK-4v-oyf"/>
                             </constraints>
                             <variation key="default">
                                 <mask key="constraints">
-                                    <exclude reference="gQX-Mt-qAv"/>
+                                    <exclude reference="vMK-4v-oyf"/>
                                 </mask>
                             </variation>
                             <variation key="heightClass=regular-widthClass=compact">
                                 <mask key="constraints">
-                                    <include reference="gQX-Mt-qAv"/>
+                                    <include reference="vMK-4v-oyf"/>
                                 </mask>
                             </variation>
                         </stackView>
-                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="SD2-2M-ejB">
-                            <rect key="frame" x="22" y="695" width="380" height="60"/>
+                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="SD2-2M-ejB">
+                            <rect key="frame" x="1013" y="1" width="540" height="185"/>
                             <subviews>
-                                <button opaque="NO" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rLJ-WR-P1u">
-                                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <button opaque="NO" tag="16" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rLJ-WR-P1u">
+                                    <rect key="frame" x="0.0" y="0.0" width="180" height="185"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="55" id="8cp-Xj-47h"/>
                                         <constraint firstAttribute="height" constant="55" id="KIb-D1-GBK"/>
@@ -220,16 +220,18 @@
                                     <variation key="widthClass=compact" fixedFrame="YES">
                                         <rect key="frame" x="39" y="286" width="46" height="30"/>
                                     </variation>
-                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                        <rect key="frame" x="0.0" y="0.0" width="55" height="55"/>
+                                    <variation key="heightClass=regular-widthClass=compact">
                                         <mask key="constraints">
                                             <include reference="8cp-Xj-47h"/>
                                             <include reference="KIb-D1-GBK"/>
                                         </mask>
                                     </variation>
+                                    <connections>
+                                        <action selector="wheather:" destination="-1" eventType="touchUpInside" id="Mvv-Cb-5EO"/>
+                                    </connections>
                                 </button>
-                                <button opaque="NO" tag="18" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CZe-06-wpQ">
-                                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <button opaque="NO" tag="18" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CZe-06-wpQ">
+                                    <rect key="frame" x="180" y="0.0" width="180" height="185"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="55" id="6cH-J7-ezH"/>
                                         <constraint firstAttribute="width" constant="55" id="KlD-GV-6Wy"/>
@@ -244,16 +246,15 @@
                                     <variation key="widthClass=compact" fixedFrame="YES">
                                         <rect key="frame" x="243" y="286" width="46" height="30"/>
                                     </variation>
-                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                        <rect key="frame" x="153" y="0.0" width="55" height="55"/>
+                                    <variation key="heightClass=regular-widthClass=compact">
                                         <mask key="constraints">
                                             <include reference="6cH-J7-ezH"/>
                                             <include reference="KlD-GV-6Wy"/>
                                         </mask>
                                     </variation>
                                 </button>
-                                <button opaque="NO" tag="17" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CjE-2B-kjR">
-                                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <button opaque="NO" tag="17" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CjE-2B-kjR">
+                                    <rect key="frame" x="360" y="0.0" width="180" height="185"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="55" id="bCJ-Ct-KCO"/>
                                         <constraint firstAttribute="height" constant="55" id="tXF-hJ-UK8"/>
@@ -268,8 +269,7 @@
                                     <variation key="widthClass=compact" fixedFrame="YES">
                                         <rect key="frame" x="150" y="285" width="46" height="30"/>
                                     </variation>
-                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                        <rect key="frame" x="305" y="0.0" width="55" height="55"/>
+                                    <variation key="heightClass=regular-widthClass=compact">
                                         <mask key="constraints">
                                             <include reference="bCJ-Ct-KCO"/>
                                             <include reference="tXF-hJ-UK8"/>
@@ -278,88 +278,76 @@
                                 </button>
                             </subviews>
                             <constraints>
-                                <constraint firstAttribute="height" constant="55" id="Bt8-9H-B8x"/>
-                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="55" id="zEi-ok-anS"/>
+                                <constraint firstAttribute="height" constant="55" id="5Hg-pp-bNL"/>
                             </constraints>
                             <variation key="default">
                                 <mask key="constraints">
-                                    <exclude reference="Bt8-9H-B8x"/>
-                                    <exclude reference="zEi-ok-anS"/>
+                                    <exclude reference="5Hg-pp-bNL"/>
                                 </mask>
                             </variation>
                             <variation key="heightClass=regular-widthClass=compact">
                                 <mask key="constraints">
-                                    <include reference="Bt8-9H-B8x"/>
-                                    <include reference="zEi-ok-anS"/>
+                                    <include reference="5Hg-pp-bNL"/>
                                 </mask>
                             </variation>
                         </stackView>
                     </subviews>
                     <constraints>
-                        <constraint firstAttribute="trailing" secondItem="4f8-Zz-HGP" secondAttribute="trailing" constant="10" id="1s2-XN-l0Z"/>
-                        <constraint firstItem="SD2-2M-ejB" firstAttribute="leading" secondItem="8AB-5h-nBt" secondAttribute="leading" constant="10" id="348-R1-cN1"/>
-                        <constraint firstItem="SD2-2M-ejB" firstAttribute="leading" secondItem="8AB-5h-nBt" secondAttribute="leading" constant="10" id="BJY-CE-0le"/>
-                        <constraint firstAttribute="trailing" secondItem="SD2-2M-ejB" secondAttribute="trailing" constant="107" id="LSy-yv-3B8"/>
-                        <constraint firstAttribute="trailing" secondItem="SD2-2M-ejB" secondAttribute="trailing" constant="10" id="MpM-Hg-Y9q"/>
-                        <constraint firstAttribute="trailing" secondItem="eOY-df-QJ8" secondAttribute="trailing" constant="10" id="UaQ-hO-pl0"/>
-                        <constraint firstItem="4f8-Zz-HGP" firstAttribute="top" secondItem="8AB-5h-nBt" secondAttribute="top" constant="10" id="cSl-ig-ZSh"/>
-                        <constraint firstAttribute="bottom" secondItem="SD2-2M-ejB" secondAttribute="bottom" constant="10" id="cdC-u4-lcm"/>
-                        <constraint firstItem="4f8-Zz-HGP" firstAttribute="leading" secondItem="8AB-5h-nBt" secondAttribute="leading" constant="10" id="eGK-XG-4sK"/>
-                        <constraint firstAttribute="bottom" secondItem="SD2-2M-ejB" secondAttribute="bottom" id="f8B-5w-m29"/>
-                        <constraint firstItem="eOY-df-QJ8" firstAttribute="leading" secondItem="8AB-5h-nBt" secondAttribute="leading" constant="10" id="gzr-bZ-bSD"/>
+                        <constraint firstItem="eOY-df-QJ8" firstAttribute="leading" secondItem="8AB-5h-nBt" secondAttribute="leading" constant="10" id="5rf-Ex-jj8"/>
+                        <constraint firstItem="SD2-2M-ejB" firstAttribute="leading" secondItem="8AB-5h-nBt" secondAttribute="leading" constant="10" id="8x7-VM-s2J"/>
+                        <constraint firstAttribute="trailing" secondItem="eOY-df-QJ8" secondAttribute="trailing" constant="10" id="A9s-qk-fwh"/>
+                        <constraint firstAttribute="trailing" secondItem="4f8-Zz-HGP" secondAttribute="trailing" constant="10" id="JP8-kF-5Xj"/>
+                        <constraint firstItem="4f8-Zz-HGP" firstAttribute="top" secondItem="8AB-5h-nBt" secondAttribute="top" constant="10" id="XdM-Ng-dRX"/>
+                        <constraint firstAttribute="trailing" secondItem="SD2-2M-ejB" secondAttribute="trailing" constant="10" id="dvK-P4-9vc"/>
+                        <constraint firstItem="4f8-Zz-HGP" firstAttribute="leading" secondItem="8AB-5h-nBt" secondAttribute="leading" constant="10" id="lwt-AH-OjP"/>
+                        <constraint firstAttribute="bottom" secondItem="SD2-2M-ejB" secondAttribute="bottom" constant="10" id="x0a-3C-jU7"/>
                     </constraints>
                     <variation key="default">
                         <mask key="constraints">
-                            <exclude reference="1s2-XN-l0Z"/>
-                            <exclude reference="cSl-ig-ZSh"/>
-                            <exclude reference="eGK-XG-4sK"/>
-                            <exclude reference="UaQ-hO-pl0"/>
-                            <exclude reference="gzr-bZ-bSD"/>
-                            <exclude reference="348-R1-cN1"/>
-                            <exclude reference="BJY-CE-0le"/>
-                            <exclude reference="LSy-yv-3B8"/>
-                            <exclude reference="MpM-Hg-Y9q"/>
-                            <exclude reference="cdC-u4-lcm"/>
-                            <exclude reference="f8B-5w-m29"/>
+                            <exclude reference="JP8-kF-5Xj"/>
+                            <exclude reference="XdM-Ng-dRX"/>
+                            <exclude reference="lwt-AH-OjP"/>
+                            <exclude reference="5rf-Ex-jj8"/>
+                            <exclude reference="A9s-qk-fwh"/>
+                            <exclude reference="8x7-VM-s2J"/>
+                            <exclude reference="dvK-P4-9vc"/>
+                            <exclude reference="x0a-3C-jU7"/>
                         </mask>
                     </variation>
                     <variation key="heightClass=regular-widthClass=compact" axis="vertical">
                         <mask key="constraints">
-                            <include reference="1s2-XN-l0Z"/>
-                            <exclude reference="cSl-ig-ZSh"/>
-                            <include reference="eGK-XG-4sK"/>
-                            <include reference="UaQ-hO-pl0"/>
-                            <include reference="gzr-bZ-bSD"/>
-                            <include reference="348-R1-cN1"/>
-                            <exclude reference="BJY-CE-0le"/>
-                            <exclude reference="LSy-yv-3B8"/>
-                            <include reference="MpM-Hg-Y9q"/>
-                            <exclude reference="cdC-u4-lcm"/>
-                            <include reference="f8B-5w-m29"/>
+                            <include reference="JP8-kF-5Xj"/>
+                            <exclude reference="XdM-Ng-dRX"/>
+                            <include reference="lwt-AH-OjP"/>
+                            <include reference="5rf-Ex-jj8"/>
+                            <include reference="A9s-qk-fwh"/>
+                            <include reference="8x7-VM-s2J"/>
+                            <include reference="dvK-P4-9vc"/>
+                            <exclude reference="x0a-3C-jU7"/>
                         </mask>
                     </variation>
                 </stackView>
             </subviews>
             <constraints>
-                <constraint firstItem="8AB-5h-nBt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="5T8-2N-cVn"/>
-                <constraint firstAttribute="bottom" secondItem="8AB-5h-nBt" secondAttribute="bottom" constant="344" id="RDV-P8-EsJ"/>
-                <constraint firstAttribute="trailing" secondItem="8AB-5h-nBt" secondAttribute="trailing" constant="10" id="cE6-AP-K57"/>
-                <constraint firstItem="8AB-5h-nBt" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="iZo-28-Xsl"/>
+                <constraint firstAttribute="trailing" secondItem="8AB-5h-nBt" secondAttribute="trailing" constant="10" id="B4x-Lz-umY"/>
+                <constraint firstItem="8AB-5h-nBt" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="J49-BG-RCN"/>
+                <constraint firstAttribute="bottom" secondItem="8AB-5h-nBt" secondAttribute="bottom" constant="194" id="jA5-6g-tFv"/>
+                <constraint firstItem="8AB-5h-nBt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="sBE-XZ-kE5"/>
             </constraints>
             <variation key="default">
                 <mask key="constraints">
-                    <exclude reference="5T8-2N-cVn"/>
-                    <exclude reference="RDV-P8-EsJ"/>
-                    <exclude reference="cE6-AP-K57"/>
-                    <exclude reference="iZo-28-Xsl"/>
+                    <exclude reference="B4x-Lz-umY"/>
+                    <exclude reference="J49-BG-RCN"/>
+                    <exclude reference="jA5-6g-tFv"/>
+                    <exclude reference="sBE-XZ-kE5"/>
                 </mask>
             </variation>
             <variation key="heightClass=regular-widthClass=compact">
                 <mask key="constraints">
-                    <include reference="5T8-2N-cVn"/>
-                    <include reference="RDV-P8-EsJ"/>
-                    <include reference="cE6-AP-K57"/>
-                    <include reference="iZo-28-Xsl"/>
+                    <include reference="B4x-Lz-umY"/>
+                    <include reference="J49-BG-RCN"/>
+                    <include reference="jA5-6g-tFv"/>
+                    <include reference="sBE-XZ-kE5"/>
                 </mask>
             </variation>
         </view>

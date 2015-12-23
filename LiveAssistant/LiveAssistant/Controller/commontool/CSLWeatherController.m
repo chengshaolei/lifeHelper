@@ -33,11 +33,15 @@
 {
     CSLWeatherModel * _wheatherInfo;//当前天气信息
     NSMutableDictionary * _dict;//全国城市ID
+    CSLSingleWeatherView *_weatherView;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    [self setupUI];
+    [self parseCityID];
+    [self locateCity];
     
 }
 
@@ -49,9 +53,9 @@
 //创建界面
 -(void) setupUI{
     self.navigationItem.title = NSLocalizedString(@"currentWheather", nil);
-    CSLSingleWeatherView *tmpView = [[CSLSingleWeatherView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kNewHeight)];
-    [tmpView updateMainInThread:_wheatherInfo];
-    [self.view addSubview:tmpView];
+    _weatherView = [[CSLSingleWeatherView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kNewHeight)];
+//    [tmpView updateMainInThread:_wheatherInfo];
+    [self.view addSubview:_weatherView];
 }
 
 //定位城市
@@ -59,7 +63,8 @@
     CSLGetPlace * place = [CSLGetPlace shareInstance];
     [place getPlace:^(NSString *cityName) {
         //获得城市名称
-        
+        _currentCityName = cityName;
+        [self loadData];
     }];
 }
 
@@ -80,11 +85,18 @@
     if (error) {
         NSLog(@"%@",error.localizedDescription);
     }
+    else{
+        [_weatherView updateMainInThread:model];
+    }
 
 }
 
 //获得城市ID
 - (void)parseCityID {
+    NSLog(@"%@",[NSBundle mainBundle].bundlePath);
+    if (!_dict) {
+        _dict = [NSMutableDictionary dictionary];
+    }
     NSString * path = [[NSBundle mainBundle] pathForResource:@"city" ofType:@"txt"];
     NSString * string = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:NULL];
     NSArray * result = [string componentsSeparatedByString:@"\n"];

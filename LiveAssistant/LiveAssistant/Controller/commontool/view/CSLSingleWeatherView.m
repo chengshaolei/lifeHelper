@@ -33,12 +33,16 @@
     if (self = [super initWithFrame:frame]) {
         _currentStle = [[CSLSetingDal sharedInstance] getCurrentTheme];
         //整个的背景图片
-        _bgImageView=[[UIImageView alloc] initWithImage:[UIImage imageNamed:[NSString stringWithFormat:@"%dbgWidget.png",_currentStle]]];
+//        _bgImageView=[[UIImageView alloc] initWithImage:[UIImage imageNamed:[NSString stringWithFormat:@"%dbgWidget.png",_currentStle]]];
+        NSLog(@"%@",[NSBundle mainBundle].bundlePath);
+        UIImage * image = [UIImage imageNamed:@"3bgWidget.png"];
+        _bgImageView=[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"3bgWidget.png"]];
         [_bgImageView setFrame:CGRectMake(0, 0, kWidth, kheight)];
         [self addSubview:_bgImageView];
         
         //时间背景图片
-        _clockbgBgImgView=[[UIImageView alloc] initWithImage:[UIImage imageNamed:[NSString stringWithFormat:@"%dbgWidgetClock.png",_currentStle]]];
+//        _clockbgBgImgView=[[UIImageView alloc] initWithImage:[UIImage imageNamed:[NSString stringWithFormat:@"%dbgWidgetClock.png",_currentStle]]];
+        _clockbgBgImgView=[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"3dbgWidgetClock.png"]];
         [_clockbgBgImgView setFrame:CGRectMake(0, 0, kWidth, kheight)];
         [self addSubview:_clockbgBgImgView];
         
@@ -207,11 +211,13 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     CSLCollectionViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellIndentifier forIndexPath:indexPath];
     CSLDayWeatherModel * model = _array[indexPath.row];
-    NSString *weatherImgName=[[CSLWeatherDAL sharedInstaced] getImageNameFromString:model.type];
+
+    NSString *weatherImgName=[[CSLWeatherDAL sharedInstaced] getImageNameFromString:[model valueForKey:@"type"]];
     
-    cell.Date.text = model.week;
+    cell.Date.text = [model valueForKey:@"week"];
     cell.weatherImg.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.png",weatherImgName]];
-    cell.Temp.text = [NSString stringWithFormat:@"%@~%@",model.lowtemp,model.hightemp];
+    cell.Temp.text = [NSString stringWithFormat:@"%@~%@",[model valueForKey:@"lowtemp"],[model valueForKey:@"hightemp"]];
+
     return cell;
 }
 

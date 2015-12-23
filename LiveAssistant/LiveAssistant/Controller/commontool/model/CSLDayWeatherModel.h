@@ -8,7 +8,7 @@
 
 #import "JSONModel.h"
 #import "CSLIndexModel.h"
-@protocol HQDayWeatherModel
+@protocol CSLDayWeatherModel
 
 @end
 
@@ -16,7 +16,7 @@
 @property (nonatomic,copy) NSString * date;
 @property (nonatomic,copy) NSString * week;
 @property (nonatomic,copy) NSString<Optional> * curTemp;
-@property (nonatomic,copy) NSArray<HQIndexModel> * index;
+@property (nonatomic,copy) NSArray<CSLIndexModel> * index;
 @property (nonatomic,copy) NSString * fengxiang;
 @property (nonatomic,copy) NSString * fengli;
 @property (nonatomic,copy) NSString * hightemp;

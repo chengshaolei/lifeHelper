@@ -8,7 +8,7 @@
 
 #import "JSONModel.h"
 
-@protocol HQIndexModel
+@protocol CSLIndexModel
 
 @end
 

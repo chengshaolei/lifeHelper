@@ -35,8 +35,8 @@ typedef enum{
 @property (nonatomic,copy) NSString * city;
 @property (nonatomic,copy) NSString * cityid;
 @property (nonatomic,copy) CSLDayWeatherModel * today;
-@property (nonatomic,strong) NSArray<HQDayWeatherModel> * forecast;
-@property (nonatomic,strong) NSArray<HQDayWeatherModel> * history;
+@property (nonatomic,strong) NSArray<CSLDayWeatherModel *> * forecast;
+@property (nonatomic,strong) NSArray<CSLDayWeatherModel *> * history;
 @property (nonatomic,copy) NSString *effectImg;
 @property (nonatomic,copy) NSString *weatherImage;
 @property (nonatomic) WeatherType weatherType;
