@@ -8,16 +8,24 @@
 
 #import "CSLDataBase.h"
 #import "FMDB.h"
+@interface CSLDBManager()
+-(void) createTable;
+@end
+
 @implementation CSLDBManager
 {
     FMDatabase * _db;//数据库
 }
+
 
 +(instancetype) defaultDBManager{
     static CSLDBManager * manager = nil;
     static dispatch_once_t once_token = 0;
     dispatch_once(&once_token, ^{
         manager = [[super alloc] init];
+        if (manager) {
+            [manager createTable];//创建表
+        }
     });
     return manager;
 }
@@ -41,9 +49,36 @@
     return self;
 }
 
+- (BOOL) isTableOK:(NSString *)tableName{
+    //从系统表sqlite_master查询
+    FMResultSet *rs = [_db executeQuery:@"select count(*) as 'count' from sqlite_master where type ='table' and name = ?", tableName];
+    while ([rs next])
+    {
+        NSInteger count = [rs intForColumn:@"count"];
+        return count!=0?YES:NO;
+    }
+    return NO;
+}
+
 -(BOOL) createTable:(NSString*)sqlString{
     return [_db executeUpdate:sqlString];
 }
+
+
+// 字符串型
+- (NSString *)getStringValue:(NSString *)tableName withFieldName:(NSString *)fieldName  where:(NSString*)condition
+{
+    NSString *result = nil;
+    
+    NSString *sql = [NSString stringWithFormat:@"SELECT %@ FROM %@ WHERE %@", fieldName, tableName,condition];
+    FMResultSet *rs = [_db executeQuery:sql];
+    if ([rs next])
+        result = [rs stringForColumnIndex:0];
+    [rs close];
+    
+    return result;
+}
+
 
 //功能：查询一个表，将返回的记录放到一个字典，将字典放到数组
 //参数：tbName:表名字
@@ -118,18 +153,30 @@
     }
     
     //创建查询语句
-    NSMutableString *sqlString = [NSMutableString stringWithFormat:@"insert into %@",tableName];
+    NSMutableString *sqlString = [NSMutableString stringWithFormat:@"insert into %@(",tableName];
+    NSMutableString * valueString = [NSMutableString stringWithString:@"  values ("];
+    
+    //值的数组
+    NSMutableArray * values = [NSMutableArray array];
+    
     NSArray * keys = [dict allKeys];//取得字典的键
-    [sqlString appendFormat:@"("];
     
     //拼插入SQL语句串
     for (NSString * key in keys) {
-        [sqlString appendFormat:@":%@",key];
+        [sqlString appendFormat:@"%@,",key];
+        [valueString appendString:@"?,"];
+        [values addObject:dict[key]];
     }
-    [sqlString appendFormat:@")"];
+    
+    [sqlString deleteCharactersInRange:NSMakeRange(sqlString.length-1, 1)];
+    [valueString deleteCharactersInRange:NSMakeRange(valueString.length-1, 1)];
+    [sqlString appendString:@")"];
+    [valueString appendString:@")"];
+    [sqlString appendString:valueString];
+   
     
     //执行插入语句
-    return [_db executeUpdate:sqlString withParameterDictionary:dict];
+    return [_db executeUpdate:sqlString withArgumentsInArray:values];
 }
 
 //功能：在表里删除一条记录
@@ -152,5 +199,16 @@
         return NO;
     }
     return [_db executeUpdate:sqlString withArgumentsInArray:condition];
+}
+
+-(void) createTable{
+    //创建快递公司表
+    [_db executeUpdate:@"create table if not exists expresscompany (esid INTEGER PRIMARY KEY AUTOINCREMENT,shortname text, name text)"];
+    
+    //创建密保
+    [_db executeUpdate:@"CREATE TABLE if not exists  codesure (cdid  INTEGER PRIMARY KEY AUTOINCREMENT, uid INTEGER REFERENCES  user (uid), password  TEXT, itemname  TEXT NOT NULL)"];
+    
+    //创建用户表
+    [_db executeUpdate:@"CREATE TABLE  if not exists user (uid  INTEGER PRIMARY KEY AUTOINCREMENT, username  TEXT NOT NULL,  password  TEXT NOT NULL,  thirdparty  BOOLEAN DEFAULT false)"];
 }
 @end

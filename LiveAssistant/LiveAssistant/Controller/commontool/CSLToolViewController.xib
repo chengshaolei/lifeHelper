@@ -230,7 +230,7 @@
                                         <action selector="wheather:" destination="-1" eventType="touchUpInside" id="Mvv-Cb-5EO"/>
                                     </connections>
                                 </button>
-                                <button opaque="NO" tag="18" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CZe-06-wpQ">
+                                <button opaque="NO" tag="17" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CZe-06-wpQ">
                                     <rect key="frame" x="180" y="0.0" width="180" height="185"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="55" id="6cH-J7-ezH"/>
@@ -253,7 +253,7 @@
                                         </mask>
                                     </variation>
                                 </button>
-                                <button opaque="NO" tag="17" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CjE-2B-kjR">
+                                <button opaque="NO" tag="18" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CjE-2B-kjR">
                                     <rect key="frame" x="360" y="0.0" width="180" height="185"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="55" id="bCJ-Ct-KCO"/>

@@ -111,4 +111,9 @@
 #define kBadiDu_wheather_Apikey  @"1a0c5e03e17b9b8f0a87f53402616f73"
 #define kBaiDu_Wheather_Url @"http://apis.baidu.com/apistore/weatherservice/recentweathers?cityname=%@&cityid=%@"
 
+
+//快递查询
+#define kBaiDu_Express_URL @"http://api.ickd.cn/?id=104890&secret=a2308503869152e91f0201e55031cc4e&com=%@&nu=%@&type=json&encode=utf8"
+
+
 #endif /* QFConstant_h */

@@ -9,20 +9,23 @@
 #import "CSLExpressViewController.h"
 #import "CSLConstant.h"
 #import "CSLNetRequest.h"
-#import "CSLDownListView.h"
+#import "CSLComBoxView.h"
+#import "CSLDataBase.h"
+#import "CSLExpressCompany.h"
+#import "CSLExpressModel.h"
+#import "CSLExpressDetailController.h"
 
 @interface CSLExpressViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *companyLabel;
 @property (weak, nonatomic) IBOutlet UITextField *expressOrderTextField;
-@property (strong, nonatomic) IBOutlet  CSLDownListView *downlistView;
-@property(nonatomic,strong)NSMutableArray* dataSource;//表格的数据源
 -(void) initDownlistView;//初始化下拉列表框
-
 @end
 
 @implementation CSLExpressViewController
 {
     IBOutlet UITableView * _tableView;
+    CSLComBoxView * _comBox;//下拉列表
+    NSArray * _allCompany;//快递公司
 }
 @synthesize dataSource = _dataSource;
 
@@ -31,65 +34,50 @@
     self.navigationController.navigationBar.translucent = NO;
     [self initDownlistView];
 //    [self downlistViewAutolayout];
+//    NSLog(@"%@",NSHomeDirectory());
+//    NSString * txtPath = [[NSBundle mainBundle] pathForResource:@"express" ofType:@"txt"];
+//    //[[CSLDBManager defaultDBManager] isTableOK:<#(NSString *)#>]
+//    __autoreleasing NSError * error;
+//    NSString * string = [NSString stringWithContentsOfFile:txtPath encoding:NSUTF8StringEncoding error:&error];
+//    NSArray * lines = [string componentsSeparatedByCharactersInSet:[NSCharacterSet newlineCharacterSet]];
+//    for (NSString * line in lines) {
+//        NSArray * arr = [line componentsSeparatedByCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+//        [[CSLDBManager defaultDBManager] insertTable:@"expresscompany" record:@{@"shortname":arr[0],@"name":arr.lastObject}];
+//    }
     
 }
 
--(void) viewDidAppear:(BOOL)animated{
-    [super viewDidAppear:animated];
-   
-    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[_expressOrderTextField]-10-[_downlistView(174)]" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_expressOrderTextField,_downlistView)]];
-    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:[_companyLabel]-2-[_downlistView]-24-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_companyLabel,_downlistView)]];
-}
-
--(void) viewWillLayoutSubviews{
-    CGRect frame = self.expressOrderTextField.frame;
-    self.downlistView.frame = CGRectMake(frame.origin.x, frame.origin.y+frame.size.height+5, frame.size.width, 40);
-}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-//数据请求
--(void) requestData:(NSString*)urlString para:(NSDictionary*)dict{
-    [CSLNetRequest post:urlString para:dict complete:^(id data) {
-        
-        NSMutableDictionary * dict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
-        NSLog(@"%@",dict);
-    } fail:^(NSError *error) {
-        NSLog(@"%@",error);
-    }];
-}
-
-
-
 -(void) initDownlistView{
-    CGRect frame = self.expressOrderTextField.frame;
-    self.downlistView = [[CSLDownListView alloc] initWithFrame:CGRectMake(frame.origin.x, frame.origin.y+frame.size.height+5, frame.size.width, 40)];
-    [self.view addSubview:self.downlistView];
-    self.downlistView.translatesAutoresizingMaskIntoConstraints = NO;
-    
-    __weak CSLExpressViewController * weakSelf = self;
-    self.downlistView.done = ^(){
-        [weakSelf.expressOrderTextField endEditing:YES];
-    };
-    
-    //初始化下拉列表的数据源
-    self.downlistView.dataSource = [NSMutableArray arrayWithArray:@[@"顺丰",@"ems",@"申通",@"圆通",@"中通",@"如风达",@"韵达",@"天天",@"汇通",@"全峰",@"德邦",@"宅急送",@"速尔",@"优速"]];
-    
-}
+    _comBox = [[CSLComBoxView alloc] initWithFrame:CGRectMake(102, 85, 100, 40)];
+    _comBox.textField.placeholder = @"请点击查询";
+    [self.view addSubview:_comBox];
+    _allCompany = [[CSLDBManager defaultDBManager] select:@"select shortname,name from expresscompany" where:nil];
+    NSMutableArray * comps = [NSMutableArray array];
+    for (NSDictionary * dict in _allCompany) {
+        [comps addObject:dict[@"name"]];
+    }
+    _comBox.tableArray = comps;
+ }
 - (IBAction)findExpressNo:(id)sender {
-    if (self.expressOrderTextField.text.length<=0 || self.downlistView.selectedItem==nil) {
+    NSString * no = self.expressOrderTextField.text;
+    NSString * com = _comBox.textField.text;
+    if (no.length<=0 || com.length<=0) {
         return;
     }
-    [self requestData:URL_EXPRESS para:@{@"apikey":@"6eb360953ca88ffef4ea260a23c54fda",@"keyword":self.expressOrderTextField.text,@"kuaidicompany":self.downlistView.selectedItem}];
-}
-
--(NSMutableArray*) dataSource{
-    if (_dataSource==nil) {
-        _dataSource = [NSMutableArray array];
+    NSString * condition = [NSString stringWithFormat:@"name = \"%@\"",com];
+    NSString * shortName = [[CSLDBManager defaultDBManager] getStringValue:@"expresscompany" withFieldName:@"shortname" where:condition];
+    if (shortName) {//找到
+        //[self loadDataWithCompany:shortName no:no];
+        CSLExpressDetailController * detailController = [[CSLExpressDetailController alloc] init];
+        detailController.shortName = shortName;
+        detailController.expressNo = no;
+        [self.navigationController pushViewController:detailController animated:YES];
     }
-    return _dataSource;
 }
 
 @end

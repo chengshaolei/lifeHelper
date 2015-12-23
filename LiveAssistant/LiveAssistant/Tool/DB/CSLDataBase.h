@@ -13,11 +13,22 @@
 
 +(instancetype) defaultDBManager;//单例
 
+//功能：判断一个表是否存在
+//参数：tableName 表名
+//返回值：有返回YES，否则返回NO
+- (BOOL) isTableOK:(NSString *)tableName;
+
 //功能：创建表
 //参数：sqlString：sql语句
 //返回值：成功返回YES，否则返回NO
 -(BOOL) createTable:(NSString*)sqlString;
 
+//功能：查询表的某列，返回字符串
+//参数：tableName：表名
+//     fieldName: 要查询的字段名
+//     condition: 条件
+//返回值：成功返回串值，否则返回nil
+- (NSString *)getStringValue:(NSString *)tableName withFieldName:(NSString *)fieldName where:(NSString*)condition;
 
 //功能：查询一个表，将返回的记录放到一个字典，将字典放到数组
 //参数：sqlString:sql语句

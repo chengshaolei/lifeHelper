@@ -35,14 +35,13 @@
         //整个的背景图片
 //        _bgImageView=[[UIImageView alloc] initWithImage:[UIImage imageNamed:[NSString stringWithFormat:@"%dbgWidget.png",_currentStle]]];
         NSLog(@"%@",[NSBundle mainBundle].bundlePath);
-        UIImage * image = [UIImage imageNamed:@"3bgWidget.png"];
         _bgImageView=[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"3bgWidget.png"]];
         [_bgImageView setFrame:CGRectMake(0, 0, kWidth, kheight)];
         [self addSubview:_bgImageView];
         
         //时间背景图片
 //        _clockbgBgImgView=[[UIImageView alloc] initWithImage:[UIImage imageNamed:[NSString stringWithFormat:@"%dbgWidgetClock.png",_currentStle]]];
-        _clockbgBgImgView=[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"3dbgWidgetClock.png"]];
+        _clockbgBgImgView=[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"3bgWidgetClock.png"]];
         [_clockbgBgImgView setFrame:CGRectMake(0, 0, kWidth, kheight)];
         [self addSubview:_clockbgBgImgView];
         
@@ -166,8 +165,8 @@
 }
 
 -(void)updateTime:(NSTimer *)timer {
-    ThemeStyle style=[[CSLSetingDal sharedInstance] getCurrentTheme];
-    
+    //ThemeStyle style=[[CSLSetingDal sharedInstance] getCurrentTheme];
+    ThemeStyle style = ThemeBlueStyle;
     NSDateComponents *dateComponents=[self getCurrentNSDateComponent];
     //得到小时
     long hour=[dateComponents hour];
@@ -179,9 +178,10 @@
     else
     {
         long hourLeft=hour/10;
-        
+        NSLog(@"%@",[NSString stringWithFormat:@"%d%ld.png",style,hourLeft]);
         [_hourLeftImgView setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%d%ld.png",style,hourLeft]]];
     }
+    NSLog(@"%@",[NSString stringWithFormat:@"%d%d.png",style,hourRight]);
     [_hourRightImgView setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%d%d.png",style,hourRight]]];
     
     //得到分钟
