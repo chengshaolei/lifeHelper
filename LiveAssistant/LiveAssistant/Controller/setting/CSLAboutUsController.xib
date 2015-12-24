@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CSLAboutUsController">
@@ -13,7 +14,103 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="GTB-T3-f7k">
+                    <rect key="frame" x="0.0" y="0.0" width="110" height="200"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="关于我们" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fur-He-JeI">
+                            <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="UIH-Gy-7FS"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="UIH-Gy-7FS"/>
+                                </mask>
+                            </variation>
+                            <variation key="widthClass=compact">
+                                <mask key="constraints">
+                                    <include reference="UIH-Gy-7FS"/>
+                                </mask>
+                            </variation>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Fur-He-JeI" firstAttribute="leading" secondItem="GTB-T3-f7k" secondAttribute="leading" id="E1p-Gt-61V"/>
+                        <constraint firstItem="Fur-He-JeI" firstAttribute="top" secondItem="GTB-T3-f7k" secondAttribute="top" id="puC-PG-8bp"/>
+                        <constraint firstAttribute="trailing" secondItem="Fur-He-JeI" secondAttribute="trailing" id="rTk-wm-9WB"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="E1p-Gt-61V"/>
+                            <exclude reference="puC-PG-8bp"/>
+                            <exclude reference="rTk-wm-9WB"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="E1p-Gt-61V"/>
+                            <include reference="puC-PG-8bp"/>
+                            <include reference="rTk-wm-9WB"/>
+                        </mask>
+                    </variation>
+                </stackView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Woe-Lz-xuu">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <string key="text">   家庭助手是一款家庭工具类产品，希望能给你提供一个家庭工具箱，满足你日常生活需要，后续版本会继续丰富工具种类。
+     本应用的内容不得赋值，分发，修改或在著作权法的范围之外，以任何形式提供给第三方。
+     Copyright©2015   成少雷  版权所有</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Woe-Lz-xuu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="0be-Sj-8Fm"/>
+                <constraint firstItem="Woe-Lz-xuu" firstAttribute="top" secondItem="GTB-T3-f7k" secondAttribute="bottom" constant="20" id="1rN-a7-TTT"/>
+                <constraint firstItem="GTB-T3-f7k" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="37S-0v-66q"/>
+                <constraint firstItem="GTB-T3-f7k" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Fi7-Gw-IPY"/>
+                <constraint firstAttribute="trailing" secondItem="GTB-T3-f7k" secondAttribute="trailing" id="g4o-iM-a3m"/>
+                <constraint firstAttribute="bottom" secondItem="GTB-T3-f7k" secondAttribute="bottom" constant="580" id="iTw-z4-xpK"/>
+                <constraint firstAttribute="bottom" secondItem="Woe-Lz-xuu" secondAttribute="bottom" constant="44" id="mLS-3f-gJA"/>
+                <constraint firstAttribute="trailing" secondItem="Woe-Lz-xuu" secondAttribute="trailing" constant="8" id="nPi-bo-d9q"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="GTB-T3-f7k"/>
+                    <exclude reference="Woe-Lz-xuu"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="37S-0v-66q"/>
+                    <exclude reference="Fi7-Gw-IPY"/>
+                    <exclude reference="g4o-iM-a3m"/>
+                    <exclude reference="iTw-z4-xpK"/>
+                    <exclude reference="0be-Sj-8Fm"/>
+                    <exclude reference="1rN-a7-TTT"/>
+                    <exclude reference="mLS-3f-gJA"/>
+                    <exclude reference="nPi-bo-d9q"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="subviews">
+                    <include reference="GTB-T3-f7k"/>
+                    <include reference="Woe-Lz-xuu"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="37S-0v-66q"/>
+                    <include reference="Fi7-Gw-IPY"/>
+                    <include reference="g4o-iM-a3m"/>
+                    <include reference="iTw-z4-xpK"/>
+                    <include reference="0be-Sj-8Fm"/>
+                    <include reference="1rN-a7-TTT"/>
+                    <include reference="mLS-3f-gJA"/>
+                    <include reference="nPi-bo-d9q"/>
+                </mask>
+            </variation>
         </view>
     </objects>
 </document>

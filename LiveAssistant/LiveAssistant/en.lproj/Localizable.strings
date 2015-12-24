@@ -57,3 +57,8 @@
 
 //天气预报
 "currentWheather" = "currentWheather";
+
+//设置
+"setting" = "setting";
+"about us" ="About us";
+"cache clean" = "cache clean";

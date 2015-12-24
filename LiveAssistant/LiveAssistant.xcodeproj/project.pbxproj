@@ -21,11 +21,12 @@
 		6C03EC381C296E0800816E50 /* CSLCommonHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C03EC311C296E0800816E50 /* CSLCommonHelper.m */; };
 		6C03EC391C296E0800816E50 /* CSLSingleWeatherView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C03EC331C296E0800816E50 /* CSLSingleWeatherView.m */; };
 		6C043B191C2B70B4005B29C0 /* CSLSettingController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C043B181C2B70B4005B29C0 /* CSLSettingController.xib */; };
-		6C043B1C1C2B7812005B29C0 /* CSLFavortateControllerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C043B1B1C2B7812005B29C0 /* CSLFavortateControllerTableViewController.m */; };
+		6C043B1C1C2B7812005B29C0 /* CSLFavortateController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C043B1B1C2B7812005B29C0 /* CSLFavortateController.m */; };
 		6C043B201C2B7841005B29C0 /* CSLAboutUsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C043B1E1C2B7841005B29C0 /* CSLAboutUsController.m */; };
 		6C043B211C2B7841005B29C0 /* CSLAboutUsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C043B1F1C2B7841005B29C0 /* CSLAboutUsController.xib */; };
+		6C043B241C2B826E005B29C0 /* CSLClearCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C043B231C2B826E005B29C0 /* CSLClearCache.m */; };
 		6C49DE5B1C28F30D0086B04E /* tabbar_setting@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C49DE5A1C28F30D0086B04E /* tabbar_setting@3x.png */; };
-		6C49DE5F1C28F37B0086B04E /* CSLSettimgController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C49DE5E1C28F37B0086B04E /* CSLSettimgController.m */; };
+		6C49DE5F1C28F37B0086B04E /* CSLSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C49DE5E1C28F37B0086B04E /* CSLSettingController.m */; };
 		6C49DE631C291CDF0086B04E /* CSLWeatherController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C49DE611C291CDF0086B04E /* CSLWeatherController.m */; };
 		6C49DE801C2953FD0086B04E /* 3bgWidget.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C49DE661C2953FD0086B04E /* 3bgWidget.png */; };
 		6C49DE811C2953FD0086B04E /* 3bgWidget@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C49DE671C2953FD0086B04E /* 3bgWidget@2x.png */; };
@@ -323,14 +324,16 @@
 		6C03EC321C296E0800816E50 /* CSLSingleWeatherView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSLSingleWeatherView.h; path = view/CSLSingleWeatherView.h; sourceTree = "<group>"; };
 		6C03EC331C296E0800816E50 /* CSLSingleWeatherView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSLSingleWeatherView.m; path = view/CSLSingleWeatherView.m; sourceTree = "<group>"; };
 		6C043B181C2B70B4005B29C0 /* CSLSettingController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSLSettingController.xib; sourceTree = "<group>"; };
-		6C043B1A1C2B7812005B29C0 /* CSLFavortateControllerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSLFavortateControllerTableViewController.h; path = setting/CSLFavortateControllerTableViewController.h; sourceTree = "<group>"; };
-		6C043B1B1C2B7812005B29C0 /* CSLFavortateControllerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSLFavortateControllerTableViewController.m; path = setting/CSLFavortateControllerTableViewController.m; sourceTree = "<group>"; };
+		6C043B1A1C2B7812005B29C0 /* CSLFavortateController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSLFavortateController.h; path = setting/CSLFavortateController.h; sourceTree = "<group>"; };
+		6C043B1B1C2B7812005B29C0 /* CSLFavortateController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSLFavortateController.m; path = setting/CSLFavortateController.m; sourceTree = "<group>"; };
 		6C043B1D1C2B7841005B29C0 /* CSLAboutUsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSLAboutUsController.h; path = setting/CSLAboutUsController.h; sourceTree = "<group>"; };
 		6C043B1E1C2B7841005B29C0 /* CSLAboutUsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSLAboutUsController.m; path = setting/CSLAboutUsController.m; sourceTree = "<group>"; };
 		6C043B1F1C2B7841005B29C0 /* CSLAboutUsController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CSLAboutUsController.xib; path = setting/CSLAboutUsController.xib; sourceTree = "<group>"; };
+		6C043B221C2B826E005B29C0 /* CSLClearCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSLClearCache.h; sourceTree = "<group>"; };
+		6C043B231C2B826E005B29C0 /* CSLClearCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSLClearCache.m; sourceTree = "<group>"; };
 		6C49DE5A1C28F30D0086B04E /* tabbar_setting@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tabbar_setting@3x.png"; path = "LiveAssistant/Resource/tabbar_setting@3x.png"; sourceTree = SOURCE_ROOT; };
-		6C49DE5D1C28F37B0086B04E /* CSLSettimgController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSLSettimgController.h; path = setting/CSLSettimgController.h; sourceTree = "<group>"; };
-		6C49DE5E1C28F37B0086B04E /* CSLSettimgController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSLSettimgController.m; path = setting/CSLSettimgController.m; sourceTree = "<group>"; };
+		6C49DE5D1C28F37B0086B04E /* CSLSettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSLSettingController.h; path = setting/CSLSettingController.h; sourceTree = "<group>"; };
+		6C49DE5E1C28F37B0086B04E /* CSLSettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSLSettingController.m; path = setting/CSLSettingController.m; sourceTree = "<group>"; };
 		6C49DE601C291CDE0086B04E /* CSLWeatherController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSLWeatherController.h; sourceTree = "<group>"; };
 		6C49DE611C291CDF0086B04E /* CSLWeatherController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSLWeatherController.m; sourceTree = "<group>"; };
 		6C49DE661C2953FD0086B04E /* 3bgWidget.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3bgWidget.png; sourceTree = "<group>"; };
@@ -767,11 +770,11 @@
 		6C49DE5C1C28F3390086B04E /* setting */ = {
 			isa = PBXGroup;
 			children = (
-				6C49DE5D1C28F37B0086B04E /* CSLSettimgController.h */,
-				6C49DE5E1C28F37B0086B04E /* CSLSettimgController.m */,
+				6C49DE5D1C28F37B0086B04E /* CSLSettingController.h */,
+				6C49DE5E1C28F37B0086B04E /* CSLSettingController.m */,
 				6C043B181C2B70B4005B29C0 /* CSLSettingController.xib */,
-				6C043B1A1C2B7812005B29C0 /* CSLFavortateControllerTableViewController.h */,
-				6C043B1B1C2B7812005B29C0 /* CSLFavortateControllerTableViewController.m */,
+				6C043B1A1C2B7812005B29C0 /* CSLFavortateController.h */,
+				6C043B1B1C2B7812005B29C0 /* CSLFavortateController.m */,
 				6C043B1D1C2B7841005B29C0 /* CSLAboutUsController.h */,
 				6C043B1E1C2B7841005B29C0 /* CSLAboutUsController.m */,
 				6C043B1F1C2B7841005B29C0 /* CSLAboutUsController.xib */,
@@ -1102,6 +1105,8 @@
 				6C73E4611C23E36D00B674E9 /* NSObject+perpoty.m */,
 				6C007C291C2A4DCF002126AC /* CSLComBoxView.h */,
 				6C007C271C2A4A39002126AC /* CSLComBoxView.m */,
+				6C043B221C2B826E005B29C0 /* CSLClearCache.h */,
+				6C043B231C2B826E005B29C0 /* CSLClearCache.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -1855,6 +1860,7 @@
 				6C93F0CB1C19246B007BA2B0 /* CSLExpressViewController.m in Sources */,
 				6CEE38A21C2191FE0077291F /* SCNavTabBar.m in Sources */,
 				6C6D47CD1C18617900B80FB6 /* CSLScanViewController.m in Sources */,
+				6C043B241C2B826E005B29C0 /* CSLClearCache.m in Sources */,
 				6CF5C1091C2540A70086FCC6 /* cSLVocabularyModel.m in Sources */,
 				6CB9EBCE1C1FEDDF006C64F0 /* JSONKeyMapper.m in Sources */,
 				6C9FB9B71C185BE700725C02 /* CSLToolViewController.m in Sources */,
@@ -1894,8 +1900,8 @@
 				6CB9EC2D1C202CF8006C64F0 /* MJRefreshAutoStateFooter.m in Sources */,
 				6CB9EBC91C1FEDDF006C64F0 /* JSONModelError.m in Sources */,
 				6C9FB9B51C185BE700725C02 /* CSLChatroomViewController.m in Sources */,
-				6C49DE5F1C28F37B0086B04E /* CSLSettimgController.m in Sources */,
-				6C043B1C1C2B7812005B29C0 /* CSLFavortateControllerTableViewController.m in Sources */,
+				6C49DE5F1C28F37B0086B04E /* CSLSettingController.m in Sources */,
+				6C043B1C1C2B7812005B29C0 /* CSLFavortateController.m in Sources */,
 				6C03EC391C296E0800816E50 /* CSLSingleWeatherView.m in Sources */,
 				6C9FB9D11C185C4D00725C02 /* AppDelegate.mm in Sources */,
 				6CB9EC291C202CF8006C64F0 /* MJRefreshFooter.m in Sources */,

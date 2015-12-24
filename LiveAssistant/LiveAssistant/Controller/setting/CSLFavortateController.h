@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CSLFavortateControllerTableViewController : UITableViewController
+@interface CSLFavortateController : UITableViewController
 
 @end

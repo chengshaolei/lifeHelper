@@ -5,9 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CSLSettimgController">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CSLSettingController">
             <connections>
-                <outlet property="view" destination="iN0-l3-epB" id="730-gJ-C9I"/>
+                <outlet property="settingTable" destination="pRl-3W-zJk" id="W56-3F-8N4"/>
+                <outlet property="view" destination="iN0-l3-epB" id="pbO-5g-7rb"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -19,8 +20,8 @@
                     <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <connections>
-                        <outlet property="dataSource" destination="-1" id="gD7-7K-IIX"/>
-                        <outlet property="delegate" destination="-1" id="vUJ-Km-8es"/>
+                        <outlet property="dataSource" destination="-1" id="BPp-Dj-bE1"/>
+                        <outlet property="delegate" destination="-1" id="Dpu-6Q-uKJ"/>
                     </connections>
                 </tableView>
             </subviews>

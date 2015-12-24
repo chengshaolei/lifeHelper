@@ -6,13 +6,13 @@
 //  Copyright © 2015年 CSL. All rights reserved.
 //
 
-#import "CSLFavortateControllerTableViewController.h"
+#import "CSLFavortateController.h"
 
-@interface CSLFavortateControllerTableViewController ()
+@interface CSLFavortateController ()
 
 @end
 
-@implementation CSLFavortateControllerTableViewController
+@implementation CSLFavortateController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

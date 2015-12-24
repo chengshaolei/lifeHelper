@@ -74,7 +74,7 @@
     [tabBarController addItem:NSLocalizedString(@"tabbar_chatroom",nil) normalImage:[UIImage imageNamed:@"tabBar_chat.png"] highLightImage:[UIImage imageNamed:@"tabBar_chat.png"] controller:@"CSLChatroomViewController"];
     
     //增加我的标签
-    [tabBarController addItem:NSLocalizedString(@"tabbar_setting",nil) normalImage:[UIImage imageNamed:@"tabbar_setting.png"] highLightImage:[UIImage imageNamed:@"tabbar_setting.png"] controller:@"CSLSettomgController"];
+    [tabBarController addItem:NSLocalizedString(@"tabbar_setting",nil) normalImage:[UIImage imageNamed:@"tabbar_setting.png"] highLightImage:[UIImage imageNamed:@"tabbar_setting.png"] controller:@"CSLSettingController"];
     
     //设置标签栏的viewControllers数组
     tabBarController.viewControllers = tabBarController.controllers;

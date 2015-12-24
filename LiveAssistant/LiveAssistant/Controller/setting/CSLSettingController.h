@@ -8,6 +8,6 @@
 
 #import "CSLBaseViewController.h"
 
-@interface CSLSettimgController : CSLBaseViewController
+@interface CSLSettingController : CSLBaseViewController
 
 @end
