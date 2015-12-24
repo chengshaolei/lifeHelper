@@ -62,7 +62,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <string key="text">   家庭助手是一款家庭工具类产品，希望能给你提供一个家庭工具箱，满足你日常生活需要，后续版本会继续丰富工具种类。
-     本应用的内容不得赋值，分发，修改或在著作权法的范围之外，以任何形式提供给第三方。
+     本应用的内容不得复制，分发，修改或在著作权法的范围之外，以任何形式提供给第三方。
      Copyright©2015   成少雷  版权所有</string>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>

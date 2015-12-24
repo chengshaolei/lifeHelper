@@ -102,7 +102,7 @@
     [alertController addAction:btn1];
     
     //第一个按钮
-    UIAlertAction * btn2 = [UIAlertAction actionWithTitle:buttons[0] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+    UIAlertAction * btn2 = [UIAlertAction actionWithTitle:buttons[1] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         if(disagree){
             disagree();
             [oldWindow makeKeyAndVisible];
@@ -158,5 +158,43 @@
     dest.borderWidth = width;
     dest.borderColor = color.CGColor;
     dest.masksToBounds = YES;
+}
+
++(void)checkVersion:(NSString*)appid
+{
+    NSDictionary *infoDic = [[NSBundle mainBundle] infoDictionary];
+    NSString *currentVersion = [infoDic objectForKey:@"CFBundleVersion"];
+    
+    NSString *URL =[NSString stringWithFormat:@"http://itunes.apple.com/lookup?id=%@",appid];
+    
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
+    [request setURL:[NSURL URLWithString:URL]];
+    [request setHTTPMethod:@"POST"];
+    NSHTTPURLResponse *urlResponse = nil;
+    __autoreleasing NSError *error = nil;
+    NSData *recervedData = [NSURLConnection sendSynchronousRequest:request returningResponse:&urlResponse error:&error];
+    
+    NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:recervedData options:NSJSONReadingMutableContainers error:&error] ;
+    
+    NSArray *infoArray = [dic objectForKey:@"results"];
+    if ([infoArray count]) {
+        NSDictionary *releaseInfo = [infoArray objectAtIndex:0];
+        NSString *lastVersion = [releaseInfo objectForKey:@"version"];
+        if (![lastVersion isEqualToString:currentVersion]) {
+            [Auxiliary alertWithTitle:@"更新" message:@"有新的版本更新，是否前往更新？" button:@[@"更新",@"取消"] done:^{
+                NSURL *url = [NSURL URLWithString:@"https://itunes.apple.com"];
+                [[UIApplication sharedApplication]openURL:url];
+            } cancel:^{
+                
+            }];
+        }
+        else
+        {
+            [Auxiliary alertWithTitle:@"更新" message:@"此版本为最新版本" button:1 done:nil];
+        }
+    }
+    else{
+        [Auxiliary alertWithTitle:@"更新" message:@"应用还未上线，无法查询！" button:1 done:nil];
+    }
 }
 @end

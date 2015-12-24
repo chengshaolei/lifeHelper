@@ -13,7 +13,7 @@
 #import "Auxiliary.h"
 
 #define SettingCellReuse @"SettingTableViewCell"
-
+#define MYAppID @"1070708005"
 @interface CSLSettingController ()<UITableViewDataSource,UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *settingTable;
 -(void) settingInit;//数据初始化
@@ -38,8 +38,8 @@
 
 -(void) settingInit{
     self.navigationItem.title = NSLocalizedString(@"setting", nil);
-    _controllers = @[@"CSLFavortateController",[NSNull null],@"CSLAboutUsController"];
-    [self.dataSource addObjectsFromArray:@[@"我的收藏",@"清除缓存",@"关于我们"]];
+    _controllers = @[@"CSLFavortateController",[NSNull null],[NSNull null],@"CSLAboutUsController"];
+    [self.dataSource addObjectsFromArray:@[@"我的收藏",@"清除缓存",@"版本检测",@"关于我们"]];
     [self.settingTable registerClass:[UITableViewCell class] forCellReuseIdentifier:SettingCellReuse];
 }
 
@@ -57,7 +57,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:SettingCellReuse];
     cell.textLabel.text = self.dataSource[indexPath.row];
-    if (1!=indexPath.row) {
+    if (1!=indexPath.row&&2!=indexPath.row) {
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
     
@@ -66,11 +66,14 @@
 
 // 行选中
 -(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    if (1==indexPath.row) {
+    if (1==indexPath.row) {//清除缓存
         CSLClearCache * CacheManager = [[CSLClearCache alloc] init];
         float size = [CacheManager clearCache];
         NSString *str = [NSString stringWithFormat:@"%@ %.2fM",NSLocalizedString(@"cache clean", nil), size];
         [Auxiliary alertWithTitle:nil message:str button:1 done:nil];
+    }
+    else if(2==indexPath.row){//版本更新
+        [Auxiliary checkVersion:MYAppID];
     }
     else{
         Class controllerClass = NSClassFromString(_controllers[indexPath.row]);

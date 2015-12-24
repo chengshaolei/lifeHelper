@@ -25,6 +25,8 @@
 		6C043B201C2B7841005B29C0 /* CSLAboutUsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C043B1E1C2B7841005B29C0 /* CSLAboutUsController.m */; };
 		6C043B211C2B7841005B29C0 /* CSLAboutUsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C043B1F1C2B7841005B29C0 /* CSLAboutUsController.xib */; };
 		6C043B241C2B826E005B29C0 /* CSLClearCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C043B231C2B826E005B29C0 /* CSLClearCache.m */; };
+		6C043B281C2BB9D8005B29C0 /* CSLTimerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C043B261C2BB9D8005B29C0 /* CSLTimerController.m */; };
+		6C043B291C2BB9D8005B29C0 /* CSLTimerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C043B271C2BB9D8005B29C0 /* CSLTimerController.xib */; };
 		6C49DE5B1C28F30D0086B04E /* tabbar_setting@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C49DE5A1C28F30D0086B04E /* tabbar_setting@3x.png */; };
 		6C49DE5F1C28F37B0086B04E /* CSLSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C49DE5E1C28F37B0086B04E /* CSLSettingController.m */; };
 		6C49DE631C291CDF0086B04E /* CSLWeatherController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C49DE611C291CDF0086B04E /* CSLWeatherController.m */; };
@@ -331,6 +333,9 @@
 		6C043B1F1C2B7841005B29C0 /* CSLAboutUsController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CSLAboutUsController.xib; path = setting/CSLAboutUsController.xib; sourceTree = "<group>"; };
 		6C043B221C2B826E005B29C0 /* CSLClearCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSLClearCache.h; sourceTree = "<group>"; };
 		6C043B231C2B826E005B29C0 /* CSLClearCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSLClearCache.m; sourceTree = "<group>"; };
+		6C043B251C2BB9D8005B29C0 /* CSLTimerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSLTimerController.h; sourceTree = "<group>"; };
+		6C043B261C2BB9D8005B29C0 /* CSLTimerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSLTimerController.m; sourceTree = "<group>"; };
+		6C043B271C2BB9D8005B29C0 /* CSLTimerController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSLTimerController.xib; sourceTree = "<group>"; };
 		6C49DE5A1C28F30D0086B04E /* tabbar_setting@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tabbar_setting@3x.png"; path = "LiveAssistant/Resource/tabbar_setting@3x.png"; sourceTree = SOURCE_ROOT; };
 		6C49DE5D1C28F37B0086B04E /* CSLSettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSLSettingController.h; path = setting/CSLSettingController.h; sourceTree = "<group>"; };
 		6C49DE5E1C28F37B0086B04E /* CSLSettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSLSettingController.m; path = setting/CSLSettingController.m; sourceTree = "<group>"; };
@@ -1026,6 +1031,9 @@
 				6CF5C23D1C262DB70086FCC6 /* CSLTranslationController.xib */,
 				6C49DE601C291CDE0086B04E /* CSLWeatherController.h */,
 				6C49DE611C291CDF0086B04E /* CSLWeatherController.m */,
+				6C043B251C2BB9D8005B29C0 /* CSLTimerController.h */,
+				6C043B261C2BB9D8005B29C0 /* CSLTimerController.m */,
+				6C043B271C2BB9D8005B29C0 /* CSLTimerController.xib */,
 			);
 			path = commontool;
 			sourceTree = "<group>";
@@ -1755,6 +1763,7 @@
 				6CB503CB1C185ACE0026891F /* Assets.xcassets in Resources */,
 				6CD1781D1C22D8A900E6DE32 /* CSLDrugListCell.xib in Resources */,
 				6C8CFBFF1C29857F00E59FFF /* n_scatteredthunderstorms@2x.png in Resources */,
+				6C043B291C2BB9D8005B29C0 /* CSLTimerController.xib in Resources */,
 				6C8CFBD61C29857F00E59FFF /* effect_clear@2x.png in Resources */,
 				6C8CFBDE1C29857F00E59FFF /* flurries@2x.png in Resources */,
 				6C49DE8B1C2953FD0086B04E /* 33@2x.png in Resources */,
@@ -1946,6 +1955,7 @@
 				6CFD58A71C21A616000B262D /* CSLDrugListViewController.m in Sources */,
 				6CB9EBC71C1FEDDF006C64F0 /* JSONModelArray.m in Sources */,
 				6C49DE631C291CDF0086B04E /* CSLWeatherController.m in Sources */,
+				6C043B281C2BB9D8005B29C0 /* CSLTimerController.m in Sources */,
 				6CA8F6611C21691A00FC1BA9 /* CSLFlashlightViewController.m in Sources */,
 				6CB9EC301C202CF8006C64F0 /* MJRefreshBackStateFooter.m in Sources */,
 				6C6D47D01C18833600B80FB6 /* Auxiliary.m in Sources */,

@@ -46,4 +46,6 @@
 //设置视图的层圆角
 +(void) layerCornerRadius:(CALayer*)dest radius:(float)radius width:(float)width color:(UIColor*)color;
 
+//版本检测
++(void)checkVersion:(NSString*)appid;
 @end
