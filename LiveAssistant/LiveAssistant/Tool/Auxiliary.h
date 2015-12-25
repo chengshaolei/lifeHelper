@@ -43,9 +43,42 @@
 //返回值：指定属性字符串的高度
 +(CGFloat) dynamicHeightWithString:(NSString*)string width:(CGFloat)width attribute:(NSDictionary*)attrs;
 
-//设置视图的层圆角
+//功能：设置视图的层圆角
+//参数：dest 目标层，radius，层的圆角度数，width，线宽，color 线的颜色
+//返回值：无
 +(void) layerCornerRadius:(CALayer*)dest radius:(float)radius width:(float)width color:(UIColor*)color;
 
-//版本检测
+//功能：版本检测
+//参数：appid，itunes里创建时产生的app的唯一编号
+//返回值：无
 +(void)checkVersion:(NSString*)appid;
+
+//功能：正则表达式验证用户名
+//参数：name 用户名,rule 验证规则
+//返回值：正确返回YES，否则返回NO
++ (BOOL) validateUserName:(NSString *)name rule:(NSString*)rule;
+
+
+//功能：正则表达式验证密码
+//参数：password 密码,rule 验证规则
+//返回值：正确返回YES，否则返回NO
++ (BOOL) validatePassword:(NSString *)passWord rule:(NSString*)rule;
+
+
+//功能：手机号码验证
+//参数：mobile 手机号
+//返回值：正确返回YES，否则返回NO
++ (BOOL) validateMobile:(NSString *)mobile;
+
+
+//功能：身份证号验证
+//参数：identityCard 身份证号
+//返回值：正确返回YES，否则返回NO
++ (BOOL) validateIdentityCard: (NSString *)identityCard;
+
+
+//功能：邮箱验证
+//参数：email 邮箱
+//返回值：正确返回YES，否则返回NO
++ (BOOL) validateEmail:(NSString *)email;
 @end

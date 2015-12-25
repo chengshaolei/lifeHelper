@@ -26,11 +26,12 @@
 		6C0418D61C2CDE1200606BF3 /* CSLLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C0418D01C2CDE1200606BF3 /* CSLLoginViewController.m */; };
 		6C0418D71C2CDE1200606BF3 /* CSLRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C0418D21C2CDE1200606BF3 /* CSLRegisterViewController.m */; };
 		6C0418D81C2CDE1200606BF3 /* CSLUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C0418D41C2CDE1200606BF3 /* CSLUser.m */; };
-		6C0418DA1C2CEC5B00606BF3 /* CSLLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C0418D91C2CEC5B00606BF3 /* CSLLoginViewController.xib */; };
+		6C0418DB1C2D16C300606BF3 /* CSLLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C0418DD1C2D16C300606BF3 /* CSLLoginViewController.xib */; };
+		6C0418E21C2D177B00606BF3 /* CSLAboutUsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C0418E41C2D177B00606BF3 /* CSLAboutUsController.xib */; };
+		6C0418EB1C2D1D5B00606BF3 /*  CSLRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C0418ED1C2D1D5B00606BF3 /*  CSLRegisterViewController.xib */; };
 		6C043B191C2B70B4005B29C0 /* CSLSettingController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C043B181C2B70B4005B29C0 /* CSLSettingController.xib */; };
 		6C043B1C1C2B7812005B29C0 /* CSLFavortateController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C043B1B1C2B7812005B29C0 /* CSLFavortateController.m */; };
 		6C043B201C2B7841005B29C0 /* CSLAboutUsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C043B1E1C2B7841005B29C0 /* CSLAboutUsController.m */; };
-		6C043B211C2B7841005B29C0 /* CSLAboutUsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C043B1F1C2B7841005B29C0 /* CSLAboutUsController.xib */; };
 		6C043B241C2B826E005B29C0 /* CSLClearCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C043B231C2B826E005B29C0 /* CSLClearCache.m */; };
 		6C043B281C2BB9D8005B29C0 /* CSLTimerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C043B261C2BB9D8005B29C0 /* CSLTimerController.m */; };
 		6C043B291C2BB9D8005B29C0 /* CSLTimerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C043B271C2BB9D8005B29C0 /* CSLTimerController.xib */; };
@@ -342,13 +343,20 @@
 		6C0418D21C2CDE1200606BF3 /* CSLRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSLRegisterViewController.m; path = setting/CSLRegisterViewController.m; sourceTree = "<group>"; };
 		6C0418D31C2CDE1200606BF3 /* CSLUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSLUser.h; path = setting/CSLUser.h; sourceTree = "<group>"; };
 		6C0418D41C2CDE1200606BF3 /* CSLUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSLUser.m; path = setting/CSLUser.m; sourceTree = "<group>"; };
-		6C0418D91C2CEC5B00606BF3 /* CSLLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSLLoginViewController.xib; sourceTree = "<group>"; };
+		6C0418DC1C2D16C300606BF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/CSLLoginViewController.xib; sourceTree = "<group>"; };
+		6C0418DF1C2D16C700606BF3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/CSLLoginViewController.strings; sourceTree = "<group>"; };
+		6C0418E11C2D16CB00606BF3 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/CSLLoginViewController.strings"; sourceTree = "<group>"; };
+		6C0418E31C2D177B00606BF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/CSLAboutUsController.xib; sourceTree = "<group>"; };
+		6C0418E61C2D177F00606BF3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/CSLAboutUsController.strings; sourceTree = "<group>"; };
+		6C0418E81C2D178200606BF3 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/CSLAboutUsController.strings"; sourceTree = "<group>"; };
+		6C0418EC1C2D1D5B00606BF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = "Base.lproj/ CSLRegisterViewController.xib"; sourceTree = "<group>"; };
+		6C0418EF1C2D1D6300606BF3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = "en.lproj/ CSLRegisterViewController.strings"; sourceTree = "<group>"; };
+		6C0418F11C2D1D6400606BF3 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/ CSLRegisterViewController.strings"; sourceTree = "<group>"; };
 		6C043B181C2B70B4005B29C0 /* CSLSettingController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSLSettingController.xib; sourceTree = "<group>"; };
 		6C043B1A1C2B7812005B29C0 /* CSLFavortateController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSLFavortateController.h; path = setting/CSLFavortateController.h; sourceTree = "<group>"; };
 		6C043B1B1C2B7812005B29C0 /* CSLFavortateController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSLFavortateController.m; path = setting/CSLFavortateController.m; sourceTree = "<group>"; };
 		6C043B1D1C2B7841005B29C0 /* CSLAboutUsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSLAboutUsController.h; path = setting/CSLAboutUsController.h; sourceTree = "<group>"; };
 		6C043B1E1C2B7841005B29C0 /* CSLAboutUsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSLAboutUsController.m; path = setting/CSLAboutUsController.m; sourceTree = "<group>"; };
-		6C043B1F1C2B7841005B29C0 /* CSLAboutUsController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CSLAboutUsController.xib; path = setting/CSLAboutUsController.xib; sourceTree = "<group>"; };
 		6C043B221C2B826E005B29C0 /* CSLClearCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSLClearCache.h; sourceTree = "<group>"; };
 		6C043B231C2B826E005B29C0 /* CSLClearCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSLClearCache.m; sourceTree = "<group>"; };
 		6C043B251C2BB9D8005B29C0 /* CSLTimerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSLTimerController.h; sourceTree = "<group>"; };
@@ -797,9 +805,10 @@
 				6C0418CE1C2CDE1200606BF3 /* CSLCheckCodeView.m */,
 				6C0418CF1C2CDE1200606BF3 /* CSLLoginViewController.h */,
 				6C0418D01C2CDE1200606BF3 /* CSLLoginViewController.m */,
-				6C0418D91C2CEC5B00606BF3 /* CSLLoginViewController.xib */,
+				6C0418DD1C2D16C300606BF3 /* CSLLoginViewController.xib */,
 				6C0418D11C2CDE1200606BF3 /* CSLRegisterViewController.h */,
 				6C0418D21C2CDE1200606BF3 /* CSLRegisterViewController.m */,
+				6C0418ED1C2D1D5B00606BF3 /*  CSLRegisterViewController.xib */,
 				6C0418D31C2CDE1200606BF3 /* CSLUser.h */,
 				6C0418D41C2CDE1200606BF3 /* CSLUser.m */,
 			);
@@ -817,7 +826,7 @@
 				6C043B1B1C2B7812005B29C0 /* CSLFavortateController.m */,
 				6C043B1D1C2B7841005B29C0 /* CSLAboutUsController.h */,
 				6C043B1E1C2B7841005B29C0 /* CSLAboutUsController.m */,
-				6C043B1F1C2B7841005B29C0 /* CSLAboutUsController.xib */,
+				6C0418E41C2D177B00606BF3 /* CSLAboutUsController.xib */,
 			);
 			name = setting;
 			sourceTree = "<group>";
@@ -1737,7 +1746,7 @@
 				6C49DE971C2953FD0086B04E /* 39@2x.png in Resources */,
 				6C8CFBC21C29857F00E59FFF /* 9.png in Resources */,
 				6C8CFBF61C29857F00E59FFF /* n_partlycloudy.png in Resources */,
-				6C043B211C2B7841005B29C0 /* CSLAboutUsController.xib in Resources */,
+				6C0418E21C2D177B00606BF3 /* CSLAboutUsController.xib in Resources */,
 				6C8CFBBE1C29857F00E59FFF /* 7.png in Resources */,
 				6C8CFBDF1C29857F00E59FFF /* fog.png in Resources */,
 				6C8CFC161C29857F00E59FFF /* storm.png in Resources */,
@@ -1831,6 +1840,7 @@
 				6C03EC351C296E0800816E50 /* CSLThemeScreentShotCell.xib in Resources */,
 				6C8CFBDA1C29857F00E59FFF /* effect_rain@2x.png in Resources */,
 				6C8CFBCF1C29857F00E59FFF /* butMode@2x.png in Resources */,
+				6C0418EB1C2D1D5B00606BF3 /*  CSLRegisterViewController.xib in Resources */,
 				6C0418BF1C2CCDEA00606BF3 /* portrait.png in Resources */,
 				6C8CFBCE1C29857F00E59FFF /* butMode.png in Resources */,
 				6C8CFBB51C29857F00E59FFF /* 2@2x.png in Resources */,
@@ -1844,7 +1854,7 @@
 				6CB9EC341C202CF8006C64F0 /* MJRefresh.bundle in Resources */,
 				6CF5C2A01C26AE2F0086FCC6 /* zhengjiang.png in Resources */,
 				6CB503C91C185ACE0026891F /* Main.storyboard in Resources */,
-				6C0418DA1C2CEC5B00606BF3 /* CSLLoginViewController.xib in Resources */,
+				6C0418DB1C2D16C300606BF3 /* CSLLoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2015,6 +2025,37 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		6C0418DD1C2D16C300606BF3 /* CSLLoginViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C0418DC1C2D16C300606BF3 /* Base */,
+				6C0418DF1C2D16C700606BF3 /* en */,
+				6C0418E11C2D16CB00606BF3 /* zh-Hans */,
+			);
+			name = CSLLoginViewController.xib;
+			sourceTree = "<group>";
+		};
+		6C0418E41C2D177B00606BF3 /* CSLAboutUsController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C0418E31C2D177B00606BF3 /* Base */,
+				6C0418E61C2D177F00606BF3 /* en */,
+				6C0418E81C2D178200606BF3 /* zh-Hans */,
+			);
+			name = CSLAboutUsController.xib;
+			path = setting;
+			sourceTree = "<group>";
+		};
+		6C0418ED1C2D1D5B00606BF3 /*  CSLRegisterViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C0418EC1C2D1D5B00606BF3 /* Base */,
+				6C0418EF1C2D1D6300606BF3 /* en */,
+				6C0418F11C2D1D6400606BF3 /* zh-Hans */,
+			);
+			name = " CSLRegisterViewController.xib";
+			sourceTree = "<group>";
+		};
 		6C73E4511C238E5600B674E9 /* CSLDrugDetailController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (

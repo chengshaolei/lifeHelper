@@ -41,7 +41,8 @@
 -(void) settingInit{
     self.navigationItem.title = NSLocalizedString(@"setting", nil);
     _controllers = @[@"CSLFavortateController",[NSNull null],[NSNull null],@"CSLAboutUsController"];
-    [self.dataSource addObjectsFromArray:@[@"我的收藏",@"清除缓存",@"版本检测",@"关于我们"]];
+
+    [self.dataSource addObjectsFromArray:@[NSLocalizedString(@"Favorite", nil),NSLocalizedString(@"Clear Cache", nil),NSLocalizedString(@"Version Check", nil),NSLocalizedString(@"About us", nil)]];
     [self.settingTable registerClass:[UITableViewCell class] forCellReuseIdentifier:SettingCellReuse];
     [self setupHeaderView];
 }
@@ -63,8 +64,8 @@
     
     //登录按钮
     UIButton * loginBtn = [UIButton buttonWithType:UIButtonTypeSystem];
-    loginBtn.frame = CGRectMake(0, 0, 60, 30);
-    [loginBtn setTitle:@"未登录" forState:UIControlStateNormal];
+    loginBtn.frame = CGRectMake(0, 0, 80, 30);
+    [loginBtn setTitle:NSLocalizedString(@"Not Login", nil) forState:UIControlStateNormal];
     [loginBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     loginBtn.translatesAutoresizingMaskIntoConstraints = NO;
     [loginBtn addTarget:self action:@selector(login:) forControlEvents:UIControlEventTouchUpInside];
@@ -76,7 +77,7 @@
     portraitBtn.translatesAutoresizingMaskIntoConstraints = NO;
     [_protraitView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-40-[portraitBtn(60)]-10-[loginBtn(30)]-40-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(portraitBtn,loginBtn)]];
     [_protraitView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-130-[portraitBtn(60)]-130-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(portraitBtn)]];
-    [_protraitView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-130-[loginBtn(60)]-130-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(loginBtn)]];
+    [_protraitView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-110-[loginBtn(80)]-110-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(loginBtn)]];
     
 }
 

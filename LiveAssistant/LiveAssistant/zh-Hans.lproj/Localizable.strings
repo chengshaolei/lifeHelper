@@ -61,3 +61,18 @@
 "setting" = "设置";
 "about us" ="关于我们";
 "cache clean" = "缓存清除";
+"Favorite" = "我的收藏";
+"Clear Cache" = "清除缓存";
+"Version Check" = "版本检测";
+"About us" = "关于我们";
+
+
+"login" = "登录";
+"Not Login" = "未登录";
+"register" = "注册";
+"verification code error" = "验证码错误";
+"user name or password error" = "用户名或密码错误";
+"error" = "错误";
+
+//默认规则用户名由大小写26个英文字母和数组组成，长度6-20位
+"username rule" = "u用户名由大小写26个英文字母和数组组成，长度6-20位";

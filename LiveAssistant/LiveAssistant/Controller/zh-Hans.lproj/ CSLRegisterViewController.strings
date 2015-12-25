@@ -1,0 +1,24 @@
+
+/* Class = "UITextField"; placeholder = "请输入密码"; ObjectID = "3bx-QK-Ts6"; */
+"3bx-QK-Ts6.placeholder" = "请输入密码";
+
+/* Class = "UILabel"; text = "密码："; ObjectID = "5H3-PD-0rs"; */
+"5H3-PD-0rs.text" = "密码：";
+
+/* Class = "UITextField"; placeholder = "请输入用户名"; ObjectID = "8Pu-uv-t0V"; */
+"8Pu-uv-t0V.placeholder" = "请输入用户名";
+
+/* Class = "UITextField"; placeholder = "请输入确认密码"; ObjectID = "EHH-uC-dsa"; */
+"EHH-uC-dsa.placeholder" = "请输入确认密码";
+
+/* Class = "UILabel"; text = "确认密码："; ObjectID = "O23-sm-Ztj"; */
+"O23-sm-Ztj.text" = "确认密码：";
+
+/* Class = "UIButton"; normalTitle = "确认"; ObjectID = "Qwl-wQ-1gB"; */
+"Qwl-wQ-1gB.normalTitle" = "确认";
+
+/* Class = "UILabel"; text = "用户名："; ObjectID = "kbk-rv-Ufv"; */
+"kbk-rv-Ufv.text" = "用户名：";
+
+/* Class = "UIButton"; normalTitle = "取消"; ObjectID = "u6q-XI-zda"; */
+"u6q-XI-zda.normalTitle" = "取消";

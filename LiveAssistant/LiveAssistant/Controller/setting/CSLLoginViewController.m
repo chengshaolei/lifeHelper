@@ -31,6 +31,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    self.navigationItem.title = NSLocalizedString(@"login", nil);
     //使用手势关闭键盘
     UITapGestureRecognizer * tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(keyboardHidden)];
     tapGesture.numberOfTapsRequired = 1;
@@ -70,6 +71,7 @@
     }
 }
 
+//键盘消失
 -(void) keyboarddisApper{
     if (isKeyboardShow) {
         __weak CSLLoginViewController * weakSelf = self;
@@ -82,7 +84,6 @@
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
     _passwordTextField = nil;
     _userNameTextField = nil;
     _checkButton = nil;
@@ -103,19 +104,20 @@
     [self keyboardHidden];
 }
 
+//注册
 -(IBAction) registerUser:(id)sender{
     [self keyboardHidden];
-    CSLRegisterViewController * registerController = [[CSLRegisterViewController alloc] init];
-    registerController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    CSLRegisterViewController * registerController = [[CSLRegisterViewController alloc] initWithNibName:@" CSLRegisterViewController" bundle:nil];
     
-    //被推出的控制器称为模态视图控制器
     [self.navigationController pushViewController:registerController animated:YES];
 }
+
+//登录
 -(IBAction) login:(id)sender{
     [self keyboardHidden];
     //验证码验证
     if ([_checkButton check:_checkTextField.text]==NO) {
-        [Auxiliary alertWithTitle:@"错误" message:@"验证码错误！" button:1 done:nil];
+        [Auxiliary alertWithTitle:NSLocalizedString(@"error", nil) message:NSLocalizedString(@"verification code error", nil) button:1 done:nil];
         return;
     }
     
@@ -129,7 +131,14 @@
         user.isLogin = YES;
     }
     else{
-        [Auxiliary alertWithTitle:@"验证错误" message:@"用户名或密码错误!" button:1 done:nil];
+        [Auxiliary alertWithTitle:NSLocalizedString(@"error", nil) message:NSLocalizedString(@"user name or password error", nil) button:1 done:nil];
+        
     }
 }
+
+//"login" = "登录";
+//"register" = "注册";
+//"verification code error" = "验证码错误";
+//"user name or password error" = "用户名或密码错误";
+//"error" = "错误";
 @end
