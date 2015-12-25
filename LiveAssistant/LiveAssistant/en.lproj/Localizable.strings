@@ -68,7 +68,7 @@
 "About us" = "About us";
 
 //登录注册
-"login" = "login";
+"login" = "logined";
 "register" = "register";
 "verification code error" = "verification code error";
 "user name or password error" = "user name or password error";
@@ -77,3 +77,9 @@
 
 //默认规则用户名由大小写26个英文字母和数组组成，长度6-20位
 "username rule" = "username  must be consisted of letters and digit digital，length of 6-20";
+"password rule" = "password  must be consisted of letters and digit digital，length of 6-20";
+"confirm pwd" = "Two input password is not consistent";
+"reminder" = "reminder";
+"failure" = "failure";
+"register failure" = "register failure";
+"duplicatename" = "Duplicate Name";

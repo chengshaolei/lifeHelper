@@ -129,6 +129,10 @@
         user.userName =_userNameTextField.text;
         user.password = _passwordTextField.text;
         user.isLogin = YES;
+        if (_loginCallBack) {
+            _loginCallBack(YES);
+        }
+        [self.navigationController popViewControllerAnimated:YES];
     }
     else{
         [Auxiliary alertWithTitle:NSLocalizedString(@"error", nil) message:NSLocalizedString(@"user name or password error", nil) button:1 done:nil];
@@ -136,9 +140,4 @@
     }
 }
 
-//"login" = "登录";
-//"register" = "注册";
-//"verification code error" = "验证码错误";
-//"user name or password error" = "用户名或密码错误";
-//"error" = "错误";
 @end

@@ -67,7 +67,7 @@
 "About us" = "关于我们";
 
 
-"login" = "登录";
+"login" = "已登录";
 "Not Login" = "未登录";
 "register" = "注册";
 "verification code error" = "验证码错误";
@@ -75,4 +75,10 @@
 "error" = "错误";
 
 //默认规则用户名由大小写26个英文字母和数组组成，长度6-20位
-"username rule" = "u用户名由大小写26个英文字母和数组组成，长度6-20位";
+"username rule" = "用户名由大小写26个英文字母和数组组成，长度6-20位";
+"password rule" = "密码由大小写26个英文字母和数组组成，长度6-20位";
+"confirm pwd" = "两次输入的密码不一致";
+"reminder" = "警告";
+"failure" = "失败";
+"register failure" = "注册失败";
+"duplicatename" = "用户名重名";

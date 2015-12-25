@@ -39,6 +39,7 @@
     
         //设置数据库路径
         NSString * path = [NSHomeDirectory() stringByAppendingFormat:@"/Documents/%@",dbName];
+        NSLog(@"%@",path);
         
         //创建数据库，如果没有该数据库，则创建
         _db = [FMDatabase databaseWithPath:path];

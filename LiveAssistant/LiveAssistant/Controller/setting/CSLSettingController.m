@@ -13,6 +13,7 @@
 #import "Auxiliary.h"
 #import "CSLLoginViewController.h"
 
+
 #define SettingCellReuse @"SettingTableViewCell"
 #define MYAppID @"1070708005"
 @interface CSLSettingController ()<UITableViewDataSource,UITableViewDelegate>
@@ -25,6 +26,7 @@
 {
     NSArray * _controllers;
     UIImageView * _protraitView;//头像
+    UIButton * _loginBtn;//登录按钮
 }
 
 - (void)viewDidLoad {
@@ -35,8 +37,10 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    _controllers = nil;
+    _protraitView = nil;
 }
+
 
 -(void) settingInit{
     self.navigationItem.title = NSLocalizedString(@"setting", nil);
@@ -63,21 +67,19 @@
     [_protraitView addSubview:portraitBtn];
     
     //登录按钮
-    UIButton * loginBtn = [UIButton buttonWithType:UIButtonTypeSystem];
-    loginBtn.frame = CGRectMake(0, 0, 80, 30);
-    [loginBtn setTitle:NSLocalizedString(@"Not Login", nil) forState:UIControlStateNormal];
-    [loginBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    loginBtn.translatesAutoresizingMaskIntoConstraints = NO;
-    [loginBtn addTarget:self action:@selector(login:) forControlEvents:UIControlEventTouchUpInside];
-    [_protraitView addSubview:loginBtn];
-    
-    
+    _loginBtn = [UIButton buttonWithType:UIButtonTypeSystem];
+    _loginBtn.frame = CGRectMake(0, 0, 80, 30);
+    [_loginBtn setTitle:NSLocalizedString(@"Not Login", nil) forState:UIControlStateNormal];
+    [_loginBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    _loginBtn.translatesAutoresizingMaskIntoConstraints = NO;
+    [_loginBtn addTarget:self action:@selector(login:) forControlEvents:UIControlEventTouchUpInside];
+    [_protraitView addSubview:_loginBtn];
     
     //适配
     portraitBtn.translatesAutoresizingMaskIntoConstraints = NO;
-    [_protraitView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-40-[portraitBtn(60)]-10-[loginBtn(30)]-40-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(portraitBtn,loginBtn)]];
+    [_protraitView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-40-[portraitBtn(60)]-10-[_loginBtn(30)]-40-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(portraitBtn,_loginBtn)]];
     [_protraitView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-130-[portraitBtn(60)]-130-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(portraitBtn)]];
-    [_protraitView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-110-[loginBtn(80)]-110-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(loginBtn)]];
+    [_protraitView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-110-[_loginBtn(80)]-110-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_loginBtn)]];
     
 }
 
@@ -118,6 +120,12 @@
 
 -(void) login:(UIButton*)sender{
     CSLLoginViewController * loginController = [[CSLLoginViewController alloc] init];
+    __weak CSLLoginViewController* weakVc = loginController;
+    __weak UIButton * weakBtn = _loginBtn;
+    weakVc.loginCallBack = ^(BOOL isLogin){//修改标题
+        [weakBtn setTitle:NSLocalizedString(@"login", nil) forState:UIControlStateNormal];
+    };
+
     [self.navigationController pushViewController:loginController animated:YES];
 }
 

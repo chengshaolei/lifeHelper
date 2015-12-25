@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface CSLLoginViewController : UIViewController
-
+//登录成功的回调
+@property(nonatomic,copy) void(^loginCallBack)(BOOL isLogin);
 @end

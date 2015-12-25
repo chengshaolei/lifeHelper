@@ -17,9 +17,21 @@ typedef enum {ERROR,SUCCESS}ErrorType ;
 
 +(instancetype) shareInstance;//单例
 
-//验证
+//功能：验证用户名、密码是否正确
+//参数：name 用户名
+//     password 密码
+//返回值：成功返回SUCCESS,否则返回ERROR
 -(ErrorType) checkName:(NSString*)name password:(NSString*)password;
 
-//在数据库里注册用户
+//功能：是否重名
+//参数：name 用户名
+//返回值：重名返回YES，否返回NO
+-(BOOL) isDuplicateName:(NSString*)name;
+
+
+//功能：在数据库里注册用户
+//参数：name 用户名
+//     password 密码
+//返回值：成功返回SUCCESS,否则返回ERROR
 -(ErrorType) registerUser:(NSString*)name password:(NSString*)password;
 @end

@@ -191,6 +191,8 @@
 		6C93F0CC1C19246B007BA2B0 /* CSLExpressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C93F0CA1C19246B007BA2B0 /* CSLExpressViewController.xib */; };
 		6C93F0D01C1925D1007BA2B0 /* CSLNetRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C93F0CF1C1925D1007BA2B0 /* CSLNetRequest.m */; };
 		6C93F0D31C195B72007BA2B0 /* CSLDownListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C93F0D21C195B72007BA2B0 /* CSLDownListView.m */; };
+		6C9E998C1C2D853E0075173C /* NSData+cryptUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C9E998B1C2D853E0075173C /* NSData+cryptUtil.m */; };
+		6C9E998F1C2D86DA0075173C /* NSString+cryptUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C9E998E1C2D86DA0075173C /* NSString+cryptUtil.m */; };
 		6C9FB9B51C185BE700725C02 /* CSLChatroomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C9FB9911C185BE600725C02 /* CSLChatroomViewController.m */; };
 		6C9FB9B61C185BE700725C02 /* CSLChatroomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C9FB9921C185BE600725C02 /* CSLChatroomViewController.xib */; };
 		6C9FB9B71C185BE700725C02 /* CSLToolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C9FB9951C185BE600725C02 /* CSLToolViewController.m */; };
@@ -534,6 +536,10 @@
 		6C93F0CF1C1925D1007BA2B0 /* CSLNetRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSLNetRequest.m; sourceTree = "<group>"; };
 		6C93F0D11C195B72007BA2B0 /* CSLDownListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSLDownListView.h; sourceTree = "<group>"; };
 		6C93F0D21C195B72007BA2B0 /* CSLDownListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSLDownListView.m; sourceTree = "<group>"; };
+		6C9E998A1C2D853E0075173C /* NSData+cryptUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+cryptUtil.h"; path = "crypt/NSData+cryptUtil.h"; sourceTree = "<group>"; };
+		6C9E998B1C2D853E0075173C /* NSData+cryptUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+cryptUtil.m"; path = "crypt/NSData+cryptUtil.m"; sourceTree = "<group>"; };
+		6C9E998D1C2D86DA0075173C /* NSString+cryptUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+cryptUtil.h"; path = "crypt/NSString+cryptUtil.h"; sourceTree = "<group>"; };
+		6C9E998E1C2D86DA0075173C /* NSString+cryptUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+cryptUtil.m"; path = "crypt/NSString+cryptUtil.m"; sourceTree = "<group>"; };
 		6C9FB9901C185BE600725C02 /* CSLChatroomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSLChatroomViewController.h; sourceTree = "<group>"; };
 		6C9FB9911C185BE600725C02 /* CSLChatroomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSLChatroomViewController.m; sourceTree = "<group>"; };
 		6C9FB9921C185BE600725C02 /* CSLChatroomViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSLChatroomViewController.xib; sourceTree = "<group>"; };
@@ -1023,6 +1029,17 @@
 			path = Resource/city;
 			sourceTree = "<group>";
 		};
+		6C9E99861C2D83210075173C /* crypt */ = {
+			isa = PBXGroup;
+			children = (
+				6C9E998D1C2D86DA0075173C /* NSString+cryptUtil.h */,
+				6C9E998E1C2D86DA0075173C /* NSString+cryptUtil.m */,
+				6C9E998A1C2D853E0075173C /* NSData+cryptUtil.h */,
+				6C9E998B1C2D853E0075173C /* NSData+cryptUtil.m */,
+			);
+			name = crypt;
+			sourceTree = "<group>";
+		};
 		6C9FB98E1C185BE600725C02 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -1143,6 +1160,7 @@
 		6C9FB9A61C185BE700725C02 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				6C9E99861C2D83210075173C /* crypt */,
 				6C8CFA601C29794F00E59FFF /* CLLocation+Sino */,
 				6CB9EBD71C1FF0D0006C64F0 /* DB */,
 				6C6D47CA1C18613C00B80FB6 /* 3rd */,
@@ -1916,6 +1934,7 @@
 				6CF5C1171C25873B0086FCC6 /* CSLTermModel.m in Sources */,
 				6CB9EC351C202CF8006C64F0 /* MJRefreshConst.m in Sources */,
 				6CB9EBCB1C1FEDDF006C64F0 /* JSONAPI.m in Sources */,
+				6C9E998C1C2D853E0075173C /* NSData+cryptUtil.m in Sources */,
 				6C93F0CB1C19246B007BA2B0 /* CSLExpressViewController.m in Sources */,
 				6CEE38A21C2191FE0077291F /* SCNavTabBar.m in Sources */,
 				6C6D47CD1C18617900B80FB6 /* CSLScanViewController.m in Sources */,
@@ -1942,6 +1961,7 @@
 				6CB9EC261C202CF8006C64F0 /* MJRefreshAutoFooter.m in Sources */,
 				6C007C281C2A4A39002126AC /* CSLComBoxView.m in Sources */,
 				6C03EC231C296DF600816E50 /* CSLIndexModel.m in Sources */,
+				6C9E998F1C2D86DA0075173C /* NSString+cryptUtil.m in Sources */,
 				6C9FB9C21C185BE700725C02 /* CSLTabBarController.m in Sources */,
 				6CB9EBCD1C1FEDDF006C64F0 /* JSONModel+networking.m in Sources */,
 				6C8CFA5E1C2978E400E59FFF /* CSLGetCity.m in Sources */,

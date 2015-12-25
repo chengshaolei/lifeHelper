@@ -44,6 +44,15 @@
     return flag?SUCCESS:ERROR;
 }
 
+-(BOOL) isDuplicateName:(NSString*)name{
+    CSLDBManager * dbManager = [CSLDBManager defaultDBManager];;
+    NSArray * result = [dbManager select:@"select username from user where username = ?" where:@[name]];
+    if (result&&result.count>0) {
+        return YES;
+    }
+    return NO;
+}
+
 -(ErrorType) registerUser:(NSString*)name password:(NSString*)password{
      CSLDBManager * dbManager = [CSLDBManager defaultDBManager];
     return [dbManager insertTable:@"user" record:@{@"username":name,@"password":password}];

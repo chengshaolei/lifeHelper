@@ -10,7 +10,7 @@
 #import "CSLUser.h"
 #import "Auxiliary.h"
 
-@interface CSLRegisterViewController ()
+@interface CSLRegisterViewController ()<UITextFieldDelegate>
 -(IBAction) registerUser:(id)sender;//用户注册
 -(IBAction) cancel:(id)sender;
 -(BOOL) check;//检查用户名和密码是否为空
@@ -26,6 +26,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = NSLocalizedString(@"register", nil);
+    UITapGestureRecognizer * tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(keyboardHidden)];
+    [self.view addGestureRecognizer:tapGesture];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -43,6 +45,17 @@
         return;
     };
     
+    NSString * name = _nameTextField.text;
+    
+    //用户名不能和已有用户名重名
+    if([[CSLUser shareInstance] isDuplicateName:name]){
+        [Auxiliary alertWithTitle:NSLocalizedString(@"reminder", nil) message:NSLocalizedString(@"duplicatename", nil) button:1 done:nil];
+        _nameTextField.text = @"";
+        [_nameTextField becomeFirstResponder];
+        return ;
+    }
+
+    NSLog(@"%@",NSHomeDirectory());
     if ([[CSLUser shareInstance] registerUser:_nameTextField.text password:_passwordTextField.text]) {
         NSDictionary * dict = @{@"name":_nameTextField.text,
                                 @"password":_passwordTextField.text};
@@ -53,7 +66,7 @@
         [self.navigationController popViewControllerAnimated:YES];
     }
     else{
-        [Auxiliary alertWithTitle:@"失败" message:@"注册失败！" button:1 done:nil];
+        [Auxiliary alertWithTitle:NSLocalizedString(@"failure", nil) message:NSLocalizedString(@"register failure", nil) button:1 done:nil];
     }
     
    
@@ -65,10 +78,7 @@
 -(BOOL) check{
     NSString * name = _nameTextField.text;
     NSString * pwd = _passwordTextField.text;
-    
-    //去掉空格回车
-    name = [name stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-    pwd = [pwd stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    NSString * confirm = _confirmPasswordTextField.text;
     
     //验证用户名
     if (![Auxiliary validateUserName:name rule:nil]) {
@@ -78,13 +88,35 @@
         return NO;
     }
     
-    //验证密码
-    if ([Auxiliary validatePassword:pwd rule:nil]) {
+    
+    //如果密码和确认密码不对称
+    if (![pwd isEqualToString:confirm]) {
+        [Auxiliary alertWithTitle:NSLocalizedString(@"reminder", nil) message:NSLocalizedString(@"confirm pwd", nil) button:1 done:nil];
+        return NO;
+    }
+
+    
+    //验证密码是否符合规则
+    if (![Auxiliary validatePassword:pwd rule:nil]) {
         [_passwordTextField becomeFirstResponder];
         _passwordTextField.text = @"";
-        [Auxiliary alertWithTitle:NSLocalizedString(@"reminder", nil) message:NSLocalizedString(@"username rule", nil) button:1 done:nil];
+        _confirmPasswordTextField.text = @"";
+        [Auxiliary alertWithTitle:NSLocalizedString(@"reminder", nil) message:NSLocalizedString(@"password rule", nil) button:1 done:nil];
         return NO;
     }
     return YES;
 }
+
+//隐藏键盘
+-(void) keyboardHidden{
+    [self.view endEditing:YES];
+}
+
+#pragma mark---------UITextFieldDelegate-------
+- (BOOL)textFieldShouldReturn:(UITextField *)textField{
+    [self keyboardHidden];//隐藏键盘
+    return YES;
+}
+
+
 @end
