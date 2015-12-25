@@ -85,14 +85,14 @@
                     <exclude reference="Woe-Lz-xuu"/>
                 </mask>
                 <mask key="constraints">
-                    <exclude reference="37S-0v-66q"/>
-                    <exclude reference="Fi7-Gw-IPY"/>
-                    <exclude reference="g4o-iM-a3m"/>
-                    <exclude reference="iTw-z4-xpK"/>
                     <exclude reference="0be-Sj-8Fm"/>
                     <exclude reference="1rN-a7-TTT"/>
                     <exclude reference="mLS-3f-gJA"/>
                     <exclude reference="nPi-bo-d9q"/>
+                    <exclude reference="37S-0v-66q"/>
+                    <exclude reference="Fi7-Gw-IPY"/>
+                    <exclude reference="g4o-iM-a3m"/>
+                    <exclude reference="iTw-z4-xpK"/>
                 </mask>
             </variation>
             <variation key="widthClass=compact">
@@ -101,14 +101,14 @@
                     <include reference="Woe-Lz-xuu"/>
                 </mask>
                 <mask key="constraints">
-                    <include reference="37S-0v-66q"/>
-                    <include reference="Fi7-Gw-IPY"/>
-                    <include reference="g4o-iM-a3m"/>
-                    <include reference="iTw-z4-xpK"/>
                     <include reference="0be-Sj-8Fm"/>
                     <include reference="1rN-a7-TTT"/>
                     <include reference="mLS-3f-gJA"/>
                     <include reference="nPi-bo-d9q"/>
+                    <include reference="37S-0v-66q"/>
+                    <include reference="Fi7-Gw-IPY"/>
+                    <include reference="g4o-iM-a3m"/>
+                    <include reference="iTw-z4-xpK"/>
                 </mask>
             </variation>
         </view>

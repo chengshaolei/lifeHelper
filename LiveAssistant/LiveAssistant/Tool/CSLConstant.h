@@ -9,6 +9,11 @@
 #ifndef QFConstant_h
 #define QFConstant_h
 
+//屏幕宽高
+#define kSCREENWIDTH      [UIScreen mainScreen].bounds.size.width
+#define kSCREENHEIGHT   [UIScreen mainScreen].bounds.size.height
+
+
 //快递请求地址,post方式,参数：
 //apikey ：授权密钥：
 //keyword ：需要查询的快递单号

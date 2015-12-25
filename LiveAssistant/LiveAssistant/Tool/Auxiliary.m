@@ -196,5 +196,6 @@
     else{
         [Auxiliary alertWithTitle:@"更新" message:@"应用还未上线，无法查询！" button:1 done:nil];
     }
+
 }
 @end

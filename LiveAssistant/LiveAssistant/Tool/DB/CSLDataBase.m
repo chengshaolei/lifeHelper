@@ -14,7 +14,7 @@
 
 @implementation CSLDBManager
 {
-    FMDatabase * _db;//数据库
+  
 }
 
 

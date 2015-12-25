@@ -20,6 +20,13 @@
 		6C03EC371C296E0800816E50 /* CSLWeatherDAL.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C03EC2E1C296E0800816E50 /* CSLWeatherDAL.m */; };
 		6C03EC381C296E0800816E50 /* CSLCommonHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C03EC311C296E0800816E50 /* CSLCommonHelper.m */; };
 		6C03EC391C296E0800816E50 /* CSLSingleWeatherView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C03EC331C296E0800816E50 /* CSLSingleWeatherView.m */; };
+		6C0418BD1C2CCADE00606BF3 /* headerbg.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C0418BC1C2CCADE00606BF3 /* headerbg.png */; };
+		6C0418BF1C2CCDEA00606BF3 /* portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C0418BE1C2CCDEA00606BF3 /* portrait.png */; };
+		6C0418D51C2CDE1200606BF3 /* CSLCheckCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C0418CE1C2CDE1200606BF3 /* CSLCheckCodeView.m */; };
+		6C0418D61C2CDE1200606BF3 /* CSLLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C0418D01C2CDE1200606BF3 /* CSLLoginViewController.m */; };
+		6C0418D71C2CDE1200606BF3 /* CSLRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C0418D21C2CDE1200606BF3 /* CSLRegisterViewController.m */; };
+		6C0418D81C2CDE1200606BF3 /* CSLUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C0418D41C2CDE1200606BF3 /* CSLUser.m */; };
+		6C0418DA1C2CEC5B00606BF3 /* CSLLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C0418D91C2CEC5B00606BF3 /* CSLLoginViewController.xib */; };
 		6C043B191C2B70B4005B29C0 /* CSLSettingController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C043B181C2B70B4005B29C0 /* CSLSettingController.xib */; };
 		6C043B1C1C2B7812005B29C0 /* CSLFavortateController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C043B1B1C2B7812005B29C0 /* CSLFavortateController.m */; };
 		6C043B201C2B7841005B29C0 /* CSLAboutUsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C043B1E1C2B7841005B29C0 /* CSLAboutUsController.m */; };
@@ -325,6 +332,17 @@
 		6C03EC311C296E0800816E50 /* CSLCommonHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSLCommonHelper.m; sourceTree = "<group>"; };
 		6C03EC321C296E0800816E50 /* CSLSingleWeatherView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSLSingleWeatherView.h; path = view/CSLSingleWeatherView.h; sourceTree = "<group>"; };
 		6C03EC331C296E0800816E50 /* CSLSingleWeatherView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSLSingleWeatherView.m; path = view/CSLSingleWeatherView.m; sourceTree = "<group>"; };
+		6C0418BC1C2CCADE00606BF3 /* headerbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = headerbg.png; sourceTree = "<group>"; };
+		6C0418BE1C2CCDEA00606BF3 /* portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = portrait.png; sourceTree = "<group>"; };
+		6C0418CD1C2CDE1200606BF3 /* CSLCheckCodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSLCheckCodeView.h; path = setting/CSLCheckCodeView.h; sourceTree = "<group>"; };
+		6C0418CE1C2CDE1200606BF3 /* CSLCheckCodeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSLCheckCodeView.m; path = setting/CSLCheckCodeView.m; sourceTree = "<group>"; };
+		6C0418CF1C2CDE1200606BF3 /* CSLLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSLLoginViewController.h; path = setting/CSLLoginViewController.h; sourceTree = "<group>"; };
+		6C0418D01C2CDE1200606BF3 /* CSLLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSLLoginViewController.m; path = setting/CSLLoginViewController.m; sourceTree = "<group>"; };
+		6C0418D11C2CDE1200606BF3 /* CSLRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSLRegisterViewController.h; path = setting/CSLRegisterViewController.h; sourceTree = "<group>"; };
+		6C0418D21C2CDE1200606BF3 /* CSLRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSLRegisterViewController.m; path = setting/CSLRegisterViewController.m; sourceTree = "<group>"; };
+		6C0418D31C2CDE1200606BF3 /* CSLUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSLUser.h; path = setting/CSLUser.h; sourceTree = "<group>"; };
+		6C0418D41C2CDE1200606BF3 /* CSLUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSLUser.m; path = setting/CSLUser.m; sourceTree = "<group>"; };
+		6C0418D91C2CEC5B00606BF3 /* CSLLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSLLoginViewController.xib; sourceTree = "<group>"; };
 		6C043B181C2B70B4005B29C0 /* CSLSettingController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSLSettingController.xib; sourceTree = "<group>"; };
 		6C043B1A1C2B7812005B29C0 /* CSLFavortateController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSLFavortateController.h; path = setting/CSLFavortateController.h; sourceTree = "<group>"; };
 		6C043B1B1C2B7812005B29C0 /* CSLFavortateController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSLFavortateController.m; path = setting/CSLFavortateController.m; sourceTree = "<group>"; };
@@ -772,9 +790,26 @@
 			path = view/Helper;
 			sourceTree = "<group>";
 		};
+		6C0418CC1C2CDDF500606BF3 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				6C0418CD1C2CDE1200606BF3 /* CSLCheckCodeView.h */,
+				6C0418CE1C2CDE1200606BF3 /* CSLCheckCodeView.m */,
+				6C0418CF1C2CDE1200606BF3 /* CSLLoginViewController.h */,
+				6C0418D01C2CDE1200606BF3 /* CSLLoginViewController.m */,
+				6C0418D91C2CEC5B00606BF3 /* CSLLoginViewController.xib */,
+				6C0418D11C2CDE1200606BF3 /* CSLRegisterViewController.h */,
+				6C0418D21C2CDE1200606BF3 /* CSLRegisterViewController.m */,
+				6C0418D31C2CDE1200606BF3 /* CSLUser.h */,
+				6C0418D41C2CDE1200606BF3 /* CSLUser.m */,
+			);
+			name = login;
+			sourceTree = "<group>";
+		};
 		6C49DE5C1C28F3390086B04E /* setting */ = {
 			isa = PBXGroup;
 			children = (
+				6C0418CC1C2CDDF500606BF3 /* login */,
 				6C49DE5D1C28F37B0086B04E /* CSLSettingController.h */,
 				6C49DE5E1C28F37B0086B04E /* CSLSettingController.m */,
 				6C043B181C2B70B4005B29C0 /* CSLSettingController.xib */,
@@ -1054,6 +1089,8 @@
 		6C9FB99D1C185BE600725C02 /* resourcelib */ = {
 			isa = PBXGroup;
 			children = (
+				6C0418BE1C2CCDEA00606BF3 /* portrait.png */,
+				6C0418BC1C2CCADE00606BF3 /* headerbg.png */,
 				6C8CFB421C29857F00E59FFF /* wheather */,
 				6C49DE651C2953FD0086B04E /* skin03 */,
 				6CF5C11A1C2595A80086FCC6 /* QQ图片20151219201420.jpg */,
@@ -1672,6 +1709,7 @@
 				6C8CFBFD1C29857F00E59FFF /* n_scatteredsnow@2x.png in Resources */,
 				6C49DE811C2953FD0086B04E /* 3bgWidget@2x.png in Resources */,
 				6C8CFC081C29857F00E59FFF /* rain.png in Resources */,
+				6C0418BD1C2CCADE00606BF3 /* headerbg.png in Resources */,
 				6C49DE5B1C28F30D0086B04E /* tabbar_setting@3x.png in Resources */,
 				6C8CFBD51C29857F00E59FFF /* effect_clear.png in Resources */,
 				6C49DE861C2953FD0086B04E /* 31.png in Resources */,
@@ -1793,6 +1831,7 @@
 				6C03EC351C296E0800816E50 /* CSLThemeScreentShotCell.xib in Resources */,
 				6C8CFBDA1C29857F00E59FFF /* effect_rain@2x.png in Resources */,
 				6C8CFBCF1C29857F00E59FFF /* butMode@2x.png in Resources */,
+				6C0418BF1C2CCDEA00606BF3 /* portrait.png in Resources */,
 				6C8CFBCE1C29857F00E59FFF /* butMode.png in Resources */,
 				6C8CFBB51C29857F00E59FFF /* 2@2x.png in Resources */,
 				6C8CFBD31C29857F00E59FFF /* cloudy@2x.png in Resources */,
@@ -1805,6 +1844,7 @@
 				6CB9EC341C202CF8006C64F0 /* MJRefresh.bundle in Resources */,
 				6CF5C2A01C26AE2F0086FCC6 /* zhengjiang.png in Resources */,
 				6CB503C91C185ACE0026891F /* Main.storyboard in Resources */,
+				6C0418DA1C2CEC5B00606BF3 /* CSLLoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1870,6 +1910,7 @@
 				6CEE38A21C2191FE0077291F /* SCNavTabBar.m in Sources */,
 				6C6D47CD1C18617900B80FB6 /* CSLScanViewController.m in Sources */,
 				6C043B241C2B826E005B29C0 /* CSLClearCache.m in Sources */,
+				6C0418D51C2CDE1200606BF3 /* CSLCheckCodeView.m in Sources */,
 				6CF5C1091C2540A70086FCC6 /* cSLVocabularyModel.m in Sources */,
 				6CB9EBCE1C1FEDDF006C64F0 /* JSONKeyMapper.m in Sources */,
 				6C9FB9B71C185BE700725C02 /* CSLToolViewController.m in Sources */,
@@ -1895,6 +1936,7 @@
 				6CB9EBCD1C1FEDDF006C64F0 /* JSONModel+networking.m in Sources */,
 				6C8CFA5E1C2978E400E59FFF /* CSLGetCity.m in Sources */,
 				6C043B201C2B7841005B29C0 /* CSLAboutUsController.m in Sources */,
+				6C0418D81C2CDE1200606BF3 /* CSLUser.m in Sources */,
 				6C9FB9C51C185BE700725C02 /* QRCodeReaderView.m in Sources */,
 				6CB9EBC81C1FEDDF006C64F0 /* JSONModelClassProperty.m in Sources */,
 				6C03EC361C296E0800816E50 /* CSLSetingDal.m in Sources */,
@@ -1939,6 +1981,7 @@
 				6CEE38A31C2191FE0077291F /* SCPopView.m in Sources */,
 				6CB9EC2A1C202CF8006C64F0 /* MJRefreshHeader.m in Sources */,
 				6CB9EC2C1C202CF8006C64F0 /* MJRefreshAutoNormalFooter.m in Sources */,
+				6C0418D61C2CDE1200606BF3 /* CSLLoginViewController.m in Sources */,
 				6C9FB9C31C185BE700725C02 /* QRCameraSwitchButton.m in Sources */,
 				6CB9EBC61C1FEDDF006C64F0 /* JSONModel.m in Sources */,
 				6C8CFA5F1C2978E400E59FFF /* CSLGetPlace.m in Sources */,
@@ -1961,6 +2004,7 @@
 				6C6D47D01C18833600B80FB6 /* Auxiliary.m in Sources */,
 				6CB503C01C185ACE0026891F /* main.m in Sources */,
 				6CB9EC331C202CF8006C64F0 /* MJRefreshStateHeader.m in Sources */,
+				6C0418D71C2CDE1200606BF3 /* CSLRegisterViewController.m in Sources */,
 				6CB9EBF11C1FF657006C64F0 /* CSLHealthViewController.m in Sources */,
 				6C03EC381C296E0800816E50 /* CSLCommonHelper.m in Sources */,
 				6CD1781C1C22D8A900E6DE32 /* CSLDrugListCell.m in Sources */,

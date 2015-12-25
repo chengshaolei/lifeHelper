@@ -9,8 +9,9 @@
 #import <Foundation/Foundation.h>
 
 #define DBNAME  @"myDB" //请根据自己的需要修改数据库名字
+@class FMDatabase;
 @interface CSLDBManager : NSObject
-
+@property(nonatomic,strong)   FMDatabase * db;//数据库
 +(instancetype) defaultDBManager;//单例
 
 //功能：判断一个表是否存在
