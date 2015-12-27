@@ -11,8 +11,11 @@
 #import "CSLLoginViewController.h"
 #import "CSLCheckCodeView.h"
 #import "CSLUser.h"
+#import "CSLNetRequest.h"
 #import "CSLRegisterViewController.h"
 #import "Auxiliary.h"
+#import "UMSocial.h"
+#import "CSLConstant.h"
 
 @interface CSLLoginViewController ()
 -(void) registerUser:(id)sender;
@@ -140,4 +143,28 @@
     }
 }
 
+//sina登录
+- (IBAction)sinaLogin:(id)sender {
+    UMSocialSnsPlatform *snsPlatform = [UMSocialSnsPlatformManager getSocialPlatformWithName:UMShareToSina];
+    __weak CSLLoginViewController * weakSelf = self;
+    snsPlatform.loginClickHandler(self,[UMSocialControllerService defaultControllerService],YES,^(UMSocialResponseEntity *response){
+        //获取微博用户名、uid、token等
+        if (response.responseCode == UMSResponseCodeSuccess) {
+            
+            UMSocialAccountEntity *snsAccount = [[UMSocialAccountManager socialAccountDictionary] valueForKey:UMShareToSina];
+            //记录用户信息
+            [CSLUser shareInstance].userName = snsAccount.userName;
+            [CSLUser shareInstance].password = snsAccount.usid;
+            [CSLUser shareInstance].isLogin = YES;
+            [CSLUser shareInstance].isThirdParty = YES;
+            [CSLUser shareInstance].iconUrl = snsAccount.iconURL;
+            if ([[CSLUser shareInstance] isInDataBase:snsAccount.userName uid:snsAccount.usid]==NO) {//如果数据库没有
+                [[CSLUser shareInstance] registerUser:snsAccount.userName password:snsAccount.usid];//注册账号
+            }
+            
+            //发通知，更新头像
+            [[NSNotificationCenter defaultCenter] postNotificationName:Notification_Update_HeadImage object:nil userInfo:@{@"iconURL":snsAccount.iconURL}];
+            [weakSelf.navigationController popToRootViewControllerAnimated:YES];
+        }});
+}
 @end

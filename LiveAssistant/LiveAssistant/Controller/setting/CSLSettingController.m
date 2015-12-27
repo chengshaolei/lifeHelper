@@ -12,6 +12,8 @@
 #import "CSLClearCache.h"
 #import "Auxiliary.h"
 #import "CSLLoginViewController.h"
+#import "CSLConstant.h"
+#import "CSLUser.h"
 
 
 #define SettingCellReuse @"SettingTableViewCell"
@@ -25,7 +27,8 @@
 @implementation CSLSettingController
 {
     NSArray * _controllers;
-    UIImageView * _protraitView;//头像
+    UIImageView * _protraitView;//头视图
+    UIButton * _portraitBtn;//头像
     UIButton * _loginBtn;//登录按钮
 }
 
@@ -49,6 +52,9 @@
     [self.dataSource addObjectsFromArray:@[NSLocalizedString(@"Favorite", nil),NSLocalizedString(@"Clear Cache", nil),NSLocalizedString(@"Version Check", nil),NSLocalizedString(@"About us", nil)]];
     [self.settingTable registerClass:[UITableViewCell class] forCellReuseIdentifier:SettingCellReuse];
     [self setupHeaderView];
+    
+    //注册观察者
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateHeadImage:) name:Notification_Update_HeadImage object:nil];
 }
 
 -(void) setupHeaderView{
@@ -59,13 +65,13 @@
     self.settingTable.tableHeaderView = _protraitView;
     
     //设置头像视图
-    UIButton * portraitBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    portraitBtn.frame = CGRectMake(0, 0, 60, 60);
-    portraitBtn.layer.cornerRadius = 30;
-    portraitBtn.layer.masksToBounds = YES;
-    [portraitBtn setImage:[UIImage imageNamed:@"portrait"] forState:UIControlStateNormal];
-    [portraitBtn addTarget:self action:@selector(changePortrait) forControlEvents:UIControlStateNormal];
-    [_protraitView addSubview:portraitBtn];
+    _portraitBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    _portraitBtn.frame = CGRectMake(0, 0, 60, 60);
+    _portraitBtn.layer.cornerRadius = 30;
+    _portraitBtn.layer.masksToBounds = YES;
+    [_portraitBtn setImage:[UIImage imageNamed:@"portrait"] forState:UIControlStateNormal];
+    [_portraitBtn addTarget:self action:@selector(changePortrait) forControlEvents:UIControlEventTouchUpInside];
+    [_protraitView addSubview:_portraitBtn];
     
     //登录按钮
     _loginBtn = [UIButton buttonWithType:UIButtonTypeSystem];
@@ -77,9 +83,9 @@
     [_protraitView addSubview:_loginBtn];
     
     //适配
-    portraitBtn.translatesAutoresizingMaskIntoConstraints = NO;
-    [_protraitView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-40-[portraitBtn(60)]-10-[_loginBtn(30)]-40-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(portraitBtn,_loginBtn)]];
-    [_protraitView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-130-[portraitBtn(60)]-130-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(portraitBtn)]];
+    _portraitBtn.translatesAutoresizingMaskIntoConstraints = NO;
+    [_protraitView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-40-[_portraitBtn(60)]-10-[_loginBtn(30)]-40-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_portraitBtn,_loginBtn)]];
+    [_protraitView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-130-[_portraitBtn(60)]-130-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_portraitBtn)]];
     [_protraitView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-110-[_loginBtn(80)]-110-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_loginBtn)]];
     
 }
@@ -134,5 +140,19 @@
 //修改头像
 -(void) changePortrait{
     
+}
+
+-(void) updateHeadImage:(NSNotification*)notification{
+    if ([CSLUser shareInstance].isThirdParty && [CSLUser shareInstance].isLogin) {
+        NSString * url = notification.userInfo[@"iconURL"];
+        if (url&&url.length>0) {
+            [self request:@"GET" url:url para:nil];//请求头像
+        }
+    }
+}
+-(void) parserData:(id)data{//解析数据
+    UIImage * image = [UIImage imageWithData:data];
+    [_portraitBtn setImage:image forState:UIControlStateNormal];
+    [_portraitBtn setTitle:NSLocalizedString(@"login", nil) forState:UIControlStateNormal];
 }
 @end

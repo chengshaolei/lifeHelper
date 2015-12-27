@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 #import "CSLTabBarController.h"
 #import "Auxiliary.h"
-
+#import "UMSocial.h"
 #import "JHAPISDK.h"
 #import "JHOpenidSupplier.h"
 #import "CSLConstant.h"
@@ -147,6 +147,8 @@
     //极光推送
     [self jpush:launchOptions];
     
+    //友盟分享的初始化
+    [UMSocialData setAppKey:UMengAppKey];
     
     //环信初始化
 //    [[EaseMob sharedInstance] registerSDKWithAppKey:@"1000phonemobile#chatdemo" apnsCertName:@"MyPushDemo20151125"];

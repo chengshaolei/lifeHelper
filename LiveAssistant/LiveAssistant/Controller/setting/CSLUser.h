@@ -14,6 +14,8 @@ typedef enum {ERROR,SUCCESS}ErrorType ;
 @property(nonatomic,copy) NSString* userName;
 @property(nonatomic,copy) NSString *password;
 @property(nonatomic,assign) BOOL isLogin;//是否登录
+@property(nonatomic,assign) BOOL isThirdParty;//是否第三方登录
+@property(nonatomic,copy) NSString * iconUrl;//头像URL
 
 //功能：检测用户是否登录
 //参数：无
@@ -33,6 +35,10 @@ typedef enum {ERROR,SUCCESS}ErrorType ;
 //返回值：重名返回YES，否返回NO
 -(BOOL) isDuplicateName:(NSString*)name;
 
+//功能：检测使用第三方登录的账号是否出现在数据库
+//参数：name 第三方账号名；uid 第三方账号id
+//返回值：在数据库返回YES，否返回NO
+-(BOOL) isInDataBase:(NSString*)name uid:(NSString*)uid;
 
 //功能：在数据库里注册用户
 //参数：name 用户名

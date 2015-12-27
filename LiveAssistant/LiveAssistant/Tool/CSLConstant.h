@@ -23,7 +23,8 @@
 //相册列表
 #define kAlbumsUrl  @"http://10.0.8.8/sns/my/album_list.php"
 
-
+//友盟分享
+#define UMengAppKey @"567fc05367e58ebacb003895"
 
 //快递请求地址,post方式,参数：
 //apikey ：授权密钥：
@@ -131,5 +132,7 @@
 //快递查询
 #define kBaiDu_Express_URL @"http://api.ickd.cn/?id=104890&secret=a2308503869152e91f0201e55031cc4e&com=%@&nu=%@&type=json&encode=utf8"
 
+//更换头像通知
+#define Notification_Update_HeadImage @"NotificationUpdateHeadImage"
 
 #endif /* QFConstant_h */

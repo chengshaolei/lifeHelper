@@ -15,6 +15,7 @@
 #import "CSLWeatherDAL.h"
 #import "CSLConstant.h"
 #import <CoreLocation/CoreLocation.h>
+#import "UMSocial.h"
 
 //屏幕宽度和高度
 #define kScreenWidth [UIScreen mainScreen].bounds.size.width
@@ -27,6 +28,7 @@
 -(void) setupUI;//创建界面
 -(void) locateCity;//定位当前城市
 -(void) loadData;//加载数据
+- (UIImage *)imageFromView: (UIView *) theView;//获得屏幕截图
 @end
 
 @implementation CSLWeatherController
@@ -64,7 +66,13 @@
 
 //分享
 -(void) shareWheather{
-    
+    UIImage * image = [self imageFromView:self.view];
+    [UMSocialSnsService presentSnsIconSheetView:self
+                                         appKey:UMengAppKey shareText:@"今天天气"
+                                     shareImage:image
+                                shareToSnsNames:[NSArray arrayWithObjects:UMShareToSina,UMShareToWechatSession,UMShareToQQ,nil]
+                                       delegate:nil];
+
 }
 
 //定位城市
@@ -115,5 +123,17 @@
         NSArray * array = [string componentsSeparatedByString:@","];
         [_dict setValue:array[0] forKey:array[1]];
     }
+}
+
+- (UIImage *)imageFromView: (UIView *) theView
+{
+    
+    UIGraphicsBeginImageContext(theView.frame.size);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    [theView.layer renderInContext:context];
+    UIImage *theImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return theImage;
 }
 @end

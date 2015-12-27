@@ -1,0 +1,103 @@
+/* 
+  Localizable.strings
+  LiveAssistant
+
+  Created by csl on 15/12/9.
+  Copyright © 2015年 CSL. All rights reserved.
+*/
+"tabbar_tool" = "tool";
+"tabbar_chatroom" = "chat";
+"tabbar_health" = "health";
+"tabbar_setting" = "setting";
+
+//手电筒
+"flashlight" = "flashlight";
+
+//警告框
+"alertTitle" = "notification";
+"scanReaderNotSupport" = "Reader not supported by the current device";
+"flashlightNotSupport" = "flashlightNotSupport";
+"scanResult" = "Completion with result";
+
+//下拉列表框
+"placeholdtext" = "please input query item";
+
+
+//药店
+"Business Detail" = "Business Detail";
+"type" = "type";
+"access count" = "access count";
+"scope" = "scope";
+"legal" = "legal";
+"tel" = "tel";
+
+//成语词典
+"dictionary of idioms" ="dictionary of idioms";
+"please input an idiom" = "please input an idiom";
+"bushou" = "bushou";
+"head" = "head";
+"pinyin" = "pinyin";
+"chengyujs" = "chengyujs";
+"from_" = "from";
+"example" = "example";
+"yufa" = "grammar";
+"ciyujs" = "ciyujs";
+"yinzhengjs" = "yinzhengjs";
+"tongyi" = "synonymy";
+"fanyi" = "antonymy";
+
+//有道反义
+"basic" = "basic";
+"web" = "web";
+"translation" = "translation";
+"phonetic" = "phonetic";
+"uk-phonetic" = "uk-phonetic";
+"us-phonetic" = "us-phonetic";
+"youdao" = "youdao";
+
+//天气预报
+"currentWheather" = "currentWheather";
+
+//闹钟
+"alertController" = "Alarm";
+"Add Alarm" = "Add Alarm";
+"delete a alarm" = "delete the alarm";
+"repeat interval" = "repeat interval";
+"title label" = "title";
+"alarm title" = "alarm setting";
+"titletint" = "please input alarm title";//请输入闹钟标题
+"bodytint" = "please input remind content";
+"buttonok" = "ok";
+"repeatmodetint" = "you must select repeat mode";//必须选择重复模式
+//[@"只此一次",@"周一到周五",@"每一天"]
+"only one" = "only one";
+"monday~friday" = "monday~friday";
+"everyday" = "everyday";
+"alarmsave" = "save successfully";//保存成功
+
+//设置
+"setting" = "setting";
+"about us" ="About us";
+"cache clean" = "cache clean";
+"Favorite" = "Favorite";
+"Clear Cache" = "Clear Cache";
+"Version Check" = "Version Check";
+"About us" = "About us";
+
+//登录注册
+"login" = "logined";
+"register" = "register";
+"verification code error" = "verification code error";
+"user name or password error" = "user name or password error";
+"error" = "error";
+"Not Login" = "Not Login";
+"user not login" = "the user don't login,please login in";
+
+//默认规则用户名由大小写26个英文字母和数组组成，长度6-20位
+"username rule" = "username  must be consisted of letters and digit digital，length of 6-20";
+"password rule" = "password  must be consisted of letters and digit digital，length of 6-20";
+"confirm pwd" = "Two input password is not consistent";
+"reminder" = "reminder";
+"failure" = "failure";
+"register failure" = "register failure";
+"duplicatename" = "Duplicate Name";

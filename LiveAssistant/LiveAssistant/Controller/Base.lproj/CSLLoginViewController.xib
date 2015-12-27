@@ -28,7 +28,7 @@
                         </constraint>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                     <variation key="default">
                         <mask key="constraints">
@@ -52,7 +52,7 @@
                         </constraint>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                     <variation key="default">
                         <mask key="constraints">
@@ -76,7 +76,7 @@
                         <constraint firstAttribute="height" constant="21" id="onq-Zy-Nja"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                     <variation key="default">
                         <mask key="constraints">
@@ -154,7 +154,7 @@
                         </constraint>
                     </constraints>
                     <state key="normal" title="登录">
-                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
                     <variation key="default">
                         <mask key="constraints">
@@ -199,7 +199,7 @@
                         <constraint firstAttribute="height" constant="30" id="l58-Oc-rRL"/>
                     </constraints>
                     <state key="normal" title="注册">
-                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
                     <variation key="default">
                         <mask key="constraints">
@@ -217,12 +217,60 @@
                         <action selector="registerUser:" destination="-1" eventType="touchUpInside" id="4N0-IR-vCU"/>
                     </connections>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="第三方登录：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SHA-f2-b5i">
+                    <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="dlJ-em-yS8"/>
+                        <constraint firstAttribute="width" constant="101" id="l0c-zx-M7T"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="dlJ-em-yS8"/>
+                            <exclude reference="l0c-zx-M7T"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="dlJ-em-yS8"/>
+                            <include reference="l0c-zx-M7T"/>
+                        </mask>
+                    </variation>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mx5-Kx-0It">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="33" id="efQ-Gu-CRc"/>
+                        <constraint firstAttribute="width" constant="59" id="kFm-Ga-jb6"/>
+                    </constraints>
+                    <state key="normal" image="sinaweibo.png"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="efQ-Gu-CRc"/>
+                            <exclude reference="kFm-Ga-jb6"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="efQ-Gu-CRc"/>
+                            <include reference="kFm-Ga-jb6"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="sinaLogin:" destination="-1" eventType="touchUpInside" id="gV4-BK-2we"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="EPE-dV-oSW" firstAttribute="top" secondItem="ZRn-sW-sIJ" secondAttribute="bottom" constant="24" id="3Ho-gG-dCE"/>
+                <constraint firstItem="SHA-f2-b5i" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="8nO-7u-tuv"/>
+                <constraint firstItem="SHA-f2-b5i" firstAttribute="bottom" secondItem="mx5-Kx-0It" secondAttribute="bottom" id="ABg-F7-ZFU"/>
                 <constraint firstItem="wMT-2d-B0W" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="CMk-p1-cZC"/>
                 <constraint firstAttribute="trailing" secondItem="ipU-fq-ZSf" secondAttribute="trailing" constant="22" id="H5P-YT-yFM"/>
+                <constraint firstItem="mx5-Kx-0It" firstAttribute="leading" secondItem="SHA-f2-b5i" secondAttribute="trailing" constant="18" id="HOm-3D-85s"/>
                 <constraint firstItem="LvA-D1-X9e" firstAttribute="top" secondItem="ZRn-sW-sIJ" secondAttribute="bottom" constant="24" id="KML-DV-bNd"/>
                 <constraint firstItem="LvA-D1-X9e" firstAttribute="leading" secondItem="EPE-dV-oSW" secondAttribute="trailing" constant="49" id="M3p-kq-fDH"/>
                 <constraint firstItem="LhM-cy-hsm" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="N3Z-9n-FoH"/>
@@ -231,6 +279,7 @@
                 </constraint>
                 <constraint firstItem="wMT-2d-B0W" firstAttribute="top" secondItem="MQJ-pk-c8g" secondAttribute="bottom" constant="29" id="RHP-fH-Gli"/>
                 <constraint firstItem="ZRn-sW-sIJ" firstAttribute="top" secondItem="1Ie-pM-FFt" secondAttribute="bottom" constant="20" id="RRy-qR-jQH"/>
+                <constraint firstItem="mx5-Kx-0It" firstAttribute="leading" secondItem="SHA-f2-b5i" secondAttribute="trailing" constant="18" id="TiU-fp-el5"/>
                 <constraint firstItem="EPE-dV-oSW" firstAttribute="leading" secondItem="ZRn-sW-sIJ" secondAttribute="leading" id="Yqn-2W-5YP">
                     <variation key="widthClass=compact" constant="-4"/>
                 </constraint>
@@ -249,6 +298,7 @@
                 <constraint firstItem="MQJ-pk-c8g" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="29" id="uMf-h7-vTf">
                     <variation key="widthClass=compact" constant="12"/>
                 </constraint>
+                <constraint firstItem="mx5-Kx-0It" firstAttribute="top" secondItem="EPE-dV-oSW" secondAttribute="bottom" constant="20" id="wM0-6t-QLF"/>
                 <constraint firstItem="DhC-sN-8JV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="21" id="y8Y-Ps-l0Q"/>
             </constraints>
             <variation key="default">
@@ -262,6 +312,8 @@
                     <exclude reference="EPE-dV-oSW"/>
                     <exclude reference="ipU-fq-ZSf"/>
                     <exclude reference="LvA-D1-X9e"/>
+                    <exclude reference="SHA-f2-b5i"/>
+                    <exclude reference="mx5-Kx-0It"/>
                 </mask>
                 <mask key="constraints">
                     <exclude reference="N3Z-9n-FoH"/>
@@ -280,6 +332,11 @@
                     <exclude reference="pGQ-3J-nfD"/>
                     <exclude reference="3Ho-gG-dCE"/>
                     <exclude reference="Yqn-2W-5YP"/>
+                    <exclude reference="8nO-7u-tuv"/>
+                    <exclude reference="ABg-F7-ZFU"/>
+                    <exclude reference="HOm-3D-85s"/>
+                    <exclude reference="TiU-fp-el5"/>
+                    <exclude reference="wM0-6t-QLF"/>
                     <exclude reference="KML-DV-bNd"/>
                     <exclude reference="M3p-kq-fDH"/>
                     <exclude reference="H5P-YT-yFM"/>
@@ -299,6 +356,8 @@
                     <include reference="EPE-dV-oSW"/>
                     <include reference="ipU-fq-ZSf"/>
                     <include reference="LvA-D1-X9e"/>
+                    <include reference="SHA-f2-b5i"/>
+                    <include reference="mx5-Kx-0It"/>
                 </mask>
                 <mask key="constraints">
                     <include reference="N3Z-9n-FoH"/>
@@ -317,6 +376,11 @@
                     <include reference="pGQ-3J-nfD"/>
                     <include reference="3Ho-gG-dCE"/>
                     <include reference="Yqn-2W-5YP"/>
+                    <include reference="8nO-7u-tuv"/>
+                    <include reference="ABg-F7-ZFU"/>
+                    <include reference="HOm-3D-85s"/>
+                    <include reference="TiU-fp-el5"/>
+                    <include reference="wM0-6t-QLF"/>
                     <include reference="KML-DV-bNd"/>
                     <include reference="M3p-kq-fDH"/>
                     <include reference="H5P-YT-yFM"/>
@@ -328,4 +392,7 @@
             <point key="canvasLocation" x="574" y="256"/>
         </view>
     </objects>
+    <resources>
+        <image name="sinaweibo.png" width="80" height="65"/>
+    </resources>
 </document>

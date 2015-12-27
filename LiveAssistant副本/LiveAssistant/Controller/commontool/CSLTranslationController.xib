@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CSLTranslationController">
+            <connections>
+                <outlet property="searchBar" destination="2FO-vq-ukA" id="mNN-xh-VOc"/>
+                <outlet property="translateTableView" destination="yAd-Ca-RSE" id="k1a-zb-6UA"/>
+                <outlet property="view" destination="iN0-l3-epB" id="nT0-GN-74Q"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="yAd-Ca-RSE">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="exR-MT-iG3"/>
+                        <outlet property="delegate" destination="-1" id="lqe-F2-rXf"/>
+                    </connections>
+                </tableView>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="2FO-vq-ukA">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="2cF-Qf-20Y"/>
+                    </constraints>
+                    <textInputTraits key="textInputTraits"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="2cF-Qf-20Y"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="2cF-Qf-20Y"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="bNN-Yx-Tei"/>
+                    </connections>
+                </searchBar>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="2FO-vq-ukA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="2eT-eb-4E2"/>
+                <constraint firstAttribute="trailing" secondItem="2FO-vq-ukA" secondAttribute="trailing" id="A0u-IY-BhU"/>
+                <constraint firstItem="yAd-Ca-RSE" firstAttribute="top" secondItem="2FO-vq-ukA" secondAttribute="bottom" id="WZI-Wa-OQr"/>
+                <constraint firstItem="yAd-Ca-RSE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="a7s-DE-7Al"/>
+                <constraint firstItem="2FO-vq-ukA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="bMX-KK-nBe"/>
+                <constraint firstAttribute="trailing" secondItem="yAd-Ca-RSE" secondAttribute="trailing" id="o8g-UF-kJR"/>
+                <constraint firstAttribute="bottom" secondItem="yAd-Ca-RSE" secondAttribute="bottom" constant="45" id="rrh-3g-uwE"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="yAd-Ca-RSE"/>
+                    <exclude reference="2FO-vq-ukA"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="2eT-eb-4E2"/>
+                    <exclude reference="A0u-IY-BhU"/>
+                    <exclude reference="bMX-KK-nBe"/>
+                    <exclude reference="WZI-Wa-OQr"/>
+                    <exclude reference="a7s-DE-7Al"/>
+                    <exclude reference="o8g-UF-kJR"/>
+                    <exclude reference="rrh-3g-uwE"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="subviews">
+                    <include reference="yAd-Ca-RSE"/>
+                    <include reference="2FO-vq-ukA"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="2eT-eb-4E2"/>
+                    <include reference="A0u-IY-BhU"/>
+                    <include reference="bMX-KK-nBe"/>
+                    <include reference="WZI-Wa-OQr"/>
+                    <include reference="a7s-DE-7Al"/>
+                    <include reference="o8g-UF-kJR"/>
+                    <include reference="rrh-3g-uwE"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,101 @@
+/* 
+  Localizable.strings
+  LiveAssistant
+
+  Created by csl on 15/12/9.
+  Copyright © 2015年 CSL. All rights reserved.
+*/
+"tabbar_tool" = "工具";
+"tabbar_chatroom" = "聊天";
+"tabbar_health" = "健康";
+"tabbar_setting" = "我的";
+
+//手电筒
+"flashlight" = "手电筒";
+
+//警告框
+"alertTitle" = "通知";
+"scanReaderNotSupport" = "当前设备不支持扫描";
+"flashlightNotSupport" = "当前设备没有闪光灯，不能提供手电筒功能";
+"scanResult" = "扫描结果";
+
+//下拉列表框
+"placeholdtext" = "请输入选择项";
+
+//药店
+"Business Detail" = "商家详情";
+"type" = "经营类型";
+"access count" = "访问量";
+"scope" = "经营范围";
+"legal" = "法人";
+"tel" = "电话";
+
+//成语
+"dictionary of idioms" ="成语词典";
+"please input an idiom" = "请输入成语";
+"bushou" = "部首";
+"head" = "头";
+"pinyin" = "拼音";
+"chengyujs" = "释义";
+"from_" = "出处";
+"example" = "例子";
+"yufa" = "语法";
+"ciyujs" = "词语解释";
+"yinzhengjs" = "引证";
+"tongyi" = "同义词";
+"fanyi" = "反义词";
+
+//有道反义
+"basic" = "基本释义";
+"web" = "网络释义";
+"translation" = "翻译";
+"phonetic" = "发音";
+"uk-phonetic" = "英音";
+"us-phonetic" = "美音";
+"youdao" = "有道翻译";
+
+//天气预报
+"currentWheather" = "天气预报";
+
+//闹钟
+"alertController" = "闹钟";
+"Add Alarm" = "添加闹钟";
+"delete a alarm" = "删除闹钟";
+"repeat interval" = "重复";
+"title label" = "标签";
+"alarm title" = "闹钟设置";
+"titletint" = "请输入闹钟标题";//
+"bodytint" = "请输入提醒内容";
+"buttonok" = "确定";
+"repeatmodetint" = "必须选择重复模式";//必须选择重复模式
+"only one" = "只此一次";
+"monday~friday" = "周一到周五";
+"everyday" = "每一天";
+"alarmsave" = "保存成功";//保存成功
+
+//设置
+"setting" = "设置";
+"about us" ="关于我们";
+"cache clean" = "缓存清除";
+"Favorite" = "我的收藏";
+"Clear Cache" = "清除缓存";
+"Version Check" = "版本检测";
+"About us" = "关于我们";
+
+
+"login" = "已登录";
+"Not Login" = "未登录";
+"register" = "注册";
+"verification code error" = "验证码错误";
+"user name or password error" = "用户名或密码错误";
+"error" = "错误";
+"user not login" = "当前用户未登录，请先登录";
+
+//默认规则用户名由大小写26个英文字母和数组组成，长度6-20位
+"username rule" = "用户名由大小写26个英文字母和数组组成，长度6-20位";
+"password rule" = "密码由大小写26个英文字母和数组组成，长度6-20位";
+"confirm pwd" = "两次输入的密码不一致";
+"reminder" = "警告";
+"failure" = "失败";
+"register failure" = "注册失败";
+"duplicatename" = "用户名重名";

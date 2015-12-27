@@ -52,6 +52,14 @@
     }
     return NO;
 }
+-(BOOL) isInDataBase:(NSString*)name uid:(NSString*)uid{
+    CSLDBManager * dbManager = [CSLDBManager defaultDBManager];;
+    NSArray * result = [dbManager select:@"select username from user where username = ? and password = ?" where:@[name,uid]];
+    if (result&&result.count>0) {
+        return YES;
+    }
+    return NO;
+}
 
 -(ErrorType) registerUser:(NSString*)name password:(NSString*)password{
      CSLDBManager * dbManager = [CSLDBManager defaultDBManager];

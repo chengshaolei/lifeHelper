@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CSLSettingController">
+            <connections>
+                <outlet property="settingTable" destination="pRl-3W-zJk" id="W56-3F-8N4"/>
+                <outlet property="view" destination="iN0-l3-epB" id="pbO-5g-7rb"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pRl-3W-zJk">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="BPp-Dj-bE1"/>
+                        <outlet property="delegate" destination="-1" id="Dpu-6Q-uKJ"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="pRl-3W-zJk" secondAttribute="trailing" id="FO3-IV-I4w"/>
+                <constraint firstAttribute="bottom" secondItem="pRl-3W-zJk" secondAttribute="bottom" constant="45" id="Xk2-WY-hnK"/>
+                <constraint firstItem="pRl-3W-zJk" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Zs8-lM-M1X"/>
+                <constraint firstItem="pRl-3W-zJk" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="fZT-mI-7yI"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="pRl-3W-zJk"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="FO3-IV-I4w"/>
+                    <exclude reference="Xk2-WY-hnK"/>
+                    <exclude reference="Zs8-lM-M1X"/>
+                    <exclude reference="fZT-mI-7yI"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="subviews">
+                    <include reference="pRl-3W-zJk"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="FO3-IV-I4w"/>
+                    <include reference="Xk2-WY-hnK"/>
+                    <include reference="Zs8-lM-M1X"/>
+                    <include reference="fZT-mI-7yI"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>
