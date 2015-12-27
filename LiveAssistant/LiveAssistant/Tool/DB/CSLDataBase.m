@@ -203,13 +203,18 @@
 }
 
 -(void) createTable{
+    //创建用户表
+    [_db executeUpdate:@"CREATE TABLE  if not exists user (uid  INTEGER PRIMARY KEY AUTOINCREMENT, username  TEXT NOT NULL,  password  TEXT NOT NULL,  thirdparty  BOOLEAN DEFAULT false)"];
+    
     //创建快递公司表
     [_db executeUpdate:@"create table if not exists expresscompany (esid INTEGER PRIMARY KEY AUTOINCREMENT,shortname text, name text)"];
     
     //创建密保
     [_db executeUpdate:@"CREATE TABLE if not exists  codesure (cdid  INTEGER PRIMARY KEY AUTOINCREMENT, uid INTEGER REFERENCES  user (uid), password  TEXT, itemname  TEXT NOT NULL)"];
     
-    //创建用户表
-    [_db executeUpdate:@"CREATE TABLE  if not exists user (uid  INTEGER PRIMARY KEY AUTOINCREMENT, username  TEXT NOT NULL,  password  TEXT NOT NULL,  thirdparty  BOOLEAN DEFAULT false)"];
+    //创建闹钟表
+    [_db executeUpdate:@"CREATE TABLE  alarm (alarmid TEXT PRIMARY KEY, uid INTEGER REFERENCES  user (uid))"];
+    //创建视图
+    [_db executeUpdate:@"create view useralarm as  select username,alarmid  from user,alarm"];
 }
 @end

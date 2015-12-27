@@ -88,6 +88,8 @@
 		6C4C68051C2F7A03006E8685 /* PushConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6C4C68041C2F7A03006E8685 /* PushConfig.plist */; };
 		6C4C68091C2F80C7006E8685 /* CSLAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4C68071C2F80C7006E8685 /* CSLAlertViewController.m */; };
 		6C4C680A1C2F80C7006E8685 /* CSLAlertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C4C68081C2F80C7006E8685 /* CSLAlertViewController.xib */; };
+		6C4C680E1C2F8D3D006E8685 /* CSLAddAlarmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4C680C1C2F8D3D006E8685 /* CSLAddAlarmViewController.m */; };
+		6C4C680F1C2F8D3D006E8685 /* CSLAddAlarmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C4C680D1C2F8D3D006E8685 /* CSLAddAlarmViewController.xib */; };
 		6C6D47CD1C18617900B80FB6 /* CSLScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C6D47CC1C18617900B80FB6 /* CSLScanViewController.m */; };
 		6C6D47D01C18833600B80FB6 /* Auxiliary.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C6D47CF1C18833600B80FB6 /* Auxiliary.m */; };
 		6C73E4531C238E5600B674E9 /* CSLDrugDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C73E4511C238E5600B674E9 /* CSLDrugDetailController.xib */; };
@@ -446,6 +448,9 @@
 		6C4C68061C2F80C6006E8685 /* CSLAlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSLAlertViewController.h; sourceTree = "<group>"; };
 		6C4C68071C2F80C7006E8685 /* CSLAlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSLAlertViewController.m; sourceTree = "<group>"; };
 		6C4C68081C2F80C7006E8685 /* CSLAlertViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSLAlertViewController.xib; sourceTree = "<group>"; };
+		6C4C680B1C2F8D3D006E8685 /* CSLAddAlarmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSLAddAlarmViewController.h; sourceTree = "<group>"; };
+		6C4C680C1C2F8D3D006E8685 /* CSLAddAlarmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSLAddAlarmViewController.m; sourceTree = "<group>"; };
+		6C4C680D1C2F8D3D006E8685 /* CSLAddAlarmViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSLAddAlarmViewController.xib; sourceTree = "<group>"; };
 		6C6D47CB1C18617900B80FB6 /* CSLScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSLScanViewController.h; sourceTree = "<group>"; };
 		6C6D47CC1C18617900B80FB6 /* CSLScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSLScanViewController.m; sourceTree = "<group>"; };
 		6C6D47CE1C18833600B80FB6 /* Auxiliary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Auxiliary.h; sourceTree = "<group>"; };
@@ -1308,6 +1313,9 @@
 				6C4C68061C2F80C6006E8685 /* CSLAlertViewController.h */,
 				6C4C68071C2F80C7006E8685 /* CSLAlertViewController.m */,
 				6C4C68081C2F80C7006E8685 /* CSLAlertViewController.xib */,
+				6C4C680B1C2F8D3D006E8685 /* CSLAddAlarmViewController.h */,
+				6C4C680C1C2F8D3D006E8685 /* CSLAddAlarmViewController.m */,
+				6C4C680D1C2F8D3D006E8685 /* CSLAddAlarmViewController.xib */,
 			);
 			path = commontool;
 			sourceTree = "<group>";
@@ -1755,6 +1763,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C4C680F1C2F8D3D006E8685 /* CSLAddAlarmViewController.xib in Resources */,
 				6C49DE921C2953FD0086B04E /* 37.png in Resources */,
 				6C8CFBBA1C29857F00E59FFF /* 5.png in Resources */,
 				6C8CFBBD1C29857F00E59FFF /* 6@2x.png in Resources */,
@@ -2110,6 +2119,7 @@
 				6CB9EBF11C1FF657006C64F0 /* CSLHealthViewController.m in Sources */,
 				6C03EC381C296E0800816E50 /* CSLCommonHelper.m in Sources */,
 				6CD1781C1C22D8A900E6DE32 /* CSLDrugListCell.m in Sources */,
+				6C4C680E1C2F8D3D006E8685 /* CSLAddAlarmViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

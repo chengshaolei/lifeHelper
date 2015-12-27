@@ -84,6 +84,7 @@
     [self layerCorner:self.middleView.layer];
     [self layerCorner:self.bottomView.layer];
     [self layerCorner:self.logoImageView.layer];
+    [self.navigationController.navigationBar setHidden:NO];
 }
 
 //视图圆角
