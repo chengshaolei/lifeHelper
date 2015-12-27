@@ -92,6 +92,7 @@
 		6C4C680F1C2F8D3D006E8685 /* CSLAddAlarmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C4C680D1C2F8D3D006E8685 /* CSLAddAlarmViewController.xib */; };
 		6C4C68111C2FA03D006E8685 /* correct.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C4C68101C2FA03D006E8685 /* correct.png */; };
 		6C4C68141C2FAC87006E8685 /* CSLRepeatSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4C68131C2FAC87006E8685 /* CSLRepeatSelectView.m */; };
+		6C4C68161C2FF44A006E8685 /* share@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C4C68151C2FF44A006E8685 /* share@2x.png */; };
 		6C6D47CD1C18617900B80FB6 /* CSLScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C6D47CC1C18617900B80FB6 /* CSLScanViewController.m */; };
 		6C6D47D01C18833600B80FB6 /* Auxiliary.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C6D47CF1C18833600B80FB6 /* Auxiliary.m */; };
 		6C73E4531C238E5600B674E9 /* CSLDrugDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C73E4511C238E5600B674E9 /* CSLDrugDetailController.xib */; };
@@ -456,6 +457,7 @@
 		6C4C68101C2FA03D006E8685 /* correct.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = correct.png; sourceTree = "<group>"; };
 		6C4C68121C2FAC87006E8685 /* CSLRepeatSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSLRepeatSelectView.h; path = view/CSLRepeatSelectView.h; sourceTree = "<group>"; };
 		6C4C68131C2FAC87006E8685 /* CSLRepeatSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSLRepeatSelectView.m; path = view/CSLRepeatSelectView.m; sourceTree = "<group>"; };
+		6C4C68151C2FF44A006E8685 /* share@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "share@2x.png"; sourceTree = "<group>"; };
 		6C6D47CB1C18617900B80FB6 /* CSLScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSLScanViewController.h; sourceTree = "<group>"; };
 		6C6D47CC1C18617900B80FB6 /* CSLScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSLScanViewController.m; sourceTree = "<group>"; };
 		6C6D47CE1C18833600B80FB6 /* Auxiliary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Auxiliary.h; sourceTree = "<group>"; };
@@ -1341,6 +1343,7 @@
 		6C9FB99D1C185BE600725C02 /* resourcelib */ = {
 			isa = PBXGroup;
 			children = (
+				6C4C68151C2FF44A006E8685 /* share@2x.png */,
 				6C4C68101C2FA03D006E8685 /* correct.png */,
 				6C0418BE1C2CCDEA00606BF3 /* portrait.png */,
 				6C0418BC1C2CCADE00606BF3 /* headerbg.png */,
@@ -1938,6 +1941,7 @@
 				6C8CFBC71C29857F00E59FFF /* bgStorm@2x.png in Resources */,
 				6CF5C29A1C26AB9E0086FCC6 /* dimentioncode.png in Resources */,
 				6C4C67CC1C2F6E33006E8685 /* SCNavTabBar.bundle in Resources */,
+				6C4C68161C2FF44A006E8685 /* share@2x.png in Resources */,
 				6C9FB9CC1C185C2700725C02 /* Localizable.strings in Resources */,
 				6C8CFBD01C29857F00E59FFF /* clear.png in Resources */,
 				6C73E4531C238E5600B674E9 /* CSLDrugDetailController.xib in Resources */,

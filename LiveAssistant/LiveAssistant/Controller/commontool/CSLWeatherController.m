@@ -56,6 +56,15 @@
     _weatherView = [[CSLSingleWeatherView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kNewHeight)];
 //    [tmpView updateMainInThread:_wheatherInfo];
     [self.view addSubview:_weatherView];
+    
+    //添加分享
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]  initWithImage:[UIImage imageNamed:@"share"] style:UIBarButtonItemStylePlain target:self action:@selector(shareWheather)];
+}
+
+
+//分享
+-(void) shareWheather{
+    
 }
 
 //定位城市
