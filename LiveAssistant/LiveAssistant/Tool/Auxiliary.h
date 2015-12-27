@@ -81,4 +81,9 @@
 //参数：email 邮箱
 //返回值：正确返回YES，否则返回NO
 + (BOOL) validateEmail:(NSString *)email;
+
+//功能：世界标准时间UTC/GMT 转为当前系统时区对应的时间
+//参数：anyDate UTC/GMT时间
+//返回值：当前系统时区对应的时间
++ (NSDate *)getNowDateFromatAnDate:(NSDate *)anyDate;
 @end

@@ -59,7 +59,21 @@
 "currentWheather" = "currentWheather";
 
 //闹钟
-"alertController" = "Alerm";
+"alertController" = "Alarm";
+"Add Alarm" = "Add Alarm";
+"delete a alarm" = "delete the alarm";
+"repeat interval" = "repeat interval";
+"title label" = "title";
+"alarm title" = "alarm setting";
+"titletint" = "please input alarm title";//请输入闹钟标题
+"bodytint" = "please input remind content";
+"buttonok" = "ok";
+"repeatmodetint" = "you must select repeat mode";//必须选择重复模式
+//[@"只此一次",@"周一到周五",@"每一天"]
+"only one" = "only one";
+"monday~friday" = "monday~friday";
+"everyday" = "everyday";
+"alarmsave" = "save successfully";//保存成功
 
 //设置
 "setting" = "setting";
@@ -77,6 +91,7 @@
 "user name or password error" = "user name or password error";
 "error" = "error";
 "Not Login" = "Not Login";
+"user not login" = "the user don't login,please login in";
 
 //默认规则用户名由大小写26个英文字母和数组组成，长度6-20位
 "username rule" = "username  must be consisted of letters and digit digital，length of 6-20";

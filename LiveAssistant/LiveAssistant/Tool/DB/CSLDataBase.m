@@ -213,8 +213,8 @@
     [_db executeUpdate:@"CREATE TABLE if not exists  codesure (cdid  INTEGER PRIMARY KEY AUTOINCREMENT, uid INTEGER REFERENCES  user (uid), password  TEXT, itemname  TEXT NOT NULL)"];
     
     //创建闹钟表
-    [_db executeUpdate:@"CREATE TABLE  alarm (alarmid TEXT PRIMARY KEY, uid INTEGER REFERENCES  user (uid))"];
+    [_db executeUpdate:@"CREATE TABLE  if not exists  alarm (alarmid TEXT PRIMARY KEY, uid INTEGER REFERENCES  user (uid))"];
     //创建视图
-    [_db executeUpdate:@"create view useralarm as  select username,alarmid  from user,alarm"];
+    [_db executeUpdate:@"create view if not exists useralarm as  select username,alarmid  from user,alarm"];
 }
 @end

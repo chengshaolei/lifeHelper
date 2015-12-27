@@ -90,6 +90,8 @@
 		6C4C680A1C2F80C7006E8685 /* CSLAlertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C4C68081C2F80C7006E8685 /* CSLAlertViewController.xib */; };
 		6C4C680E1C2F8D3D006E8685 /* CSLAddAlarmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4C680C1C2F8D3D006E8685 /* CSLAddAlarmViewController.m */; };
 		6C4C680F1C2F8D3D006E8685 /* CSLAddAlarmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C4C680D1C2F8D3D006E8685 /* CSLAddAlarmViewController.xib */; };
+		6C4C68111C2FA03D006E8685 /* correct.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C4C68101C2FA03D006E8685 /* correct.png */; };
+		6C4C68141C2FAC87006E8685 /* CSLRepeatSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4C68131C2FAC87006E8685 /* CSLRepeatSelectView.m */; };
 		6C6D47CD1C18617900B80FB6 /* CSLScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C6D47CC1C18617900B80FB6 /* CSLScanViewController.m */; };
 		6C6D47D01C18833600B80FB6 /* Auxiliary.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C6D47CF1C18833600B80FB6 /* Auxiliary.m */; };
 		6C73E4531C238E5600B674E9 /* CSLDrugDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C73E4511C238E5600B674E9 /* CSLDrugDetailController.xib */; };
@@ -451,6 +453,9 @@
 		6C4C680B1C2F8D3D006E8685 /* CSLAddAlarmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSLAddAlarmViewController.h; sourceTree = "<group>"; };
 		6C4C680C1C2F8D3D006E8685 /* CSLAddAlarmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSLAddAlarmViewController.m; sourceTree = "<group>"; };
 		6C4C680D1C2F8D3D006E8685 /* CSLAddAlarmViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSLAddAlarmViewController.xib; sourceTree = "<group>"; };
+		6C4C68101C2FA03D006E8685 /* correct.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = correct.png; sourceTree = "<group>"; };
+		6C4C68121C2FAC87006E8685 /* CSLRepeatSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSLRepeatSelectView.h; path = view/CSLRepeatSelectView.h; sourceTree = "<group>"; };
+		6C4C68131C2FAC87006E8685 /* CSLRepeatSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSLRepeatSelectView.m; path = view/CSLRepeatSelectView.m; sourceTree = "<group>"; };
 		6C6D47CB1C18617900B80FB6 /* CSLScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSLScanViewController.h; sourceTree = "<group>"; };
 		6C6D47CC1C18617900B80FB6 /* CSLScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSLScanViewController.m; sourceTree = "<group>"; };
 		6C6D47CE1C18833600B80FB6 /* Auxiliary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Auxiliary.h; sourceTree = "<group>"; };
@@ -1336,6 +1341,7 @@
 		6C9FB99D1C185BE600725C02 /* resourcelib */ = {
 			isa = PBXGroup;
 			children = (
+				6C4C68101C2FA03D006E8685 /* correct.png */,
 				6C0418BE1C2CCDEA00606BF3 /* portrait.png */,
 				6C0418BC1C2CCADE00606BF3 /* headerbg.png */,
 				6C8CFB421C29857F00E59FFF /* wheather */,
@@ -1625,6 +1631,8 @@
 				6C03EC2F1C296E0800816E50 /* Helper */,
 				6C03EC321C296E0800816E50 /* CSLSingleWeatherView.h */,
 				6C03EC331C296E0800816E50 /* CSLSingleWeatherView.m */,
+				6C4C68121C2FAC87006E8685 /* CSLRepeatSelectView.h */,
+				6C4C68131C2FAC87006E8685 /* CSLRepeatSelectView.m */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -1813,6 +1821,7 @@
 				6C8CFBFD1C29857F00E59FFF /* n_scatteredsnow@2x.png in Resources */,
 				6C49DE811C2953FD0086B04E /* 3bgWidget@2x.png in Resources */,
 				6C8CFC081C29857F00E59FFF /* rain.png in Resources */,
+				6C4C68111C2FA03D006E8685 /* correct.png in Resources */,
 				6C0418BD1C2CCADE00606BF3 /* headerbg.png in Resources */,
 				6C49DE5B1C28F30D0086B04E /* tabbar_setting@3x.png in Resources */,
 				6C8CFBD51C29857F00E59FFF /* effect_clear.png in Resources */,
@@ -2056,6 +2065,7 @@
 				6CFD58BD1C21AFF5000B262D /* CSLDrugTypeDetailViewController.m in Sources */,
 				6CB9EC2D1C202CF8006C64F0 /* MJRefreshAutoStateFooter.m in Sources */,
 				6C9FB9B51C185BE700725C02 /* CSLChatroomViewController.m in Sources */,
+				6C4C68141C2FAC87006E8685 /* CSLRepeatSelectView.m in Sources */,
 				6C49DE5F1C28F37B0086B04E /* CSLSettingController.m in Sources */,
 				6C4C67EB1C2F6EBE006E8685 /* JSONModelArray.m in Sources */,
 				6C043B1C1C2B7812005B29C0 /* CSLFavortateController.m in Sources */,

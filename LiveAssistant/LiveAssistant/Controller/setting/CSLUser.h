@@ -15,6 +15,11 @@ typedef enum {ERROR,SUCCESS}ErrorType ;
 @property(nonatomic,copy) NSString *password;
 @property(nonatomic,assign) BOOL isLogin;//是否登录
 
+//功能：检测用户是否登录
+//参数：无
+//返回值：登录返回YES，否则返回NO
+-(BOOL) isLoginedUser;
+
 +(instancetype) shareInstance;//单例
 
 //功能：验证用户名、密码是否正确

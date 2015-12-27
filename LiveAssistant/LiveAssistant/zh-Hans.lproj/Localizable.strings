@@ -59,6 +59,19 @@
 
 //闹钟
 "alertController" = "闹钟";
+"Add Alarm" = "添加闹钟";
+"delete a alarm" = "删除闹钟";
+"repeat interval" = "重复";
+"title label" = "标签";
+"alarm title" = "闹钟设置";
+"titletint" = "请输入闹钟标题";//
+"bodytint" = "请输入提醒内容";
+"buttonok" = "确定";
+"repeatmodetint" = "必须选择重复模式";//必须选择重复模式
+"only one" = "只此一次";
+"monday~friday" = "周一到周五";
+"everyday" = "每一天";
+"alarmsave" = "保存成功";//保存成功
 
 //设置
 "setting" = "设置";
@@ -76,6 +89,7 @@
 "verification code error" = "验证码错误";
 "user name or password error" = "用户名或密码错误";
 "error" = "错误";
+"user not login" = "当前用户未登录，请先登录";
 
 //默认规则用户名由大小写26个英文字母和数组组成，长度6-20位
 "username rule" = "用户名由大小写26个英文字母和数组组成，长度6-20位";

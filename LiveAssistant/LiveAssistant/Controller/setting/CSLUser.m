@@ -57,4 +57,9 @@
      CSLDBManager * dbManager = [CSLDBManager defaultDBManager];
     return [dbManager insertTable:@"user" record:@{@"username":name,@"password":password}];
 }
+
+-(BOOL) isLoginedUser{
+    //如果用户名和密码不空和islogin为真，则为登录
+    return self.userName.length>0 && self.password.length>0 &&self.isLogin;
+}
 @end

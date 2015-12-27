@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CSLAddAlarmViewController">
             <connections>
+                <outlet property="alarmTable" destination="e0e-Uw-BCP" id="gG6-mt-rkC"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -13,7 +15,45 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="e0e-Uw-BCP">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="6X3-G5-DXt"/>
+                        <outlet property="delegate" destination="-1" id="6gc-pH-scs"/>
+                    </connections>
+                </tableView>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="e0e-Uw-BCP" secondAttribute="trailing" id="Clj-bK-tx9"/>
+                <constraint firstItem="e0e-Uw-BCP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="I9I-CA-KGY"/>
+                <constraint firstAttribute="bottom" secondItem="e0e-Uw-BCP" secondAttribute="bottom" constant="45" id="KVl-cl-Hl7"/>
+                <constraint firstItem="e0e-Uw-BCP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="eMD-Mw-P04"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="e0e-Uw-BCP"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="Clj-bK-tx9"/>
+                    <exclude reference="I9I-CA-KGY"/>
+                    <exclude reference="KVl-cl-Hl7"/>
+                    <exclude reference="eMD-Mw-P04"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="subviews">
+                    <include reference="e0e-Uw-BCP"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="Clj-bK-tx9"/>
+                    <include reference="I9I-CA-KGY"/>
+                    <include reference="KVl-cl-Hl7"/>
+                    <include reference="eMD-Mw-P04"/>
+                </mask>
+            </variation>
         </view>
     </objects>
 </document>

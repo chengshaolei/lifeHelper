@@ -78,6 +78,7 @@
     
     // Required
     [APService handleRemoteNotification:userInfo];
+    
 }
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler {
     
@@ -107,24 +108,24 @@
 //创建标签栏
 -(void) createAppFrame{
     //创建标签栏
-    CSLTabBarController * tabBarController = [[CSLTabBarController alloc] init];
+    _tabBarController = [[CSLTabBarController alloc] init];
     //增加工具标签
-    [tabBarController addItem:NSLocalizedString(@"tabbar_tool",nil) normalImage:[UIImage imageNamed:@"tool.png"] highLightImage:[UIImage imageNamed:@"tool.png"] controller:@"CSLToolViewController"];
+    [_tabBarController addItem:NSLocalizedString(@"tabbar_tool",nil) normalImage:[UIImage imageNamed:@"tool.png"] highLightImage:[UIImage imageNamed:@"tool.png"] controller:@"CSLToolViewController"];
     
     //增加健康标签
-    [tabBarController addItem:NSLocalizedString(@"tabbar_health",nil) normalImage:[UIImage imageNamed:@"tabBar_heal.png"] highLightImage:[UIImage imageNamed:@"tabBar_heal.png"] controller:@"CSLHealthMainController"];
+    [_tabBarController addItem:NSLocalizedString(@"tabbar_health",nil) normalImage:[UIImage imageNamed:@"tabBar_heal.png"] highLightImage:[UIImage imageNamed:@"tabBar_heal.png"] controller:@"CSLHealthMainController"];
     
     //增加聊天室标签
-    [tabBarController addItem:NSLocalizedString(@"tabbar_chatroom",nil) normalImage:[UIImage imageNamed:@"tabBar_chat.png"] highLightImage:[UIImage imageNamed:@"tabBar_chat.png"] controller:@"CSLChatroomViewController"];
+    [_tabBarController addItem:NSLocalizedString(@"tabbar_chatroom",nil) normalImage:[UIImage imageNamed:@"tabBar_chat.png"] highLightImage:[UIImage imageNamed:@"tabBar_chat.png"] controller:@"CSLChatroomViewController"];
     
     //增加我的标签
-    [tabBarController addItem:NSLocalizedString(@"tabbar_setting",nil) normalImage:[UIImage imageNamed:@"tabbar_setting.png"] highLightImage:[UIImage imageNamed:@"tabbar_setting.png"] controller:@"CSLSettingController"];
+    [_tabBarController addItem:NSLocalizedString(@"tabbar_setting",nil) normalImage:[UIImage imageNamed:@"tabbar_setting.png"] highLightImage:[UIImage imageNamed:@"tabbar_setting.png"] controller:@"CSLSettingController"];
     
     //设置标签栏的viewControllers数组
-    tabBarController.viewControllers = tabBarController.controllers;
+    _tabBarController.viewControllers = _tabBarController.controllers;
     
     //设置window的rootviewcontroller
-    self.window.rootViewController = tabBarController;
+    self.window.rootViewController = _tabBarController;
 }
 
 //各种初始化
