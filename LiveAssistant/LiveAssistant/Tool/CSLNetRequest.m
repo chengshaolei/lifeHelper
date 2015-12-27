@@ -9,9 +9,12 @@
 #import "CSLNetRequest.h"
 #import "CSLConstant.h"
 #import "JHAPISDK.h"
+#import "Auxiliary.h"
 
 @implementation CSLNetRequest
 +(void) get:(NSString*)urlString complete:(CompleteCallBack)complete fail:(FailureCallBack)failure{
+
+    
     //得到AFHTTPRequestOperationManager请求的单例
     AFHTTPRequestOperationManager * manager = [AFHTTPRequestOperationManager manager];
     
@@ -30,6 +33,7 @@
 }
 
 +(void) post:(NSString*)urlString para:(NSDictionary*)paras complete:(CompleteCallBack)complete fail:(FailureCallBack)failure{
+
     //得到AFHTTPRequestOperationManager请求的单例
     AFHTTPRequestOperationManager * requestManager = [AFHTTPRequestOperationManager manager];
     
@@ -95,8 +99,9 @@
     return netState;
 }
 
-//+(void) JHRequestMethod:(NSString*)method url:(NSString*)urlString paras:(NSDictionary*)dict success:(void(^)(id reponeseData))done failure:(void(^)(NSError*))fail
+
 +(void) JHRequestAPPId:(NSString*)aid Method:(NSString*)method url:(NSString*)urlString paras:(NSDictionary*)dict success:(void(^)(id reponeseData))done failure:(void(^)(NSError*))fail{
+    
     JHAPISDK *juheapi = [JHAPISDK shareJHAPISDK];
     [juheapi executeWorkWithAPI:urlString APIID:aid Parameters:dict Method:method Success:^(id responseObject) {
         if (done) {

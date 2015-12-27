@@ -10,6 +10,8 @@
 "tabbar_health" = "健康";
 "tabbar_setting" = "我的";
 
+"netstate" = "你的网络不给力，请切换网络";
+
 //手电筒
 "flashlight" = "手电筒";
 

@@ -60,7 +60,9 @@
     [self.view addSubview:_weatherView];
     
     //添加分享
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]  initWithImage:[UIImage imageNamed:@"share"] style:UIBarButtonItemStylePlain target:self action:@selector(shareWheather)];
+    UIImage * image = [UIImage imageNamed:@"share"];
+    image = [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]  initWithImage:image style:UIBarButtonItemStylePlain target:self action:@selector(shareWheather)];
 }
 
 

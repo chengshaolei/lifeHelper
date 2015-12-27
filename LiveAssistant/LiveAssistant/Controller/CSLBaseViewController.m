@@ -9,10 +9,12 @@
 #import "CSLBaseViewController.h"
 #import "MBProgressHUD.h"
 #import "MJRefresh.h"
+#import "Reachability.h"
 
 @interface CSLBaseViewController ()
 -(void) dataInit;//数据初始化
 -(void) showIndicatorInView:(UIView*)parentView isDisplay:(BOOL)show;//是否显示指示器
+-(BOOL) isConnect:(NSString*)url;//检测网络连接
 @end
 
 @implementation CSLBaseViewController
@@ -41,6 +43,9 @@
 }
 
 -(void) requestType:(RequestType)type method:(NSString*)method url:(NSString*)urlString paras:(NSDictionary*)dict{
+    if ([self isConnect:@"www.baidu.com"]==NO) {
+        [Auxiliary alertWithTitle:NSLocalizedString(@"reminder", nil) message:NSLocalizedString(@"netstate", nil) button:1 done:nil];        return;
+    }
     switch (type) {
         case NormalRequest:
             [self request:method url:urlString para:dict];
@@ -61,6 +66,12 @@
 
 //数据请求
 -(void) request:(NSString*)method url:(NSString*)urlString para:(NSDictionary*)dict{
+    //检测网络连接
+    if ([self isConnect:@"www.baidu.com"]==NO) {
+        [Auxiliary alertWithTitle:NSLocalizedString(@"reminder", nil) message:NSLocalizedString(@"netstate", nil) button:1 done:nil];
+        return;
+    }
+    
 //    [self showIndicator:YES];
     if ([method isEqualToString:@"GET"]) {
         [CSLNetRequest get:urlString complete:^(id data) {
@@ -79,6 +90,11 @@
 }
 
 -(void)request: (NSString*)urlStr  {
+    //检测网络连接
+    if ([self isConnect:@"www.baidu.com"]==NO) {
+        [Auxiliary alertWithTitle:NSLocalizedString(@"reminder", nil) message:NSLocalizedString(@"netstate", nil) button:1 done:nil];
+        return;
+    }
     
     NSURL *url = [NSURL URLWithString: urlStr];
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc]initWithURL: url cachePolicy: NSURLRequestUseProtocolCachePolicy timeoutInterval: 10];
@@ -105,6 +121,12 @@
 
 //聚合数据请求
 -(void) JHRequestWithAPPid:(NSString*)appid method:(NSString*)method url:(NSString*)urlString paras:(NSDictionary*)dict{
+    //检测网络连接
+    if ([self isConnect:@"www.baidu.com"]==NO) {
+        [Auxiliary alertWithTitle:NSLocalizedString(@"reminder", nil) message:NSLocalizedString(@"netstate", nil) button:1 done:nil];
+        return;
+    }
+    
 //    [self showIndicator:YES];
     [CSLNetRequest JHRequestAPPId:appid Method:method url:urlString paras:dict success:^(id reponeseData) {
         [self parserData:reponeseData];
@@ -128,5 +150,24 @@
     else{
         [MBProgressHUD hideHUDForView:parentView animated:YES];
     }
+}
+-(BOOL) isConnect:(NSString*)url{
+    BOOL state = NO;
+    Reachability *r = [Reachability reachabilityWithHostName:url];
+    switch ([r currentReachabilityStatus]) {
+        case NotReachable:
+            // 没有网络连接
+            state = NO;
+            break;
+        case ReachableViaWWAN:
+            // 使用3G网络
+            state = YES;
+            break;
+        case ReachableViaWiFi:
+            // 使用WiFi网络
+            state = YES;
+            break;
+    }
+    return state;
 }
 @end

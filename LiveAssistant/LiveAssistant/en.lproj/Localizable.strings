@@ -5,10 +5,15 @@
   Created by csl on 15/12/9.
   Copyright © 2015年 CSL. All rights reserved.
 */
+
+//标签栏
 "tabbar_tool" = "tool";
 "tabbar_chatroom" = "chat";
 "tabbar_health" = "health";
 "tabbar_setting" = "setting";
+
+//网络状态
+"netstate" = "Network has been disconnected";
 
 //手电筒
 "flashlight" = "flashlight";
