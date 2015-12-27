@@ -64,6 +64,7 @@
     portraitBtn.layer.cornerRadius = 30;
     portraitBtn.layer.masksToBounds = YES;
     [portraitBtn setImage:[UIImage imageNamed:@"portrait"] forState:UIControlStateNormal];
+    [portraitBtn addTarget:self action:@selector(changePortrait) forControlEvents:UIControlStateNormal];
     [_protraitView addSubview:portraitBtn];
     
     //登录按钮
@@ -118,6 +119,7 @@
     }
 }
 
+//登录
 -(void) login:(UIButton*)sender{
     CSLLoginViewController * loginController = [[CSLLoginViewController alloc] init];
     __weak CSLLoginViewController* weakVc = loginController;
@@ -129,4 +131,8 @@
     [self.navigationController pushViewController:loginController animated:YES];
 }
 
+//修改头像
+-(void) changePortrait{
+    
+}
 @end

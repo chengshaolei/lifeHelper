@@ -58,6 +58,9 @@
 //天气预报
 "currentWheather" = "currentWheather";
 
+//闹钟
+"alertController" = "Alerm";
+
 //设置
 "setting" = "setting";
 "about us" ="About us";

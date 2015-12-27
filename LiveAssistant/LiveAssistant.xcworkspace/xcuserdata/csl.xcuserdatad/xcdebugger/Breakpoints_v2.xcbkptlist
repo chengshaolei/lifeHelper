@@ -99,13 +99,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "LiveAssistant/Controller/setting/CSLSettingController.m"
-            timestampString = "472749743.622757"
+            filePath = "LiveAssistant/AppDelegate.mm"
+            timestampString = "472874134.799933"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "124"
-            endingLineNumber = "124"
-            landmarkName = "-login:"
+            startingLineNumber = "146"
+            endingLineNumber = "146"
+            landmarkName = "-jpush:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

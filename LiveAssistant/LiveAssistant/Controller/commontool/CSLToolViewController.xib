@@ -18,7 +18,7 @@
                 <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8AB-5h-nBt">
                     <rect key="frame" x="-12" y="0.0" width="594" height="521"/>
                     <subviews>
-                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4f8-Zz-HGP">
+                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4f8-Zz-HGP">
                             <rect key="frame" x="168" y="0.0" width="259" height="150"/>
                             <subviews>
                                 <button opaque="NO" tag="10" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ght-w6-6aL">
@@ -105,10 +105,10 @@
                                 </mask>
                             </variation>
                         </stackView>
-                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="eOY-df-QJ8">
+                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="eOY-df-QJ8">
                             <rect key="frame" x="0.0" y="150" width="594" height="186"/>
                             <subviews>
-                                <button opaque="NO" tag="13" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b0G-Qr-hlz">
+                                <button opaque="NO" tag="13" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b0G-Qr-hlz">
                                     <rect key="frame" x="0.0" y="2" width="180" height="182"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="55" id="pFL-Q5-BaK"/>
@@ -134,7 +134,7 @@
                                         <action selector="chineseExplain:" destination="-1" eventType="touchUpInside" id="ND4-ib-WZe"/>
                                     </connections>
                                 </button>
-                                <button opaque="NO" tag="14" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvO-CL-cSC">
+                                <button opaque="NO" tag="14" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvO-CL-cSC">
                                     <rect key="frame" x="180" y="2" width="234" height="182"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="55" id="6Uh-hf-tbx"/>
@@ -160,7 +160,7 @@
                                         <action selector="termExplain:" destination="-1" eventType="touchUpInside" id="MLN-gg-VGr"/>
                                     </connections>
                                 </button>
-                                <button opaque="NO" tag="15" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7fM-Bq-Tmr">
+                                <button opaque="NO" tag="15" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7fM-Bq-Tmr">
                                     <rect key="frame" x="414" y="0.0" width="180" height="186"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="55" id="CcR-6U-EaA"/>
@@ -201,7 +201,7 @@
                                 </mask>
                             </variation>
                         </stackView>
-                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="SD2-2M-ejB">
+                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="SD2-2M-ejB">
                             <rect key="frame" x="27" y="336" width="540" height="185"/>
                             <subviews>
                                 <button opaque="NO" tag="16" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rLJ-WR-P1u">
@@ -230,7 +230,7 @@
                                         <action selector="wheather:" destination="-1" eventType="touchUpInside" id="Mvv-Cb-5EO"/>
                                     </connections>
                                 </button>
-                                <button opaque="NO" tag="17" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CZe-06-wpQ">
+                                <button opaque="NO" tag="18" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CZe-06-wpQ">
                                     <rect key="frame" x="180" y="0.0" width="180" height="185"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="55" id="6cH-J7-ezH"/>
@@ -253,7 +253,7 @@
                                         </mask>
                                     </variation>
                                 </button>
-                                <button opaque="NO" tag="18" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CjE-2B-kjR">
+                                <button opaque="NO" tag="17" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CjE-2B-kjR">
                                     <rect key="frame" x="360" y="0.0" width="180" height="185"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="55" id="bCJ-Ct-KCO"/>
@@ -275,6 +275,9 @@
                                             <include reference="tXF-hJ-UK8"/>
                                         </mask>
                                     </variation>
+                                    <connections>
+                                        <action selector="alert:" destination="-1" eventType="touchUpInside" id="xnP-Hs-Cna"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <constraints>
@@ -304,11 +307,11 @@
                     </constraints>
                     <variation key="default">
                         <mask key="constraints">
+                            <exclude reference="5rf-Ex-jj8"/>
+                            <exclude reference="A9s-qk-fwh"/>
                             <exclude reference="JP8-kF-5Xj"/>
                             <exclude reference="XdM-Ng-dRX"/>
                             <exclude reference="lwt-AH-OjP"/>
-                            <exclude reference="5rf-Ex-jj8"/>
-                            <exclude reference="A9s-qk-fwh"/>
                             <exclude reference="8x7-VM-s2J"/>
                             <exclude reference="dvK-P4-9vc"/>
                             <exclude reference="x0a-3C-jU7"/>
@@ -316,11 +319,11 @@
                     </variation>
                     <variation key="heightClass=regular-widthClass=compact" axis="vertical">
                         <mask key="constraints">
+                            <include reference="5rf-Ex-jj8"/>
+                            <include reference="A9s-qk-fwh"/>
                             <include reference="JP8-kF-5Xj"/>
                             <exclude reference="XdM-Ng-dRX"/>
                             <include reference="lwt-AH-OjP"/>
-                            <include reference="5rf-Ex-jj8"/>
-                            <include reference="A9s-qk-fwh"/>
                             <include reference="8x7-VM-s2J"/>
                             <include reference="dvK-P4-9vc"/>
                             <exclude reference="x0a-3C-jU7"/>

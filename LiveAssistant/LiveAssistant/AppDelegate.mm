@@ -12,11 +12,13 @@
 #import "JHAPISDK.h"
 #import "JHOpenidSupplier.h"
 #import "CSLConstant.h"
+#import "APService.h"
 
 @interface AppDelegate ()
 //搭建app的框架
 -(void) createAppFrame;
--(void) initApp;//初始化
+-(void) initApp:(NSDictionary *)launchOptions;//初始化
+-(void) jpush:(NSDictionary *)launchOptions;//极光推送初始化
 @end
 
 @implementation AppDelegate
@@ -29,7 +31,7 @@
     
     //搭建系统框架
     [self createAppFrame];
-    [self initApp];//系统初始化
+    [self initApp:launchOptions];//系统初始化
 //    
 //    [[EaseMob sharedInstance] application:application didFinishLaunchingWithOptions:launchOptions];
     [self.window makeKeyAndVisible];
@@ -59,6 +61,48 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    
+    //反馈给服务器，告诉官方APNs服务器，当前设备注册了设备标示
+    // Required
+    [APService registerDeviceToken:deviceToken];
+    
+    //这里收到了服务器的设备标识
+    //极光可以给自己的设备设一个昵称，别名，以便单独发送数据给这部手机
+    [APService setAlias:@"csl20151027" callbackSelector:nil object:nil];
+    
+    
+    //这个别名，根据极光官方的说法，是不能重复的。因此，理应是，程序启动时，服务器发送给设备。
+}
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
+    
+    // Required
+    [APService handleRemoteNotification:userInfo];
+}
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler {
+    
+    //iOS7以后收到推送通知响应的方法
+    
+    
+    NSLog(@"%@", userInfo);
+    //收到推送时，如果程序是打开的，直接调用这个方法，如果程序是关闭的，系统会弹出推送托盘，点击托盘，会进入当前程序，调用这个方法。
+    
+    
+    // 取得 APNs 标准信息内容
+    NSDictionary *aps = [userInfo valueForKey:@"aps"];
+    NSString *content = [aps valueForKey:@"alert"]; //推送显示的内容
+    NSInteger badge = [[aps valueForKey:@"badge"] integerValue]; //badge数量
+    NSString *sound = [aps valueForKey:@"sound"]; //播放的声音
+    
+    // 取得自定义字段内容
+    NSString *customizeField1 = [userInfo valueForKey:@"XXX"]; //自定义参数，key是自己定义的
+    NSLog(@"content =[%@], badge=[%ld], sound=[%@], customize field =[%@]",content,(long)badge,sound,customizeField1);
+
+    
+    // IOS 7 Support Required
+    [APService handleRemoteNotification:userInfo];
+    completionHandler(UIBackgroundFetchResultNewData);
+}
 
 //创建标签栏
 -(void) createAppFrame{
@@ -84,10 +128,43 @@
 }
 
 //各种初始化
--(void) initApp{
+-(void) initApp:(NSDictionary *)launchOptions{
     //聚合初始化
     [[JHOpenidSupplier shareSupplier] registerJuheAPIByOpenId:JHAPPID];
+    
+    //极光推送
+    [self jpush:launchOptions];
+    
+    
     //环信初始化
 //    [[EaseMob sharedInstance] registerSDKWithAppKey:@"1000phonemobile#chatdemo" apnsCertName:@"MyPushDemo20151125"];
+}
+
+//极光推送
+-(void) jpush:(NSDictionary *)launchOptions{
+    // Required
+#if __IPHONE_OS_VERSION_MAX_ALLOWED > __IPHONE_7_1
+    if ([[UIDevice currentDevice].systemVersion floatValue] >= 8.0) {
+        //可以添加自定义categories
+        [APService registerForRemoteNotificationTypes:(UIUserNotificationTypeBadge |
+                                                       UIUserNotificationTypeSound |
+                                                       UIUserNotificationTypeAlert)
+                                           categories:nil];
+    } else {
+        //categories 必须为nil
+        [APService registerForRemoteNotificationTypes:(UIRemoteNotificationTypeBadge |
+                                                       UIRemoteNotificationTypeSound |
+                                                       UIRemoteNotificationTypeAlert)
+                                           categories:nil];
+    }
+#else
+    //categories 必须为nil
+    [APService registerForRemoteNotificationTypes:(UIRemoteNotificationTypeBadge |
+                                                   UIRemoteNotificationTypeSound |
+                                                   UIRemoteNotificationTypeAlert)
+                                       categories:nil];
+#endif
+    // Required
+    [APService setupWithOption:launchOptions];
 }
 @end

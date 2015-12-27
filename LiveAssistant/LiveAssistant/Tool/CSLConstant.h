@@ -13,6 +13,17 @@
 #define kSCREENWIDTH      [UIScreen mainScreen].bounds.size.width
 #define kSCREENHEIGHT   [UIScreen mainScreen].bounds.size.height
 
+//登录注册
+//登录
+#define kLoginUrl  @"http://10.0.8.8/sns/my/login.php"
+
+//注册
+#define kRigisterUrl @"http://10.0.8.8/sns/my/register.php"
+
+//相册列表
+#define kAlbumsUrl  @"http://10.0.8.8/sns/my/album_list.php"
+
+
 
 //快递请求地址,post方式,参数：
 //apikey ：授权密钥：
