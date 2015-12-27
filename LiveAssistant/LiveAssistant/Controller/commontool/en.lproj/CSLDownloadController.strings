@@ -1,0 +1,12 @@
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "IBo-Lg-wOY"; */
+"IBo-Lg-wOY.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "下载"; ObjectID = "Wyq-od-tWj"; */
+"Wyq-od-tWj.normalTitle" = "download";
+
+/* Class = "UIButton"; normalTitle = "暂停"; ObjectID = "mjg-rE-m62"; */
+"mjg-rE-m62.normalTitle" = "pause";
+
+/* Class = "UIButton"; normalTitle = "恢复"; ObjectID = "zC8-0h-yRf"; */
+"zC8-0h-yRf.normalTitle" = "resume";

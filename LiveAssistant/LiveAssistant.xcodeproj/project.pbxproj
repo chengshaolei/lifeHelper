@@ -111,6 +111,11 @@
 		6C4C68461C2FF692006E8685 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C4C68451C2FF692006E8685 /* libiconv.tbd */; };
 		6C4C68481C2FFC67006E8685 /* sinaweibo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C4C68471C2FFC67006E8685 /* sinaweibo.png */; };
 		6C4C684C1C3020D9006E8685 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4C684B1C3020D9006E8685 /* Reachability.m */; };
+		6C4C684E1C302574006E8685 /* alarm.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C4C684D1C302574006E8685 /* alarm.png */; };
+		6C4C68521C3025EF006E8685 /* CSLDownloadController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4C68501C3025EF006E8685 /* CSLDownloadController.m */; };
+		6C4C68561C3038F7006E8685 /* DownLoadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4C68551C3038F7006E8685 /* DownLoadOperation.m */; };
+		6C4C68571C303A33006E8685 /* CSLDownloadController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C4C68591C303A33006E8685 /* CSLDownloadController.xib */; };
+		6C4C685F1C304764006E8685 /* 640x1136.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C4C685E1C304764006E8685 /* 640x1136.png */; };
 		6C6D47CD1C18617900B80FB6 /* CSLScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C6D47CC1C18617900B80FB6 /* CSLScanViewController.m */; };
 		6C6D47D01C18833600B80FB6 /* Auxiliary.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C6D47CF1C18833600B80FB6 /* Auxiliary.m */; };
 		6C73E4531C238E5600B674E9 /* CSLDrugDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C73E4511C238E5600B674E9 /* CSLDrugDetailController.xib */; };
@@ -507,6 +512,15 @@
 		6C4C68471C2FFC67006E8685 /* sinaweibo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sinaweibo.png; sourceTree = "<group>"; };
 		6C4C684A1C3020D9006E8685 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		6C4C684B1C3020D9006E8685 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		6C4C684D1C302574006E8685 /* alarm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alarm.png; sourceTree = "<group>"; };
+		6C4C684F1C3025EF006E8685 /* CSLDownloadController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSLDownloadController.h; sourceTree = "<group>"; };
+		6C4C68501C3025EF006E8685 /* CSLDownloadController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSLDownloadController.m; sourceTree = "<group>"; };
+		6C4C68541C3038F7006E8685 /* DownLoadOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownLoadOperation.h; sourceTree = "<group>"; };
+		6C4C68551C3038F7006E8685 /* DownLoadOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownLoadOperation.m; sourceTree = "<group>"; };
+		6C4C68581C303A33006E8685 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/CSLDownloadController.xib; sourceTree = "<group>"; };
+		6C4C685B1C303A3B006E8685 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/CSLDownloadController.strings; sourceTree = "<group>"; };
+		6C4C685D1C303A40006E8685 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/CSLDownloadController.strings"; sourceTree = "<group>"; };
+		6C4C685E1C304764006E8685 /* 640x1136.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 640x1136.png; path = Resource/city/640x1136.png; sourceTree = "<group>"; };
 		6C6D47CB1C18617900B80FB6 /* CSLScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSLScanViewController.h; sourceTree = "<group>"; };
 		6C6D47CC1C18617900B80FB6 /* CSLScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSLScanViewController.m; sourceTree = "<group>"; };
 		6C6D47CE1C18833600B80FB6 /* Auxiliary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Auxiliary.h; sourceTree = "<group>"; };
@@ -1437,6 +1451,9 @@
 				6C4C680B1C2F8D3D006E8685 /* CSLAddAlarmViewController.h */,
 				6C4C680C1C2F8D3D006E8685 /* CSLAddAlarmViewController.m */,
 				6C4C680D1C2F8D3D006E8685 /* CSLAddAlarmViewController.xib */,
+				6C4C684F1C3025EF006E8685 /* CSLDownloadController.h */,
+				6C4C68501C3025EF006E8685 /* CSLDownloadController.m */,
+				6C4C68591C303A33006E8685 /* CSLDownloadController.xib */,
 			);
 			path = commontool;
 			sourceTree = "<group>";
@@ -1457,6 +1474,7 @@
 		6C9FB99D1C185BE600725C02 /* resourcelib */ = {
 			isa = PBXGroup;
 			children = (
+				6C4C684D1C302574006E8685 /* alarm.png */,
 				6C4C68471C2FFC67006E8685 /* sinaweibo.png */,
 				6C4C68151C2FF44A006E8685 /* share@2x.png */,
 				6C4C68101C2FA03D006E8685 /* correct.png */,
@@ -1505,6 +1523,8 @@
 		6C9FB9A61C185BE700725C02 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				6C4C68541C3038F7006E8685 /* DownLoadOperation.h */,
+				6C4C68551C3038F7006E8685 /* DownLoadOperation.m */,
 				6C9E99861C2D83210075173C /* crypt */,
 				6C8CFA601C29794F00E59FFF /* CLLocation+Sino */,
 				6CB9EBD71C1FF0D0006C64F0 /* DB */,
@@ -1557,6 +1577,7 @@
 				6CB503C71C185ACE0026891F /* Main.storyboard */,
 				6CB503CA1C185ACE0026891F /* Assets.xcassets */,
 				6CB503CC1C185ACE0026891F /* LaunchScreen.storyboard */,
+				6C4C685E1C304764006E8685 /* 640x1136.png */,
 				6CB503CF1C185ACE0026891F /* Info.plist */,
 				6CB503BE1C185ACE0026891F /* Supporting Files */,
 			);
@@ -1927,6 +1948,7 @@
 				6C8CFBB41C29857F00E59FFF /* 2.png in Resources */,
 				6C4C683B1C2FF598006E8685 /* UMSLoginViewController.xib in Resources */,
 				6C8CFBC31C29857F00E59FFF /* 9@2x.png in Resources */,
+				6C4C685F1C304764006E8685 /* 640x1136.png in Resources */,
 				6CF5C1051C24FBE90086FCC6 /* CSLVocabularyController.xib in Resources */,
 				6C8CFBE31C29857F00E59FFF /* haze.png in Resources */,
 				6C73E45C1C23B88E00B674E9 /* CSLDrugDetailCell.xib in Resources */,
@@ -2069,6 +2091,7 @@
 				6CF5C28E1C2696E30086FCC6 /* tabBar_heal@3x.png in Resources */,
 				6C8CFBC71C29857F00E59FFF /* bgStorm@2x.png in Resources */,
 				6CF5C29A1C26AB9E0086FCC6 /* dimentioncode.png in Resources */,
+				6C4C684E1C302574006E8685 /* alarm.png in Resources */,
 				6C4C67CC1C2F6E33006E8685 /* SCNavTabBar.bundle in Resources */,
 				6C4C68161C2FF44A006E8685 /* share@2x.png in Resources */,
 				6C9FB9CC1C185C2700725C02 /* Localizable.strings in Resources */,
@@ -2088,6 +2111,7 @@
 				6CF5C2921C269AE30086FCC6 /* shoudian@3x.png in Resources */,
 				6C8CFC231C299F9C00E59FFF /* CityId.txt in Resources */,
 				6C8CFBB21C29857F00E59FFF /* 1.png in Resources */,
+				6C4C68571C303A33006E8685 /* CSLDownloadController.xib in Resources */,
 				6C8CFC061C29857F00E59FFF /* partlysunny.png in Resources */,
 				6C8CFC1C1C29857F00E59FFF /* wind@2x.png in Resources */,
 				6C8CFA591C29731400E59FFF /* CSLCollectionViewCell.xib in Resources */,
@@ -2158,6 +2182,7 @@
 				6C4C67CD1C2F6E33006E8685 /* SCNavTabBarController.m in Sources */,
 				6CB9EC351C202CF8006C64F0 /* MJRefreshConst.m in Sources */,
 				6C9E998C1C2D853E0075173C /* NSData+cryptUtil.m in Sources */,
+				6C4C68561C3038F7006E8685 /* DownLoadOperation.m in Sources */,
 				6C93F0CB1C19246B007BA2B0 /* CSLExpressViewController.m in Sources */,
 				6C6D47CD1C18617900B80FB6 /* CSLScanViewController.m in Sources */,
 				6C043B241C2B826E005B29C0 /* CSLClearCache.m in Sources */,
@@ -2221,6 +2246,7 @@
 				6C4C67ED1C2F6EBE006E8685 /* JSONModelError.m in Sources */,
 				6CB9EC371C202CF8006C64F0 /* UIScrollView+MJRefresh.m in Sources */,
 				6C9E999E1C2F6BF50075173C /* MBProgressHUD.m in Sources */,
+				6C4C68521C3025EF006E8685 /* CSLDownloadController.m in Sources */,
 				6CF5C2391C262A730086FCC6 /* CSLTranlationModel.m in Sources */,
 				6C93F0D01C1925D1007BA2B0 /* CSLNetRequest.m in Sources */,
 				6CD178211C22DFFC00E6DE32 /* CSLDrugDetailController.m in Sources */,
@@ -2309,6 +2335,16 @@
 				6C4C68321C2FF598006E8685 /* zh-Hans */,
 			);
 			name = UMSocialLocalizable.strings;
+			sourceTree = "<group>";
+		};
+		6C4C68591C303A33006E8685 /* CSLDownloadController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C4C68581C303A33006E8685 /* Base */,
+				6C4C685B1C303A3B006E8685 /* en */,
+				6C4C685D1C303A40006E8685 /* zh-Hans */,
+			);
+			name = CSLDownloadController.xib;
 			sourceTree = "<group>";
 		};
 		6C73E4511C238E5600B674E9 /* CSLDrugDetailController.xib */ = {

@@ -127,7 +127,7 @@
     [_tabBarController addItem:NSLocalizedString(@"tabbar_health",nil) normalImage:[UIImage imageNamed:@"tabBar_heal.png"] highLightImage:[UIImage imageNamed:@"tabBar_heal.png"] controller:@"CSLHealthMainController"];
     
     //增加聊天室标签
-    [_tabBarController addItem:NSLocalizedString(@"tabbar_chatroom",nil) normalImage:[UIImage imageNamed:@"tabBar_chat.png"] highLightImage:[UIImage imageNamed:@"tabBar_chat.png"] controller:@"CSLChatroomViewController"];
+    //[_tabBarController addItem:NSLocalizedString(@"tabbar_chatroom",nil) normalImage:[UIImage imageNamed:@"tabBar_chat.png"] highLightImage:[UIImage imageNamed:@"tabBar_chat.png"] controller:@"CSLChatroomViewController"];
     
     //增加我的标签
     [_tabBarController addItem:NSLocalizedString(@"tabbar_setting",nil) normalImage:[UIImage imageNamed:@"tabbar_setting.png"] highLightImage:[UIImage imageNamed:@"tabbar_setting.png"] controller:@"CSLSettingController"];

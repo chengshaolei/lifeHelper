@@ -252,6 +252,9 @@
                                             <include reference="KlD-GV-6Wy"/>
                                         </mask>
                                     </variation>
+                                    <connections>
+                                        <action selector="download:" destination="-1" eventType="touchUpInside" id="NM2-w0-spJ"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" tag="17" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CjE-2B-kjR">
                                     <rect key="frame" x="360" y="0.0" width="180" height="185"/>
@@ -259,7 +262,7 @@
                                         <constraint firstAttribute="width" constant="55" id="bCJ-Ct-KCO"/>
                                         <constraint firstAttribute="height" constant="55" id="tXF-hJ-UK8"/>
                                     </constraints>
-                                    <state key="normal" image="meng.png"/>
+                                    <state key="normal" image="alarm.png"/>
                                     <variation key="default">
                                         <mask key="constraints">
                                             <exclude reference="bCJ-Ct-KCO"/>
@@ -356,10 +359,10 @@
         </view>
     </objects>
     <resources>
+        <image name="alarm.png" width="90" height="91"/>
         <image name="dictionary.png" width="180" height="182"/>
         <image name="dimentioncode.png" width="150" height="150"/>
         <image name="idiom.png" width="180" height="182"/>
-        <image name="meng.png" width="180" height="181"/>
         <image name="shoudian.png" width="50" height="50"/>
         <image name="tianqi.png" width="180" height="185"/>
         <image name="toolexpress.png" width="59" height="60"/>

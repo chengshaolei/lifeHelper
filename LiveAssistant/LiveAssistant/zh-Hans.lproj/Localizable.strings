@@ -74,7 +74,7 @@
 "monday~friday" = "周一到周五";
 "everyday" = "每一天";
 "alarmsave" = "保存成功";//保存成功
-
+"download" = "文件上传/下载";
 //设置
 "setting" = "设置";
 "about us" ="关于我们";

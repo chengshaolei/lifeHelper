@@ -79,6 +79,7 @@
 "monday~friday" = "monday~friday";
 "everyday" = "everyday";
 "alarmsave" = "save successfully";//保存成功
+"download" = "up/download file";
 
 //设置
 "setting" = "setting";

@@ -47,9 +47,11 @@
 
 -(void) settingInit{
     self.navigationItem.title = NSLocalizedString(@"setting", nil);
-    _controllers = @[@"CSLFavortateController",[NSNull null],[NSNull null],@"CSLAboutUsController"];
+    //@"CSLFavortateController",
+    _controllers = @[[NSNull null],[NSNull null],@"CSLAboutUsController"];
 
-    [self.dataSource addObjectsFromArray:@[NSLocalizedString(@"Favorite", nil),NSLocalizedString(@"Clear Cache", nil),NSLocalizedString(@"Version Check", nil),NSLocalizedString(@"About us", nil)]];
+    //@[NSLocalizedString(@"Favorite", nil),
+    [self.dataSource addObjectsFromArray:@[NSLocalizedString(@"Clear Cache", nil),NSLocalizedString(@"Version Check", nil),NSLocalizedString(@"About us", nil)]];
     [self.settingTable registerClass:[UITableViewCell class] forCellReuseIdentifier:SettingCellReuse];
     [self setupHeaderView];
     
@@ -100,7 +102,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:SettingCellReuse];
     cell.textLabel.text = self.dataSource[indexPath.row];
-    if (1!=indexPath.row&&2!=indexPath.row) {
+    if (0!=indexPath.row&&1!=indexPath.row) {
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
     
@@ -109,13 +111,13 @@
 
 // 行选中
 -(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    if (1==indexPath.row) {//清除缓存
+    if (0==indexPath.row) {//清除缓存
         CSLClearCache * CacheManager = [[CSLClearCache alloc] init];
         float size = [CacheManager clearCache];
         NSString *str = [NSString stringWithFormat:@"%@ %.2fM",NSLocalizedString(@"cache clean", nil), size];
         [Auxiliary alertWithTitle:nil message:str button:1 done:nil];
     }
-    else if(2==indexPath.row){//版本更新
+    else if(1==indexPath.row){//版本更新
         [Auxiliary checkVersion:MYAppID];
     }
     else{

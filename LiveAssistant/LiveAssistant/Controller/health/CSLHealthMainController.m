@@ -26,10 +26,10 @@
     CSLDrugTypeViewController * drugType = [[CSLDrugTypeViewController alloc] init];
     drugType.title = @"药品";
     
-    SCNavTabBarController * navTabBarController = [[SCNavTabBarController alloc] init];
+    SCNavTabBarController * navTabBarController = [[SCNavTabBarController alloc] initWithShowArrowButton:NO];
+    navTabBarController.showArrowButton = NO;
     navTabBarController.subViewControllers = @[drugShop,drugType];
-    navTabBarController.showArrowButton = YES;
-    navTabBarController.navTabBarColor = [UIColor whiteColor];
+    navTabBarController.navTabBarColor = [UIColor colorWithRed:121.0/255 green:200.0/255 blue:231.0/255 alpha:1];
     [navTabBarController addParentController:self];
     self.navigationController.navigationBar.hidden = YES;
 }
