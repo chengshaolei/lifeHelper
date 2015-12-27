@@ -7,7 +7,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CSLDrugTypeViewController">
             <connections>
-                <outlet property="searchDrug" destination="fAc-gf-vYG" id="ZoD-L3-erQ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -15,51 +14,7 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <subviews>
-                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="fAc-gf-vYG">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="44" id="pSu-JM-i6h"/>
-                    </constraints>
-                    <textInputTraits key="textInputTraits"/>
-                    <variation key="default">
-                        <mask key="constraints">
-                            <exclude reference="pSu-JM-i6h"/>
-                        </mask>
-                    </variation>
-                    <variation key="widthClass=compact">
-                        <mask key="constraints">
-                            <include reference="pSu-JM-i6h"/>
-                        </mask>
-                    </variation>
-                </searchBar>
-            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-            <constraints>
-                <constraint firstAttribute="trailing" secondItem="fAc-gf-vYG" secondAttribute="trailing" id="91E-FK-SaV"/>
-                <constraint firstItem="fAc-gf-vYG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ScG-dg-C7b"/>
-                <constraint firstItem="fAc-gf-vYG" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ypb-a3-TuL"/>
-            </constraints>
-            <variation key="default">
-                <mask key="subviews">
-                    <exclude reference="fAc-gf-vYG"/>
-                </mask>
-                <mask key="constraints">
-                    <exclude reference="91E-FK-SaV"/>
-                    <exclude reference="ScG-dg-C7b"/>
-                    <exclude reference="ypb-a3-TuL"/>
-                </mask>
-            </variation>
-            <variation key="widthClass=compact">
-                <mask key="subviews">
-                    <include reference="fAc-gf-vYG"/>
-                </mask>
-                <mask key="constraints">
-                    <include reference="91E-FK-SaV"/>
-                    <include reference="ScG-dg-C7b"/>
-                    <include reference="ypb-a3-TuL"/>
-                </mask>
-            </variation>
         </view>
     </objects>
 </document>

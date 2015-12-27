@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "CSLTabBarController.h"
+#import "Auxiliary.h"
 
 #import "JHAPISDK.h"
 #import "JHOpenidSupplier.h"
@@ -80,6 +81,16 @@
     [APService handleRemoteNotification:userInfo];
     
 }
+
+- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification {
+    // 更新显示的徽章个数
+    NSInteger badge = [UIApplication sharedApplication].applicationIconBadgeNumber;
+    badge--;
+    badge = badge >= 0 ? badge : 0;
+    [UIApplication sharedApplication].applicationIconBadgeNumber = badge;
+}
+
+//接收远程通通知
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler {
     
     //iOS7以后收到推送通知响应的方法

@@ -17,6 +17,7 @@
 //两个按钮
 +(void) alertWithTitle:(NSString*)title message:(NSString*)message button:(NSArray*)buttons done:(void (^)())agree cancel:(void (^)())disagree;
 
++(void) alertWithTitle:(NSString*)title message:(NSString*)message button:(NSUInteger)buttons inController:(UIViewController*)controller done:(void (^)())act;
 //定义转场动画
 //参数：properties字典，每一个键值对描述一个动画属性，常用的有：
 //     动画类型： pageCurl            向上翻一页

@@ -20,10 +20,6 @@
 @end
 
 @implementation CSLDrugTypeViewController
-{
-//    CSLDrugTypeLeftController * _LeftController;
-//    CSLDrugTypeDetailViewController * _rightController;
-}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -62,11 +58,11 @@
     [self addChildViewController:_rightController];
     
     //设置左边的控制器view的frame
-    _LeftController.view.frame = CGRectMake(0, self.searchDrug.frame.size.height, self.view.frame.size.width/2, self.view.frame.size.height-self.searchDrug.frame.size.height);
+    _LeftController.view.frame = CGRectMake(0, 1, self.view.frame.size.width/2, self.view.frame.size.height);
     [self.view addSubview:_LeftController.view];
     
     //设置右边的控制器view的frame
-    _rightController.view.frame = CGRectMake(self.view.frame.size.width/2, self.searchDrug.frame.size.height, self.view.frame.size.width/2, self.view.frame.size.height-self.searchDrug.frame.size.height);
+    _rightController.view.frame = CGRectMake(self.view.frame.size.width/2, 1, self.view.frame.size.width/2, self.view.frame.size.height);
     [self.view addSubview:_rightController.view];
     
 }
@@ -78,14 +74,14 @@
     leftView.layer.borderColor = [UIColor grayColor].CGColor;
     leftView.
     translatesAutoresizingMaskIntoConstraints = NO;
-    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[_searchDrug]-5-[leftView]-0-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_searchDrug,leftView)]];
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-5-[leftView]-0-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(leftView)]];
     
     //右视图
     UIView * rightView = _rightController.view;
     rightView.layer.borderWidth = 1;
     rightView.layer.borderColor = [UIColor grayColor].CGColor;
     rightView.translatesAutoresizingMaskIntoConstraints = NO;
-    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[_searchDrug]-5-[rightView]-0-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_searchDrug,rightView)]];
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-5-[rightView]-0-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(rightView)]];
     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[leftView(110)]-1-[rightView]-0-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(leftView,rightView)]];
 }
 

@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface CSLAddAlarmViewController : UIViewController
-
+@property(nonatomic,strong) NSMutableDictionary * dict;//闹钟信息
 @end

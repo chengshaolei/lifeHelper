@@ -118,6 +118,7 @@
 
 }
 
+
 +(CATransition*) transitWithProperties:(NSDictionary*)properties{
     //定义转场动画
     __autoreleasing CATransition * transition = [CATransition animation];

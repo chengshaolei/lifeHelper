@@ -13,13 +13,15 @@
 #import "CSLUser.h"
 
 @interface CSLAddAlarmViewController ()<UITableViewDataSource,UITableViewDelegate>
--(void) setupUI;//初始化界面
 @property (weak, nonatomic) IBOutlet UITableView *alarmTable;
+-(void) setupUI;//初始化界面
 @end
 
 @implementation CSLAddAlarmViewController{
     RepeatMode  selectedMode;//选中的模式
+    NSArray * repeatModes;//选中模式对应的中文数组
     NSString * selectedTitle;//闹钟标题
+    NSString * bodyText;//闹钟提醒的内容
     NSString * time;//闹钟时间
 }
 
@@ -40,7 +42,15 @@
     UIImage *image = [UIImage imageNamed:@"correct.png"];
     image = [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:image style:UIBarButtonItemStylePlain target:self action:@selector(save:)];
+    
+    //初始数组
+    repeatModes = @[NSLocalizedString(@"only one", nil),NSLocalizedString(@"monday~friday", nil),NSLocalizedString(@"everyday", nil)];
+    if (!self.dict) {
+        self.dict = [[NSMutableDictionary alloc] init];
+    }
 }
+
+
 
 #pragma mark-------------数据源代理-----------
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -82,11 +92,14 @@
     if (1==row) {
         cell.textLabel.text = NSLocalizedString(@"repeat interval", nil);
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-        
+        if (self.dict) {
+            cell.detailTextLabel.text = _dict[@"repeat"];
+        }
     }
     else if(2==row){
         cell.textLabel.text = NSLocalizedString(@"title label", nil);
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        cell.detailTextLabel.text = _dict[@"title"];
     }
     return cell;
 }
@@ -103,8 +116,16 @@
     if (indexPath.row==1) {
         selectedMode = (RepeatMode)-1;
         CSLRepeatSelectView * selectedView = [[CSLRepeatSelectView alloc] initWithFrame:self.view.frame];
+        __weak CSLAddAlarmViewController * weakSelf = self;
         [selectedView showinView:self.view.window complete:^(RepeatMode selected) {
             selectedMode = selected;
+            if (!weakSelf.dict[@"repeat"]) {
+                [weakSelf.dict setObject:repeatModes[(NSUInteger)selected] forKey:@"repeat"];
+            }
+           else{
+               weakSelf.dict[@"repeat"] = repeatModes[(NSUInteger)selected];
+            }
+            
         }];
         
     }
@@ -116,10 +137,21 @@
         [titleController addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
             textField.placeholder = NSLocalizedString(@"bodytint", nil);
         }];
+        __weak CSLAddAlarmViewController * weakSelf = self;
         __weak UIAlertController * weakController = titleController;
         UIAlertAction * okAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"buttonok", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            //获得提醒的标题和内容
             UITextField * titleField = weakController.textFields[0];
             selectedTitle = titleField.text;
+            UITextField * bodyField = weakController.textFields[1];
+            bodyText = bodyField.text;
+            if (!weakSelf.dict[@"title"]) {
+                [weakSelf.dict setObject:selectedTitle forKey:@"title"];
+            }
+            else{
+                weakSelf.dict[@"title"] = selectedTitle;
+            }
+            
         }];
         [titleController addAction:okAction];
         [self presentViewController:titleController animated:YES completion:nil];
@@ -148,10 +180,7 @@
         return;
     }
     
-    //"only one" = "只此一次";
-//    "monday~friday" = "周一到周五";
-//    "everyday" = "每一天";
-    NSArray * repeatModes = @[NSLocalizedString(@"only one", nil),NSLocalizedString(@"monday~friday", nil),NSLocalizedString(@"everyday", nil)];
+    
     NSDateFormatter * dateFormater = [[NSDateFormatter alloc] init];
     [dateFormater setDateFormat:@"yyy-MM-dd"];
     NSString * currentDateString = [dateFormater stringFromDate:[NSDate date]];
@@ -166,12 +195,13 @@
     if (!selectedTitle) {//如果标题为空，设置默认标题
         selectedTitle = currentDateString;
     }
-   [APService setLocalNotification:date alertBody:@"hello world" badge:1 alertAction:NSLocalizedString(@"buttonok", nil) identifierKey:indentifier userInfo:@{@"alarmKey":indentifier,@"time":time,@"title":selectedTitle,@"repeat":repeatModes[selectedMode]} soundName:nil region:nil regionTriggersOnce:NO category:nil];
+   [APService setLocalNotification:date alertBody:bodyText badge:1 alertAction:NSLocalizedString(@"buttonok", nil) identifierKey:indentifier userInfo:@{@"alarmKey":indentifier,@"time":time,@"title":selectedTitle,@"repeat":repeatModes[selectedMode]} soundName:nil region:nil regionTriggersOnce:NO category:nil];
     [Auxiliary alertWithTitle:NSLocalizedString(@"reminder", nil) message:NSLocalizedString(@"alermsave", nil) button:1 done:nil];
     
     __weak CSLAddAlarmViewController *wealSelf = self;
-    [Auxiliary alertWithTitle:NSLocalizedString(@"reminder", nil) message:NSLocalizedString(@"alermsave", nil) button:1 done:^{
+    [Auxiliary alertWithTitle:NSLocalizedString(@"reminder", nil) message:NSLocalizedString(@"alermsave", nil) button:1 inController:self done:^{
         [wealSelf.navigationController popViewControllerAnimated:YES];
+
     }];
     
 }

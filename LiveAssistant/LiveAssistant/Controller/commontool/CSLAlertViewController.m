@@ -48,7 +48,7 @@
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addAlarm)];
     //创建数据源
     self.alarms = [[NSMutableArray alloc] init];
-    self.alermTableView.editing = YES;//进入编辑模式
+    //self.alermTableView.editing = YES;//进入编辑模式
 }
 
 //增加闹钟
@@ -113,11 +113,33 @@
 
 //选中cell
 -(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    
+    if ([[CSLUser shareInstance] isLoginedUser]) {//检测用户是否登录，登录用户才允许增加闹钟
+        CSLAddAlarmViewController * alarmController = [[CSLAddAlarmViewController alloc] init];
+        [self.navigationController pushViewController:alarmController animated:YES];
+    }
+    else{
+        NSDictionary * dict = _alarms[indexPath.row];
+        CSLAddAlarmViewController * addController = [[CSLAddAlarmViewController alloc] init];
+        addController.dict = [[NSMutableDictionary alloc] initWithDictionary:dict];
+        [self.navigationController pushViewController:addController animated:YES];
+    }
+}
+
+#pragma mark ---------cell的删除-----------
+-(BOOL) tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath{
+    return YES;
 }
 
 //删除cell
 -(void) tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
-    
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        [_alarms removeObjectAtIndex:indexPath.row];
+        //[testTableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        
+        //删除通知
+        NSString * alarmKey = _alarms[indexPath.row][@"alarmKey"];
+        [APService deleteLocalNotificationWithIdentifierKey:alarmKey];
+    }
 }
 @end
